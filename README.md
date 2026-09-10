@@ -35,4 +35,12 @@ The homepage uses a simple static hero with the original supplied bottle image. 
 
 ## Content boundaries
 
-English interface; supplied Georgian brand/founding copy is preserved. No unreviewed full Georgian UI translation is presented as approved. Company laboratory and permit information is attributed to the company. GPP process started is not GPP certification. No fabricated laboratory photos, metrics, partners, opening hours or email address are used. Fonts are hosted with the site and fall back to Arial if unavailable.
+English and Georgian interfaces are available through the KA/EN header button. The adjacent day/night switch changes the appearance. Both choices persist in this browser across routes and return visits; first visits use English and light mode. The original Georgian brand/founding copy is preserved. Company laboratory and permit information is attributed to the company. GPP process started is not GPP certification. No fabricated laboratory photos, metrics, partners, opening hours or email address are used. Fonts, including Noto Sans Georgian, are hosted with the site and fall back to Arial if unavailable.
+
+## Language and appearance maintenance
+
+Interface translations are in `src/ka.json`; Georgian ingredient context, clinical cautions, formulation limits, product names and source labels are in `src/ka-products.json`. Keep both languages synchronized when changing the original English content. Clinical translations preserve the same reference-product and off-label distinctions and require the same ongoing pharmacy review as the English copy. Product images and source URLs remain unchanged in either language or theme.
+
+`src/preferences.jsx` manages the controls and saved preferences. `src/preferences.css` defines the dark palette and Georgian layout adjustments. The page head restores choices before rendering to avoid a light-theme flash. Browser storage failure does not prevent controls from working.
+
+Run `node scripts/check-preferences.mjs` with a Playwright Chromium installation to check all routes in both languages and themes. `FORTIS_TEST_URL` can select a preview or production URL; `FORTIS_CHROME_PATH` can select an existing compatible browser executable.

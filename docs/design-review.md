@@ -33,3 +33,13 @@ Original illustrations contain placeholder clinical label content; the user expl
 - Desktop and mobile layouts, catalog search/filter/reset, mobile navigation, product links, and image loading were checked in the browser. Final production preview reported no console errors.
 - All ten original PNG files match their supplied sources. Delivery uses lossless WebP copies with verified identical decoded pixels. Cards defer image loading until near the viewport; detail pages preload their own product photo.
 - Local Lighthouse mobile audit: performance 75, accessibility 100, best practices 100, SEO 100. Largest contentful paint was 7.7 seconds under simulated mobile throttling, with no blocking time. Full-resolution image preservation remains the principal loading tradeoff. These are local audit results, not measurements of a published deployment.
+
+## Georgian and night-mode follow-up
+
+The user requested Georgian and night mode, referencing Digital Wing's header controls. Live inspection confirmed an alternate-language KA/EN button and a compact day/night switch. Fortis follows this interaction pattern while retaining its own brand colors, static hero and original assets. This explicit follow-up supersedes the initial light-only direction above.
+
+Translations cover navigation, every information and product page, catalog controls, clinical context, limitations, source labels, image alternatives, page titles and accessibility labels. A locally hosted Georgian font supports readable text. Both preferences persist across full-page navigation and return visits. Night mode changes interface colors while keeping image pixels and photographic backgrounds intact.
+
+The production build and content checks pass. Automated browser checks passed 68 mobile combinations (17 routes in English/Georgian and light/dark), including loaded original image dimensions, persistent preferences, bilingual search, no-results/reset, filters retained across language changes, desktop overflow and absence of page errors.
+
+An axe accessibility check found no WCAG A/AA violations on the Georgian homepage, catalog, minoxidil detail, about and contact pages in both themes after correcting text contrast. The homepage, catalog and naltrexone detail also fit a 320px viewport without horizontal overflow.

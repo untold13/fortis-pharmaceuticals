@@ -2,6 +2,21 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <script>
+      (() => {
+        let language = "en",
+          theme = "light";
+        try {
+          language =
+            localStorage.getItem("fortis-language") === "ka" ? "ka" : "en";
+          theme =
+            localStorage.getItem("fortis-theme") === "dark" ? "dark" : "light";
+        } catch {}
+        document.documentElement.lang = language;
+        document.documentElement.dataset.theme = theme;
+        document.documentElement.style.colorScheme = theme;
+      })();
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="preload"
