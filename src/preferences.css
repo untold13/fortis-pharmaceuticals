@@ -1,0 +1,423 @@
+/* Compact language and day/night controls, following the reference interaction. */
+:root {
+  --surface: #fff;
+  --raised: #f3f6f7;
+}
+.breadcrumb, .specs small, .contact-option small { color: #536874; }
+blockquote { color: #526c51; }
+.nav-wrap {
+  gap: 20px;
+}
+.nav {
+  gap: 22px;
+}
+.preferences-controls {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  flex-shrink: 0;
+}
+.language-button {
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--ink);
+  color: var(--surface);
+  font:
+    600 12px "DM Sans Variable",
+    sans-serif;
+  padding: 0;
+}
+.theme-switch {
+  position: relative;
+  width: 66px;
+  height: 38px;
+  padding: 0;
+  border: 1px solid #9bb9c8;
+  border-radius: 24px;
+  background: #c7e7f1;
+  flex-shrink: 0;
+}
+.theme-switch svg {
+  position: absolute;
+  top: 10px;
+}
+.day-icon {
+  right: 8px;
+  color: #6c5018;
+}
+.night-icon {
+  left: 8px;
+  color: #d7ecff;
+  opacity: 0;
+}
+.theme-thumb {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 1px 4px #17334630;
+}
+.theme-switch[aria-checked="true"] {
+  background: #1d3659;
+  border-color: #6188ab;
+}
+.theme-switch[aria-checked="true"] .theme-thumb {
+  left: 31px;
+}
+.theme-switch[aria-checked="true"] .night-icon {
+  opacity: 1;
+}
+.theme-switch[aria-checked="true"] .day-icon {
+  opacity: 0;
+}
+.language-button:hover {
+  outline: 1px solid var(--blue);
+  outline-offset: 3px;
+}
+.menu-button {
+  min-width: 36px;
+  min-height: 44px;
+  padding: 0;
+}
+
+/* Georgian uses its own locally hosted font, with space for longer words. */
+.georgian,
+[lang="ka"] {
+  font-family: "Noto Sans Georgian Variable", Arial, sans-serif;
+}
+html[lang="ka"] h1,
+html[lang="ka"] h2,
+html[lang="ka"] h3 {
+  font-family: "Noto Sans Georgian Variable", Arial, sans-serif;
+  letter-spacing: -0.5px;
+  line-height: 1.35;
+}
+html[lang="ka"] .eyebrow,
+html[lang="ka"] small {
+  letter-spacing: 0;
+}
+html[lang="ka"] .nav {
+  font-size: 12px;
+  gap: 18px;
+}
+html[lang="ka"] .simple-hero .hero-copy h1 {
+  font-size: clamp(38px, 4.4vw, 62px);
+  letter-spacing: -1px;
+  line-height: 1.2;
+}
+html[lang="ka"] .simple-hero .hero-copy p {
+  max-width: 440px;
+  font-size: 16px;
+}
+html[lang="ka"] .hero-actions {
+  flex-wrap: wrap;
+}
+html[lang="ka"] .button {
+  white-space: normal;
+  line-height: 1.6;
+  text-align: left;
+}
+.button svg,
+.text-link svg {
+  flex-shrink: 0;
+}
+html[lang="ka"] .product-card h3 {
+  overflow-wrap: anywhere;
+}
+html[lang="ka"] .detail-copy h1 {
+  font-size: 36px;
+  overflow-wrap: anywhere;
+}
+html[lang="ka"] .contact-band h2 {
+  font-size: 29px;
+}
+html[lang="ka"] .product-card-bottom > div {
+  flex-wrap: wrap;
+  gap: 6px 12px;
+}
+html[lang="ka"] .specs {
+  gap: 24px;
+}
+html[lang="ka"] .contact-panel li {
+  line-height: 1.9;
+  margin-bottom: 10px;
+}
+html[lang="ka"] .page-intro h1 {
+  font-size: clamp(34px, 4vw, 58px);
+}
+
+/* Images retain their original pixels and light photographic backgrounds. */
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --ink: #e2edf2;
+  --muted: #b2c4cd;
+  --blue: #83c2ed;
+  --green: #a2bf8c;
+  --line: #344854;
+  --pale: #192a35;
+  --surface: #111e27;
+  --raised: #192a35;
+  color: var(--ink);
+  background: var(--surface);
+}
+html[data-theme="dark"] .header,
+html[data-theme="dark"] footer,
+html[data-theme="dark"] .nav {
+  background: var(--surface);
+  border-color: var(--line);
+}
+html[data-theme="dark"] .simple-hero,
+html[data-theme="dark"] .featured,
+html[data-theme="dark"] .contact-band,
+html[data-theme="dark"] .clinical-note,
+html[data-theme="dark"] .quality-grid > div,
+html[data-theme="dark"] .contact-panel,
+html[data-theme="dark"] .search {
+  background: var(--raised);
+  border-color: var(--line);
+}
+html[data-theme="dark"] .nav,
+html[data-theme="dark"] .nav a,
+html[data-theme="dark"] .approach .lead,
+html[data-theme="dark"] .simple-hero .hero-copy p,
+html[data-theme="dark"] .eyebrow,
+html[data-theme="dark"] .quiet-note,
+html[data-theme="dark"] .filter-note,
+html[data-theme="dark"] .product-category,
+html[data-theme="dark"] .product-card-bottom span:not(.product-category),
+html[data-theme="dark"] .footer-top > div > small,
+html[data-theme="dark"] .footer-bottom,
+html[data-theme="dark"] .specs small,
+html[data-theme="dark"] .contact-option small,
+html[data-theme="dark"] .contact-panel ul,
+html[data-theme="dark"] .breadcrumb {
+  color: var(--muted);
+}
+html[data-theme="dark"] .nav a[aria-current],
+html[data-theme="dark"] .product-card-bottom strong,
+html[data-theme="dark"] .detail-strength {
+  color: var(--blue);
+}
+html[data-theme="dark"] h1 em,
+html[data-theme="dark"] .editorial-layout .georgian,
+html[data-theme="dark"] blockquote,
+html[data-theme="dark"] .quality-grid svg,
+html[data-theme="dark"] .editorial-layout aside,
+html[data-theme="dark"] .contact-option > svg,
+html[data-theme="dark"] .steps > div > span {
+  color: var(--green);
+}
+html[data-theme="dark"] .brand strong {
+  color: #83bfd6;
+}
+html[data-theme="dark"] .brand small {
+  color: #a2bf8c;
+}
+html[data-theme="dark"] .brand-icon {
+  background: #fff;
+  border-radius: 4px;
+}
+html[data-theme="dark"] .brand-icon img,
+html[data-theme="dark"] .product-image img,
+html[data-theme="dark"] .detail-visual img,
+html[data-theme="dark"] .simple-hero-image img {
+  mix-blend-mode: normal;
+}
+html[data-theme="dark"] .company-brand {
+  background: #fff;
+  border-radius: 4px;
+}
+html[data-theme="dark"] .simple-hero-image,
+html[data-theme="dark"] .detail-visual,
+html[data-theme="dark"] .product-image {
+  background: #edf1f4;
+}
+html[data-theme="dark"] .simple-hero-image figcaption,
+html[data-theme="dark"] .detail-visual p {
+  color: #435964;
+}
+html[data-theme="dark"] .button,
+html[data-theme="dark"] .contact-band .button {
+  background: var(--blue);
+  border-color: var(--blue);
+  color: #102837;
+}
+html[data-theme="dark"] .button:hover,
+html[data-theme="dark"] .contact-band .button:hover {
+  background: #b8def5;
+}
+html[data-theme="dark"] .button.secondary {
+  color: var(--ink);
+  background: transparent;
+  border-color: var(--line);
+}
+html[data-theme="dark"] .button.secondary:hover {
+  background: #263e4b;
+}
+html[data-theme="dark"] .contact-nav {
+  border-color: var(--line);
+}
+html[data-theme="dark"] .filters button {
+  background: var(--surface);
+  color: var(--muted);
+  border-color: var(--line);
+}
+html[data-theme="dark"] .filters button[aria-pressed="true"] {
+  background: var(--blue);
+  border-color: var(--blue);
+  color: #102837;
+}
+html[data-theme="dark"] .search input::placeholder {
+  color: var(--muted);
+}
+html[data-theme="dark"] .tag {
+  color: #c6dfb4;
+  background: #2c4232;
+}
+html[data-theme="dark"] .contact-resource {
+  border-color: var(--line);
+}
+
+@media (max-width: 1420px) {
+  .contact-nav {
+    display: none;
+  }
+}
+@media (max-width: 1100px) {
+  .header {
+    height: 78px;
+  }
+  .nav-wrap {
+    justify-content: start;
+  }
+  .preferences-controls {
+    margin-left: auto;
+  }
+  .menu-button {
+    display: block;
+  }
+  .nav {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 78px;
+    padding: 12px 24px;
+    background: var(--surface);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav.open {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+  .nav a {
+    padding: 14px 0;
+    font-size: 14px;
+  }
+  html[lang="ka"] .nav {
+    gap: 0;
+  }
+}
+@media (max-width: 700px) {
+  .header {
+    height: 72px;
+  }
+  .nav {
+    top: 72px;
+  }
+  .nav-wrap {
+    width: calc(100% - 32px);
+    gap: 12px;
+  }
+  .preferences-controls {
+    gap: 6px;
+  }
+  .language-button {
+    width: 36px;
+    height: 38px;
+    font-size: 11px;
+  }
+  .theme-switch {
+    width: 58px;
+  }
+  .theme-switch[aria-checked="true"] .theme-thumb {
+    left: 23px;
+  }
+  .brand {
+    gap: 5px;
+  }
+  .brand strong {
+    font-size: 21px;
+    letter-spacing: 2.8px;
+  }
+  .brand small {
+    font-size: 6px;
+    letter-spacing: 1.2px;
+  }
+  .brand-icon {
+    width: 34px;
+    flex-shrink: 0;
+  }
+  html[lang="ka"] .simple-hero .hero-copy h1 {
+    font-size: clamp(31px, 8.6vw, 43px);
+    letter-spacing: -0.7px;
+  }
+  html[lang="ka"] .simple-hero .hero-copy p {
+    font-size: 15px;
+  }
+  html[lang="ka"] .approach > h2,
+  html[lang="ka"] .section-heading h2,
+  html[lang="ka"] .company-overview h2 {
+    font-size: 29px;
+  }
+  html[lang="ka"] .detail-copy h1 {
+    font-size: 30px;
+  }
+  html[lang="ka"] .product-card h3 {
+    font-size: 13px;
+  }
+  html[lang="ka"] .contact-band h2 {
+    font-size: 25px;
+  }
+  html[lang="ka"] .contact-option h2 {
+    font-size: 24px;
+  }
+  html[lang="ka"] .button {
+    font-size: 13px;
+  }
+  html[lang="ka"] .detail-copy .button {
+    max-width: 100%;
+  }
+}
+@media (max-width: 360px) {
+  html[lang="ka"] .page-intro h1 { font-size: 29px; }
+  .nav-wrap {
+    gap: 7px;
+  }
+  .brand strong {
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+  .brand small {
+    letter-spacing: 0.7px;
+  }
+  .brand-icon {
+    width: 31px;
+  }
+  .preferences-controls {
+    gap: 4px;
+  }
+  .theme-switch {
+    width: 54px;
+  }
+  .theme-switch[aria-checked="true"] .theme-thumb {
+    left: 19px;
+  }
+}
