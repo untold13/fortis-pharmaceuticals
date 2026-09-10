@@ -7,13 +7,7 @@ assert.equal(
   products.length,
   "Every product must have a unique route",
 );
-const allowed = new Set([
-  "www.accessdata.fda.gov",
-  "www.fda.gov",
-  "www.ema.europa.eu",
-  "jamanetwork.com",
-  "pmc.ncbi.nlm.nih.gov",
-]);
+import { allowedSourceHosts as allowed } from "../lib/cms-validation.js";
 for (const p of products) {
   assert.ok(existsSync(`public${p.image}`), `Missing image for ${p.slug}`);
   assert.ok(p.strength && p.name && p.pack && p.context && p.caution && p.note);

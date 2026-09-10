@@ -72,7 +72,12 @@ try {
           `${language}/${theme}${path} overflows`,
         );
         if (language === "ka") {
-          assert.match(state.heading, /[ა-ჰ]/, path);
+          const localizedProduct = products.find(
+            (p) => path === `/products/${p.slug}`,
+          );
+          if (localizedProduct)
+            assert.equal(state.heading, localizedProduct.ka.name, path);
+          else assert.match(state.heading, /[ა-ჰ]/, path);
           assert.match(state.title, /ფორტის/, path);
         }
         const product = products.find((p) => path === `/products/${p.slug}`);
@@ -88,14 +93,15 @@ try {
               .evaluate((e) => getComputedStyle(e).animationName),
             "fortis-bottle-float",
           );
-          await page.locator(".hero-motion-control").click();
-          assert.equal(
-            await page
-              .locator(".bottle-float")
-              .evaluate((e) => getComputedStyle(e).animationPlayState),
-            "paused",
-          );
-          await page.locator(".hero-motion-control").click();
+          assert.equal(await page.locator(".hero-motion-control").count(), 0);
+          const animation = await page
+            .locator(".bottle-float")
+            .evaluate((e) => ({
+              duration: getComputedStyle(e).animationDuration,
+              iterations: getComputedStyle(e).animationIterationCount,
+            }));
+          assert.equal(animation.duration, "4.5s");
+          assert.equal(animation.iterations, "1");
           await page.emulateMedia({ reducedMotion: "reduce" });
           assert.equal(
             await page
