@@ -53,6 +53,12 @@
         "სექსუალური ჯანმრთელობა",
         "თავის ტვინი და ნერვული სისტემა"
       ]
-    }
-  }
+    },
+    "infoOverview": "მოწოდებული დოსიე აღწერს ფლიბანსერინის შემცველ ინდივიდუალურად მომზადებულ 100 მგ პერორალურ პრეპარატს. რეფერენსული ჩვენებისთვის მოქმედების ზუსტი მექანიზმი ცნობილი არ არის; ნივთიერება ცენტრალურ ნერვულ სისტემაში სეროტონინის რეცეპტორებზე მოქმედებს.",
+    "infoUse": "FDA-ს მიმდინარე რეფერენსული ინსტრუქცია მოიცავს შეძენილ, გენერალიზებულ ჰიპოაქტიურ სქესობრივი სურვილის აშლილობას, რომელიც მნიშვნელოვან დისკომფორტს იწვევს 65 წლამდე ქალებში, როდესაც დაბალი სურვილი სხვა დაავადებით, მედიკამენტით ან ურთიერთობის პრობლემით არ არის გამოწვეული. ალკოჰოლი, CYP3A4-ის საშუალო ან ძლიერი ინჰიბიტორები, ღვიძლის ფუნქციის დარღვევა, დაბალი არტერიული წნევა და სედაცია განსაკუთრებულ შეფასებას საჭიროებს.",
+    "infoStorage": "მოწოდებული დოსიე მიუთითებს, რომ პრეპარატი უნდა ინახებოდეს ოთახის ტემპერატურაზე, მშრალ და პირდაპირი სინათლისგან დაცულ ადგილას, ბავშვებისთვის მიუწვდომლად. უპირატესობა ენიჭება გაცემული პრეპარატის ეტიკეტზე მითითებულ შენახვის პირობასა და გამოყენების საბოლოო ვადას."
+  },
+  "infoOverview": "The supplied dossier identifies a compounded 100 mg oral preparation containing flibanserin. Its exact mechanism for the reference indication is not known; it acts at serotonin receptors in the central nervous system.",
+  "infoUse": "The current FDA reference label covers acquired, generalized hypoactive sexual desire disorder causing marked distress in women younger than 65 when low desire is not caused by another condition, medication effect or relationship problem. Alcohol, moderate or strong CYP3A4 inhibitors, liver impairment, low blood pressure and sedation require careful review.",
+  "infoStorage": "The supplied dossier states to keep this preparation at room temperature, dry and protected from direct light, out of reach of children. The storage instruction and beyond-use date on the dispensing label take precedence."
 }

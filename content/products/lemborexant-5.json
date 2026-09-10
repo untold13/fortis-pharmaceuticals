@@ -47,8 +47,14 @@
       ]
     },
     "packUnit": "ტაბლეტი",
-    "preparation": "კომპოზიტური · პერორალური"
+    "preparation": "კომპოზიტური · პერორალური",
+    "infoOverview": "მოწოდებული დოსიე ლემბორექსანტს აღწერს როგორც ორექსინის ორივე რეცეპტორის ანტაგონისტს, რომელიც OX1R და OX2R რეცეპტორების გავლით სიფხიზლის სიგნალს ამცირებს. პრეპარატი წარმოდგენილია პერორალური გამოყენებისთვის.",
+    "infoUse": "დოსიე განიხილავს უძილობას, როდესაც გართულებულია ჩაძინება ან ძილის შენარჩუნება. ნარკოლეფსია უკუჩვენებაა. მომდევნო დღის ფუნქციონირების დაქვეითება, ძილში რთული ქცევები, ძილის დამბლა, ალკოჰოლი ან ცენტრალური ნერვული სისტემის სხვა დამთრგუნველები და CYP3A ურთიერთქმედებები ექიმის შეფასებას საჭიროებს.",
+    "infoStorage": "მოწოდებული დოსიე მიუთითებს, რომ პრეპარატი უნდა ინახებოდეს ოთახის ტემპერატურაზე, მშრალ და პირდაპირი სინათლისგან დაცულ ადგილას, ბავშვებისთვის მიუწვდომლად. უპირატესობა ენიჭება გაცემული პრეპარატის ეტიკეტზე მითითებულ შენახვის პირობასა და გამოყენების საბოლოო ვადას."
   },
   "packUnit": "tablets",
-  "preparation": "Compounded · oral"
+  "preparation": "Compounded · oral",
+  "infoOverview": "The supplied dossier describes lemborexant as a dual orexin receptor antagonist that reduces wake signaling through OX1R and OX2R receptors. The preparation is presented for oral use.",
+  "infoUse": "The dossier discusses insomnia involving difficulty falling asleep or staying asleep. Narcolepsy is a contraindication. Next-day impairment, complex sleep behaviors, sleep paralysis, alcohol or other central nervous system depressants, and CYP3A interactions require prescriber review.",
+  "infoStorage": "The supplied dossier states to keep this preparation at room temperature, dry and protected from direct light, out of reach of children. The storage instruction and beyond-use date on the dispensing label take precedence."
 }

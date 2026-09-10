@@ -48,8 +48,14 @@
       ]
     },
     "packUnit": "ტაბლეტი",
-    "preparation": "კომპოზიტური · პერორალური"
+    "preparation": "კომპოზიტური · პერორალური",
+    "infoOverview": "მოწოდებული დოსიე აღწერს დაბალდოზიან, ინდივიდუალურად მომზადებულ ნალტრექსონის კაფსულებს და დროებით ოპიოიდურ რეცეპტორულ ბლოკადას არარეგისტრირებული გამოყენების სავარაუდო საფუძვლად განიხილავს. დაბალი დოზის ეს სავარაუდო ეფექტები FDA-ს მიერ დამტკიცებული ჩვენებები არ არის.",
+    "infoUse": "მოწოდებული დოსიე ჩამოთვლის აუტოიმუნურ, ტკივილის, დაღლილობისა და სხვა მრავალ არარეგისტრირებულ გამოყენებას. ისინი აქ დადასტურებულ სარგებლად არ არის წარმოდგენილი. ციტირებულ რანდომიზებულ კვლევაში 4.5 მგ დოზამ ფიბრომიალგიისას კლინიკურად მნიშვნელოვანი ტკივილგამაყუჩებელი ეფექტი ვერ აჩვენა. ოპიოიდების მიმდინარე გამოყენებამ შეიძლება მძიმე მოხსნის სინდრომი გამოიწვიოს და ოპიოიდური ტკივილგამაყუჩებლების მოქმედება დაბლოკოს.",
+    "infoStorage": "მოწოდებული დოსიე მიუთითებს, რომ პრეპარატი უნდა ინახებოდეს ოთახის ტემპერატურაზე, მშრალ და პირდაპირი სინათლისგან დაცულ ადგილას, ბავშვებისთვის მიუწვდომლად. უპირატესობა ენიჭება გაცემული პრეპარატის ეტიკეტზე მითითებულ შენახვის პირობასა და გამოყენების საბოლოო ვადას."
   },
   "packUnit": "tablets",
-  "preparation": "Compounded · oral"
+  "preparation": "Compounded · oral",
+  "infoOverview": "The supplied dossier identifies low-dose compounded naltrexone capsules and describes temporary opioid-receptor blockade as the proposed basis for off-label use. These proposed low-dose effects are not established FDA indications.",
+  "infoUse": "The supplied dossier lists broad autoimmune, pain, fatigue and other off-label uses. They are not presented here as proven benefits. The cited randomized study found no clinically relevant analgesic efficacy for 4.5 mg in fibromyalgia. Current opioid use can trigger severe withdrawal and prevent opioid pain medicines from working.",
+  "infoStorage": "The supplied dossier states to keep this preparation at room temperature, dry and protected from direct light, out of reach of children. The storage instruction and beyond-use date on the dispensing label take precedence."
 }

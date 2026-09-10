@@ -47,8 +47,14 @@
       ]
     },
     "packUnit": "ტაბლეტი",
-    "preparation": "კომპოზიტური · პერორალური"
+    "preparation": "კომპოზიტური · პერორალური",
+    "infoOverview": "მოწოდებული დოსიე აღწერს ინდივიდუალურად მომზადებულ პერორალურ პრეპარატს, რომელიც შეიცავს 45 მგ ბუპროპიონის ჰიდროქლორიდსა და 4 მგ ნალტრექსონის ჰიდროქლორიდს. ნივთიერებები მოქმედებს ნორადრენერგულ, დოფამინერგულ და ოპიოიდურ რეცეპტორულ გზებზე.",
+    "infoUse": "დოსიე განიხილავს წონის მართვას კვებისა და ფიზიკური აქტივობის ცვლილებებთან ერთად. ეს დოზა და დაუზუსტებელი გამოთავისუფლების პროფილი განსხვავდება ციტირებული რეფერენსული პრეპარატებისგან, ამიტომ მათი დოზირების სქემა არ უნდა გადაიტანოთ. შესაფასებელია კრუნჩხვის რისკი, არაკონტროლირებული ჰიპერტენზია, კვებითი ქცევის დარღვევები, ოპიოიდების გამოყენება და MAOI-ით მკურნალობა.",
+    "infoStorage": "მოწოდებული დოსიე მიუთითებს, რომ პრეპარატი უნდა ინახებოდეს ოთახის ტემპერატურაზე, მშრალ და პირდაპირი სინათლისგან დაცულ ადგილას, ბავშვებისთვის მიუწვდომლად. უპირატესობა ენიჭება გაცემული პრეპარატის ეტიკეტზე მითითებულ შენახვის პირობასა და გამოყენების საბოლოო ვადას."
   },
   "packUnit": "tablets",
-  "preparation": "Compounded · oral"
+  "preparation": "Compounded · oral",
+  "infoOverview": "The supplied dossier identifies a compounded oral preparation containing bupropion hydrochloride 45 mg and naltrexone hydrochloride 4 mg. The ingredients affect noradrenergic, dopaminergic and opioid-receptor pathways.",
+  "infoUse": "The dossier discusses weight management together with diet and physical activity. This strength and its unspecified release profile differ from the cited reference products, so their dosing must not be transferred. Seizure risk, uncontrolled hypertension, eating disorders, opioid use and MAOI treatment require assessment.",
+  "infoStorage": "The supplied dossier states to keep this preparation at room temperature, dry and protected from direct light, out of reach of children. The storage instruction and beyond-use date on the dispensing label take precedence."
 }

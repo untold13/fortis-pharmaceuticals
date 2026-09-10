@@ -21,6 +21,9 @@ for (const p of products) {
     "form",
     "packUnit",
     "preparation",
+    "infoOverview",
+    "infoUse",
+    "infoStorage",
   ])
     if (p.ka?.[key]) dictionary[p[key]] = { en: p[key], ka: p.ka[key] };
   for (const key of ["specialty", "use", "system"])

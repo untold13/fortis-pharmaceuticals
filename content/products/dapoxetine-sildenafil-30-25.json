@@ -50,8 +50,14 @@
       ]
     },
     "packUnit": "ტაბლეტი",
-    "preparation": "კომპოზიტური · პერორალური"
+    "preparation": "კომპოზიტური · პერორალური",
+    "infoOverview": "მოწოდებული დოსიე აღწერს ინდივიდუალურად მომზადებულ კომბინაციას, რომელიც შეიცავს 30 მგ დაპოქსეტინსა და 25 მგ სილდენაფილს. დაპოქსეტინი მოქმედებს სეროტონინის უკუმიტაცებაზე, ხოლო სილდენაფილი თრგუნავს PDE5-ს და სქესობრივი სტიმულაციისას ერექციულ პასუხს უწყობს ხელს.",
+    "infoUse": "დოსიე განიხილავს ნაადრევ ეაკულაციას თანმხლებ ერექციულ დისფუნქციასთან ერთად. ციტირებული ინსტრუქციები ამ ფიქსირებულ კომბინაციას არ ამტკიცებს. წნევის დაქვეითებისა და გულის წასვლის ეფექტი შეიძლება გაძლიერდეს, სილდენაფილი არ გამოიყენება ნიტრატებთან ან რიოციგუატთან ერთად, ხოლო მიღების დრო და სიხშირე დანიშნულებამ უნდა განსაზღვროს.",
+    "infoStorage": "მოწოდებული დოსიე მიუთითებს, რომ პრეპარატი უნდა ინახებოდეს ოთახის ტემპერატურაზე, მშრალ და პირდაპირი სინათლისგან დაცულ ადგილას, ბავშვებისთვის მიუწვდომლად. უპირატესობა ენიჭება გაცემული პრეპარატის ეტიკეტზე მითითებულ შენახვის პირობასა და გამოყენების საბოლოო ვადას."
   },
   "packUnit": "tablets",
-  "preparation": "Compounded · oral"
+  "preparation": "Compounded · oral",
+  "infoOverview": "The supplied dossier identifies a compounded combination of dapoxetine 30 mg and sildenafil 25 mg. Dapoxetine affects serotonin reuptake, while sildenafil inhibits PDE5 and supports erectile response during sexual stimulation.",
+  "infoUse": "The dossier discusses concurrent premature ejaculation and erectile dysfunction. No cited label establishes this fixed combination. Blood-pressure lowering and fainting may be additive, sildenafil must not be used with nitrates or riociguat, and the prescription must define timing and frequency.",
+  "infoStorage": "The supplied dossier states to keep this preparation at room temperature, dry and protected from direct light, out of reach of children. The storage instruction and beyond-use date on the dispensing label take precedence."
 }

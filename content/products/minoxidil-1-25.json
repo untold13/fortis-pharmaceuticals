@@ -48,8 +48,14 @@
       ]
     },
     "packUnit": "ტაბლეტი",
-    "preparation": "კომპოზიტური · პერორალური"
+    "preparation": "კომპოზიტური · პერორალური",
+    "infoOverview": "მოწოდებული დოსიე პერორალურ მინოქსიდილს აღწერს როგორც სისხლძარღვების გამაფართოებელ და კალიუმის არხების გამხსნელ ნივთიერებას. ეს ინდივიდუალურად მომზადებული პრეპარატი თითო პერორალურ ერთეულში 1.25 მგ-ს შეიცავს.",
+    "infoUse": "დოსიე განიხილავს თმის ცვენას, თუმცა თმის ცვენისას დაბალი დოზით პერორალური გამოყენება FDA-ს დამტკიცებული ჩვენების ფარგლებს გარეთაა. ციტირებული FDA-ს პერორალური რეფერენსული პრეპარატი მძიმე რეზისტენტული ჰიპერტენზიისთვისაა. არტერიული წნევა, პულსი, სითხის შეკავება, შეშუპება და გულის სიმპტომები ინდივიდუალურ შეფასებასა და მონიტორინგს საჭიროებს.",
+    "infoStorage": "მოწოდებული დოსიე მიუთითებს, რომ პრეპარატი უნდა ინახებოდეს ოთახის ტემპერატურაზე, მშრალ და პირდაპირი სინათლისგან დაცულ ადგილას, ბავშვებისთვის მიუწვდომლად. უპირატესობა ენიჭება გაცემული პრეპარატის ეტიკეტზე მითითებულ შენახვის პირობასა და გამოყენების საბოლოო ვადას."
   },
   "packUnit": "tablets",
-  "preparation": "Compounded · oral"
+  "preparation": "Compounded · oral",
+  "infoOverview": "The supplied dossier describes oral minoxidil as a vasodilator and potassium-channel opener. This compounded preparation contains 1.25 mg per oral unit.",
+  "infoUse": "The dossier discusses hair loss, but low-dose oral use for hair loss is outside the FDA-approved indication. The cited FDA oral reference product is for severe resistant hypertension. Blood pressure, heart rate, fluid retention, edema and cardiac symptoms require individualized assessment and monitoring.",
+  "infoStorage": "The supplied dossier states to keep this preparation at room temperature, dry and protected from direct light, out of reach of children. The storage instruction and beyond-use date on the dispensing label take precedence."
 }

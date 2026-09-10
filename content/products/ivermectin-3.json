@@ -53,6 +53,12 @@
         "ნაწლავები",
         "კანი და თვალები"
       ]
-    }
-  }
+    },
+    "infoOverview": "მოწოდებული დოსიე აღწერს ივერმექტინის შემცველ ინდივიდუალურად მომზადებულ 3 მგ პერორალურ პრეპარატს. ივერმექტინი ანტიპარაზიტული ნივთიერებაა, რომელიც პარაზიტის ქლორიდულ არხებზე მოქმედებს.",
+    "infoUse": "მოწოდებული დოსიე ძირითადად მუნს განიხილავს. ციტირებული FDA-ს პერორალური რეფერენსული ინსტრუქცია მოიცავს ნაწლავის სტრონგილოიდოზსა და ონქოცერკოზს და არა მუნს. რეფერენსული ჩვენებების ფარგლებს გარეთ ნებისმიერი გამოყენება, მათ შორის მუნისას, ინდივიდუალურ დანიშნულებასა და ექიმის მეთვალყურეობას საჭიროებს.",
+    "infoStorage": "მოწოდებული დოსიე მიუთითებს, რომ პრეპარატი უნდა ინახებოდეს ოთახის ტემპერატურაზე, მშრალ და პირდაპირი სინათლისგან დაცულ ადგილას, ბავშვებისთვის მიუწვდომლად. უპირატესობა ენიჭება გაცემული პრეპარატის ეტიკეტზე მითითებულ შენახვის პირობასა და გამოყენების საბოლოო ვადას."
+  },
+  "infoOverview": "The supplied dossier identifies a compounded 3 mg oral preparation containing ivermectin, an antiparasitic ingredient that acts on parasite chloride channels.",
+  "infoUse": "The supplied dossier focuses on scabies. The cited FDA oral reference label covers strongyloidiasis of the intestinal tract and onchocerciasis, not scabies. Any use outside the reference indications, including scabies, requires an individual prescription and clinician supervision.",
+  "infoStorage": "The supplied dossier states to keep this preparation at room temperature, dry and protected from direct light, out of reach of children. The storage instruction and beyond-use date on the dispensing label take precedence."
 }

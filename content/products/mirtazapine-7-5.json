@@ -47,8 +47,14 @@
       ]
     },
     "packUnit": "ტაბლეტი",
-    "preparation": "კომპოზიტური · პერორალური"
+    "preparation": "კომპოზიტური · პერორალური",
+    "infoOverview": "მოწოდებული დოსიე აღწერს მირტაზაპინის შემცველ ინდივიდუალურად მომზადებულ 7.5 მგ პერორალურ პრეპარატს. მისი ფარმაკოლოგია მოიცავს ალფა-2 ადრენერგული და სეროტონინის რეცეპტორების ანტაგონიზმს; H1 რეცეპტორზე ძლიერი მოქმედება ძილიანობას უწყობს ხელს.",
+    "infoUse": "დოსიე განიხილავს მაჟორულ დეპრესიულ აშლილობას და მასთან დაკავშირებულ ძილის ან მადის სიმპტომებს. ციტირებული FDA-ს რეფერენსული ჩვენებაა მაჟორული დეპრესიული აშლილობა მოზრდილებში, ხოლო დამტკიცებული რეფერენსული დოზები 15 მგ-დან იწყება. სუიციდური აზრები, სედაცია, წონის მატება, სეროტონინის სინდრომი, სისხლის უჯრედების დარღვევები და MAOI-თან ურთიერთქმედება შეფასებას საჭიროებს.",
+    "infoStorage": "მოწოდებული დოსიე მიუთითებს, რომ პრეპარატი უნდა ინახებოდეს ოთახის ტემპერატურაზე, მშრალ და პირდაპირი სინათლისგან დაცულ ადგილას, ბავშვებისთვის მიუწვდომლად. უპირატესობა ენიჭება გაცემული პრეპარატის ეტიკეტზე მითითებულ შენახვის პირობასა და გამოყენების საბოლოო ვადას."
   },
   "packUnit": "tablets",
-  "preparation": "Compounded · oral"
+  "preparation": "Compounded · oral",
+  "infoOverview": "The supplied dossier identifies a compounded 7.5 mg oral preparation containing mirtazapine. Its pharmacology includes alpha-2 adrenergic and serotonin-receptor antagonism; strong H1 receptor activity contributes to somnolence.",
+  "infoUse": "The dossier discusses major depressive disorder and associated sleep or appetite symptoms. The cited FDA reference indication is major depressive disorder in adults, with approved reference strengths beginning at 15 mg. Suicidal thinking, sedation, weight gain, serotonin syndrome, blood-cell disorders and MAOI interactions require review.",
+  "infoStorage": "The supplied dossier states to keep this preparation at room temperature, dry and protected from direct light, out of reach of children. The storage instruction and beyond-use date on the dispensing label take precedence."
 }
