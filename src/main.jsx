@@ -15,8 +15,7 @@ import {
   ShieldCheck,
   SlidersHorizontal,
   BookOpen,
-  Sun,
-  Moon,
+  ChevronDown,
 } from "lucide-react";
 import { products, sources } from "./products";
 import "@fontsource-variable/dm-sans";
@@ -24,6 +23,11 @@ import "@fontsource-variable/manrope";
 import "@fontsource-variable/noto-sans-georgian";
 import "./style.css";
 import "./preferences.css";
+import "./refinements.css";
+import { BrandArtwork } from "./brand-art";
+import { BottleArtwork } from "./bottle-art";
+import { ThemeArtwork } from "./theme-art";
+import { facets, emptyFilters, filterProducts } from "./catalog-model";
 const nav = [
   ["/", "Home"],
   ["/compounding", "Compounding"],
@@ -40,7 +44,7 @@ function Brand() {
   return (
     <A href="/" className="brand" aria-label={t("Fortis Pharmaceuticals home")}>
       <span className="brand-icon">
-        <img src="/fortis-logo.jpeg" alt="" />
+        <BrandArtwork symbol />
       </span>
       <span>
         <strong>FORTIS</strong>
@@ -99,9 +103,7 @@ function Header() {
             )}
             onClick={() => setTheme(theme === "light" ? "dark" : "light")}
           >
-            <Sun size={16} aria-hidden="true" className="day-icon" />
-            <Moon size={15} aria-hidden="true" className="night-icon" />
-            <span className="theme-thumb" aria-hidden="true" />
+            <ThemeArtwork />
           </button>
         </div>
         <button
@@ -268,20 +270,9 @@ function Hero() {
             </A>
           </div>
         </div>
-        <figure className="simple-hero-image">
-          <img
-            src={products[0].image}
-            alt={t(
-              "Original Fortis naltrexone hydrochloride 1.5 mg bottle illustration",
-            )}
-            width="1024"
-            height="1536"
-            fetchPriority="high"
-          />
-          <figcaption>
-            {t("Illustrative packaging. Follow your prescription.")}
-          </figcaption>
-        </figure>
+        <div className="hero-artwork">
+          <BottleArtwork label={t("Hand-drawn amber Fortis medicine bottle")} />
+        </div>
       </div>
     </section>
   );
@@ -401,15 +392,11 @@ function LabTeaser() {
           </A>
         </div>
       </div>
-      <img
+      <BrandArtwork
         className="company-brand"
-        src="/fortis-logo.jpeg"
-        alt={t(
+        label={t(
           "Fortis Pharmaceuticals / Compounding Pharmacy, in Georgian and English",
         )}
-        loading="lazy"
-        width="1600"
-        height="533"
       />
     </section>
   );
@@ -455,18 +442,33 @@ function PageIntro({ eyebrow, title, description }) {
 function Catalog() {
   const { t } = usePreferences();
   const [q, setQ] = useState("");
-  const [cat, setCat] = useState("All preparations");
-  const categories = [
-    "All preparations",
-    ...new Set(products.map((p) => p.category)),
-  ];
-  const shown = products.filter(
-    (p) =>
-      (cat === categories[0] || p.category === cat) &&
-      `${p.name} ${p.strength} ${p.category} ${t(p.name)} ${t(p.strength)} ${t(p.category)}`
-        .toLowerCase()
-        .includes(q.toLowerCase().trim()),
+  const [selected, setSelected] = useState(emptyFilters);
+  const filterRef = useRef(null);
+  const shown = filterProducts(q, selected, t);
+  const active = facets.flatMap((f) =>
+    selected[f.key].map((value) => ({ ...f, value })),
   );
+  const toggle = (key, value) =>
+    setSelected((prev) => ({
+      ...prev,
+      [key]: prev[key].includes(value)
+        ? prev[key].filter((v) => v !== value)
+        : [...prev[key], value],
+    }));
+  const reset = () => {
+    setQ("");
+    setSelected(emptyFilters());
+  };
+  useEffect(() => {
+    const close = (e) => {
+      if (!filterRef.current?.contains(e.target))
+        filterRef.current
+          ?.querySelectorAll("details[open]")
+          .forEach((d) => (d.open = false));
+    };
+    document.addEventListener("pointerdown", close);
+    return () => document.removeEventListener("pointerdown", close);
+  }, []);
   return (
     <>
       <PageIntro
@@ -479,15 +481,12 @@ function Catalog() {
           </>
         }
         description={t(
-          "Explore our portfolio by ingredient, strength or area of care. Each preparation has its own information page.",
+          "Find a preparation by ingredient, strength, specialty or use context. Read its individual information and references before discussing it with your prescriber.",
         )}
       />
       <section className="wrap catalog">
-        <div className="catalog-toolbar">
+        <div className="catalog-search-row">
           <label className="search">
-            <span className="sr-only">
-              {t("Search products by name or strength")}
-            </span>
             <Icon type={Search} />
             <input
               id="product-search"
@@ -502,21 +501,84 @@ function Catalog() {
               </button>
             )}
           </label>
-          <span aria-live="polite">
-            {shown.length}
-            {t(" preparations")}
-          </span>
+          <p>{t("Choose more than one option in each filter.")}</p>
         </div>
-        <div className="filters" aria-label={t("Filter by area of care")}>
-          {categories.map((c) => (
-            <button key={c} aria-pressed={cat === c} onClick={() => setCat(c)}>
-              {t(c)}
-            </button>
+        <div className="catalog-facets" ref={filterRef}>
+          {facets.map((f) => (
+            <details
+              className="catalog-facet"
+              key={f.key}
+              data-facet={f.key}
+              onToggle={(e) => {
+                if (e.currentTarget.open)
+                  filterRef.current
+                    .querySelectorAll("details[open]")
+                    .forEach((d) => {
+                      if (d !== e.currentTarget) d.open = false;
+                    });
+              }}
+              onKeyDown={(e) => {
+                if (e.key === "Escape") {
+                  e.currentTarget.open = false;
+                  e.currentTarget.querySelector("summary").focus();
+                }
+              }}
+            >
+              <summary>
+                <span>{t(f.label)}</span>
+                {selected[f.key].length > 0 && <b>{selected[f.key].length}</b>}
+                <Icon type={ChevronDown} />
+              </summary>
+              <fieldset className="facet-options">
+                <legend className="sr-only">{t(f.label)}</legend>
+                {f.options.map((value) => (
+                  <label key={value}>
+                    <input
+                      type="checkbox"
+                      checked={selected[f.key].includes(value)}
+                      onChange={() => toggle(f.key, value)}
+                    />
+                    <span>{t(value)}</span>
+                  </label>
+                ))}
+                {f.key === "form" && (
+                  <p>{t("All 10 listed preparations are tablets.")}</p>
+                )}
+              </fieldset>
+            </details>
           ))}
         </div>
+        <div className="catalog-results-bar">
+          <p role="status" aria-live="polite" aria-atomic="true">
+            <strong>{shown.length}</strong>
+            {t(" preparations")} <span> / {10}</span>
+          </p>
+          {(active.length > 0 || q) && (
+            <button className="reset-filters" onClick={reset}>
+              {t("Reset filters")}
+              <Icon type={X} />
+            </button>
+          )}
+        </div>
+        {active.length > 0 && (
+          <div className="active-filters" aria-label={t("Active filters")}>
+            {active.map((f) => (
+              <button
+                key={f.key + f.value}
+                onClick={() => toggle(f.key, f.value)}
+                aria-label={`${t("Remove filter")}: ${t(f.label)}: ${t(f.value)}`}
+              >
+                <span>
+                  <small>{t(f.label)}:</small> {t(f.value)}
+                </span>
+                <Icon type={X} />
+              </button>
+            ))}
+          </div>
+        )}
         <p className="filter-note">
           {t(
-            "Areas of care are navigation aids; they do not establish an indication for a compounded preparation.",
+            "Filters describe ingredient reference or research contexts, not approved indications for Fortis preparations. Off-label uses are marked; study results and formulation limits remain on each product page.",
           )}
         </p>
         <div className="product-grid">
@@ -528,15 +590,6 @@ function Catalog() {
           <div className="empty">
             <h2>{t("No preparations found.")}</h2>
             <p>{t("Try another ingredient or reset the filters.")}</p>
-            <button
-              className="button"
-              onClick={() => {
-                setQ("");
-                setCat(categories[0]);
-              }}
-            >
-              {t("Reset filters")}
-            </button>
           </div>
         )}
         <p className="quiet-note">
