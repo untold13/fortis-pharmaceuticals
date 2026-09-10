@@ -1,0 +1,54 @@
+{
+  "slug": "psk-90",
+  "name": "PSK",
+  "strength": "Not specified",
+  "pack": 90,
+  "form": "Capsule",
+  "packUnit": "capsules",
+  "preparation": "Compounded · oral",
+  "image": "/products/psk-90.png",
+  "published": true,
+  "featured": false,
+  "order": 25,
+  "category": "Product information",
+  "tag": "Capsule formulation information",
+  "context": "This supplied product is identified as PSK. The amount per capsule has not been specified. A therapeutic indication or clinical benefit for this exact preparation has not been established by the references used for this catalog.",
+  "caution": "Confirm the ingredient identity, amount, suitability and potential interactions with Fortis and the treating clinician before use.",
+  "note": "The FDA supplement reference is general background, not evidence of PSK efficacy or approval of this product. The displayed pack quantity does not specify a dose.",
+  "refs": [
+    "supplement_background"
+  ],
+  "facets": {
+    "specialty": [
+      "Specialist consultation"
+    ],
+    "use": [
+      "Not specified"
+    ],
+    "system": [
+      "Not specified"
+    ]
+  },
+  "ka": {
+    "name": "PSK",
+    "form": "კაფსულა",
+    "packUnit": "კაფსულა",
+    "preparation": "კომპოზიტური · პერორალური",
+    "category": "პროდუქტის ინფორმაცია",
+    "tag": "ინფორმაცია კაფსულის ფორმის შესახებ",
+    "context": "მოწოდებული პროდუქტი დასახელებულია როგორც PSK. ერთ კაფსულაში ნივთიერების რაოდენობა მითითებული არ არის. კატალოგში გამოყენებული წყაროებით ამ კონკრეტული ფორმულის თერაპიული ჩვენება ან კლინიკური სარგებელი დადგენილი არ არის.",
+    "caution": "გამოყენებამდე ფორტისთან და მკურნალ ექიმთან უნდა დაზუსტდეს ნივთიერების იდენტობა, რაოდენობა, გამოყენების მიზანშეწონილობა და შესაძლო ურთიერთქმედებები.",
+    "note": "FDA-ს წყარო საკვები დანამატების შესახებ ზოგადი ინფორმაციაა და არა PSK-ის ეფექტურობის ან ამ პროდუქტის დამტკიცების მტკიცებულება. შეფუთვაში კაფსულების რაოდენობა დოზას არ განსაზღვრავს.",
+    "facets": {
+      "specialty": [
+        "სპეციალისტის კონსულტაცია"
+      ],
+      "use": [
+        "მითითებული არ არის"
+      ],
+      "system": [
+        "მითითებული არ არის"
+      ]
+    }
+  }
+}

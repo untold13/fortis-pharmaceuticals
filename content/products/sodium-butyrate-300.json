@@ -1,0 +1,55 @@
+{
+  "slug": "sodium-butyrate-300",
+  "name": "Sodium butyrate",
+  "strength": "300 mg",
+  "pack": 30,
+  "form": "Capsule",
+  "packUnit": "capsules",
+  "preparation": "Compounded · oral",
+  "image": "/products/sodium-butyrate-300.png",
+  "published": true,
+  "featured": false,
+  "order": 27,
+  "category": "Product information",
+  "tag": "Butyrate formulation information",
+  "context": "Sodium butyrate is the sodium salt of butyric acid. The FDA substance record identifies the ingredient. The cited EMA designation concerns an investigational rectal preparation and does not establish an indication for these 300 mg oral capsules.",
+  "caution": "The intended use, formulation, tolerability and interactions require individual review with the clinician and pharmacist.",
+  "note": "A substance identifier and an orphan designation are not marketing approval or proof of clinical benefit for this Fortis oral formulation.",
+  "refs": [
+    "butyrate_identity",
+    "butyrate_ema"
+  ],
+  "facets": {
+    "specialty": [
+      "Specialist consultation"
+    ],
+    "use": [
+      "Formulation information"
+    ],
+    "system": [
+      "Not specified"
+    ]
+  },
+  "ka": {
+    "name": "ნატრიუმის ბუტირატი",
+    "form": "კაფსულა",
+    "packUnit": "კაფსულა",
+    "preparation": "კომპოზიტური · პერორალური",
+    "category": "პროდუქტის ინფორმაცია",
+    "tag": "ინფორმაცია ბუტირატის ფორმულის შესახებ",
+    "context": "ნატრიუმის ბუტირატი ბუტირის მჟავას ნატრიუმის მარილია. FDA-ს ჩანაწერი ნივთიერების იდენტიფიკაციას ეხება. EMA-ს ციტირებული სტატუსი კვლევით რექტალურ ფორმას შეეხება და ამ 300 მგ პერორალური კაფსულებისთვის ჩვენებას არ ადგენს.",
+    "caution": "გამოყენების მიზანი, შემადგენლობა, ამტანობა და ურთიერთქმედებები ექიმმა და ფარმაცევტმა ინდივიდუალურად უნდა შეაფასონ.",
+    "note": "ნივთიერების იდენტიფიკატორი და იშვიათი დაავადებისთვის განკუთვნილი საკვლევი პრეპარატის სტატუსი ფორტისის ამ პერორალური ფორმულის დამტკიცებას ან კლინიკური სარგებლის მტკიცებულებას არ წარმოადგენს.",
+    "facets": {
+      "specialty": [
+        "სპეციალისტის კონსულტაცია"
+      ],
+      "use": [
+        "ფორმულის შესახებ ინფორმაცია"
+      ],
+      "system": [
+        "მითითებული არ არის"
+      ]
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "slug": "ivermectin-3",
+  "name": "Ivermectin",
+  "strength": "3 mg",
+  "pack": 10,
+  "form": "Tablet",
+  "packUnit": "tablets",
+  "preparation": "Compounded · oral",
+  "image": "/products/ivermectin-3.png",
+  "published": true,
+  "featured": false,
+  "order": 24,
+  "category": "Infectious diseases",
+  "tag": "Antiparasitic reference",
+  "context": "The FDA Stromectol oral reference label describes intestinal strongyloidiasis and onchocerciasis. Diagnosis, the parasite involved and body weight determine the appropriate clinical approach.",
+  "caution": "Neurologic toxicity and severe inflammatory reactions require attention. Assess possible Loa loa exposure and interactions, including warfarin, before treatment.",
+  "note": "Reference-product information does not establish approval or equivalence of this Fortis preparation. Confirm the formulation and indication-specific instructions with the prescriber and pharmacist.",
+  "refs": [
+    "stromectol"
+  ],
+  "facets": {
+    "specialty": [
+      "Infectious diseases",
+      "Parasitology"
+    ],
+    "use": [
+      "Parasitic infections (reference context)"
+    ],
+    "system": [
+      "Intestines",
+      "Skin & eyes"
+    ]
+  },
+  "ka": {
+    "name": "ივერმექტინი",
+    "form": "ტაბლეტი",
+    "packUnit": "ტაბლეტი",
+    "preparation": "კომპოზიტური · პერორალური",
+    "category": "ინფექციური დაავადებები",
+    "tag": "ანტიპარაზიტული რეფერენსული კონტექსტი",
+    "context": "FDA-ს სტრომექტოლის პერორალური რეფერენსული ინსტრუქცია აღწერს ნაწლავურ სტრონგილოიდოზსა და ონქოცერკოზს. კლინიკური მიდგომა დამოკიდებულია დიაგნოზზე, გამომწვევ პარაზიტსა და სხეულის წონაზე.",
+    "caution": "ყურადღებას საჭიროებს ნევროლოგიური ტოქსიკურობა და მძიმე ანთებითი რეაქციები. მკურნალობამდე შესაფასებელია Loa loa-ს შესაძლო ექსპოზიცია და ურთიერთქმედებები, მათ შორის ვარფარინთან.",
+    "note": "რეფერენსული პრეპარატის ინფორმაცია ფორტისის ფორმულის დამტკიცებას ან ეკვივალენტობას არ ადასტურებს. შემადგენლობა და კონკრეტული ჩვენების შესაბამისი მითითებები ექიმთან და ფარმაცევტთან უნდა დაზუსტდეს.",
+    "facets": {
+      "specialty": [
+        "ინფექციური დაავადებები",
+        "პარაზიტოლოგია"
+      ],
+      "use": [
+        "პარაზიტული ინფექციები (რეფერენსული პრეპარატი)"
+      ],
+      "system": [
+        "ნაწლავები",
+        "კანი და თვალები"
+      ]
+    }
+  }
+}

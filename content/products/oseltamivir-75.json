@@ -1,0 +1,54 @@
+{
+  "slug": "oseltamivir-75",
+  "name": "Oseltamivir phosphate",
+  "strength": "75 mg",
+  "pack": 10,
+  "form": "Capsule",
+  "packUnit": "capsules",
+  "preparation": "Compounded · oral",
+  "image": "/products/oseltamivir-75.png",
+  "published": true,
+  "featured": false,
+  "order": 21,
+  "category": "Infectious diseases",
+  "tag": "Influenza antiviral reference",
+  "context": "Oseltamivir is an antiviral ingredient. The FDA Tamiflu reference label covers treatment of influenza A and B and prevention in selected exposure settings. Suitability and instructions depend on age, weight, kidney function and whether treatment or prevention is intended.",
+  "caution": "Nausea and vomiting may occur. Serious allergy or skin reactions and unusual neuropsychiatric symptoms require prompt clinical assessment.",
+  "note": "Reference-product information does not establish approval or equivalence of this Fortis preparation. Confirm the formulation and indication-specific instructions with the prescriber and pharmacist.",
+  "refs": [
+    "tamiflu"
+  ],
+  "facets": {
+    "specialty": [
+      "Infectious diseases"
+    ],
+    "use": [
+      "Influenza (reference context)"
+    ],
+    "system": [
+      "Respiratory system"
+    ]
+  },
+  "ka": {
+    "name": "ოსელტამივირის ფოსფატი",
+    "form": "კაფსულა",
+    "packUnit": "კაფსულა",
+    "preparation": "კომპოზიტური · პერორალური",
+    "category": "ინფექციური დაავადებები",
+    "tag": "გრიპის საწინააღმდეგო რეფერენსული კონტექსტი",
+    "context": "ოსელტამივირი ანტივირუსული ნივთიერებაა. FDA-ს ტამიფლუს რეფერენსული ინსტრუქცია მოიცავს A და B ტიპის გრიპის მკურნალობას და გარკვეულ შემთხვევებში კონტაქტის შემდგომ პრევენციას. გამოყენების მიზანი, ასაკი, წონა და თირკმლის ფუნქცია ინდივიდუალურად უნდა შეფასდეს.",
+    "caution": "შესაძლებელია გულისრევა და ღებინება. მძიმე ალერგიული ან კანის რეაქციები და უჩვეულო ნეიროფსიქიატრიული სიმპტომები დროულ კლინიკურ შეფასებას საჭიროებს.",
+    "note": "რეფერენსული პრეპარატის ინფორმაცია ფორტისის ფორმულის დამტკიცებას ან ეკვივალენტობას არ ადასტურებს. შემადგენლობა და კონკრეტული ჩვენების შესაბამისი მითითებები ექიმთან და ფარმაცევტთან უნდა დაზუსტდეს.",
+    "facets": {
+      "specialty": [
+        "ინფექციური დაავადებები"
+      ],
+      "use": [
+        "გრიპი (რეფერენსული პრეპარატი)"
+      ],
+      "system": [
+        "სასუნთქი სისტემა"
+      ]
+    }
+  }
+}

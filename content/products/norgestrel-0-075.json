@@ -1,0 +1,54 @@
+{
+  "slug": "norgestrel-0-075",
+  "name": "Norgestrel",
+  "strength": "0.075 mg",
+  "pack": 28,
+  "form": "Tablet",
+  "packUnit": "tablets",
+  "preparation": "Compounded · oral",
+  "image": "/products/norgestrel-0-075.png",
+  "published": true,
+  "featured": false,
+  "order": 23,
+  "category": "Gynecology",
+  "tag": "Progestin-only contraceptive reference",
+  "context": "Norgestrel is a progestin. FDA information for the 0.075 mg Opill reference product describes oral contraception for pregnancy prevention. Consistent daily timing is important to contraceptive effectiveness.",
+  "caution": "A history of breast cancer is a contraindication. Some medicines reduce contraceptive effectiveness. Discuss relevant conditions and interactions with a clinician; this method does not protect against sexually transmitted infections.",
+  "note": "Reference-product information does not establish approval or equivalence of this Fortis preparation. Confirm the formulation and indication-specific instructions with the prescriber and pharmacist.",
+  "refs": [
+    "opill"
+  ],
+  "facets": {
+    "specialty": [
+      "Gynecology"
+    ],
+    "use": [
+      "Pregnancy prevention (reference context)"
+    ],
+    "system": [
+      "Reproductive system"
+    ]
+  },
+  "ka": {
+    "name": "ნორგესტრელი",
+    "form": "ტაბლეტი",
+    "packUnit": "ტაბლეტი",
+    "preparation": "კომპოზიტური · პერორალური",
+    "category": "გინეკოლოგია",
+    "tag": "მხოლოდ პროგესტინის შემცველი კონტრაცეფციის რეფერენსი",
+    "context": "ნორგესტრელი პროგესტინია. FDA-ს ინფორმაცია 0.075 მგ Opill-ის რეფერენსულ პრეპარატზე აღწერს პერორალურ კონტრაცეფციას ორსულობის თავიდან ასაცილებლად. ეფექტურობისთვის მნიშვნელოვანია ყოველდღიურად მიღების დროის დაცვა.",
+    "caution": "ძუძუს კიბოს ისტორია უკუჩვენებაა. ზოგი მედიკამენტი კონტრაცეფციის ეფექტურობას ამცირებს. თანმხლები მდგომარეობები და ურთიერთქმედებები ექიმთან უნდა შეფასდეს; ეს მეთოდი სქესობრივი გზით გადამდები ინფექციებისგან არ იცავს.",
+    "note": "რეფერენსული პრეპარატის ინფორმაცია ფორტისის ფორმულის დამტკიცებას ან ეკვივალენტობას არ ადასტურებს. შემადგენლობა და კონკრეტული ჩვენების შესაბამისი მითითებები ექიმთან და ფარმაცევტთან უნდა დაზუსტდეს.",
+    "facets": {
+      "specialty": [
+        "გინეკოლოგია"
+      ],
+      "use": [
+        "ორსულობის პრევენცია (რეფერენსული პრეპარატი)"
+      ],
+      "system": [
+        "რეპროდუქციული სისტემა"
+      ]
+    }
+  }
+}
