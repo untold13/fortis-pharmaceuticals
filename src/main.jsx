@@ -16,6 +16,8 @@ import {
   SlidersHorizontal,
   BookOpen,
   ChevronDown,
+  Pause,
+  Play,
 } from "lucide-react";
 import { products, sources } from "./products";
 import "@fontsource-variable/dm-sans";
@@ -24,6 +26,7 @@ import "@fontsource-variable/noto-sans-georgian";
 import "./style.css";
 import "./preferences.css";
 import "./refinements.css";
+import { extraSections } from "./generated-content";
 import { BrandArtwork } from "./brand-art";
 import { BottleArtwork } from "./bottle-art";
 import { ThemeArtwork } from "./theme-art";
@@ -207,9 +210,9 @@ function DeferredProductImage({ p }) {
     <img
       ref={ref}
       src={visible ? p.image : undefined}
-      alt={`${t(p.name)} ${t(p.strength)}, ${p.pack} ${t("tablets")} - ${t("supplied packaging illustration")}`}
-      width="1024"
-      height="1536"
+      alt={`${t(p.name)} ${t(p.strength)}, ${p.pack} ${t(p.packUnit)} - ${t("supplied packaging illustration")}`}
+      width={p.imageWidth}
+      height={p.imageHeight}
       decoding="async"
       style={
         visible
@@ -225,7 +228,10 @@ function Card({ p }) {
   const { t } = usePreferences();
   return (
     <A href={`/products/${p.slug}`} className="product-card">
-      <div className="product-image">
+      <div
+        className="product-image"
+        style={{ aspectRatio: `${p.imageWidth} / ${p.imageHeight}` }}
+      >
         <DeferredProductImage p={p} />
         <span className="round-arrow">
           <Icon type={ArrowUpRight} />
@@ -237,8 +243,7 @@ function Card({ p }) {
         <div>
           <strong>{t(p.strength)}</strong>
           <span>
-            {p.pack}
-            {t(" tablets")}
+            {p.pack} {t(p.packUnit)}
           </span>
         </div>
       </div>
@@ -247,6 +252,7 @@ function Card({ p }) {
 }
 function Hero() {
   const { t } = usePreferences();
+  const [paused, setPaused] = useState(false);
   return (
     <section className="simple-hero">
       <div className="wrap simple-hero-grid">
@@ -270,8 +276,21 @@ function Hero() {
             </A>
           </div>
         </div>
-        <div className="hero-artwork">
+        <div className="hero-artwork" data-paused={paused}>
           <BottleArtwork label={t("Hand-drawn amber Fortis medicine bottle")} />
+          <button
+            className="hero-motion-control"
+            aria-pressed={paused}
+            aria-label={t(
+              paused ? "Play bottle animation" : "Pause bottle animation",
+            )}
+            title={t(
+              paused ? "Play bottle animation" : "Pause bottle animation",
+            )}
+            onClick={() => setPaused(!paused)}
+          >
+            <Icon type={paused ? Play : Pause} />
+          </button>
         </div>
       </div>
     </section>
@@ -363,6 +382,51 @@ function Featured() {
     </section>
   );
 }
+function PreparationGuide() {
+  const { t } = usePreferences();
+  return (
+    <section className="section wrap preparation-guide">
+      <div className="preparation-guide-intro">
+        <h2>{t("The prescription is just the beginning.")}</h2>
+        <p>
+          {t(
+            "An individual preparation starts with a clear understanding of the patient’s needs. These are the details to discuss with your prescriber and the Fortis pharmacist.",
+          )}
+        </p>
+      </div>
+      <dl className="preparation-guide-topics">
+        <div>
+          <dt>{t("Strength and formulation")}</dt>
+          <dd>
+            {t(
+              "The ingredient, strength and dosage form need to match the prescription. Release characteristics matter; preparations with similar ingredient names are not automatically interchangeable.",
+            )}
+          </dd>
+        </div>
+        <div>
+          <dt>{t("Ingredients and individual needs")}</dt>
+          <dd>
+            {t(
+              "Discuss allergies, excipient tolerance and any formulation requirements before preparation. Fortis describes sourcing active pharmaceutical ingredients from the US and Europe for local compounding in Tbilisi.",
+            )}
+          </dd>
+        </div>
+        <div>
+          <dt>{t("Guidance at dispensing")}</dt>
+          <dd>
+            {t(
+              "Confirm your own directions, storage conditions and beyond-use date with the pharmacist. The information and packaging illustrations on this website do not replace your prescription.",
+            )}
+          </dd>
+        </div>
+      </dl>
+      <A href="/compounding" className="text-link">
+        {t("How individual preparation works")}
+        <Icon type={ArrowRight} />
+      </A>
+    </section>
+  );
+}
 function LabTeaser() {
   const { t } = usePreferences();
   return (
@@ -401,6 +465,32 @@ function LabTeaser() {
     </section>
   );
 }
+function ExtraContent() {
+  const { language } = usePreferences();
+  const path = location.pathname.replace(/\/$/, "") || "/";
+  return extraSections
+    .filter((s) => s.published && (s.page || "/") === path)
+    .map((s, i) => {
+      const copy = s[language] || s.en;
+      return (
+        <section className="section wrap added-content" key={i}>
+          <h2>{copy.title}</h2>
+          <div>
+            {copy.body.split(/\n\s*\n/).map((p, j) => (
+              <p key={j}>{p}</p>
+            ))}
+          </div>
+          {s.image && (
+            <img
+              src={s.image}
+              alt={copy.imageAlt || copy.title}
+              loading="lazy"
+            />
+          )}
+        </section>
+      );
+    });
+}
 function ContactBand() {
   const { t } = usePreferences();
   return (
@@ -424,7 +514,9 @@ function Home() {
       <Hero />
       <Approach />
       <Featured />
+      <PreparationGuide />
       <LabTeaser />
+      <ExtraContent />
       <ContactBand />
     </>
   );
@@ -542,7 +634,11 @@ function Catalog() {
                   </label>
                 ))}
                 {f.key === "form" && (
-                  <p>{t("All 10 listed preparations are tablets.")}</p>
+                  <p>
+                    {t(
+                      "Available forms reflect the currently published preparations.",
+                    )}
+                  </p>
                 )}
               </fieldset>
             </details>
@@ -551,7 +647,7 @@ function Catalog() {
         <div className="catalog-results-bar">
           <p role="status" aria-live="polite" aria-atomic="true">
             <strong>{shown.length}</strong>
-            {t(" preparations")} <span> / {10}</span>
+            {t(" preparations")} <span> / {products.length}</span>
           </p>
           {(active.length > 0 || q) && (
             <button className="reset-filters" onClick={reset}>
@@ -617,9 +713,9 @@ function Product({ p }) {
         <div className="detail-visual">
           <img
             src={p.image}
-            alt={`${t(p.name)} ${t(p.strength)}, ${p.pack} ${t("tablets")} - ${t("supplied packaging illustration")}`}
-            width="1024"
-            height="1536"
+            alt={`${t(p.name)} ${t(p.strength)}, ${p.pack} ${t(p.packUnit)} - ${t("supplied packaging illustration")}`}
+            width={p.imageWidth}
+            height={p.imageHeight}
           />
           <p>
             {t(
@@ -635,13 +731,12 @@ function Product({ p }) {
             <div>
               <small>{t("PACK SIZE")}</small>
               <strong>
-                {p.pack}
-                {t(" tablets")}
+                {p.pack} {t(p.packUnit)}
               </strong>
             </div>
             <div>
               <small>{t("PREPARATION")}</small>
-              <strong>{t("Compounded · oral")}</strong>
+              <strong>{t(p.preparation)}</strong>
             </div>
           </div>
           <span className="tag">{t(p.tag)}</span>
@@ -1124,7 +1219,10 @@ function App() {
         {t("Skip to content")}
       </a>
       <Header />
-      <main id="main">{page}</main>
+      <main id="main">
+        {page}
+        {path !== "/" && <ExtraContent />}
+      </main>
       <Footer />
     </>
   );

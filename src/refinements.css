@@ -472,3 +472,168 @@ html[data-theme="dark"] .bottle-cap-line {
     transition: none;
   }
 }
+
+/* Full first screen: header + hero, with room to grow on small/zoomed screens. */
+:root {
+  --fortis-header-height: 78px;
+}
+.simple-hero {
+  min-height: calc(100svh - var(--fortis-header-height));
+  display: flex;
+  align-items: center;
+  padding-block: clamp(36px, 7vh, 90px);
+}
+.simple-hero-grid {
+  width: min(1280px, calc(100% - 96px));
+}
+.bottle-art {
+  max-width: 520px;
+  max-height: 570px;
+  overflow: visible;
+}
+.bottle-float {
+  transform-origin: 220px 280px;
+  animation: fortis-bottle-float 8s ease-in-out infinite;
+}
+.bottle-cap-motion {
+  transform-origin: 219px 129px;
+  animation: fortis-cap-turn 8s ease-in-out infinite;
+}
+@keyframes fortis-bottle-float {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(0);
+  }
+  50% {
+    transform: translate(3px, -10px) rotate(1deg);
+  }
+}
+@keyframes fortis-cap-turn {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(-3deg);
+  }
+}
+.preparation-guide-intro {
+  max-width: 780px;
+}
+.preparation-guide h2 {
+  font-size: clamp(30px, 3.3vw, 44px);
+  line-height: 1.25;
+  letter-spacing: -1px;
+}
+.preparation-guide-intro p {
+  max-width: 680px;
+  margin-top: 24px;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.8;
+}
+.preparation-guide-topics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 32px;
+  margin-block: 40px 28px;
+}
+.preparation-guide-topics > div {
+  border-top: 1px solid var(--line);
+  padding-top: 24px;
+}
+.preparation-guide-topics dt {
+  font-size: 18px;
+  font-weight: 550;
+  line-height: 1.6;
+}
+.preparation-guide-topics dd {
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.8;
+}
+@media (max-width: 700px) {
+  :root {
+    --fortis-header-height: 72px;
+  }
+  .simple-hero {
+    padding-block: 30px;
+  }
+  .simple-hero-grid {
+    width: calc(100% - 40px);
+    gap: 12px;
+  }
+  .simple-hero .hero-copy {
+    padding: 0;
+  }
+  .bottle-art {
+    max-height: clamp(230px, 34svh, 350px);
+  }
+  .preparation-guide-topics {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-top: 30px;
+  }
+  .preparation-guide-intro p {
+    font-size: 15px;
+  }
+  .preparation-guide-topics dt {
+    font-size: 17px;
+  }
+  .preparation-guide-topics dd {
+    font-size: 14px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .bottle-float,
+  .bottle-cap-motion {
+    animation: none;
+  }
+}
+
+.hero-artwork {
+  position: relative;
+}
+.hero-motion-control {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--surface);
+  color: var(--ink);
+  cursor: pointer;
+}
+.hero-artwork[data-paused="true"] .bottle-float,
+.hero-artwork[data-paused="true"] .bottle-cap-motion {
+  animation-play-state: paused;
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-motion-control {
+    display: none;
+  }
+}
+
+@media (min-width: 901px) {
+  .simple-hero .bottle-art {
+    max-height: min(570px, calc(100svh - 180px));
+  }
+}
+.added-content > div {
+  max-width: 72ch;
+  line-height: 1.8;
+  color: var(--muted);
+}
+.added-content img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  max-height: 600px;
+  object-fit: contain;
+  margin-top: 32px;
+}

@@ -5,26 +5,44 @@ import React, {
   useMemo,
   useState,
 } from "react";
-import georgian from "./ka.json";
-import clinical from "./ka-products.json";
-import { families, sources } from "./products";
-
-const dictionary = { ...georgian, ...clinical.names };
-for (const [key, fields] of Object.entries(clinical.families)) {
-  for (const [field, translation] of Object.entries(fields))
-    dictionary[families[key][field]] = translation;
+import { products, sources } from "./products";
+import { siteCopy } from "./generated-content";
+const dictionary = Object.fromEntries(
+  siteCopy.map((e) => [e.key, { en: e.en, ka: e.ka }]),
+);
+for (const p of products) {
+  for (const key of [
+    "name",
+    "category",
+    "tag",
+    "context",
+    "caution",
+    "note",
+    "form",
+    "packUnit",
+    "preparation",
+  ])
+    if (p.ka?.[key]) dictionary[p[key]] = { en: p[key], ka: p.ka[key] };
+  for (const key of ["specialty", "use", "system"])
+    p.facets[key].forEach((value, i) => {
+      dictionary[value] = { en: value, ka: p.ka.facets[key][i] };
+    });
 }
-for (const [key, translation] of Object.entries(clinical.sources))
-  dictionary[sources[key].title] = translation;
+for (const source of Object.values(sources))
+  dictionary[source.title] = { en: source.title, ka: source.titleKa };
 
 const Preferences = createContext(null);
 export function translate(value, language = "en") {
-  if (language !== "ka" || typeof value !== "string") return value;
+  if (typeof value !== "string") return value;
   const normalized = value.replace(/\s+/g, " ").trim();
-  let translated = dictionary[normalized];
-  if (!translated && /^\d/.test(normalized) && /\bmg\b/.test(normalized)) {
+  let translated = dictionary[normalized]?.[language];
+  if (
+    !translated &&
+    language === "ka" &&
+    /^\d/.test(normalized) &&
+    /\bmg\b/.test(normalized)
+  )
     translated = normalized.replace(/\bmg\b/g, "მგ");
-  }
   if (!translated) return value;
   return `${/^\s/.test(value) ? " " : ""}${translated}${/\s$/.test(value) ? " " : ""}`;
 }
