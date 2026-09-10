@@ -16,8 +16,6 @@ import {
   SlidersHorizontal,
   BookOpen,
   ChevronDown,
-  Pause,
-  Play,
 } from "lucide-react";
 import { products, sources } from "./products";
 import "@fontsource-variable/dm-sans";
@@ -252,7 +250,6 @@ function Card({ p }) {
 }
 function Hero() {
   const { t } = usePreferences();
-  const [paused, setPaused] = useState(false);
   return (
     <section className="simple-hero">
       <div className="wrap simple-hero-grid">
@@ -276,21 +273,8 @@ function Hero() {
             </A>
           </div>
         </div>
-        <div className="hero-artwork" data-paused={paused}>
+        <div className="hero-artwork">
           <BottleArtwork label={t("Hand-drawn amber Fortis medicine bottle")} />
-          <button
-            className="hero-motion-control"
-            aria-pressed={paused}
-            aria-label={t(
-              paused ? "Play bottle animation" : "Pause bottle animation",
-            )}
-            title={t(
-              paused ? "Play bottle animation" : "Pause bottle animation",
-            )}
-            onClick={() => setPaused(!paused)}
-          >
-            <Icon type={paused ? Play : Pause} />
-          </button>
         </div>
       </div>
     </section>

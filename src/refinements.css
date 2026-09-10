@@ -493,11 +493,11 @@ html[data-theme="dark"] .bottle-cap-line {
 }
 .bottle-float {
   transform-origin: 220px 280px;
-  animation: fortis-bottle-float 8s ease-in-out infinite;
+  animation: fortis-bottle-float 4.5s cubic-bezier(0.4, 0, 0.2, 1) 1;
 }
 .bottle-cap-motion {
   transform-origin: 219px 129px;
-  animation: fortis-cap-turn 8s ease-in-out infinite;
+  animation: fortis-cap-turn 4.5s cubic-bezier(0.4, 0, 0.2, 1) 1;
 }
 @keyframes fortis-bottle-float {
   0%,
@@ -505,7 +505,7 @@ html[data-theme="dark"] .bottle-cap-line {
     transform: translate(0, 0) rotate(0);
   }
   50% {
-    transform: translate(3px, -10px) rotate(1deg);
+    transform: translate(18px, -28px) rotate(6deg);
   }
 }
 @keyframes fortis-cap-turn {
@@ -514,7 +514,7 @@ html[data-theme="dark"] .bottle-cap-line {
     transform: rotate(0);
   }
   50% {
-    transform: rotate(-3deg);
+    transform: translate(-12px, -42px) rotate(-32deg);
   }
 }
 .preparation-guide-intro {
@@ -594,29 +594,6 @@ html[data-theme="dark"] .bottle-cap-line {
 
 .hero-artwork {
   position: relative;
-}
-.hero-motion-control {
-  position: absolute;
-  right: 8px;
-  bottom: 8px;
-  width: 44px;
-  height: 44px;
-  display: grid;
-  place-items: center;
-  border: 1px solid var(--line);
-  border-radius: 50%;
-  background: var(--surface);
-  color: var(--ink);
-  cursor: pointer;
-}
-.hero-artwork[data-paused="true"] .bottle-float,
-.hero-artwork[data-paused="true"] .bottle-cap-motion {
-  animation-play-state: paused;
-}
-@media (prefers-reduced-motion: reduce) {
-  .hero-motion-control {
-    display: none;
-  }
 }
 
 @media (min-width: 901px) {
