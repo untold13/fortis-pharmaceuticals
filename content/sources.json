@@ -101,6 +101,48 @@
       "title": "FDA · Wellcovorin prescribing information (March 2026)",
       "titleKa": "FDA · Wellcovorin-ის ინსტრუქცია (მარტი, 2026)",
       "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/018342s015lbl.pdf"
+    },
+    {
+      "id": "tamiflu",
+      "title": "FDA Tamiflu prescribing information (2019 archive)",
+      "titleKa": "FDA: ტამიფლუს ინსტრუქცია (2019 წლის არქივი)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2019/021087s071%2C021246s054lbl.pdf"
+    },
+    {
+      "id": "addyi",
+      "title": "FDA Addyi prescribing information (December 2025)",
+      "titleKa": "FDA: Addyi-ის ინსტრუქცია (დეკემბერი, 2025)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/022526s013lbl.pdf"
+    },
+    {
+      "id": "opill",
+      "title": "FDA Opill norgestrel product information",
+      "titleKa": "FDA: Opill-ისა და ნორგესტრელის ინფორმაცია",
+      "url": "https://www.fda.gov/drugs/postmarket-drug-safety-information-patients-and-providers/opill-0075mg-oral-norgestrel-tablet-information"
+    },
+    {
+      "id": "stromectol",
+      "title": "FDA Stromectol prescribing information (2022 archive)",
+      "titleKa": "FDA: სტრომექტოლის ინსტრუქცია (2022 წლის არქივი)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2022/050742s030lbl.pdf"
+    },
+    {
+      "id": "supplement_background",
+      "title": "FDA questions and answers on dietary supplements (general background)",
+      "titleKa": "FDA: კითხვები და პასუხები საკვები დანამატების შესახებ (ზოგადი ინფორმაცია)",
+      "url": "https://www.fda.gov/food/information-consumers-using-dietary-supplements/questions-and-answers-dietary-supplements"
+    },
+    {
+      "id": "butyrate_identity",
+      "title": "FDA substance identity: sodium butyrate (UNII 8RAS91C36W)",
+      "titleKa": "FDA: ნატრიუმის ბუტირატის იდენტიფიკაცია (UNII 8RAS91C36W)",
+      "url": "https://precision.fda.gov/uniisearch/srs/unii/8ras91c36w"
+    },
+    {
+      "id": "butyrate_ema",
+      "title": "EMA sodium butyrate orphan designation EU/3/05/284 (rectal research context)",
+      "titleKa": "EMA: ნატრიუმის ბუტირატის ობოლი პრეპარატის სტატუსი EU/3/05/284 (რექტალური კვლევითი ფორმა)",
+      "url": "https://www.ema.europa.eu/en/medicines/human/orphan-designations/eu-3-05-284"
     }
   ]
 }

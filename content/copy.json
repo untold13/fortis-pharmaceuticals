@@ -1099,6 +1099,21 @@
       "key": "Available forms reflect the currently published preparations.",
       "en": "Available forms reflect the currently published preparations.",
       "ka": "მოცემულია გამოქვეყნებული პრეპარატების შესაბამისი ფორმები."
+    },
+    {
+      "key": "Not specified",
+      "en": "Not specified",
+      "ka": "მითითებული არ არის"
+    },
+    {
+      "key": "Capsule",
+      "en": "Capsule",
+      "ka": "კაფსულა"
+    },
+    {
+      "key": "capsules",
+      "en": "capsules",
+      "ka": "კაფსულა"
     }
   ]
 }
