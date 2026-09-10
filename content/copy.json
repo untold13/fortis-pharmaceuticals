@@ -1114,6 +1114,36 @@
       "key": "capsules",
       "en": "capsules",
       "ka": "კაფსულა"
+    },
+    {
+      "key": "PRODUCT INFORMATION",
+      "en": "PRODUCT INFORMATION",
+      "ka": "პროდუქტის ინფორმაცია"
+    },
+    {
+      "key": "Reviewed details for this preparation.",
+      "en": "Reviewed details for this preparation.",
+      "ka": "ამ პრეპარატის გადამოწმებული დეტალები."
+    },
+    {
+      "key": "This summary reflects the supplied Fortis product dossier, checked against the cited reference sources. Follow the dispensing label and clinician’s instructions.",
+      "en": "This summary reflects the supplied Fortis product dossier, checked against the cited reference sources. Follow the dispensing label and clinician’s instructions.",
+      "ka": "ეს მიმოხილვა ეფუძნება ფორტისის მოწოდებულ პროდუქტის დოსიეს და გადამოწმებულია მითითებულ რეფერენსულ წყაროებთან. დაიცავით გაცემული პრეპარატის ეტიკეტი და ექიმის მითითებები."
+    },
+    {
+      "key": "FORMULATION OVERVIEW",
+      "en": "FORMULATION OVERVIEW",
+      "ka": "ფორმულის მიმოხილვა"
+    },
+    {
+      "key": "USE AND SAFETY",
+      "en": "USE AND SAFETY",
+      "ka": "გამოყენება და უსაფრთხოება"
+    },
+    {
+      "key": "STORAGE AND HANDLING",
+      "en": "STORAGE AND HANDLING",
+      "ka": "შენახვა და მოპყრობა"
     }
   ]
 }

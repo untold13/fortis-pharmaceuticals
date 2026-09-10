@@ -49,6 +49,12 @@
       "system": [
         "რეპროდუქციული სისტემა"
       ]
-    }
-  }
+    },
+    "infoOverview": "მოწოდებული დოსიე აღწერს ინდივიდუალურად მომზადებულ პერორალურ ტაბლეტს, რომელიც შეიცავს 0.075 მგ ნორგესტრელს, პროგესტინურ ნივთიერებას.",
+    "infoUse": "დოსიე და FDA-ს ინფორმაცია რეფერენსულ პრეპარატზე განიხილავს ორსულობის თავიდან აცილებას. მნიშვნელოვანია ყოველდღიურად ერთსა და იმავე დროს მიღება და კონკრეტული პროდუქტის გამოტოვებული დოზის ინსტრუქციის დაცვა. ძუძუს კიბოს ისტორია და წამლებთან ურთიერთქმედება შეფასებას საჭიროებს; ეს მეთოდი სქესობრივი გზით გადამდები ინფექციებისგან არ იცავს.",
+    "infoStorage": "მოწოდებული დოსიე მიუთითებს, რომ პრეპარატი უნდა ინახებოდეს ოთახის ტემპერატურაზე, მშრალ და პირდაპირი სინათლისგან დაცულ ადგილას, ბავშვებისთვის მიუწვდომლად. უპირატესობა ენიჭება გაცემული პრეპარატის ეტიკეტზე მითითებულ შენახვის პირობასა და გამოყენების საბოლოო ვადას."
+  },
+  "infoOverview": "The supplied dossier identifies a compounded oral tablet containing norgestrel 0.075 mg, a progestin ingredient.",
+  "infoUse": "The dossier and FDA information for the reference product discuss pregnancy prevention. Consistent daily timing and the product-specific missed-dose instructions matter. Breast-cancer history and interacting medicines require review, and this method does not protect against sexually transmitted infections.",
+  "infoStorage": "The supplied dossier states to keep this preparation at room temperature, dry and protected from direct light, out of reach of children. The storage instruction and beyond-use date on the dispensing label take precedence."
 }

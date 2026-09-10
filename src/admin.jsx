@@ -136,6 +136,9 @@ const languageFields = [
   ["context", "Clinical context / კლინიკური კონტექსტი"],
   ["caution", "Clinical considerations / სიფრთხილის საკითხები"],
   ["note", "Formulation notes / ფორმულის შეზღუდვები"],
+  ["infoOverview", "Product overview / პროდუქტის მიმოხილვა"],
+  ["infoUse", "Use and safety / გამოყენება და უსაფრთხოება"],
+  ["infoStorage", "Storage and handling / შენახვა და მოპყრობა"],
 ];
 const emptyProduct = () => ({
   slug: "",
@@ -154,6 +157,9 @@ const emptyProduct = () => ({
   context: "",
   caution: "",
   note: "",
+  infoOverview: "",
+  infoUse: "",
+  infoStorage: "",
   refs: [],
   facets: { specialty: [], use: [], system: [] },
   ka: {
@@ -166,6 +172,9 @@ const emptyProduct = () => ({
     context: "",
     caution: "",
     note: "",
+    infoOverview: "",
+    infoUse: "",
+    infoStorage: "",
     facets: { specialty: [], use: [], system: [] },
   },
 });
@@ -321,7 +330,14 @@ function ProductEditor({ record, sources, onSave, onCancel, onError }) {
           label={label}
           value={localized[key]}
           onChange={(v) => updateLanguage(key, v)}
-          multiline={["context", "caution", "note"].includes(key)}
+          multiline={[
+            "context",
+            "caution",
+            "note",
+            "infoOverview",
+            "infoUse",
+            "infoStorage",
+          ].includes(key)}
         />
       ))}
       <h3>Catalog filters / კატალოგის ფილტრები</h3>

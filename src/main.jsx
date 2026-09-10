@@ -740,6 +740,33 @@ function Product({ p }) {
           </p>
         </div>
       </section>
+      {p.infoOverview && (
+        <section id="product-information" className="wrap product-information">
+          <div className="product-information-heading">
+            <Eyebrow>{t("PRODUCT INFORMATION")}</Eyebrow>
+            <h2>{t("Reviewed details for this preparation.")}</h2>
+            <p>
+              {t(
+                "This summary reflects the supplied Fortis product dossier, checked against the cited reference sources. Follow the dispensing label and clinician’s instructions.",
+              )}
+            </p>
+          </div>
+          <div className="product-information-grid">
+            <article>
+              <small>{t("FORMULATION OVERVIEW")}</small>
+              <p>{t(p.infoOverview)}</p>
+            </article>
+            <article>
+              <small>{t("USE AND SAFETY")}</small>
+              <p>{t(p.infoUse)}</p>
+            </article>
+            <article>
+              <small>{t("STORAGE AND HANDLING")}</small>
+              <p>{t(p.infoStorage)}</p>
+            </article>
+          </div>
+        </section>
+      )}
       <section className="wrap references">
         <div>
           <Eyebrow>{t("READ THE EVIDENCE")}</Eyebrow>

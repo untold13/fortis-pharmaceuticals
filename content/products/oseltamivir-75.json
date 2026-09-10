@@ -49,6 +49,12 @@
       "system": [
         "სასუნთქი სისტემა"
       ]
-    }
-  }
+    },
+    "infoOverview": "მოწოდებული დოსიე აღწერს ინდივიდუალურად მომზადებულ 75 მგ პერორალურ კაფსულას, რომელიც შეიცავს ოსელტამივირის ფოსფატს, ნეირამინიდაზის დამთრგუნველ ანტივირუსულ ნივთიერებას.",
+    "infoUse": "დოსიე და ციტირებული FDA-ს რეფერენსული ინსტრუქცია განიხილავს A და B ტიპის გრიპის მკურნალობას და გარკვეულ კონტაქტისშემდგომ გარემოებებში პრევენციას. სარგებელი დამოკიდებულია დროულ და ჩვენების შესაბამის გამოყენებაზე. დანიშნულებაზე გავლენას ახდენს ასაკი, წონა, თირკმლის ფუნქცია და ის, მკურნალობა იგეგმება თუ პრევენცია. მძიმე კანის, ალერგიული ან უჩვეულო ნეიროფსიქიატრიული სიმპტომები სწრაფ შეფასებას საჭიროებს.",
+    "infoStorage": "მოწოდებული დოსიე მიუთითებს, რომ პრეპარატი უნდა ინახებოდეს ოთახის ტემპერატურაზე, მშრალ და პირდაპირი სინათლისგან დაცულ ადგილას, ბავშვებისთვის მიუწვდომლად. უპირატესობა ენიჭება გაცემული პრეპარატის ეტიკეტზე მითითებულ შენახვის პირობასა და გამოყენების საბოლოო ვადას."
+  },
+  "infoOverview": "The supplied dossier identifies a compounded 75 mg oral capsule containing oseltamivir phosphate, a neuraminidase-inhibiting antiviral ingredient.",
+  "infoUse": "The dossier and cited FDA reference label discuss treatment of influenza A and B and prevention in selected exposure settings. Benefit depends on prompt, indication-specific use. Age, weight, kidney function and whether treatment or prevention is intended affect the prescription. Serious skin, allergic or unusual neuropsychiatric symptoms require prompt assessment.",
+  "infoStorage": "The supplied dossier states to keep this preparation at room temperature, dry and protected from direct light, out of reach of children. The storage instruction and beyond-use date on the dispensing label take precedence."
 }
