@@ -1,0 +1,58 @@
+{
+  "name": "Brexpiprazole",
+  "category": "Mental health",
+  "tag": "Atypical antipsychotic ingredient",
+  "context": "Brexpiprazole is an atypical antipsychotic. The FDA Rexulti reference label covers treatment of adult major depressive disorder as an adjunct to an antidepressant, schizophrenia in adults and patients aged 13 years and older, and agitation associated with Alzheimer dementia. It is not an as-needed treatment for agitation.",
+  "caution": "The reference label warns of increased mortality in older people with dementia-related psychosis and suicidal thoughts or behavior. Metabolic and weight changes, movement disorders, orthostatic symptoms and interactions require assessment.",
+  "note": "These strengths appear in the cited reference label. Reference-product approval does not establish approval or equivalence of a Fortis compounded preparation.",
+  "refs": [
+    "rexulti"
+  ],
+  "slug": "brexpiprazole-1",
+  "strength": "1 mg",
+  "pack": 30,
+  "form": "Tablet",
+  "image": "/products/brexpiprazole-1.png",
+  "featured": false,
+  "published": true,
+  "order": 13,
+  "facets": {
+    "specialty": [
+      "Psychiatry"
+    ],
+    "use": [
+      "Adjunctive depression treatment (reference context)",
+      "Schizophrenia (reference context)",
+      "Alzheimer-related agitation (reference context)"
+    ],
+    "system": [
+      "Brain & nervous system"
+    ]
+  },
+  "ka": {
+    "name": "ბრექსპიპრაზოლი",
+    "category": "ფსიქიკური ჯანმრთელობა",
+    "tag": "ატიპური ანტიფსიქოზური ნივთიერება",
+    "context": "ბრექსპიპრაზოლი ატიპური ანტიფსიქოზური ნივთიერებაა. FDA-ს Rexulti-ის რეფერენსული ინსტრუქცია მოიცავს ზრდასრულთა მაჟორული დეპრესიული აშლილობის მკურნალობას ანტიდეპრესანტთან ერთად, შიზოფრენიას ზრდასრულებსა და 13 წლიდან პაციენტებში, ასევე ალცჰაიმერის დემენციასთან დაკავშირებულ აგზნებას. იგი აგზნებისას საჭიროების მიხედვით მისაღებ პრეპარატად არ განიხილება.",
+    "caution": "რეფერენსული ინსტრუქცია აფრთხილებს დემენციასთან დაკავშირებული ფსიქოზის მქონე ხანდაზმულებში სიკვდილიანობის მატებისა და სუიციდური აზრების ან ქცევის რისკის შესახებ. შესაფასებელია მეტაბოლური და წონის ცვლილებები, მოძრაობითი დარღვევები, წამოდგომისას სიმპტომები და წამლებთან ურთიერთქმედება.",
+    "note": "ეს დოზები მითითებულია ციტირებულ რეფერენსულ ინსტრუქციაში. რეფერენსული პრეპარატის დამტკიცება ფორტისის პრეპარატის დამტკიცებას ან ეკვივალენტობას არ ნიშნავს.",
+    "form": "ტაბლეტი",
+    "facets": {
+      "specialty": [
+        "ფსიქიატრია"
+      ],
+      "use": [
+        "დეპრესიის დამატებითი მკურნალობა (რეფერენსული პრეპარატი)",
+        "შიზოფრენია (რეფერენსული პრეპარატი)",
+        "ალცჰაიმერთან დაკავშირებული აგზნება (რეფერენსული პრეპარატი)"
+      ],
+      "system": [
+        "თავის ტვინი და ნერვული სისტემა"
+      ]
+    },
+    "packUnit": "ტაბლეტი",
+    "preparation": "კომპოზიტური · პერორალური"
+  },
+  "packUnit": "tablets",
+  "preparation": "Compounded · oral"
+}

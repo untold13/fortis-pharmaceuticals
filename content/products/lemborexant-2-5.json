@@ -1,0 +1,53 @@
+{
+  "slug": "lemborexant-2-5",
+  "name": "Lemborexant",
+  "strength": "2.5 mg",
+  "pack": 30,
+  "category": "Sleep medicine",
+  "tag": "Orexin receptor antagonist",
+  "context": "Lemborexant blocks orexin receptors involved in wakefulness. The FDA Dayvigo reference label covers adult insomnia with difficulty falling asleep or staying asleep and lists 5 mg and 10 mg tablets.",
+  "caution": "Narcolepsy is a contraindication. Next-day impairment, complex sleep behaviors and interactions with alcohol, other CNS depressants or CYP3A medicines require prescriber review.",
+  "note": "Fortis 1 mg and 2.5 mg are not strengths listed in the cited FDA label. Reference-product approval does not establish approval or equivalence of any Fortis compounded preparation.",
+  "refs": [
+    "dayvigo"
+  ],
+  "facets": {
+    "specialty": [
+      "Sleep medicine"
+    ],
+    "use": [
+      "Insomnia (reference context)"
+    ],
+    "system": [
+      "Brain & nervous system"
+    ]
+  },
+  "image": "/products/lemborexant-2-5.png",
+  "form": "Tablet",
+  "published": true,
+  "order": 9,
+  "ka": {
+    "name": "ლემბორექსანტი",
+    "category": "ძილის მედიცინა",
+    "tag": "ორექსინის რეცეპტორების ანტაგონისტი",
+    "context": "ლემბორექსანტი ბლოკავს სიფხიზლეში მონაწილე ორექსინის რეცეპტორებს. FDA-ს Dayvigo-ს რეფერენსული ინსტრუქცია ეხება მოზრდილთა უძილობას, ჩაძინების ან ძილის შენარჩუნების გაძნელებით, და მოიცავს 5 მგ და 10 მგ ტაბლეტებს.",
+    "caution": "ნარკოლეფსია უკუჩვენებაა. მომდევნო დღეს სიფხიზლისა და ფუნქციონირების დაქვეითება, ძილში რთული ქცევები და ალკოჰოლთან, ცენტრალური ნერვული სისტემის სხვა დამთრგუნველებთან ან CYP3A-ზე მოქმედ მედიკამენტებთან ურთიერთქმედება ექიმის შეფასებას საჭიროებს.",
+    "note": "ფორტისის 1 მგ და 2.5 მგ დოზები მითითებული არ არის ციტირებულ FDA-ს ინსტრუქციაში. რეფერენსული პროდუქტის დამტკიცება არ ადასტურებს ფორტისის რომელიმე ინდივიდუალურად მომზადებული პრეპარატის დამტკიცებას ან ეკვივალენტობას.",
+    "form": "ტაბლეტი",
+    "facets": {
+      "specialty": [
+        "ძილის მედიცინა"
+      ],
+      "use": [
+        "უძილობა (რეფერენსული პრეპარატი)"
+      ],
+      "system": [
+        "თავის ტვინი და ნერვული სისტემა"
+      ]
+    },
+    "packUnit": "ტაბლეტი",
+    "preparation": "კომპოზიტური · პერორალური"
+  },
+  "packUnit": "tablets",
+  "preparation": "Compounded · oral"
+}

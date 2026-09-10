@@ -1,0 +1,60 @@
+{
+  "name": "Leucovorin (calcium folinate)",
+  "category": "Specialist folate therapy",
+  "tag": "Reduced folate ingredient",
+  "context": "The March 2026 FDA Wellcovorin label describes reduction of methotrexate toxicity with impaired elimination and folate-antagonist overdose in adults. It also covers cerebral folate transport deficiency with a confirmed FOLR1 variant in adults and children.",
+  "caution": "Rescue timing and protocols are critical. Hypersensitivity and interactions with trimethoprim-sulfamethoxazole or anticonvulsants require review. Leucovorin can enhance fluorouracil toxicity. Specialist supervision is essential.",
+  "note": "The 25 mg strength is listed in the March 2026 reference label. Dose and route depend on the indication and require specialist prescribing; this formulation must not be assumed interchangeable with a reference tablet or injectable rescue treatment.",
+  "refs": [
+    "wellcovorin"
+  ],
+  "slug": "leucovorin-25",
+  "strength": "25 mg",
+  "pack": 30,
+  "form": "Tablet",
+  "image": "/products/leucovorin-25.png",
+  "featured": false,
+  "published": true,
+  "order": 29,
+  "facets": {
+    "specialty": [
+      "Oncology / clinical toxicology",
+      "Neurology / metabolic medicine"
+    ],
+    "use": [
+      "Antifolate rescue (reference context)",
+      "Confirmed FOLR1 deficiency (reference context)"
+    ],
+    "system": [
+      "Folate metabolism",
+      "Brain & nervous system"
+    ]
+  },
+  "ka": {
+    "name": "ლეიკოვორინი (კალციუმის ფოლინატი)",
+    "category": "ფოლატით სპეციალიზებული თერაპია",
+    "tag": "აღდგენილი ფოლატის ფორმა",
+    "context": "FDA-ს Wellcovorin-ის 2026 წლის მარტის ინსტრუქცია აღწერს ზრდასრულებში მეთოტრექსატის ტოქსიკურობის შემცირებას მისი დაქვეითებული გამოყოფისას და ფოლატის ანტაგონისტის ჭარბი დოზის დროს. ასევე მოიცავს ცერებრალური ფოლატის ტრანსპორტის დეფიციტს დადასტურებული FOLR1 ვარიანტით, ზრდასრულებსა და ბავშვებში.",
+    "caution": "ტოქსიკურობის შემცირებისას კრიტიკულად მნიშვნელოვანია დროისა და შესაბამისი პროტოკოლის დაცვა. შესაფასებელია ჰიპერმგრძნობელობა და ურთიერთქმედება ტრიმეტოპრიმ-სულფამეთოქსაზოლთან ან ანტიკონვულსანტებთან. ლეიკოვორინმა შესაძლოა ფტორურაცილის ტოქსიკურობა გააძლიეროს. აუცილებელია სპეციალისტის ზედამხედველობა.",
+    "note": "25 მგ დოზა 2026 წლის მარტის რეფერენსულ ინსტრუქციაში მოცემულია. დოზა და მიღების გზა დამოკიდებულია ჩვენებაზე და სპეციალისტის დანიშნულებას მოითხოვს; ეს ფორმულა რეფერენსული ტაბლეტის ან საინექციო ანტიფოლატური ტოქსიკურობის საწინააღმდეგო მკურნალობის ურთიერთჩანაცვლებად ფორმად არ უნდა ჩაითვალოს.",
+    "form": "ტაბლეტი",
+    "facets": {
+      "specialty": [
+        "ონკოლოგია / კლინიკური ტოქსიკოლოგია",
+        "ნევროლოგია / მეტაბოლური მედიცინა"
+      ],
+      "use": [
+        "ანტიფოლატის ტოქსიკურობის შემცირება (რეფერენსული პრეპარატი)",
+        "დადასტურებული FOLR1-თან დაკავშირებული დეფიციტი (რეფერენსული პრეპარატი)"
+      ],
+      "system": [
+        "ფოლატის მეტაბოლიზმი",
+        "თავის ტვინი და ნერვული სისტემა"
+      ]
+    },
+    "packUnit": "ტაბლეტი",
+    "preparation": "კომპოზიტური · პერორალური"
+  },
+  "packUnit": "tablets",
+  "preparation": "Compounded · oral"
+}

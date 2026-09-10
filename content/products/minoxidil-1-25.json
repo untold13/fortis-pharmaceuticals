@@ -1,0 +1,55 @@
+{
+  "slug": "minoxidil-1-25",
+  "name": "Minoxidil",
+  "strength": "1.25 mg",
+  "pack": 30,
+  "featured": true,
+  "category": "Dermatology",
+  "tag": "Off-label hair-loss context",
+  "context": "Oral minoxidil is a vasodilator; the FDA reference product is labeled for severe resistant hypertension. Low-dose oral use for hair loss is off-label. JAMA Dermatology expert consensus discusses this use while identifying evidence gaps.",
+  "caution": "Blood-pressure changes, fluid retention, increased heart rate and pericardial complications require assessment. Suitability and monitoring must be individualized.",
+  "note": "The 1.25 mg Fortis preparation is not the 2.5 mg or 10 mg reference tablet. Expert consensus is not regulatory approval, and topical minoxidil evidence cannot be assumed to apply to an oral preparation.",
+  "refs": [
+    "loniten",
+    "minoxidil"
+  ],
+  "facets": {
+    "specialty": [
+      "Dermatology"
+    ],
+    "use": [
+      "Hair loss (off-label)"
+    ],
+    "system": [
+      "Skin & hair"
+    ]
+  },
+  "image": "/products/minoxidil-1-25.png",
+  "form": "Tablet",
+  "published": true,
+  "order": 7,
+  "ka": {
+    "name": "მინოქსიდილი",
+    "category": "დერმატოლოგია",
+    "tag": "თმის ცვენისას ჩვენების ფარგლებს გარეთ გამოყენება",
+    "context": "პერორალური მინოქსიდილი ვაზოდილატატორია; FDA-ს რეფერენსული პროდუქტის ჩვენებაა მძიმე რეზისტენტული ჰიპერტენზია. თმის ცვენისას დაბალი დოზით პერორალური გამოყენება ოფიციალური ჩვენების ფარგლებს გარეთაა. JAMA Dermatology-ის ექსპერტთა კონსენსუსი განიხილავს ამ გამოყენებას და მიუთითებს მტკიცებულებებში არსებულ ხარვეზებზე.",
+    "caution": "არტერიული წნევის ცვლილებები, სითხის შეკავება, გულისცემის აჩქარება და პერიკარდიუმთან დაკავშირებული გართულებები შეფასებას საჭიროებს. მიზანშეწონილობა და მონიტორინგი ინდივიდუალურად უნდა განისაზღვროს.",
+    "note": "ფორტისის 1.25 მგ პრეპარატი განსხვავდება 2.5 მგ ან 10 მგ რეფერენსული ტაბლეტისგან. ექსპერტთა კონსენსუსი არ ნიშნავს მარეგულირებლის მიერ დამტკიცებას. ადგილობრივი გამოყენების მინოქსიდილის მტკიცებულებები ავტომატურად არ ვრცელდება პერორალურ პრეპარატზე.",
+    "form": "ტაბლეტი",
+    "facets": {
+      "specialty": [
+        "დერმატოლოგია"
+      ],
+      "use": [
+        "თმის ცვენა (არარეგისტრირებული ჩვენება)"
+      ],
+      "system": [
+        "კანი და თმა"
+      ]
+    },
+    "packUnit": "ტაბლეტი",
+    "preparation": "კომპოზიტური · პერორალური"
+  },
+  "packUnit": "tablets",
+  "preparation": "Compounded · oral"
+}

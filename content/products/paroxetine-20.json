@@ -1,0 +1,58 @@
+{
+  "name": "Paroxetine",
+  "category": "Mental health",
+  "tag": "SSRI ingredient",
+  "context": "Paroxetine is an SSRI. The FDA Paxil reference label describes adult major depressive disorder, obsessive-compulsive disorder, panic disorder, social anxiety disorder, generalized anxiety disorder and post-traumatic stress disorder.",
+  "caution": "Suicidal thoughts or behavior in younger patients, serotonin syndrome, interacting medicines, bleeding and pregnancy considerations require prescriber review. Abrupt discontinuation can cause withdrawal symptoms.",
+  "note": "The 20 mg strength is described in the reference label. This does not establish approval, equivalence or clinical performance of the Fortis compounded preparation.",
+  "refs": [
+    "paxil"
+  ],
+  "slug": "paroxetine-20",
+  "strength": "20 mg",
+  "pack": 28,
+  "form": "Tablet",
+  "image": "/products/paroxetine-20.png",
+  "featured": false,
+  "published": true,
+  "order": 11,
+  "facets": {
+    "specialty": [
+      "Psychiatry"
+    ],
+    "use": [
+      "Depression (reference context)",
+      "OCD (reference context)",
+      "Anxiety / PTSD (reference context)"
+    ],
+    "system": [
+      "Brain & nervous system"
+    ]
+  },
+  "ka": {
+    "name": "პაროქსეტინი",
+    "category": "ფსიქიკური ჯანმრთელობა",
+    "tag": "სეროტონინის უკუმიტაცების სელექციური ინჰიბიტორი",
+    "context": "პაროქსეტინი სეროტონინის უკუმიტაცების სელექციური ინჰიბიტორია. FDA-ს Paxil-ის რეფერენსულ ინსტრუქციაში ზრდასრულებისთვის აღწერილია მაჟორული დეპრესიული, ობსესიურ-კომპულსიური, პანიკური, სოციალური შფოთვითი, გენერალიზებული შფოთვითი და პოსტტრავმული სტრესული აშლილობები.",
+    "caution": "ახალგაზრდა პაციენტებში სუიციდური აზრების ან ქცევის რისკი, სეროტონინის სინდრომი, წამლებთან ურთიერთქმედება, სისხლდენა და ორსულობასთან დაკავშირებული საკითხები ექიმის შეფასებას საჭიროებს. უეცარმა შეწყვეტამ შეიძლება მოხსნის სიმპტომები გამოიწვიოს.",
+    "note": "რეფერენსულ ინსტრუქციაში 20 მგ დოზა მოცემულია. ეს ფორტისის ინდივიდუალურად მომზადებული პრეპარატის დამტკიცებას, ეკვივალენტობას ან კლინიკურ ეფექტს არ ადასტურებს.",
+    "form": "ტაბლეტი",
+    "facets": {
+      "specialty": [
+        "ფსიქიატრია"
+      ],
+      "use": [
+        "დეპრესია (რეფერენსული პრეპარატი)",
+        "ობსესიურ-კომპულსიური აშლილობა (რეფერენსული პრეპარატი)",
+        "შფოთვა / პოსტტრავმული სტრესი (რეფერენსული პრეპარატი)"
+      ],
+      "system": [
+        "თავის ტვინი და ნერვული სისტემა"
+      ]
+    },
+    "packUnit": "ტაბლეტი",
+    "preparation": "კომპოზიტური · პერორალური"
+  },
+  "packUnit": "tablets",
+  "preparation": "Compounded · oral"
+}

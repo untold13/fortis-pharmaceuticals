@@ -6,6 +6,14 @@ const withoutHeroPreload = template.replace(
   /<link\b[^>]*rel="preload"[^>]*as="image"[^>]*>/g,
   "",
 );
+const escapeHTML = (text) =>
+  text.replace(
+    /[&<>"']/g,
+    (c) =>
+      ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[
+        c
+      ],
+  );
 const pages = [
   ["compounding", "Individual pharmaceutical compounding"],
   ["about", "Our story & laboratory"],
@@ -15,7 +23,7 @@ const pages = [
   ["privacy", "Privacy"],
   ...products.map((p) => [
     `products/${p.slug}`,
-    `${p.name} ${p.strength} - ${p.pack} tablets`,
+    `${p.name} ${p.strength} - ${p.pack} ${p.packUnit}`,
   ]),
 ];
 for (const [route, title] of pages) {
@@ -31,7 +39,7 @@ for (const [route, title] of pages) {
     `dist/${route}/index.html`,
     pageTemplate.replace(
       /<title>.*?<\/title>/,
-      `<title>${title} | Fortis Pharmaceuticals</title>`,
+      `<title>${escapeHTML(title)} | Fortis Pharmaceuticals</title>`,
     ),
   );
 }
@@ -42,5 +50,8 @@ await fs.writeFile(
     "<title>Page not found | Fortis Pharmaceuticals</title>",
   ),
 );
-await fs.writeFile("dist/robots.txt", "User-agent: *\nAllow: /\n");
+await fs.writeFile(
+  "dist/robots.txt",
+  "User-agent: *\nAllow: /\nDisallow: /admin/\nDisallow: /api/\n",
+);
 console.log(`Generated ${pages.length + 1} route documents and 404 page.`);

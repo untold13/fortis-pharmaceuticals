@@ -1,0 +1,58 @@
+{
+  "slug": "flibanserin-100",
+  "name": "Flibanserin",
+  "strength": "100 mg",
+  "pack": 30,
+  "form": "Tablet",
+  "packUnit": "tablets",
+  "preparation": "Compounded · oral",
+  "image": "/products/flibanserin-100.png",
+  "published": true,
+  "featured": false,
+  "order": 22,
+  "category": "Sexual medicine",
+  "tag": "Hypoactive sexual desire reference",
+  "context": "The December 2025 FDA Addyi label covers acquired, generalized hypoactive sexual desire disorder causing marked distress in women younger than 65. The low desire must not be caused by a medical or psychiatric condition, medication effects or relationship problems.",
+  "caution": "Severe low blood pressure and fainting can occur with alcohol. Moderate or strong CYP3A4 inhibitors and liver impairment are contraindications. Sedation and other interactions require careful review.",
+  "note": "Reference-product information does not establish approval or equivalence of this Fortis preparation. Confirm the formulation and indication-specific instructions with the prescriber and pharmacist.",
+  "refs": [
+    "addyi"
+  ],
+  "facets": {
+    "specialty": [
+      "Gynecology",
+      "Sexual medicine"
+    ],
+    "use": [
+      "Hypoactive sexual desire disorder (reference context)"
+    ],
+    "system": [
+      "Sexual health",
+      "Brain & nervous system"
+    ]
+  },
+  "ka": {
+    "name": "ფლიბანსერინი",
+    "form": "ტაბლეტი",
+    "packUnit": "ტაბლეტი",
+    "preparation": "კომპოზიტური · პერორალური",
+    "category": "სექსუალური მედიცინა",
+    "tag": "ჰიპოაქტიური სექსუალური ლტოლვის რეფერენსული კონტექსტი",
+    "context": "FDA-ს Addyi-ის 2025 წლის დეკემბრის ინსტრუქცია მოიცავს შეძენილ, გენერალიზებულ ჰიპოაქტიურ სექსუალურ ლტოლვას, რომელიც გამოხატულ დისკომფორტს იწვევს 65 წლამდე ქალებში. ლტოლვის დაქვეითება არ უნდა იყოს გამოწვეული სამედიცინო ან ფსიქიკური მდგომარეობით, მედიკამენტების გავლენით ან ურთიერთობაში არსებული პრობლემებით.",
+    "caution": "ალკოჰოლთან ერთად შესაძლებელია წნევის მკვეთრი დაქვეითება და გულის წასვლა. უკუნაჩვენებია CYP3A4-ის ზომიერ ან ძლიერ ინჰიბიტორებთან და ღვიძლის ფუნქციის დარღვევისას. შესაფასებელია სედაცია და სხვა ურთიერთქმედებები.",
+    "note": "რეფერენსული პრეპარატის ინფორმაცია ფორტისის ფორმულის დამტკიცებას ან ეკვივალენტობას არ ადასტურებს. შემადგენლობა და კონკრეტული ჩვენების შესაბამისი მითითებები ექიმთან და ფარმაცევტთან უნდა დაზუსტდეს.",
+    "facets": {
+      "specialty": [
+        "გინეკოლოგია",
+        "სექსუალური მედიცინა"
+      ],
+      "use": [
+        "ჰიპოაქტიური სექსუალური ლტოლვა (რეფერენსული პრეპარატი)"
+      ],
+      "system": [
+        "სექსუალური ჯანმრთელობა",
+        "თავის ტვინი და ნერვული სისტემა"
+      ]
+    }
+  }
+}

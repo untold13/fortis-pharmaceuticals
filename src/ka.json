@@ -206,5 +206,14 @@
   "All 10 listed preparations are tablets.": "კატალოგში მოცემული ათივე პრეპარატი ტაბლეტია.",
   "Active filters": "არჩეული ფილტრები",
   "Remove filter": "ფილტრის მოხსნა",
-  "Filters describe ingredient reference or research contexts, not approved indications for Fortis preparations. Off-label uses are marked; study results and formulation limits remain on each product page.": "ფილტრები მოქმედი ნივთიერების რეფერენსულ პრეპარატებს ან კვლევით გამოყენებას აღწერს და ფორტისის პრეპარატების დამტკიცებულ ჩვენებებს არ განსაზღვრავს. არარეგისტრირებული ჩვენებები მონიშნულია. კვლევების შედეგები და კონკრეტული ფორმულის შეზღუდვები პროდუქტის გვერდზეა განმარტებული."
+  "Filters describe ingredient reference or research contexts, not approved indications for Fortis preparations. Off-label uses are marked; study results and formulation limits remain on each product page.": "ფილტრები მოქმედი ნივთიერების რეფერენსულ პრეპარატებს ან კვლევით გამოყენებას აღწერს და ფორტისის პრეპარატების დამტკიცებულ ჩვენებებს არ განსაზღვრავს. არარეგისტრირებული ჩვენებები მონიშნულია. კვლევების შედეგები და კონკრეტული ფორმულის შეზღუდვები პროდუქტის გვერდზეა განმარტებული.",
+  "The prescription is just the beginning.": "ყველაფერი დანიშნულებით იწყება.",
+  "An individual preparation starts with a clear understanding of the patient’s needs. These are the details to discuss with your prescriber and the Fortis pharmacist.": "ინდივიდუალური მედიკამენტის მომზადებამდე მნიშვნელოვანია პაციენტის საჭიროებების გააზრება. ეს საკითხები თქვენს ექიმსა და ფორტისის ფარმაცევტთან ერთად განიხილეთ.",
+  "Strength and formulation": "დოზა და ფორმულა",
+  "The ingredient, strength and dosage form need to match the prescription. Release characteristics matter; preparations with similar ingredient names are not automatically interchangeable.": "მოქმედი ნივთიერება, დოზა და წამლის ფორმა დანიშნულებას უნდა შეესაბამებოდეს. მნიშვნელოვანია ნივთიერების გამოთავისუფლების თავისებურებებიც. ერთი და იმავე ნივთიერების შემცველი პრეპარატები ყოველთვის ურთიერთჩანაცვლებადი არ არის.",
+  "Ingredients and individual needs": "შემადგენლობა და ინდივიდუალური საჭიროებები",
+  "Discuss allergies, excipient tolerance and any formulation requirements before preparation. Fortis describes sourcing active pharmaceutical ingredients from the US and Europe for local compounding in Tbilisi.": "მომზადებამდე აცნობეთ ფარმაცევტს ალერგიის, დამხმარე ნივთიერებების აუტანლობისა და ფორმულის მიმართ სხვა მოთხოვნების შესახებ. კომპანიის ინფორმაციით, ფორტისი მედიკამენტებს თბილისში ამზადებს, აშშ-დან და ევროპიდან მიღებული აქტიური ნივთიერებებით.",
+  "Guidance at dispensing": "მითითებები მედიკამენტის მიღებისას",
+  "Confirm your own directions, storage conditions and beyond-use date with the pharmacist. The information and packaging illustrations on this website do not replace your prescription.": "ფარმაცევტთან გადაამოწმეთ მიღების წესი, შენახვის პირობები და გამოყენების საბოლოო ვადა. ვებგვერდის ინფორმაცია და შეფუთვის ილუსტრაციები თქვენს დანიშნულებას ვერ ჩაანაცვლებს.",
+  "How individual preparation works": "როგორ მზადდება ინდივიდუალური მედიკამენტი"
 }

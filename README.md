@@ -1,56 +1,44 @@
 # Fortis Pharmaceuticals
 
-Company and compounding portfolio website built directly in the saved Fortis project. React + Vite; static hosting on Vercel. No checkout, patient collection, database or fake admin persistence.
+Bilingual Georgian/English compounding pharmacy website, built in the saved Fortis project using React and Vite. Production: https://fortis-pharmaceuticals.vercel.app
 
-## Run and verify
+## Development
 
 ```sh
 npm ci
 npm run dev
 npm run build
 npm run check
-npm run preview
+node scripts/check-cms-auth.mjs
 ```
 
-Local preview: http://127.0.0.1:4173. Production build is `dist/`. A route document is generated for every product and information page, so direct URLs work on a static host. The host should serve `404.html` for missing routes.
+Prebuild validates CMS content and creates lossless delivery images. Every published product gets an independent static route. The public site contains no checkout or patient data collection.
 
-## Edit or upload products
+## Content editor
 
-1. Put a pharmacy-approved product image in `public/products/`. Use a descriptive unique filename; never include actual patient or prescriber data in a public image.
-2. Edit `src/products.js`. Add one product object per strength, with a unique `slug`, `name`, `strength`, numeric tablet `pack`, and a valid `family`. Upload the original `/products/{slug}.png`; the build generates and serves a lossless WebP copy with identical decoded pixels. Do not group strengths or add selectors.
-3. Clinical context, cautions, formulation limits and references live in `families` and `sources` in the same file. The selected substantive medical sources are FDA, EMA, JAMA Dermatology and Pain Reports; PMC is used as an access mirror for the original Pain Reports article.
-4. Have the pharmacy review formulation/release characteristics, local authorization, copy and labeling. Reference-product approval never implies Fortis approval or equivalence.
-5. Select exactly four records with `featured: true` for the homepage. Update the exact-count check intentionally if the catalog grows beyond ten products.
-6. Run `npm run build && npm run check`, inspect the changed product route and mobile catalog, then commit and push. If Vercel Git integration is connected, its production branch deploys automatically.
+Direct address: https://fortis-pharmaceuticals.vercel.app/admin/
 
-The first build deliberately uses the user's ten original images unchanged, as explicitly requested. Images are illustrative packaging, not prescription instructions; this is stated on catalog/detail pages and `/editorial`. No generated label edits are used. Source files are not altered. A build script converts PNGs to lossless WebP and verifies identical decoded pixels; off-screen card images load near the viewport.
+The editor uses a custom FortisAdmin username/password sign-in and is absent from public navigation. It has noindex headers. No GitHub sign-in is shown to editors. Passwords are scrypt hashes; the local `node scripts/setup-admin-account.mjs` helper lets the owner set a password privately and writes only its hash and a generated session secret to a mode-600 temporary environment file. Never commit credentials or prefix them with VITE.
 
-## Deploy
+Required server environment: `CMS_ADMIN_USERNAME`, `CMS_PASSWORD_HASH`, `CMS_SESSION_SECRET`, `CMS_GITHUB_APP_ID`, `CMS_GITHUB_PRIVATE_KEY_BASE64`, `CMS_GITHUB_INSTALLATION_ID`, and `CMS_REPOSITORY_ID`. Install the private GitHub App only on `untold13/fortis-pharmaceuticals`; its server-side installation tokens are restricted to that repository with contents-write permission. Missing configuration fails closed.
 
-The project is published at https://fortis-pharmaceuticals.vercel.app from https://github.com/untold13/fortis-pharmaceuticals. Vercel automatically deploys the main branch using the Vite preset: build `npm run build`, output `dist`. No environment variables are required. Alternatively, with an authenticated CLI, run `vercel --prod` in this folder. Do not point this project at the separate Fortis Library site.
+Sessions use signed HttpOnly, Secure, SameSite=Strict cookies and expire after eight hours. Rotating the password hash or session secret invalidates previous sessions. Sign-in attempts are limited per IP on each active server instance, while the password itself is protected with deliberately expensive scrypt verification. All writes require the fixed production origin and JSON content type. Credentials never enter the browser bundle or responses.
 
-## Hero and accessibility
+A successful save creates a main-branch commit and triggers the connected Vercel deployment. Website changes appear after that deployment succeeds; use GitHub history to restore earlier content. Saves use the current content SHA to reject overwriting concurrent changes. The editor, server and build share content validation; publishing requires both languages, valid reference IDs and an existing image. Removing a reference used by published products is blocked.
 
-The homepage uses an original static SVG sketch of an amber medicine bottle (`src/bottle-art.jsx`). Product photographs are reserved for the catalog and detail pages. There is no 3D scene, scroll animation or sticky scroll sequence, following the user's final design correction. All cards are standard links with independent routes; navigation, filters, search and FAQ are keyboard accessible. Reduced-motion preferences disable decorative transitions.
+- **Products:** create or edit English and Georgian details, strength, pack quantity/unit, dosage form, preparation route, original image, filters and reference IDs. Turn “Published” off to retain a draft outside all public routes and filters. Product addresses are permanent; do not rename existing slugs. Use the same item order for corresponding English/Georgian filter lists.
+- **Website content:** edit existing bilingual text or add bilingual sections to the homepage, about, compounding, contact or catalog pages. Plain text fields keep public rendering safe.
+- **References:** maintain verified primary-source titles, URLs and IDs. Clinical fields require professional review before publication.
+- **Images:** upload PNG, JPEG or WebP through the image upload field (maximum 3 MB). Originals are committed unchanged under `public/uploads`. Build-time lossless WebP conversion verifies identical decoded pixels. No image regeneration or label alterations occur.
 
-## Content boundaries
+CMS records live in `content/products/*.json`, existing text in `content/copy.json`, added sections in `content/home.json`, and primary references in `content/sources.json`. Generated `src/generated-content.js` is excluded from Git. The catalog, filter options, counts, image dimensions and routes derive from published records, so future additions do not need source code changes. Current catalog: 29 separate preparations, with the original four featured records.
 
-English and Georgian interfaces are available through the KA/EN header button. The adjacent day/night switch changes the appearance. Both choices persist in this browser across routes and return visits; first visits use English and light mode. The original Georgian brand/founding copy is preserved. Company laboratory and permit information is attributed to the company. GPP process started is not GPP certification. No fabricated laboratory photos, metrics, partners, opening hours or email address are used. Fonts, including Noto Sans Georgian, are hosted with the site and fall back to Arial if unavailable.
+## Design and accessibility
 
-## Language and appearance maintenance
+Taste frontend skill guides the preserved Fortis blue/green branding, self-hosted Georgian typography and clean clinical layout. The header and hero fill the first screen where content fits. The original amber-bottle SVG has a visible bottle lift and cap turn that finishes in 4.5 seconds, with no pause control and no motion under reduced-motion settings. Original product imagery and the source logo remain unchanged. The logo's SVG display mask makes its background transparent without recreating lettering.
 
-Interface translations are in `src/ka.json`; Georgian ingredient context, clinical cautions, formulation limits, product names and source labels are in `src/ka-products.json`. Keep both languages synchronized when changing the original English content. Clinical translations preserve the same reference-product and off-label distinctions and require the same ongoing pharmacy review as the English copy. Product images and source URLs remain unchanged in either language or theme.
+English/Georgian and day/night preferences persist. The landscape theme switch follows the user-selected Dribbble reference. Five catalog filter dimensions combine OR within a group and AND between groups, with keyboard controls, visible active filters, and reset/search states. All current product photos remain fully visible at their original aspect ratios.
 
-`src/preferences.jsx` manages the controls and saved preferences. `src/preferences.css` defines the dark palette and Georgian layout adjustments. The page head restores choices before rendering to avoid a light-theme flash. Browser storage failure does not prevent controls from working.
+## Verification
 
-Run `node scripts/check-preferences.mjs` with a Playwright Chromium installation to check all routes in both languages and themes. `FORTIS_TEST_URL` can select a preview or production URL; `FORTIS_CHROME_PATH` can select an existing compatible browser executable.
-
-## Visual assets and catalog facets
-
-`src/brand-art.jsx` renders the original `public/fortis-logo.jpeg` through a native SVG chroma mask. The neutral source background becomes transparent while the original Georgian/English lettering and symbol remain the source artwork. The original JPEG is archived unchanged. A generated raster extraction was rejected because it contained a painted checkerboard; no generated logo is used.
-
-`src/theme-art.jsx` and `src/refinements.css` implement the user-requested landscape switch after visual inspection of [Lior Ullert’s reference](https://dribbble.com/shots/15942486-Light-Dark-Mode-Toggle): rolling hills and a tree, sun/clouds changing to crescent/stars, and a white thumb moving left/day to right/night. It uses a native accessible switch, browser persistence, and immediate state changes with reduced motion.
-
-`src/catalog-model.js` provides separate multiselect strength, medical-specialty, use-context, body-system and form dimensions. Selected values combine with OR within a dimension and AND across dimensions and search. Each group uses native details and labeled checkboxes; active filters can be removed individually, and reset clears all filters/search. All ten current preparations are tablets. New families need reviewed navigation metadata here as well as clinical content in `src/products.js` and Georgian translations. Filters describe reference or research contexts and do not confer approved indications on compounded products.
-
-Every card uses its source photo’s 2:3 ratio with no CSS padding, cropping, stretching or blended color treatment. Inherent photographic backgrounds stay unchanged in both themes.
+`node scripts/check-preferences.mjs` exercises every public route in both languages and themes, mobile overflow, original image loading, search/filter logic, keyboard controls, finite hero motion and reduced motion. Set `FORTIS_TEST_URL` for production and `FORTIS_CHROME_PATH` for a local Chromium executable. `scripts/check-cms-auth.mjs` exercises password login, fixed-origin checks, restricted installation tokens, save/reload, SHA conflicts, image byte preservation, source protection, malformed input, logout, credential rotation, expiry and rate limits using a deterministic GitHub double. Real editor save/publish persistence must also be checked after the App and Vercel setup. Mock tests do not verify deployed services.

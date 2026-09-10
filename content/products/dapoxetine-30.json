@@ -1,0 +1,55 @@
+{
+  "name": "Dapoxetine",
+  "category": "Sexual medicine",
+  "tag": "SSRI ingredient",
+  "context": "Dapoxetine is an SSRI. The EMA Priligy referral and product information describe premature ejaculation in men aged 18 to 64 years. The referral concerns historic national authorization of the reference medicine.",
+  "caution": "Fainting and postural hypotension, heart or liver conditions, serotonergic interactions and alcohol use require clinical assessment. A complete review of other medicines is necessary.",
+  "note": "EMA information about Priligy does not establish approval, equivalence, safety or efficacy of this Fortis 30 mg compounded preparation.",
+  "refs": [
+    "priligy",
+    "priligy_info"
+  ],
+  "slug": "dapoxetine-30",
+  "strength": "30 mg",
+  "pack": 3,
+  "form": "Tablet",
+  "image": "/products/dapoxetine-30.png",
+  "featured": false,
+  "published": true,
+  "order": 17,
+  "facets": {
+    "specialty": [
+      "Urology / sexual medicine"
+    ],
+    "use": [
+      "Premature ejaculation (reference context)"
+    ],
+    "system": [
+      "Sexual & reproductive health"
+    ]
+  },
+  "ka": {
+    "name": "დაპოქსეტინი",
+    "category": "სექსუალური მედიცინა",
+    "tag": "სეროტონინის უკუმიტაცების სელექციური ინჰიბიტორი",
+    "context": "დაპოქსეტინი სეროტონინის უკუმიტაცების სელექციური ინჰიბიტორია. EMA-ს Priligy-ის რეფერალური შეფასება და ინსტრუქცია აღწერს ნაადრევ ეაკულაციას 18–64 წლის მამაკაცებში. შეფასება რეფერენსული მედიკამენტის ისტორიულ ეროვნულ ავტორიზაციას ეხება.",
+    "caution": "გულის წასვლა და წამოდგომისას წნევის ვარდნა, გულის ან ღვიძლის დაავადებები, სეროტონინზე მოქმედ წამლებთან ურთიერთქმედება და ალკოჰოლის მიღება ექიმის შეფასებას საჭიროებს. აუცილებელია სხვა მიღებული მედიკამენტების სრული განხილვა.",
+    "note": "EMA-ს ინფორმაცია Priligy-ის შესახებ ფორტისის 30 მგ ინდივიდუალურად მომზადებული პრეპარატის დამტკიცებას, ეკვივალენტობას, უსაფრთხოებას ან ეფექტურობას არ ადასტურებს.",
+    "form": "ტაბლეტი",
+    "facets": {
+      "specialty": [
+        "უროლოგია / სექსუალური მედიცინა"
+      ],
+      "use": [
+        "ნაადრევი ეაკულაცია (რეფერენსული პრეპარატი)"
+      ],
+      "system": [
+        "სექსუალური და რეპროდუქციული ჯანმრთელობა"
+      ]
+    },
+    "packUnit": "ტაბლეტი",
+    "preparation": "კომპოზიტური · პერორალური"
+  },
+  "packUnit": "tablets",
+  "preparation": "Compounded · oral"
+}

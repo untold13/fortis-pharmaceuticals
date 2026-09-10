@@ -57,3 +57,11 @@ The five independent filter dimensions support OR within each dimension and AND 
 Verification: production build/content checks pass; 68 route/language/theme browser combinations pass, including five-dimensional filtering, OR/AND combinations, bilingual search, reset, preferences, keyboard/reduced-motion switch, original image dimensions and unpadded frames. Axe reports no WCAG A/AA violations across five Georgian pages in both themes; 320px layouts fit. Desktop/mobile visual review includes both languages and themes with all card images loaded. All original PNGs and the logo JPEG remain unmodified.
 
 Updated local Lighthouse mobile scores: performance 97, accessibility 100, best practices 100, SEO 100; LCP 2.1 seconds and CLS 0.02. These are local simulated measurements, not field performance. The SVG hero avoids downloading the original product photo above the fold.
+
+## Current expansion: full-screen hero, twenty products and content editor
+
+The latest request authorizes restrained bottle float/cap motion, overriding the earlier static-only preference. The hero fills the first screen, with a pause button and reduced-motion fallback. Added substantive English/Georgian preparation guidance while retaining existing company facts. Ten additional supplied PNGs are unchanged; each has a separate record and route, bringing the public catalog to twenty products and 27 routes. Clinical references preserve ingredient-versus-Fortis distinctions, current FOLR1 scope, and the dapoxetine/sildenafil blood-pressure warning.
+
+Content now lives in bilingual JSON records maintained through a separate Decap editor. Public counts, image aspect ratios, pack labels, dosage forms, route documents and filters derive from those records. The editor uses official Decap GitHub backend/widgets and a private GitHub App user-token flow, separate from Taste's landing-page scope. No editor link appears publicly. App credentials are server-only and missing configuration denies sign-in.
+
+Checks so far: 108 local route/language/theme combinations passed; original/new PNG delivery pixels verified; authentication unit checks passed; dependency audit reported zero vulnerabilities. Live CMS persistence requires completing GitHub identity verification and app installation. These observations do not claim that unfinished real-auth test has passed.

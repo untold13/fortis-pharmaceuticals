@@ -1,50 +1,9 @@
 import { products } from "./products.js";
 
-// Navigation metadata is grounded in each family's cited clinical context.
-// These facets never assert an approved indication for a Fortis preparation.
-const context = {
-  ldn: {
-    specialty: ["Pain medicine / research"],
-    use: ["Pain research (off-label)"],
-    system: ["Individualized / research context"],
-  },
-  naltrexone: {
-    specialty: ["Addiction medicine"],
-    use: [
-      "Alcohol dependence (reference context)",
-      "Opioid blockade (reference context)",
-    ],
-    system: ["Brain & nervous system"],
-  },
-  combination: {
-    specialty: ["Obesity medicine"],
-    use: ["Weight management (reference context)"],
-    system: ["Weight regulation / metabolic context"],
-  },
-  bupropion: {
-    specialty: ["Psychiatry"],
-    use: ["Depression (reference context)"],
-    system: ["Brain & nervous system"],
-  },
-  modafinil: {
-    specialty: ["Sleep medicine"],
-    use: ["Excessive sleepiness (reference context)"],
-    system: ["Brain & nervous system"],
-  },
-  minoxidil: {
-    specialty: ["Dermatology"],
-    use: ["Hair loss (off-label)"],
-    system: ["Skin & hair"],
-  },
-  lemborexant: {
-    specialty: ["Sleep medicine"],
-    use: ["Insomnia (reference context)"],
-    system: ["Brain & nervous system"],
-  },
-};
+// Separate dimensions come from reviewed, bilingual CMS product records.
 export const catalogProducts = products.map((p) => ({
   ...p,
-  facets: { ...context[p.family], strength: [p.strength], form: ["Tablet"] },
+  facets: { ...p.facets, strength: [p.strength], form: [p.form] },
 }));
 export const facets = [
   { key: "strength", label: "Strength" },

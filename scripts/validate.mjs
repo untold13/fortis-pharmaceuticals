@@ -1,27 +1,13 @@
 import assert from "node:assert/strict";
 import { existsSync, readFileSync } from "node:fs";
 import { products, sources } from "../src/products.js";
-assert.equal(
-  products.length,
-  10,
-  "Catalog must contain exactly ten independent preparations",
-);
+assert.ok(products.length > 0, "Catalog must contain published products");
 assert.equal(
   new Set(products.map((p) => p.slug)).size,
-  10,
+  products.length,
   "Every product must have a unique route",
 );
-assert.equal(
-  products.filter((p) => p.featured).length,
-  4,
-  "Homepage must feature four products",
-);
-const allowed = new Set([
-  "www.accessdata.fda.gov",
-  "www.ema.europa.eu",
-  "jamanetwork.com",
-  "pmc.ncbi.nlm.nih.gov",
-]);
+import { allowedSourceHosts as allowed } from "../lib/cms-validation.js";
 for (const p of products) {
   assert.ok(existsSync(`public${p.image}`), `Missing image for ${p.slug}`);
   assert.ok(p.strength && p.name && p.pack && p.context && p.caution && p.note);
@@ -36,5 +22,5 @@ if (existsSync("dist"))
     assert.ok(h.includes(p.name), `Missing route metadata ${p.slug}`);
   }
 console.log(
-  "PASS: 10 unique product pages, 4 featured products, 10 original images, complete clinical notes and allowed reference domains.",
+  `PASS: ${products.length} unique product pages, original images, complete clinical notes and allowed reference domains.`,
 );

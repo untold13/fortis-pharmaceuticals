@@ -1,0 +1,54 @@
+{
+  "slug": "bupropion-er-75",
+  "name": "Bupropion ER",
+  "strength": "75 mg",
+  "pack": 30,
+  "featured": true,
+  "category": "Mental health",
+  "tag": "Individualized strength",
+  "context": "Bupropion is an antidepressant. The FDA Wellbutrin XL reference label covers major depressive disorder and prevention of seasonal depressive episodes, using 150 mg and 300 mg extended-release tablets.",
+  "caution": "Seizure risk, changes in mood or suicidal thinking, eating-disorder history and interacting medicines require prescriber assessment. Release characteristics matter when selecting a preparation.",
+  "note": "“ER 75 mg” is the supplied Fortis catalog designation. Its release characteristics have not been independently verified here. This page does not equate it with an FDA-approved SR or XL product.",
+  "refs": [
+    "xl"
+  ],
+  "facets": {
+    "specialty": [
+      "Psychiatry"
+    ],
+    "use": [
+      "Depression (reference context)"
+    ],
+    "system": [
+      "Brain & nervous system"
+    ]
+  },
+  "image": "/products/bupropion-er-75.png",
+  "form": "Tablet",
+  "published": true,
+  "order": 5,
+  "ka": {
+    "name": "ბუპროპიონი ER",
+    "category": "ფსიქიკური ჯანმრთელობა",
+    "tag": "ინდივიდუალური დოზა",
+    "context": "ბუპროპიონი ანტიდეპრესანტია. FDA-ს Wellbutrin XL-ის რეფერენსული ინსტრუქცია მოიცავს მაჟორულ დეპრესიულ აშლილობასა და სეზონური დეპრესიული ეპიზოდების პრევენციას, 150 მგ და 300 მგ გახანგრძლივებული გამოთავისუფლების ტაბლეტებით.",
+    "caution": "კრუნჩხვის რისკი, განწყობის ცვლილებები ან სუიციდური აზრები, კვებითი ქცევის დარღვევების ისტორია და სხვა მედიკამენტებთან ურთიერთქმედება ექიმის შეფასებას საჭიროებს. პრეპარატის შერჩევისას მნიშვნელოვანია გამოთავისუფლების მახასიათებლები.",
+    "note": "„ER 75 მგ“ ფორტისის მიერ მოწოდებული კატალოგის დასახელებაა. მისი გამოთავისუფლების მახასიათებლები აქ დამოუკიდებლად გადამოწმებული არ არის. ეს გვერდი მას არ აიგივებს FDA-ს მიერ დამტკიცებულ SR ან XL პროდუქტთან.",
+    "form": "ტაბლეტი",
+    "facets": {
+      "specialty": [
+        "ფსიქიატრია"
+      ],
+      "use": [
+        "დეპრესია (რეფერენსული პრეპარატი)"
+      ],
+      "system": [
+        "თავის ტვინი და ნერვული სისტემა"
+      ]
+    },
+    "packUnit": "ტაბლეტი",
+    "preparation": "კომპოზიტური · პერორალური"
+  },
+  "packUnit": "tablets",
+  "preparation": "Compounded · oral"
+}
