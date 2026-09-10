@@ -2,10 +2,8 @@ import { randomBytes } from "node:crypto";
 import sharp from "sharp";
 import { account, checkPassword, sameOrigin, reply } from "../lib/cms-auth.js";
 import {
-  redisConfigured,
   createSession,
   getSession,
-  revokeSession,
   clearCookie,
   rateLimit,
 } from "../lib/cms-sessions.js";
@@ -32,14 +30,13 @@ export default async function handler(req, res) {
     });
   try {
     if (action === "logout" && req.method === "POST") {
-      await revokeSession(req);
       res.setHeader("Set-Cookie", clearCookie());
       return reply(res, 200, { ok: true });
     }
     let config;
     try {
       config = account();
-      if (!storageConfigured() || !redisConfigured()) throw new Error();
+      if (!storageConfigured()) throw new Error();
     } catch {
       return reply(res, action === "session" ? 200 : 503, {
         authenticated: false,
@@ -48,7 +45,7 @@ export default async function handler(req, res) {
       });
     }
     if (action === "login" && req.method === "POST") {
-      if (!(await rateLimit(req, config))) {
+      if (!rateLimit(req, config)) {
         res.setHeader("Retry-After", "60");
         return reply(res, 429, {
           error: "Too many sign-in attempts. Please wait a minute.",
@@ -60,13 +57,13 @@ export default async function handler(req, res) {
         return reply(res, 401, {
           error: "The username or password is incorrect.",
         });
-      res.setHeader("Set-Cookie", await createSession(config));
+      res.setHeader("Set-Cookie", createSession(config));
       return reply(res, 200, {
         authenticated: true,
         username: config.username,
       });
     }
-    const current = await getSession(req, config);
+    const current = getSession(req, config);
     if (action === "session" && req.method === "GET")
       return reply(res, 200, {
         authenticated: !!current,

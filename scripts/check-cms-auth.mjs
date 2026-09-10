@@ -3,15 +3,17 @@ import { generateKeyPairSync, createHash, verify } from "node:crypto";
 import { readFileSync, readdirSync } from "node:fs";
 import handler from "../api/cms.js";
 import { hashPassword, account, ORIGIN, REPO } from "../lib/cms-auth.js";
-import { getSession, rateLimit } from "../lib/cms-sessions.js";
+import {
+  getSession,
+  rateLimit,
+  resetRateLimitsForTest,
+} from "../lib/cms-sessions.js";
 import { validateContent } from "../lib/cms-validation.js";
 // Deterministic external-service doubles. Never read the private setup account.
 const env = { ...process.env },
   originalFetch = globalThis.fetch;
-const files = new Map(),
-  redis = new Map();
-let now = 0,
-  commits = 0,
+const files = new Map();
+let commits = 0,
   tokenRequests = 0;
 const hash = (b) => createHash("sha256").update(b).digest("hex");
 const put = (path, data) => {
@@ -48,34 +50,8 @@ try {
     CMS_GITHUB_PRIVATE_KEY_BASE64: Buffer.from(
       keyPair.privateKey.export({ type: "pkcs8", format: "pem" }),
     ).toString("base64"),
-    KV_REST_API_URL: "https://test.upstash.io",
-    KV_REST_API_TOKEN: "test-only-redis",
   });
   globalThis.fetch = async (url, options) => {
-    if (url === "https://test.upstash.io") {
-      const [command, ...a] = JSON.parse(options.body);
-      for (const [k, v] of redis) if (v.expires <= now) redis.delete(k);
-      if (command === "SET") {
-        redis.set(a[0], { value: a[1], expires: now + Number(a[3]) });
-        return result({ result: "OK" });
-      }
-      if (command === "GET")
-        return result({ result: redis.get(a[0])?.value ?? null });
-      if (command === "DEL")
-        return result({ result: Number(redis.delete(a[0])) });
-      if (command === "EVAL") {
-        assert.match(a[0], /redis.call\('INCR'/);
-        return result({
-          result: a.slice(2).map((k) => {
-            const v = redis.get(k) || { value: 0, expires: now + 60 };
-            v.value++;
-            redis.set(k, v);
-            return v.value;
-          }),
-        });
-      }
-      throw Error("Unexpected Redis command");
-    }
     assert.equal(new URL(url).origin, "https://api.github.com");
     if (url.endsWith("/app/installations/456/access_tokens")) {
       tokenRequests++;
@@ -316,13 +292,15 @@ try {
     () => validateContent(path, JSON.parse('{"__proto__":{}}')),
     (e) => e.status === 400,
   );
-  assert.equal((await call("logout", {}, cookie)).statusCode, 200);
+  const logout = await call("logout", {}, cookie);
+  assert.equal(logout.statusCode, 200);
+  assert.match(logout.headers["Set-Cookie"], /Max-Age=0/);
   assert.equal(
-    (await call("session", undefined, cookie)).data.authenticated,
+    (await call("session")).data.authenticated,
     false,
   );
   assert.equal(
-    (await call("save", { path, data: product }, cookie)).statusCode,
+    (await call("save", { path, data: product })).statusCode,
     401,
   );
   r = await call("login", { username: "FortisAdmin", password });
@@ -340,37 +318,28 @@ try {
     await getSession({ headers: { cookie: second } }, account()),
     null,
   );
-  now += 28801;
   assert.equal(
-    await getSession({ headers: { cookie: second } }, account()),
+    getSession(
+      { headers: { cookie: second } },
+      account(),
+      Math.floor(Date.now() / 1000) + 28801,
+    ),
     null,
   );
-  redis.clear();
+  resetRateLimitsForTest();
   const config = account();
-  const attempts = await Promise.all(
-    Array.from({ length: 9 }, () =>
-      rateLimit({ headers: { "x-vercel-forwarded-for": "192.0.2.1" } }, config),
-    ),
+  const attempts = Array.from({ length: 9 }, () =>
+    rateLimit({ headers: { "x-vercel-forwarded-for": "192.0.2.1" } }, config),
   );
   assert.equal(attempts.filter(Boolean).length, 8);
-  redis.clear();
-  const globalAttempts = await Promise.all(
-    Array.from({ length: 41 }, (_, i) =>
-      rateLimit(
-        { headers: { "x-vercel-forwarded-for": `192.0.2.${i}` } },
-        config,
-      ),
-    ),
-  );
-  assert.equal(globalAttempts.filter(Boolean).length, 40);
-  delete process.env.KV_REST_API_TOKEN;
+  delete process.env.CMS_GITHUB_INSTALLATION_ID;
   assert.equal((await call("session")).data.configured, false);
   assert.equal(
     (await call("login", { username: "FortisAdmin", password })).statusCode,
     503,
   );
   console.log(
-    "PASS: custom password login, fixed-origin protection, restricted GitHub App token, durable save/reload via service doubles, conflicts, source protection, original upload bytes, draft save, malformed requests, logout replay, rotation, expiry, atomic rate limits, fail-closed setup. External services mocked; production setup still required.",
+    "PASS: custom password login, fixed-origin protection, restricted GitHub App token, durable save/reload via service double, conflicts, source protection, original upload bytes, draft save, malformed requests, logout cookie clearing, rotation, expiry, per-IP rate limits and fail-closed setup. GitHub is mocked; production setup still required.",
   );
 } finally {
   process.env = env;
