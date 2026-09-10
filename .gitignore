@@ -5,3 +5,7 @@ dist/
 test-results/
 *.log
 public/products/*.webp
+
+src/generated-content.js
+public/uploads/**/*.webp
+public/uploads/*.webp

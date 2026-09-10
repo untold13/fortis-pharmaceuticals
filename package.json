@@ -8,8 +8,8 @@
     "build": "vite build && node scripts/prerender.mjs",
     "preview": "vite preview --host 127.0.0.1 --port 4173",
     "check": "node scripts/validate.mjs",
-    "predev": "node scripts/optimize-images.mjs",
-    "prebuild": "node scripts/optimize-images.mjs"
+    "predev": "node scripts/generate-content.mjs && node scripts/optimize-images.mjs",
+    "prebuild": "node scripts/generate-content.mjs && node scripts/optimize-images.mjs"
   },
   "dependencies": {
     "@fontsource-variable/dm-sans": "5.3.0",
@@ -21,8 +21,23 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "5.0.0",
+    "decap-cms-backend-github": "3.8.2",
+    "decap-cms-core": "3.19.0",
+    "decap-cms-locales": "3.8.2",
+    "decap-cms-widget-boolean": "3.2.2",
+    "decap-cms-widget-image": "3.4.2",
+    "decap-cms-widget-list": "3.6.2",
+    "decap-cms-widget-number": "3.4.2",
+    "decap-cms-widget-object": "3.7.2",
+    "decap-cms-widget-relation": "3.7.2",
+    "decap-cms-widget-select": "3.4.2",
+    "decap-cms-widget-string": "3.3.2",
+    "decap-cms-widget-text": "3.3.2",
     "playwright": "1.63.0",
     "sharp": "0.35.4",
     "vite": "7.3.6"
+  },
+  "overrides": {
+    "uuid": "11.1.1"
   }
 }
