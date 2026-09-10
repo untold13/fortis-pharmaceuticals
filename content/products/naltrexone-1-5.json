@@ -1,0 +1,55 @@
+{
+  "slug": "naltrexone-1-5",
+  "name": "Naltrexone hydrochloride",
+  "strength": "1.5 mg",
+  "pack": 30,
+  "featured": true,
+  "category": "Individualized compounding",
+  "tag": "Low-dose preparation",
+  "context": "Naltrexone is an opioid receptor antagonist. Lower-dose preparations are studied in off-label settings. A 2023 randomized crossover study in 58 people with fibromyalgia found no clinically relevant analgesic efficacy with 4.5 mg. This study does not establish efficacy for a 1.5 mg preparation.",
+  "caution": "Naltrexone can precipitate opioid withdrawal and interfere with opioid pain medicines. Liver risks and other medicines require prescriber review. A lower strength does not establish a safer or effective treatment.",
+  "note": "These lower-dose Fortis preparations are not the 50 mg reference product. No approved indication or proven clinical benefit for these specific compounded preparations is implied.",
+  "refs": [
+    "ldn",
+    "revia"
+  ],
+  "facets": {
+    "specialty": [
+      "Pain medicine / research"
+    ],
+    "use": [
+      "Pain research (off-label)"
+    ],
+    "system": [
+      "Individualized / research context"
+    ]
+  },
+  "image": "/products/naltrexone-1-5.png",
+  "form": "Tablet",
+  "published": true,
+  "order": 1,
+  "ka": {
+    "name": "ნალტრექსონის ჰიდროქლორიდი",
+    "category": "ინდივიდუალური მომზადება",
+    "tag": "დაბალდოზიანი პრეპარატი",
+    "context": "ნალტრექსონი ოპიოიდური რეცეპტორების ანტაგონისტია. დაბალდოზიანი პრეპარატები შეისწავლება ოფიციალურად დამტკიცებული ჩვენებების ფარგლებს გარეთ. 2023 წლის რანდომიზებულ ჯვარედინ კვლევაში, რომელშიც ფიბრომიალგიის მქონე 58 ადამიანი მონაწილეობდა, 4.5 მგ დოზით კლინიკურად მნიშვნელოვანი ტკივილგამაყუჩებელი ეფექტი არ გამოვლინდა. ეს კვლევა არ ადასტურებს 1.5 მგ პრეპარატის ეფექტურობას.",
+    "caution": "ნალტრექსონმა შეიძლება მწვავედ გამოიწვიოს ოპიოიდების მოხსნის სინდრომი და ხელი შეუშალოს ოპიოიდური ტკივილგამაყუჩებლების მოქმედებას. ღვიძლის რისკები და სხვა მედიკამენტები ექიმმა უნდა შეაფასოს. დაბალი დოზა თავისთავად არ ადასტურებს მკურნალობის უსაფრთხოებას ან ეფექტურობას.",
+    "note": "ფორტისის ეს დაბალდოზიანი პრეპარატები განსხვავდება 50 მგ რეფერენსული პროდუქტისგან. ამ კონკრეტული, ინდივიდუალურად მომზადებული პრეპარატებისთვის დამტკიცებული ჩვენება ან დადასტურებული კლინიკური სარგებელი არ იგულისხმება.",
+    "form": "ტაბლეტი",
+    "facets": {
+      "specialty": [
+        "ტკივილის მედიცინა / კვლევა"
+      ],
+      "use": [
+        "ტკივილის კვლევა (არარეგისტრირებული ჩვენება)"
+      ],
+      "system": [
+        "ინდივიდუალური / კვლევითი კონტექსტი"
+      ]
+    },
+    "packUnit": "ტაბლეტი",
+    "preparation": "კომპოზიტური · პერორალური"
+  },
+  "packUnit": "tablets",
+  "preparation": "Compounded · oral"
+}

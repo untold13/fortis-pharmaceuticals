@@ -1,0 +1,53 @@
+{
+  "slug": "modafinil-100",
+  "name": "Modafinil",
+  "strength": "100 mg",
+  "pack": 30,
+  "category": "Sleep medicine",
+  "tag": "Wakefulness-promoting ingredient",
+  "context": "The FDA reference label describes modafinil for excessive sleepiness associated with adult narcolepsy, obstructive sleep apnea or shift-work disorder. It does not treat the underlying airway obstruction.",
+  "caution": "Serious rash, psychiatric effects, cardiovascular concerns and drug interactions require review. Modafinil can reduce the effectiveness of steroidal contraceptives. It is not presented here as a cognitive-enhancement product.",
+  "note": "Reference-product evidence does not establish approval or equivalence for the specific Fortis compounded formulation.",
+  "refs": [
+    "provigil"
+  ],
+  "facets": {
+    "specialty": [
+      "Sleep medicine"
+    ],
+    "use": [
+      "Excessive sleepiness (reference context)"
+    ],
+    "system": [
+      "Brain & nervous system"
+    ]
+  },
+  "image": "/products/modafinil-100.png",
+  "form": "Tablet",
+  "published": true,
+  "order": 6,
+  "ka": {
+    "name": "მოდაფინილი",
+    "category": "ძილის მედიცინა",
+    "tag": "სიფხიზლის ხელშემწყობი ნივთიერება",
+    "context": "FDA-ს რეფერენსული ინსტრუქცია აღწერს მოდაფინილის გამოყენებას მოზრდილებში ნარკოლეფსიასთან, ძილის ობსტრუქციულ აპნოესთან ან ცვლაში მუშაობით გამოწვეულ ძილის დარღვევასთან დაკავშირებული ჭარბი ძილიანობის დროს. იგი არ მკურნალობს სასუნთქი გზების ძირითად ობსტრუქციას.",
+    "caution": "მძიმე გამონაყარი, ფსიქიატრიული ეფექტები, გულ-სისხლძარღვთა რისკები და წამალთაშორისი ურთიერთქმედება შეფასებას საჭიროებს. მოდაფინილმა შეიძლება შეამციროს სტეროიდული კონტრაცეპტივების ეფექტურობა. აქ იგი არ არის წარმოდგენილი როგორც კოგნიტიური უნარების გასაუმჯობესებელი საშუალება.",
+    "note": "რეფერენსული პროდუქტის მტკიცებულებები არ ადასტურებს ფორტისის კონკრეტული ფორმულის დამტკიცებას ან ეკვივალენტობას.",
+    "form": "ტაბლეტი",
+    "facets": {
+      "specialty": [
+        "ძილის მედიცინა"
+      ],
+      "use": [
+        "ჭარბი ძილიანობა (რეფერენსული პრეპარატი)"
+      ],
+      "system": [
+        "თავის ტვინი და ნერვული სისტემა"
+      ]
+    },
+    "packUnit": "ტაბლეტი",
+    "preparation": "კომპოზიტური · პერორალური"
+  },
+  "packUnit": "tablets",
+  "preparation": "Compounded · oral"
+}

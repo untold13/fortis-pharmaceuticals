@@ -1,0 +1,54 @@
+{
+  "name": "Mirtazapine",
+  "category": "Mental health",
+  "tag": "Antidepressant ingredient",
+  "context": "Mirtazapine is an antidepressant. The FDA Remeron reference label describes major depressive disorder in adults.",
+  "caution": "Sedation, increased appetite or weight, suicidal thoughts or behavior, serotonergic interactions and rare severe neutropenia or DRESS require professional assessment.",
+  "note": "7.5 mg is the supplied Fortis strength. This page does not establish Fortis approval or equivalence to a reference product.",
+  "refs": [
+    "remeron"
+  ],
+  "slug": "mirtazapine-7-5",
+  "strength": "7.5 mg",
+  "pack": 30,
+  "form": "Tablet",
+  "image": "/products/mirtazapine-7-5.png",
+  "featured": false,
+  "published": true,
+  "order": 19,
+  "facets": {
+    "specialty": [
+      "Psychiatry"
+    ],
+    "use": [
+      "Depression (reference context)"
+    ],
+    "system": [
+      "Brain & nervous system"
+    ]
+  },
+  "ka": {
+    "name": "მირტაზაპინი",
+    "category": "ფსიქიკური ჯანმრთელობა",
+    "tag": "ანტიდეპრესანტი ნივთიერება",
+    "context": "მირტაზაპინი ანტიდეპრესანტია. FDA-ს Remeron-ის რეფერენსული ინსტრუქცია ზრდასრულთა მაჟორულ დეპრესიულ აშლილობას აღწერს.",
+    "caution": "სედაცია, მადის ან წონის მატება, სუიციდური აზრები ან ქცევა, სეროტონინზე მოქმედ წამლებთან ურთიერთქმედება და იშვიათი მძიმე ნეიტროპენია ან DRESS პროფესიულ შეფასებას საჭიროებს.",
+    "note": "7.5 მგ ფორტისის მიერ მოწოდებული დოზაა. გვერდი ფორტისის პრეპარატის დამტკიცებას ან რეფერენსულ პროდუქტთან ეკვივალენტობას არ ადასტურებს.",
+    "form": "ტაბლეტი",
+    "facets": {
+      "specialty": [
+        "ფსიქიატრია"
+      ],
+      "use": [
+        "დეპრესია (რეფერენსული პრეპარატი)"
+      ],
+      "system": [
+        "თავის ტვინი და ნერვული სისტემა"
+      ]
+    },
+    "packUnit": "ტაბლეტი",
+    "preparation": "კომპოზიტური · პერორალური"
+  },
+  "packUnit": "tablets",
+  "preparation": "Compounded · oral"
+}

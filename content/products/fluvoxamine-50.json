@@ -1,0 +1,54 @@
+{
+  "name": "Fluvoxamine",
+  "category": "Mental health",
+  "tag": "SSRI ingredient",
+  "context": "Fluvoxamine is an SSRI. The cited FDA tablet label describes obsessive-compulsive disorder, including adult and pediatric patients aged 8 to 17 years.",
+  "caution": "Suicidal thoughts or behavior, serotonin syndrome, bleeding and discontinuation symptoms require review. Major interactions, including with MAOIs, tizanidine and pimozide, make a full medication review essential.",
+  "note": "The 25 mg and 50 mg strengths are listed in the archived reference label. That evidence does not establish Fortis approval, equivalence or suitability for an individual patient.",
+  "refs": [
+    "fluvoxamine"
+  ],
+  "slug": "fluvoxamine-50",
+  "strength": "50 mg",
+  "pack": 30,
+  "form": "Tablet",
+  "image": "/products/fluvoxamine-50.png",
+  "featured": false,
+  "published": true,
+  "order": 16,
+  "facets": {
+    "specialty": [
+      "Psychiatry"
+    ],
+    "use": [
+      "OCD (reference context)"
+    ],
+    "system": [
+      "Brain & nervous system"
+    ]
+  },
+  "ka": {
+    "name": "ფლუვოქსამინი",
+    "category": "ფსიქიკური ჯანმრთელობა",
+    "tag": "სეროტონინის უკუმიტაცების სელექციური ინჰიბიტორი",
+    "context": "ფლუვოქსამინი სეროტონინის უკუმიტაცების სელექციური ინჰიბიტორია. FDA-ს ციტირებული ტაბლეტების ინსტრუქცია აღწერს ობსესიურ-კომპულსიურ აშლილობას ზრდასრულებსა და 8–17 წლის პაციენტებში.",
+    "caution": "სუიციდური აზრები ან ქცევა, სეროტონინის სინდრომი, სისხლდენა და შეწყვეტის სიმპტომები ექიმის შეფასებას საჭიროებს. მნიშვნელოვანი ურთიერთქმედებების, მათ შორის MAO-ს ინჰიბიტორებთან, ტიზანიდინთან და პიმოზიდთან, გამო აუცილებელია ყველა მიღებული წამლის განხილვა.",
+    "note": "საარქივო რეფერენსულ ინსტრუქციაში 25 მგ და 50 მგ დოზები მოცემულია. ეს ფორტისის პრეპარატის დამტკიცებას, ეკვივალენტობას ან კონკრეტული პაციენტისთვის შესაბამისობას არ ადასტურებს.",
+    "form": "ტაბლეტი",
+    "facets": {
+      "specialty": [
+        "ფსიქიატრია"
+      ],
+      "use": [
+        "ობსესიურ-კომპულსიური აშლილობა (რეფერენსული პრეპარატი)"
+      ],
+      "system": [
+        "თავის ტვინი და ნერვული სისტემა"
+      ]
+    },
+    "packUnit": "ტაბლეტი",
+    "preparation": "კომპოზიტური · პერორალური"
+  },
+  "packUnit": "tablets",
+  "preparation": "Compounded · oral"
+}

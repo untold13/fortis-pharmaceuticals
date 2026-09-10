@@ -1,0 +1,55 @@
+{
+  "slug": "naltrexone-50",
+  "name": "Naltrexone hydrochloride",
+  "strength": "50 mg",
+  "pack": 10,
+  "category": "Addiction medicine",
+  "tag": "Opioid antagonist",
+  "context": "Naltrexone blocks opioid receptors. The FDA reference label describes treatment of alcohol dependence and blockade of externally administered opioids as part of a comprehensive management plan.",
+  "caution": "Current opioid use or dependence can make naltrexone inappropriate and may lead to precipitated withdrawal. Liver concerns and vulnerability to opioid overdose need clinical assessment.",
+  "note": "The reference label concerns Revia. It does not establish approval, equivalence or clinical performance of this Fortis compounded preparation.",
+  "refs": [
+    "revia"
+  ],
+  "facets": {
+    "specialty": [
+      "Addiction medicine"
+    ],
+    "use": [
+      "Alcohol dependence (reference context)",
+      "Opioid blockade (reference context)"
+    ],
+    "system": [
+      "Brain & nervous system"
+    ]
+  },
+  "image": "/products/naltrexone-50.png",
+  "form": "Tablet",
+  "published": true,
+  "order": 3,
+  "ka": {
+    "name": "ნალტრექსონის ჰიდროქლორიდი",
+    "category": "ადიქტოლოგია",
+    "tag": "ოპიოიდური რეცეპტორების ანტაგონისტი",
+    "context": "ნალტრექსონი ბლოკავს ოპიოიდურ რეცეპტორებს. FDA-ს რეფერენსული ინსტრუქცია აღწერს ალკოჰოლზე დამოკიდებულების მკურნალობასა და გარედან მიღებული ოპიოიდების მოქმედების ბლოკირებას, კომპლექსური მართვის გეგმის ფარგლებში.",
+    "caution": "ოპიოიდების მიმდინარე მოხმარების ან მათზე დამოკიდებულების დროს ნალტრექსონი შეიძლება არ იყოს მიზანშეწონილი და მწვავედ გამოიწვიოს მოხსნის სინდრომი. ღვიძლის პრობლემები და ოპიოიდების ჭარბი დოზირებისადმი მოწყვლადობა კლინიკურ შეფასებას საჭიროებს.",
+    "note": "მითითებული ინსტრუქცია ეხება Revia-ს. ის არ ადასტურებს ფორტისის ამ პრეპარატის დამტკიცებას, ეკვივალენტობას ან კლინიკურ შედეგიანობას.",
+    "form": "ტაბლეტი",
+    "facets": {
+      "specialty": [
+        "ადიქტოლოგია"
+      ],
+      "use": [
+        "ალკოჰოლზე დამოკიდებულება (რეფერენსული პრეპარატი)",
+        "ოპიოიდების მოქმედების ბლოკადა (რეფერენსული პრეპარატი)"
+      ],
+      "system": [
+        "თავის ტვინი და ნერვული სისტემა"
+      ]
+    },
+    "packUnit": "ტაბლეტი",
+    "preparation": "კომპოზიტური · პერორალური"
+  },
+  "packUnit": "tablets",
+  "preparation": "Compounded · oral"
+}
