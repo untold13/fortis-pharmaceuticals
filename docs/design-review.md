@@ -43,3 +43,17 @@ Translations cover navigation, every information and product page, catalog contr
 The production build and content checks pass. Automated browser checks passed 68 mobile combinations (17 routes in English/Georgian and light/dark), including loaded original image dimensions, persistent preferences, bilingual search, no-results/reset, filters retained across language changes, desktop overflow and absence of page errors.
 
 An axe accessibility check found no WCAG A/AA violations on the Georgian homepage, catalog, minoxidil detail, about and contact pages in both themes after correcting text contrast. The homepage, catalog and naltrexone detail also fit a 320px viewport without horizontal overflow.
+
+## September 10: premium Georgian landing and catalog refinement
+
+Reading this as a premium Georgian compounding-pharmacy landing page for patients and healthcare professionals, using a calm medical aesthetic and the existing Fortis identity. Preserve mode: native React/CSS, DESIGN_VARIANCE 4, MOTION_INTENSITY 1, VISUAL_DENSITY 4. The user's specific requests authorize an original SVG bottle and landscape-switch motion; product originals and clinical boundaries remain protected. The installed Taste SKILL.md was compared to the requested GitHub repository and matches byte for byte.
+
+Audit: retain the 17 routes, titles, company information, blue/green palette, self-hosted Georgian typography, English option, dark palette and clinical source links. Retire the hero photograph, padded product frames, background rectangles behind logos, generic sun/moon toggle, and single area-of-care filter. Georgian landing copy is written naturally around patient needs and the prescription.
+
+Implemented an original static amber-bottle drawing; native SVG transparency masking of the unchanged source logo; full-frame 2:3 original photographs; and the inspected Dribbble landscape transition. No generic motion library or hero animation was introduced. Generated raster background removal failed alpha QA and was discarded. The SVG display treatment preserves source lettering without regenerated text.
+
+The five independent filter dimensions support OR within each dimension and AND across dimensions/search, active-filter removal, reset and live results. All available forms truthfully remain tablets. Use contexts identify off-label research and reference-product boundaries. Low-dose naltrexone is not described as proven pain or autoimmune therapy; minoxidil 1.25 mg is classified under skin/hair context; the combination's reference weight-management context does not claim cardiovascular or diabetes efficacy. Source links and product-specific caveats remain intact.
+
+Verification: production build/content checks pass; 68 route/language/theme browser combinations pass, including five-dimensional filtering, OR/AND combinations, bilingual search, reset, preferences, keyboard/reduced-motion switch, original image dimensions and unpadded frames. Axe reports no WCAG A/AA violations across five Georgian pages in both themes; 320px layouts fit. Desktop/mobile visual review includes both languages and themes with all card images loaded. All original PNGs and the logo JPEG remain unmodified.
+
+Updated local Lighthouse mobile scores: performance 97, accessibility 100, best practices 100, SEO 100; LCP 2.1 seconds and CLS 0.02. These are local simulated measurements, not field performance. The SVG hero avoids downloading the original product photo above the fold.
