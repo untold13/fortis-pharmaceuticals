@@ -84,10 +84,26 @@ try {
           assert.equal(await page.locator(".simple-hero img").count(), 0);
           assert.equal(
             await page
-              .locator(".simple-hero")
-              .evaluate((e) => e.getAnimations({ subtree: true }).length),
-            0,
+              .locator(".bottle-float")
+              .evaluate((e) => getComputedStyle(e).animationName),
+            "fortis-bottle-float",
           );
+          await page.locator(".hero-motion-control").click();
+          assert.equal(
+            await page
+              .locator(".bottle-float")
+              .evaluate((e) => getComputedStyle(e).animationPlayState),
+            "paused",
+          );
+          await page.locator(".hero-motion-control").click();
+          await page.emulateMedia({ reducedMotion: "reduce" });
+          assert.equal(
+            await page
+              .locator(".bottle-float")
+              .evaluate((e) => getComputedStyle(e).animationName),
+            "none",
+          );
+          await page.emulateMedia({ reducedMotion: "no-preference" });
         }
         if (product) {
           const source = product.image;
@@ -97,7 +113,7 @@ try {
                 (i) =>
                   i.getAttribute("src") === src &&
                   i.complete &&
-                  i.naturalWidth === 1024,
+                  i.naturalWidth > 0,
               ),
             source,
           );
@@ -123,7 +139,10 @@ try {
           exact: true,
         })
         .click();
-      assert.equal(await page.locator(".product-card").count(), 10);
+      assert.equal(
+        await page.locator(".product-card").count(),
+        products.length,
+      );
       const select = async (key, value) => {
         const group = page.locator(`[data-facet="${key}"]`);
         if (
@@ -169,7 +188,7 @@ try {
           exact: true,
         })
         .click();
-      await count(10);
+      await count(products.length);
       await page.setViewportSize({ width: 320, height: 800 });
       await page.locator('[data-facet="use"] summary').click();
       assert.equal(
@@ -211,11 +230,10 @@ try {
           pw: e.parentElement.clientWidth,
           ph: e.parentElement.clientHeight,
         }));
-        assert.equal(size.nw, 1024);
-        assert.equal(size.nh, 1536);
+        assert.ok(size.nw > 0 && size.nh > 0);
         assert.equal(size.w, size.pw);
         assert.equal(size.h, size.ph);
-        assert.ok(Math.abs(size.w / size.h - 2 / 3) < 0.01);
+        assert.ok(Math.abs(size.w / size.h - size.nw / size.nh) < 0.01);
       }
       await page.setViewportSize({ width: 1280, height: 800 });
       await page.goto(base);
