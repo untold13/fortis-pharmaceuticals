@@ -684,6 +684,22 @@ function Catalog() {
 }
 function Product({ p }) {
   const { t } = usePreferences();
+  const information = [
+    ["Name", p.name],
+    ["Dosage form", p.form],
+    ["Preparation and route", p.preparation],
+    ["Medical area", p.category],
+    ["Short description", p.tag],
+    ["Name and Composition", p.nameComposition],
+    ["Pharmacological Properties and Mechanism of Action", p.pharmacology],
+    ["Indications", p.indications],
+    ["Dosage and Administration", p.dosageAdministration],
+    ["Side Effects", p.sideEffects],
+    ["Contraindications", p.contraindications],
+    ["Special Warnings and Precautions", p.warningsPrecautions],
+    ["Storage Conditions", p.storageConditions],
+    ["Manufacturer", p.manufacturer],
+  ];
   return (
     <>
       <div className="wrap breadcrumb">
@@ -723,15 +739,6 @@ function Product({ p }) {
               <strong>{t(p.preparation)}</strong>
             </div>
           </div>
-          <span className="tag">{t(p.tag)}</span>
-          <h2>{t("Ingredient context")}</h2>
-          <p>{t(p.context)}</p>
-          <div className="clinical-note">
-            <h3>{t("Clinical considerations")}</h3>
-            <p>{t(p.caution)}</p>
-          </div>
-          <h3>{t("About this formulation")}</h3>
-          <p>{t(p.note)}</p>
           <Button href="/contact">{t("Ask about this preparation")}</Button>
           <p className="detail-small">
             {t(
@@ -740,33 +747,19 @@ function Product({ p }) {
           </p>
         </div>
       </section>
-      {p.infoOverview && (
-        <section id="product-information" className="wrap product-information">
-          <div className="product-information-heading">
-            <Eyebrow>{t("PRODUCT INFORMATION")}</Eyebrow>
-            <h2>{t("Reviewed details for this preparation.")}</h2>
-            <p>
-              {t(
-                "This summary reflects the supplied Fortis product dossier, checked against the cited reference sources. Follow the dispensing label and clinician’s instructions.",
-              )}
-            </p>
-          </div>
-          <div className="product-information-grid">
-            <article>
-              <small>{t("FORMULATION OVERVIEW")}</small>
-              <p>{t(p.infoOverview)}</p>
+      <section id="product-information" className="wrap product-information">
+        <div className="product-information-heading">
+          <h2>{t("Product information")}</h2>
+        </div>
+        <div className="product-information-grid">
+          {information.map(([label, value]) => (
+            <article key={label}>
+              <small>{t(label)}</small>
+              <p>{value?.trim() ? t(value) : t("Not specified")}</p>
             </article>
-            <article>
-              <small>{t("USE AND SAFETY")}</small>
-              <p>{t(p.infoUse)}</p>
-            </article>
-            <article>
-              <small>{t("STORAGE AND HANDLING")}</small>
-              <p>{t(p.infoStorage)}</p>
-            </article>
-          </div>
-        </section>
-      )}
+          ))}
+        </div>
+      </section>
       <section className="wrap references">
         <div>
           <Eyebrow>{t("READ THE EVIDENCE")}</Eyebrow>
