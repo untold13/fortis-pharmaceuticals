@@ -1,62 +1,33 @@
 {
-  "name": "Dapoxetine + Sildenafil",
-  "category": "Sexual medicine",
-  "tag": "Compounded combination",
+  "name": "დაპოქსეტინი + სილდენაფილი",
+  "category": "სექსუალური მედიცინა",
+  "tag": "ინდივიდუალურად მომზადებული კომბინაცია",
   "refs": [
     "priligy_info",
     "viagra"
   ],
   "slug": "dapoxetine-sildenafil-30-25",
-  "strength": "30 mg / 25 mg",
+  "strength": "30 მგ / 25 მგ",
   "pack": 3,
-  "form": "Tablet",
+  "form": "ტაბლეტი",
   "image": "/products/dapoxetine-sildenafil-30-25.png",
   "featured": false,
   "published": true,
   "order": 18,
   "facets": {
     "specialty": [
-      "Urology / sexual medicine"
+      "უროლოგია / სექსუალური მედიცინა"
     ],
     "use": [
-      "Premature ejaculation (ingredient context)",
-      "Erectile dysfunction (ingredient context)"
+      "ნაადრევი ეაკულაცია (ცალკეული ნივთიერება)",
+      "ერექციული დისფუნქცია (ცალკეული ნივთიერება)"
     ],
     "system": [
-      "Sexual & reproductive health"
+      "სექსუალური და რეპროდუქციული ჯანმრთელობა"
     ]
   },
-  "ka": {
-    "name": "დაპოქსეტინი + სილდენაფილი",
-    "category": "სექსუალური მედიცინა",
-    "tag": "ინდივიდუალურად მომზადებული კომბინაცია",
-    "form": "ტაბლეტი",
-    "facets": {
-      "specialty": [
-        "უროლოგია / სექსუალური მედიცინა"
-      ],
-      "use": [
-        "ნაადრევი ეაკულაცია (ცალკეული ნივთიერება)",
-        "ერექციული დისფუნქცია (ცალკეული ნივთიერება)"
-      ],
-      "system": [
-        "სექსუალური და რეპროდუქციული ჯანმრთელობა"
-      ]
-    },
-    "packUnit": "ტაბლეტი",
-    "preparation": "კომპოზიტური · პერორალური",
-    "nameComposition": "",
-    "pharmacology": "",
-    "indications": "",
-    "dosageAdministration": "",
-    "sideEffects": "",
-    "contraindications": "",
-    "warningsPrecautions": "",
-    "storageConditions": "",
-    "manufacturer": ""
-  },
-  "packUnit": "tablets",
-  "preparation": "Compounded · oral",
+  "packUnit": "ტაბლეტი",
+  "preparation": "კომპოზიტური · პერორალური",
   "nameComposition": "",
   "pharmacology": "",
   "indications": "",

@@ -1,59 +1,31 @@
 {
   "slug": "bupropion-naltrexone-45-4",
-  "name": "Bupropion + Naltrexone",
-  "strength": "45 mg / 4 mg",
+  "name": "ბუპროპიონი + ნალტრექსონი",
+  "strength": "45 მგ / 4 მგ",
   "pack": 30,
-  "category": "Weight management",
-  "tag": "Combination preparation",
+  "category": "წონის მართვა",
+  "tag": "კომბინირებული პრეპარატი",
   "refs": [
     "contrave",
     "mysimba"
   ],
   "facets": {
     "specialty": [
-      "Obesity medicine"
+      "სიმსუქნის მართვა"
     ],
     "use": [
-      "Weight management (reference context)"
+      "წონის მართვა (რეფერენსული პრეპარატი)"
     ],
     "system": [
-      "Weight regulation / metabolic context"
+      "წონის რეგულაცია / მეტაბოლური სფერო"
     ]
   },
   "image": "/products/bupropion-naltrexone-45-4.png",
-  "form": "Tablet",
+  "form": "ტაბლეტი",
   "published": true,
   "order": 4,
-  "ka": {
-    "name": "ბუპროპიონი + ნალტრექსონი",
-    "category": "წონის მართვა",
-    "tag": "კომბინირებული პრეპარატი",
-    "form": "ტაბლეტი",
-    "facets": {
-      "specialty": [
-        "სიმსუქნის მართვა"
-      ],
-      "use": [
-        "წონის მართვა (რეფერენსული პრეპარატი)"
-      ],
-      "system": [
-        "წონის რეგულაცია / მეტაბოლური სფერო"
-      ]
-    },
-    "packUnit": "ტაბლეტი",
-    "preparation": "კომპოზიტური · პერორალური",
-    "nameComposition": "",
-    "pharmacology": "",
-    "indications": "",
-    "dosageAdministration": "",
-    "sideEffects": "",
-    "contraindications": "",
-    "warningsPrecautions": "",
-    "storageConditions": "",
-    "manufacturer": ""
-  },
-  "packUnit": "tablets",
-  "preparation": "Compounded · oral",
+  "packUnit": "ტაბლეტი",
+  "preparation": "კომპოზიტური · პერორალური",
   "nameComposition": "",
   "pharmacology": "",
   "indications": "",

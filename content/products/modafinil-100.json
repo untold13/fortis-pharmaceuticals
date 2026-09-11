@@ -1,58 +1,30 @@
 {
   "slug": "modafinil-100",
-  "name": "Modafinil",
-  "strength": "100 mg",
+  "name": "მოდაფინილი",
+  "strength": "100 მგ",
   "pack": 30,
-  "category": "Sleep medicine",
-  "tag": "Wakefulness-promoting ingredient",
+  "category": "ძილის მედიცინა",
+  "tag": "სიფხიზლის ხელშემწყობი ნივთიერება",
   "refs": [
     "provigil"
   ],
   "facets": {
     "specialty": [
-      "Sleep medicine"
+      "ძილის მედიცინა"
     ],
     "use": [
-      "Excessive sleepiness (reference context)"
+      "ჭარბი ძილიანობა (რეფერენსული პრეპარატი)"
     ],
     "system": [
-      "Brain & nervous system"
+      "თავის ტვინი და ნერვული სისტემა"
     ]
   },
   "image": "/products/modafinil-100.png",
-  "form": "Tablet",
+  "form": "ტაბლეტი",
   "published": true,
   "order": 6,
-  "ka": {
-    "name": "მოდაფინილი",
-    "category": "ძილის მედიცინა",
-    "tag": "სიფხიზლის ხელშემწყობი ნივთიერება",
-    "form": "ტაბლეტი",
-    "facets": {
-      "specialty": [
-        "ძილის მედიცინა"
-      ],
-      "use": [
-        "ჭარბი ძილიანობა (რეფერენსული პრეპარატი)"
-      ],
-      "system": [
-        "თავის ტვინი და ნერვული სისტემა"
-      ]
-    },
-    "packUnit": "ტაბლეტი",
-    "preparation": "კომპოზიტური · პერორალური",
-    "nameComposition": "",
-    "pharmacology": "",
-    "indications": "",
-    "dosageAdministration": "",
-    "sideEffects": "",
-    "contraindications": "",
-    "warningsPrecautions": "",
-    "storageConditions": "",
-    "manufacturer": ""
-  },
-  "packUnit": "tablets",
-  "preparation": "Compounded · oral",
+  "packUnit": "ტაბლეტი",
+  "preparation": "კომპოზიტური · პერორალური",
   "nameComposition": "",
   "pharmacology": "",
   "indications": "",

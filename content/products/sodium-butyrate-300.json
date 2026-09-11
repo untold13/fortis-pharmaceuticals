@@ -1,59 +1,31 @@
 {
   "slug": "sodium-butyrate-300",
-  "name": "Sodium butyrate",
-  "strength": "300 mg",
+  "name": "ნატრიუმის ბუტირატი",
+  "strength": "300 მგ",
   "pack": 30,
-  "form": "Enteric-coated capsule",
-  "packUnit": "capsules",
-  "preparation": "Compounded · oral · enteric-coated",
+  "form": "ნაწლავში ხსნადი კაფსულა",
+  "packUnit": "კაფსულა",
+  "preparation": "კომპოზიტური · პერორალური · ნაწლავში ხსნადი",
   "image": "/products/sodium-butyrate-300.png",
   "published": true,
   "featured": false,
   "order": 27,
-  "category": "Product information",
-  "tag": "Butyrate formulation information",
+  "category": "პროდუქტის ინფორმაცია",
+  "tag": "ინფორმაცია ბუტირატის ფორმულის შესახებ",
   "refs": [
     "butyrate_identity",
     "butyrate_ema"
   ],
   "facets": {
     "specialty": [
-      "Specialist consultation"
+      "სპეციალისტის კონსულტაცია"
     ],
     "use": [
-      "Formulation information"
+      "ფორმულის შესახებ ინფორმაცია"
     ],
     "system": [
-      "Not specified"
+      "მითითებული არ არის"
     ]
-  },
-  "ka": {
-    "name": "ნატრიუმის ბუტირატი",
-    "form": "ნაწლავში ხსნადი კაფსულა",
-    "packUnit": "კაფსულა",
-    "preparation": "კომპოზიტური · პერორალური · ნაწლავში ხსნადი",
-    "category": "პროდუქტის ინფორმაცია",
-    "tag": "ინფორმაცია ბუტირატის ფორმულის შესახებ",
-    "facets": {
-      "specialty": [
-        "სპეციალისტის კონსულტაცია"
-      ],
-      "use": [
-        "ფორმულის შესახებ ინფორმაცია"
-      ],
-      "system": [
-        "მითითებული არ არის"
-      ]
-    },
-    "nameComposition": "",
-    "pharmacology": "",
-    "indications": "",
-    "dosageAdministration": "",
-    "sideEffects": "",
-    "contraindications": "",
-    "warningsPrecautions": "",
-    "storageConditions": "",
-    "manufacturer": ""
   },
   "nameComposition": "",
   "pharmacology": "",

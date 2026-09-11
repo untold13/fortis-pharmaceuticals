@@ -1,60 +1,32 @@
 {
-  "name": "Dapoxetine",
-  "category": "Sexual medicine",
-  "tag": "SSRI ingredient",
+  "name": "დაპოქსეტინი",
+  "category": "სექსუალური მედიცინა",
+  "tag": "სეროტონინის უკუმიტაცების სელექციური ინჰიბიტორი",
   "refs": [
     "priligy",
     "priligy_info"
   ],
   "slug": "dapoxetine-30",
-  "strength": "30 mg",
+  "strength": "30 მგ",
   "pack": 3,
-  "form": "Tablet",
+  "form": "ტაბლეტი",
   "image": "/products/dapoxetine-30.png",
   "featured": false,
   "published": true,
   "order": 17,
   "facets": {
     "specialty": [
-      "Urology / sexual medicine"
+      "უროლოგია / სექსუალური მედიცინა"
     ],
     "use": [
-      "Premature ejaculation (reference context)"
+      "ნაადრევი ეაკულაცია (რეფერენსული პრეპარატი)"
     ],
     "system": [
-      "Sexual & reproductive health"
+      "სექსუალური და რეპროდუქციული ჯანმრთელობა"
     ]
   },
-  "ka": {
-    "name": "დაპოქსეტინი",
-    "category": "სექსუალური მედიცინა",
-    "tag": "სეროტონინის უკუმიტაცების სელექციური ინჰიბიტორი",
-    "form": "ტაბლეტი",
-    "facets": {
-      "specialty": [
-        "უროლოგია / სექსუალური მედიცინა"
-      ],
-      "use": [
-        "ნაადრევი ეაკულაცია (რეფერენსული პრეპარატი)"
-      ],
-      "system": [
-        "სექსუალური და რეპროდუქციული ჯანმრთელობა"
-      ]
-    },
-    "packUnit": "ტაბლეტი",
-    "preparation": "კომპოზიტური · პერორალური",
-    "nameComposition": "",
-    "pharmacology": "",
-    "indications": "",
-    "dosageAdministration": "",
-    "sideEffects": "",
-    "contraindications": "",
-    "warningsPrecautions": "",
-    "storageConditions": "",
-    "manufacturer": ""
-  },
-  "packUnit": "tablets",
-  "preparation": "Compounded · oral",
+  "packUnit": "ტაბლეტი",
+  "preparation": "კომპოზიტური · პერორალური",
   "nameComposition": "",
   "pharmacology": "",
   "indications": "",

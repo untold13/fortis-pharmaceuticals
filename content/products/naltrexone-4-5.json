@@ -1,59 +1,31 @@
 {
   "slug": "naltrexone-4-5",
-  "name": "Naltrexone hydrochloride",
-  "strength": "4.5 mg",
+  "name": "ნალტრექსონის ჰიდროქლორიდი",
+  "strength": "4.5 მგ",
   "pack": 30,
-  "category": "Individualized compounding",
-  "tag": "Low-dose preparation",
+  "category": "ინდივიდუალური მომზადება",
+  "tag": "დაბალდოზიანი პრეპარატი",
   "refs": [
     "ldn",
     "revia"
   ],
   "facets": {
     "specialty": [
-      "Pain medicine / research"
+      "ტკივილის მედიცინა / კვლევა"
     ],
     "use": [
-      "Pain research (off-label)"
+      "ტკივილის კვლევა (არარეგისტრირებული ჩვენება)"
     ],
     "system": [
-      "Individualized / research context"
+      "ინდივიდუალური / კვლევითი კონტექსტი"
     ]
   },
   "image": "/products/naltrexone-4-5.png",
-  "form": "Tablet",
+  "form": "ტაბლეტი",
   "published": true,
   "order": 2,
-  "ka": {
-    "name": "ნალტრექსონის ჰიდროქლორიდი",
-    "category": "ინდივიდუალური მომზადება",
-    "tag": "დაბალდოზიანი პრეპარატი",
-    "form": "ტაბლეტი",
-    "facets": {
-      "specialty": [
-        "ტკივილის მედიცინა / კვლევა"
-      ],
-      "use": [
-        "ტკივილის კვლევა (არარეგისტრირებული ჩვენება)"
-      ],
-      "system": [
-        "ინდივიდუალური / კვლევითი კონტექსტი"
-      ]
-    },
-    "packUnit": "ტაბლეტი",
-    "preparation": "კომპოზიტური · პერორალური",
-    "nameComposition": "",
-    "pharmacology": "",
-    "indications": "",
-    "dosageAdministration": "",
-    "sideEffects": "",
-    "contraindications": "",
-    "warningsPrecautions": "",
-    "storageConditions": "",
-    "manufacturer": ""
-  },
-  "packUnit": "tablets",
-  "preparation": "Compounded · oral",
+  "packUnit": "ტაბლეტი",
+  "preparation": "კომპოზიტური · პერორალური",
   "nameComposition": "",
   "pharmacology": "",
   "indications": "",

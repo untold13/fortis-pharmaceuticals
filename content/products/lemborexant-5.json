@@ -1,59 +1,31 @@
 {
   "slug": "lemborexant-5",
-  "name": "Lemborexant",
-  "strength": "5 mg",
+  "name": "ლემბორექსანტი",
+  "strength": "5 მგ",
   "pack": 30,
   "featured": true,
-  "category": "Sleep medicine",
-  "tag": "Orexin receptor antagonist",
+  "category": "ძილის მედიცინა",
+  "tag": "ორექსინის რეცეპტორების ანტაგონისტი",
   "refs": [
     "dayvigo"
   ],
   "facets": {
     "specialty": [
-      "Sleep medicine"
+      "ძილის მედიცინა"
     ],
     "use": [
-      "Insomnia (reference context)"
+      "უძილობა (რეფერენსული პრეპარატი)"
     ],
     "system": [
-      "Brain & nervous system"
+      "თავის ტვინი და ნერვული სისტემა"
     ]
   },
   "image": "/products/lemborexant-5.png",
-  "form": "Tablet",
+  "form": "ტაბლეტი",
   "published": true,
   "order": 10,
-  "ka": {
-    "name": "ლემბორექსანტი",
-    "category": "ძილის მედიცინა",
-    "tag": "ორექსინის რეცეპტორების ანტაგონისტი",
-    "form": "ტაბლეტი",
-    "facets": {
-      "specialty": [
-        "ძილის მედიცინა"
-      ],
-      "use": [
-        "უძილობა (რეფერენსული პრეპარატი)"
-      ],
-      "system": [
-        "თავის ტვინი და ნერვული სისტემა"
-      ]
-    },
-    "packUnit": "ტაბლეტი",
-    "preparation": "კომპოზიტური · პერორალური",
-    "nameComposition": "",
-    "pharmacology": "",
-    "indications": "",
-    "dosageAdministration": "",
-    "sideEffects": "",
-    "contraindications": "",
-    "warningsPrecautions": "",
-    "storageConditions": "",
-    "manufacturer": ""
-  },
-  "packUnit": "tablets",
-  "preparation": "Compounded · oral",
+  "packUnit": "ტაბლეტი",
+  "preparation": "კომპოზიტური · პერორალური",
   "nameComposition": "",
   "pharmacology": "",
   "indications": "",

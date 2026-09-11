@@ -1,59 +1,31 @@
 {
   "slug": "bupropion-er-75",
-  "name": "Bupropion ER",
-  "strength": "75 mg",
+  "name": "ბუპროპიონი ER",
+  "strength": "75 მგ",
   "pack": 30,
   "featured": true,
-  "category": "Mental health",
-  "tag": "Individualized strength",
+  "category": "ფსიქიკური ჯანმრთელობა",
+  "tag": "ინდივიდუალური დოზა",
   "refs": [
     "xl"
   ],
   "facets": {
     "specialty": [
-      "Psychiatry"
+      "ფსიქიატრია"
     ],
     "use": [
-      "Depression (reference context)"
+      "დეპრესია (რეფერენსული პრეპარატი)"
     ],
     "system": [
-      "Brain & nervous system"
+      "თავის ტვინი და ნერვული სისტემა"
     ]
   },
   "image": "/products/bupropion-er-75.png",
-  "form": "Tablet",
+  "form": "ტაბლეტი",
   "published": true,
   "order": 5,
-  "ka": {
-    "name": "ბუპროპიონი ER",
-    "category": "ფსიქიკური ჯანმრთელობა",
-    "tag": "ინდივიდუალური დოზა",
-    "form": "ტაბლეტი",
-    "facets": {
-      "specialty": [
-        "ფსიქიატრია"
-      ],
-      "use": [
-        "დეპრესია (რეფერენსული პრეპარატი)"
-      ],
-      "system": [
-        "თავის ტვინი და ნერვული სისტემა"
-      ]
-    },
-    "packUnit": "ტაბლეტი",
-    "preparation": "კომპოზიტური · პერორალური",
-    "nameComposition": "",
-    "pharmacology": "",
-    "indications": "",
-    "dosageAdministration": "",
-    "sideEffects": "",
-    "contraindications": "",
-    "warningsPrecautions": "",
-    "storageConditions": "",
-    "manufacturer": ""
-  },
-  "packUnit": "tablets",
-  "preparation": "Compounded · oral",
+  "packUnit": "ტაბლეტი",
+  "preparation": "კომპოზიტური · პერორალური",
   "nameComposition": "",
   "pharmacology": "",
   "indications": "",

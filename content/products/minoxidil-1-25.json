@@ -1,60 +1,32 @@
 {
   "slug": "minoxidil-1-25",
-  "name": "Minoxidil",
-  "strength": "1.25 mg",
+  "name": "მინოქსიდილი",
+  "strength": "1.25 მგ",
   "pack": 30,
   "featured": true,
-  "category": "Dermatology",
-  "tag": "Off-label hair-loss context",
+  "category": "დერმატოლოგია",
+  "tag": "თმის ცვენისას ჩვენების ფარგლებს გარეთ გამოყენება",
   "refs": [
     "loniten",
     "minoxidil"
   ],
   "facets": {
     "specialty": [
-      "Dermatology"
+      "დერმატოლოგია"
     ],
     "use": [
-      "Hair loss (off-label)"
+      "თმის ცვენა (არარეგისტრირებული ჩვენება)"
     ],
     "system": [
-      "Skin & hair"
+      "კანი და თმა"
     ]
   },
   "image": "/products/minoxidil-1-25.png",
-  "form": "Tablet",
+  "form": "ტაბლეტი",
   "published": true,
   "order": 7,
-  "ka": {
-    "name": "მინოქსიდილი",
-    "category": "დერმატოლოგია",
-    "tag": "თმის ცვენისას ჩვენების ფარგლებს გარეთ გამოყენება",
-    "form": "ტაბლეტი",
-    "facets": {
-      "specialty": [
-        "დერმატოლოგია"
-      ],
-      "use": [
-        "თმის ცვენა (არარეგისტრირებული ჩვენება)"
-      ],
-      "system": [
-        "კანი და თმა"
-      ]
-    },
-    "packUnit": "ტაბლეტი",
-    "preparation": "კომპოზიტური · პერორალური",
-    "nameComposition": "",
-    "pharmacology": "",
-    "indications": "",
-    "dosageAdministration": "",
-    "sideEffects": "",
-    "contraindications": "",
-    "warningsPrecautions": "",
-    "storageConditions": "",
-    "manufacturer": ""
-  },
-  "packUnit": "tablets",
-  "preparation": "Compounded · oral",
+  "packUnit": "ტაბლეტი",
+  "preparation": "კომპოზიტური · პერორალური",
   "nameComposition": "",
   "pharmacology": "",
   "indications": "",

@@ -1,58 +1,30 @@
 {
   "slug": "oseltamivir-75",
-  "name": "Oseltamivir phosphate",
-  "strength": "75 mg",
+  "name": "ოსელტამივირის ფოსფატი",
+  "strength": "75 მგ",
   "pack": 10,
-  "form": "Capsule",
-  "packUnit": "capsules",
-  "preparation": "Compounded · oral",
+  "form": "კაფსულა",
+  "packUnit": "კაფსულა",
+  "preparation": "კომპოზიტური · პერორალური",
   "image": "/products/oseltamivir-75.png",
   "published": true,
   "featured": false,
   "order": 21,
-  "category": "Infectious diseases",
-  "tag": "Influenza antiviral reference",
+  "category": "ინფექციური დაავადებები",
+  "tag": "გრიპის საწინააღმდეგო რეფერენსული კონტექსტი",
   "refs": [
     "tamiflu"
   ],
   "facets": {
     "specialty": [
-      "Infectious diseases"
+      "ინფექციური დაავადებები"
     ],
     "use": [
-      "Influenza (reference context)"
+      "გრიპი (რეფერენსული პრეპარატი)"
     ],
     "system": [
-      "Respiratory system"
+      "სასუნთქი სისტემა"
     ]
-  },
-  "ka": {
-    "name": "ოსელტამივირის ფოსფატი",
-    "form": "კაფსულა",
-    "packUnit": "კაფსულა",
-    "preparation": "კომპოზიტური · პერორალური",
-    "category": "ინფექციური დაავადებები",
-    "tag": "გრიპის საწინააღმდეგო რეფერენსული კონტექსტი",
-    "facets": {
-      "specialty": [
-        "ინფექციური დაავადებები"
-      ],
-      "use": [
-        "გრიპი (რეფერენსული პრეპარატი)"
-      ],
-      "system": [
-        "სასუნთქი სისტემა"
-      ]
-    },
-    "nameComposition": "",
-    "pharmacology": "",
-    "indications": "",
-    "dosageAdministration": "",
-    "sideEffects": "",
-    "contraindications": "",
-    "warningsPrecautions": "",
-    "storageConditions": "",
-    "manufacturer": ""
   },
   "nameComposition": "",
   "pharmacology": "",

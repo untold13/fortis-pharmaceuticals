@@ -1,62 +1,32 @@
 {
   "slug": "flibanserin-100",
-  "name": "Flibanserin",
-  "strength": "100 mg",
+  "name": "ფლიბანსერინი",
+  "strength": "100 მგ",
   "pack": 30,
-  "form": "Tablet",
-  "packUnit": "tablets",
-  "preparation": "Compounded · oral",
+  "form": "ტაბლეტი",
+  "packUnit": "ტაბლეტი",
+  "preparation": "კომპოზიტური · პერორალური",
   "image": "/products/flibanserin-100.png",
   "published": true,
   "featured": false,
   "order": 22,
-  "category": "Sexual medicine",
-  "tag": "Hypoactive sexual desire reference",
+  "category": "სექსუალური მედიცინა",
+  "tag": "ჰიპოაქტიური სექსუალური ლტოლვის რეფერენსული კონტექსტი",
   "refs": [
     "addyi"
   ],
   "facets": {
     "specialty": [
-      "Gynecology",
-      "Sexual medicine"
+      "გინეკოლოგია",
+      "სექსუალური მედიცინა"
     ],
     "use": [
-      "Hypoactive sexual desire disorder (reference context)"
+      "ჰიპოაქტიური სექსუალური ლტოლვა (რეფერენსული პრეპარატი)"
     ],
     "system": [
-      "Sexual health",
-      "Brain & nervous system"
+      "სექსუალური ჯანმრთელობა",
+      "თავის ტვინი და ნერვული სისტემა"
     ]
-  },
-  "ka": {
-    "name": "ფლიბანსერინი",
-    "form": "ტაბლეტი",
-    "packUnit": "ტაბლეტი",
-    "preparation": "კომპოზიტური · პერორალური",
-    "category": "სექსუალური მედიცინა",
-    "tag": "ჰიპოაქტიური სექსუალური ლტოლვის რეფერენსული კონტექსტი",
-    "facets": {
-      "specialty": [
-        "გინეკოლოგია",
-        "სექსუალური მედიცინა"
-      ],
-      "use": [
-        "ჰიპოაქტიური სექსუალური ლტოლვა (რეფერენსული პრეპარატი)"
-      ],
-      "system": [
-        "სექსუალური ჯანმრთელობა",
-        "თავის ტვინი და ნერვული სისტემა"
-      ]
-    },
-    "nameComposition": "",
-    "pharmacology": "",
-    "indications": "",
-    "dosageAdministration": "",
-    "sideEffects": "",
-    "contraindications": "",
-    "warningsPrecautions": "",
-    "storageConditions": "",
-    "manufacturer": ""
   },
   "nameComposition": "",
   "pharmacology": "",

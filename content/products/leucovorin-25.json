@@ -1,65 +1,34 @@
 {
-  "name": "Leucovorin (calcium folinate)",
-  "category": "Specialist folate therapy",
-  "tag": "Reduced folate ingredient",
+  "name": "ლეიკოვორინი (კალციუმის ფოლინატი)",
+  "category": "ფოლატით სპეციალიზებული თერაპია",
+  "tag": "აღდგენილი ფოლატის ფორმა",
   "refs": [
     "wellcovorin"
   ],
   "slug": "leucovorin-25",
-  "strength": "25 mg",
+  "strength": "25 მგ",
   "pack": 30,
-  "form": "Tablet",
+  "form": "ტაბლეტი",
   "image": "/products/leucovorin-25.png",
   "featured": false,
   "published": true,
   "order": 29,
   "facets": {
     "specialty": [
-      "Oncology / clinical toxicology",
-      "Neurology / metabolic medicine"
+      "ონკოლოგია / კლინიკური ტოქსიკოლოგია",
+      "ნევროლოგია / მეტაბოლური მედიცინა"
     ],
     "use": [
-      "Antifolate rescue (reference context)",
-      "Confirmed FOLR1 deficiency (reference context)"
+      "ანტიფოლატის ტოქსიკურობის შემცირება (რეფერენსული პრეპარატი)",
+      "დადასტურებული FOLR1-თან დაკავშირებული დეფიციტი (რეფერენსული პრეპარატი)"
     ],
     "system": [
-      "Folate metabolism",
-      "Brain & nervous system"
+      "ფოლატის მეტაბოლიზმი",
+      "თავის ტვინი და ნერვული სისტემა"
     ]
   },
-  "ka": {
-    "name": "ლეიკოვორინი (კალციუმის ფოლინატი)",
-    "category": "ფოლატით სპეციალიზებული თერაპია",
-    "tag": "აღდგენილი ფოლატის ფორმა",
-    "form": "ტაბლეტი",
-    "facets": {
-      "specialty": [
-        "ონკოლოგია / კლინიკური ტოქსიკოლოგია",
-        "ნევროლოგია / მეტაბოლური მედიცინა"
-      ],
-      "use": [
-        "ანტიფოლატის ტოქსიკურობის შემცირება (რეფერენსული პრეპარატი)",
-        "დადასტურებული FOLR1-თან დაკავშირებული დეფიციტი (რეფერენსული პრეპარატი)"
-      ],
-      "system": [
-        "ფოლატის მეტაბოლიზმი",
-        "თავის ტვინი და ნერვული სისტემა"
-      ]
-    },
-    "packUnit": "ტაბლეტი",
-    "preparation": "კომპოზიტური · პერორალური",
-    "nameComposition": "",
-    "pharmacology": "",
-    "indications": "",
-    "dosageAdministration": "",
-    "sideEffects": "",
-    "contraindications": "",
-    "warningsPrecautions": "",
-    "storageConditions": "",
-    "manufacturer": ""
-  },
-  "packUnit": "tablets",
-  "preparation": "Compounded · oral",
+  "packUnit": "ტაბლეტი",
+  "preparation": "კომპოზიტური · პერორალური",
   "nameComposition": "",
   "pharmacology": "",
   "indications": "",

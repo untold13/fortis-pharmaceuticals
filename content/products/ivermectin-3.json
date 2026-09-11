@@ -1,62 +1,32 @@
 {
   "slug": "ivermectin-3",
-  "name": "Ivermectin",
-  "strength": "3 mg",
+  "name": "ივერმექტინი",
+  "strength": "3 მგ",
   "pack": 10,
-  "form": "Tablet",
-  "packUnit": "tablets",
-  "preparation": "Compounded · oral",
+  "form": "ტაბლეტი",
+  "packUnit": "ტაბლეტი",
+  "preparation": "კომპოზიტური · პერორალური",
   "image": "/products/ivermectin-3.png",
   "published": true,
   "featured": false,
   "order": 24,
-  "category": "Infectious diseases",
-  "tag": "Antiparasitic reference",
+  "category": "ინფექციური დაავადებები",
+  "tag": "ანტიპარაზიტული რეფერენსული კონტექსტი",
   "refs": [
     "stromectol"
   ],
   "facets": {
     "specialty": [
-      "Infectious diseases",
-      "Parasitology"
+      "ინფექციური დაავადებები",
+      "პარაზიტოლოგია"
     ],
     "use": [
-      "Parasitic infections (reference context)"
+      "პარაზიტული ინფექციები (რეფერენსული პრეპარატი)"
     ],
     "system": [
-      "Intestines",
-      "Skin & eyes"
+      "ნაწლავები",
+      "კანი და თვალები"
     ]
-  },
-  "ka": {
-    "name": "ივერმექტინი",
-    "form": "ტაბლეტი",
-    "packUnit": "ტაბლეტი",
-    "preparation": "კომპოზიტური · პერორალური",
-    "category": "ინფექციური დაავადებები",
-    "tag": "ანტიპარაზიტული რეფერენსული კონტექსტი",
-    "facets": {
-      "specialty": [
-        "ინფექციური დაავადებები",
-        "პარაზიტოლოგია"
-      ],
-      "use": [
-        "პარაზიტული ინფექციები (რეფერენსული პრეპარატი)"
-      ],
-      "system": [
-        "ნაწლავები",
-        "კანი და თვალები"
-      ]
-    },
-    "nameComposition": "",
-    "pharmacology": "",
-    "indications": "",
-    "dosageAdministration": "",
-    "sideEffects": "",
-    "contraindications": "",
-    "warningsPrecautions": "",
-    "storageConditions": "",
-    "manufacturer": ""
   },
   "nameComposition": "",
   "pharmacology": "",
