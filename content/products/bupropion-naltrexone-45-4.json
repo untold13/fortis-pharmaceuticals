@@ -5,9 +5,6 @@
   "pack": 30,
   "category": "Weight management",
   "tag": "Combination preparation",
-  "context": "Bupropion and naltrexone are combined in reference medicines used for weight management in eligible adults alongside lifestyle measures. FDA Contrave contains 90 mg bupropion hydrochloride and 8 mg naltrexone hydrochloride in an extended-release tablet.",
-  "caution": "Reference-product contraindications include seizure disorders, uncontrolled hypertension, certain eating disorders, opioid use and MAOI treatment. Individual assessment and monitoring are essential.",
-  "note": "Fortis 45 mg / 4 mg has a different stated strength and an unspecified release profile. It must not be treated as equivalent to Contrave or Mysimba, and reference dosing must not be transferred.",
   "refs": [
     "contrave",
     "mysimba"
@@ -31,9 +28,6 @@
     "name": "ბუპროპიონი + ნალტრექსონი",
     "category": "წონის მართვა",
     "tag": "კომბინირებული პრეპარატი",
-    "context": "ბუპროპიონი და ნალტრექსონი კომბინირებულია რეფერენსულ მედიკამენტებში, რომლებიც სათანადო კრიტერიუმების მქონე მოზრდილებში წონის მართვისთვის გამოიყენება, ცხოვრების წესის ცვლილებებთან ერთად. FDA-ს მიერ დამტკიცებული Contrave გახანგრძლივებული გამოთავისუფლების ტაბლეტში შეიცავს 90 მგ ბუპროპიონის ჰიდროქლორიდსა და 8 მგ ნალტრექსონის ჰიდროქლორიდს.",
-    "caution": "რეფერენსული პროდუქტის უკუჩვენებები მოიცავს კრუნჩხვით დაავადებებს, არაკონტროლირებულ ჰიპერტენზიას, კვებითი ქცევის ზოგიერთ დარღვევას, ოპიოიდების გამოყენებასა და მონოამინოქსიდაზის ინჰიბიტორებით (MAOI) მკურნალობას. აუცილებელია ინდივიდუალური შეფასება და მონიტორინგი.",
-    "note": "ფორტისის 45 მგ / 4 მგ პრეპარატს განსხვავებული მითითებული დოზა აქვს, ხოლო გამოთავისუფლების პროფილი დაზუსტებული არ არის. ის არ უნდა ჩაითვალოს Contrave-ის ან Mysimba-ს ეკვივალენტად და მასზე არ უნდა გავრცელდეს რეფერენსული პრეპარატის დოზირების სქემა.",
     "form": "ტაბლეტი",
     "facets": {
       "specialty": [
@@ -48,13 +42,25 @@
     },
     "packUnit": "ტაბლეტი",
     "preparation": "კომპოზიტური · პერორალური",
-    "infoOverview": "მოწოდებული დოსიე აღწერს ინდივიდუალურად მომზადებულ პერორალურ პრეპარატს, რომელიც შეიცავს 45 მგ ბუპროპიონის ჰიდროქლორიდსა და 4 მგ ნალტრექსონის ჰიდროქლორიდს. ნივთიერებები მოქმედებს ნორადრენერგულ, დოფამინერგულ და ოპიოიდურ რეცეპტორულ გზებზე.",
-    "infoUse": "დოსიე განიხილავს წონის მართვას კვებისა და ფიზიკური აქტივობის ცვლილებებთან ერთად. ეს დოზა და დაუზუსტებელი გამოთავისუფლების პროფილი განსხვავდება ციტირებული რეფერენსული პრეპარატებისგან, ამიტომ მათი დოზირების სქემა არ უნდა გადაიტანოთ. შესაფასებელია კრუნჩხვის რისკი, არაკონტროლირებული ჰიპერტენზია, კვებითი ქცევის დარღვევები, ოპიოიდების გამოყენება და MAOI-ით მკურნალობა.",
-    "infoStorage": "მოწოდებული დოსიე მიუთითებს, რომ პრეპარატი უნდა ინახებოდეს ოთახის ტემპერატურაზე, მშრალ და პირდაპირი სინათლისგან დაცულ ადგილას, ბავშვებისთვის მიუწვდომლად. უპირატესობა ენიჭება გაცემული პრეპარატის ეტიკეტზე მითითებულ შენახვის პირობასა და გამოყენების საბოლოო ვადას."
+    "nameComposition": "",
+    "pharmacology": "",
+    "indications": "",
+    "dosageAdministration": "",
+    "sideEffects": "",
+    "contraindications": "",
+    "warningsPrecautions": "",
+    "storageConditions": "",
+    "manufacturer": ""
   },
   "packUnit": "tablets",
   "preparation": "Compounded · oral",
-  "infoOverview": "The supplied dossier identifies a compounded oral preparation containing bupropion hydrochloride 45 mg and naltrexone hydrochloride 4 mg. The ingredients affect noradrenergic, dopaminergic and opioid-receptor pathways.",
-  "infoUse": "The dossier discusses weight management together with diet and physical activity. This strength and its unspecified release profile differ from the cited reference products, so their dosing must not be transferred. Seizure risk, uncontrolled hypertension, eating disorders, opioid use and MAOI treatment require assessment.",
-  "infoStorage": "The supplied dossier states to keep this preparation at room temperature, dry and protected from direct light, out of reach of children. The storage instruction and beyond-use date on the dispensing label take precedence."
+  "nameComposition": "",
+  "pharmacology": "",
+  "indications": "",
+  "dosageAdministration": "",
+  "sideEffects": "",
+  "contraindications": "",
+  "warningsPrecautions": "",
+  "storageConditions": "",
+  "manufacturer": ""
 }

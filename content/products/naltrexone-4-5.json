@@ -5,9 +5,6 @@
   "pack": 30,
   "category": "Individualized compounding",
   "tag": "Low-dose preparation",
-  "context": "Naltrexone is an opioid receptor antagonist. Lower-dose preparations are studied in off-label settings. A 2023 randomized crossover study in 58 people with fibromyalgia found no clinically relevant analgesic efficacy with 4.5 mg. This study does not establish efficacy for a 1.5 mg preparation.",
-  "caution": "Naltrexone can precipitate opioid withdrawal and interfere with opioid pain medicines. Liver risks and other medicines require prescriber review. A lower strength does not establish a safer or effective treatment.",
-  "note": "These lower-dose Fortis preparations are not the 50 mg reference product. No approved indication or proven clinical benefit for these specific compounded preparations is implied.",
   "refs": [
     "ldn",
     "revia"
@@ -31,9 +28,6 @@
     "name": "ნალტრექსონის ჰიდროქლორიდი",
     "category": "ინდივიდუალური მომზადება",
     "tag": "დაბალდოზიანი პრეპარატი",
-    "context": "ნალტრექსონი ოპიოიდური რეცეპტორების ანტაგონისტია. დაბალდოზიანი პრეპარატები შეისწავლება ოფიციალურად დამტკიცებული ჩვენებების ფარგლებს გარეთ. 2023 წლის რანდომიზებულ ჯვარედინ კვლევაში, რომელშიც ფიბრომიალგიის მქონე 58 ადამიანი მონაწილეობდა, 4.5 მგ დოზით კლინიკურად მნიშვნელოვანი ტკივილგამაყუჩებელი ეფექტი არ გამოვლინდა. ეს კვლევა არ ადასტურებს 1.5 მგ პრეპარატის ეფექტურობას.",
-    "caution": "ნალტრექსონმა შეიძლება მწვავედ გამოიწვიოს ოპიოიდების მოხსნის სინდრომი და ხელი შეუშალოს ოპიოიდური ტკივილგამაყუჩებლების მოქმედებას. ღვიძლის რისკები და სხვა მედიკამენტები ექიმმა უნდა შეაფასოს. დაბალი დოზა თავისთავად არ ადასტურებს მკურნალობის უსაფრთხოებას ან ეფექტურობას.",
-    "note": "ფორტისის ეს დაბალდოზიანი პრეპარატები განსხვავდება 50 მგ რეფერენსული პროდუქტისგან. ამ კონკრეტული, ინდივიდუალურად მომზადებული პრეპარატებისთვის დამტკიცებული ჩვენება ან დადასტურებული კლინიკური სარგებელი არ იგულისხმება.",
     "form": "ტაბლეტი",
     "facets": {
       "specialty": [
@@ -48,13 +42,25 @@
     },
     "packUnit": "ტაბლეტი",
     "preparation": "კომპოზიტური · პერორალური",
-    "infoOverview": "მოწოდებული დოსიე აღწერს დაბალდოზიან, ინდივიდუალურად მომზადებულ ნალტრექსონის კაფსულებს და დროებით ოპიოიდურ რეცეპტორულ ბლოკადას არარეგისტრირებული გამოყენების სავარაუდო საფუძვლად განიხილავს. დაბალი დოზის ეს სავარაუდო ეფექტები FDA-ს მიერ დამტკიცებული ჩვენებები არ არის.",
-    "infoUse": "მოწოდებული დოსიე ჩამოთვლის აუტოიმუნურ, ტკივილის, დაღლილობისა და სხვა მრავალ არარეგისტრირებულ გამოყენებას. ისინი აქ დადასტურებულ სარგებლად არ არის წარმოდგენილი. ციტირებულ რანდომიზებულ კვლევაში 4.5 მგ დოზამ ფიბრომიალგიისას კლინიკურად მნიშვნელოვანი ტკივილგამაყუჩებელი ეფექტი ვერ აჩვენა. ოპიოიდების მიმდინარე გამოყენებამ შეიძლება მძიმე მოხსნის სინდრომი გამოიწვიოს და ოპიოიდური ტკივილგამაყუჩებლების მოქმედება დაბლოკოს.",
-    "infoStorage": "მოწოდებული დოსიე მიუთითებს, რომ პრეპარატი უნდა ინახებოდეს ოთახის ტემპერატურაზე, მშრალ და პირდაპირი სინათლისგან დაცულ ადგილას, ბავშვებისთვის მიუწვდომლად. უპირატესობა ენიჭება გაცემული პრეპარატის ეტიკეტზე მითითებულ შენახვის პირობასა და გამოყენების საბოლოო ვადას."
+    "nameComposition": "",
+    "pharmacology": "",
+    "indications": "",
+    "dosageAdministration": "",
+    "sideEffects": "",
+    "contraindications": "",
+    "warningsPrecautions": "",
+    "storageConditions": "",
+    "manufacturer": ""
   },
   "packUnit": "tablets",
   "preparation": "Compounded · oral",
-  "infoOverview": "The supplied dossier identifies low-dose compounded naltrexone capsules and describes temporary opioid-receptor blockade as the proposed basis for off-label use. These proposed low-dose effects are not established FDA indications.",
-  "infoUse": "The supplied dossier lists broad autoimmune, pain, fatigue and other off-label uses. They are not presented here as proven benefits. The cited randomized study found no clinically relevant analgesic efficacy for 4.5 mg in fibromyalgia. Current opioid use can trigger severe withdrawal and prevent opioid pain medicines from working.",
-  "infoStorage": "The supplied dossier states to keep this preparation at room temperature, dry and protected from direct light, out of reach of children. The storage instruction and beyond-use date on the dispensing label take precedence."
+  "nameComposition": "",
+  "pharmacology": "",
+  "indications": "",
+  "dosageAdministration": "",
+  "sideEffects": "",
+  "contraindications": "",
+  "warningsPrecautions": "",
+  "storageConditions": "",
+  "manufacturer": ""
 }

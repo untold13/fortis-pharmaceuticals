@@ -2,9 +2,6 @@
   "name": "Paroxetine",
   "category": "Mental health",
   "tag": "SSRI ingredient",
-  "context": "Paroxetine is an SSRI. The FDA Paxil reference label describes adult major depressive disorder, obsessive-compulsive disorder, panic disorder, social anxiety disorder, generalized anxiety disorder and post-traumatic stress disorder.",
-  "caution": "Suicidal thoughts or behavior in younger patients, serotonin syndrome, interacting medicines, bleeding and pregnancy considerations require prescriber review. Abrupt discontinuation can cause withdrawal symptoms.",
-  "note": "The 20 mg strength is described in the reference label. This does not establish approval, equivalence or clinical performance of the Fortis compounded preparation.",
   "refs": [
     "paxil"
   ],
@@ -33,9 +30,6 @@
     "name": "პაროქსეტინი",
     "category": "ფსიქიკური ჯანმრთელობა",
     "tag": "სეროტონინის უკუმიტაცების სელექციური ინჰიბიტორი",
-    "context": "პაროქსეტინი სეროტონინის უკუმიტაცების სელექციური ინჰიბიტორია. FDA-ს Paxil-ის რეფერენსულ ინსტრუქციაში ზრდასრულებისთვის აღწერილია მაჟორული დეპრესიული, ობსესიურ-კომპულსიური, პანიკური, სოციალური შფოთვითი, გენერალიზებული შფოთვითი და პოსტტრავმული სტრესული აშლილობები.",
-    "caution": "ახალგაზრდა პაციენტებში სუიციდური აზრების ან ქცევის რისკი, სეროტონინის სინდრომი, წამლებთან ურთიერთქმედება, სისხლდენა და ორსულობასთან დაკავშირებული საკითხები ექიმის შეფასებას საჭიროებს. უეცარმა შეწყვეტამ შეიძლება მოხსნის სიმპტომები გამოიწვიოს.",
-    "note": "რეფერენსულ ინსტრუქციაში 20 მგ დოზა მოცემულია. ეს ფორტისის ინდივიდუალურად მომზადებული პრეპარატის დამტკიცებას, ეკვივალენტობას ან კლინიკურ ეფექტს არ ადასტურებს.",
     "form": "ტაბლეტი",
     "facets": {
       "specialty": [
@@ -52,13 +46,25 @@
     },
     "packUnit": "ტაბლეტი",
     "preparation": "კომპოზიტური · პერორალური",
-    "infoOverview": "მოწოდებული დოსიე აღწერს პაროქსეტინის შემცველ ინდივიდუალურად მომზადებულ 20 მგ პერორალურ პრეპარატს. პაროქსეტინი სეროტონინის უკუმიტაცების სელექციური ინჰიბიტორია.",
-    "infoUse": "დოსიე და FDA-ს რეფერენსული ინსტრუქცია მოზრდილებში განიხილავს მაჟორულ დეპრესიულ, ობსესიურ-კომპულსიურ, პანიკურ, სოციალურ შფოთვით, გენერალიზებულ შფოთვით და პოსტტრავმულ სტრესულ აშლილობებს. სუიციდური აზრები, სეროტონინის სინდრომი, სისხლდენა, ორსულობასთან დაკავშირებული საკითხები, ურთიერთქმედებები და შეწყვეტის სიმპტომები ექიმის შეფასებას საჭიროებს.",
-    "infoStorage": "მოწოდებული დოსიე მიუთითებს, რომ პრეპარატი უნდა ინახებოდეს ოთახის ტემპერატურაზე, მშრალ და პირდაპირი სინათლისგან დაცულ ადგილას, ბავშვებისთვის მიუწვდომლად. უპირატესობა ენიჭება გაცემული პრეპარატის ეტიკეტზე მითითებულ შენახვის პირობასა და გამოყენების საბოლოო ვადას."
+    "nameComposition": "",
+    "pharmacology": "",
+    "indications": "",
+    "dosageAdministration": "",
+    "sideEffects": "",
+    "contraindications": "",
+    "warningsPrecautions": "",
+    "storageConditions": "",
+    "manufacturer": ""
   },
   "packUnit": "tablets",
   "preparation": "Compounded · oral",
-  "infoOverview": "The supplied dossier identifies a compounded 20 mg oral preparation containing paroxetine, a selective serotonin reuptake inhibitor.",
-  "infoUse": "The dossier and FDA reference label discuss major depressive disorder, obsessive-compulsive disorder, panic disorder, social anxiety disorder, generalized anxiety disorder and post-traumatic stress disorder in adults. Suicidal thinking, serotonin syndrome, bleeding, pregnancy considerations, interactions and discontinuation symptoms require prescriber review.",
-  "infoStorage": "The supplied dossier states to keep this preparation at room temperature, dry and protected from direct light, out of reach of children. The storage instruction and beyond-use date on the dispensing label take precedence."
+  "nameComposition": "",
+  "pharmacology": "",
+  "indications": "",
+  "dosageAdministration": "",
+  "sideEffects": "",
+  "contraindications": "",
+  "warningsPrecautions": "",
+  "storageConditions": "",
+  "manufacturer": ""
 }

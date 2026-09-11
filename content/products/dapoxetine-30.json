@@ -2,9 +2,6 @@
   "name": "Dapoxetine",
   "category": "Sexual medicine",
   "tag": "SSRI ingredient",
-  "context": "Dapoxetine is an SSRI. The EMA Priligy referral and product information describe premature ejaculation in men aged 18 to 64 years. The referral concerns historic national authorization of the reference medicine.",
-  "caution": "Fainting and postural hypotension, heart or liver conditions, serotonergic interactions and alcohol use require clinical assessment. A complete review of other medicines is necessary.",
-  "note": "EMA information about Priligy does not establish approval, equivalence, safety or efficacy of this Fortis 30 mg compounded preparation.",
   "refs": [
     "priligy",
     "priligy_info"
@@ -32,9 +29,6 @@
     "name": "დაპოქსეტინი",
     "category": "სექსუალური მედიცინა",
     "tag": "სეროტონინის უკუმიტაცების სელექციური ინჰიბიტორი",
-    "context": "დაპოქსეტინი სეროტონინის უკუმიტაცების სელექციური ინჰიბიტორია. EMA-ს Priligy-ის რეფერალური შეფასება და ინსტრუქცია აღწერს ნაადრევ ეაკულაციას 18–64 წლის მამაკაცებში. შეფასება რეფერენსული მედიკამენტის ისტორიულ ეროვნულ ავტორიზაციას ეხება.",
-    "caution": "გულის წასვლა და წამოდგომისას წნევის ვარდნა, გულის ან ღვიძლის დაავადებები, სეროტონინზე მოქმედ წამლებთან ურთიერთქმედება და ალკოჰოლის მიღება ექიმის შეფასებას საჭიროებს. აუცილებელია სხვა მიღებული მედიკამენტების სრული განხილვა.",
-    "note": "EMA-ს ინფორმაცია Priligy-ის შესახებ ფორტისის 30 მგ ინდივიდუალურად მომზადებული პრეპარატის დამტკიცებას, ეკვივალენტობას, უსაფრთხოებას ან ეფექტურობას არ ადასტურებს.",
     "form": "ტაბლეტი",
     "facets": {
       "specialty": [
@@ -49,13 +43,25 @@
     },
     "packUnit": "ტაბლეტი",
     "preparation": "კომპოზიტური · პერორალური",
-    "infoOverview": "მოწოდებული დოსიე დაპოქსეტინს აღწერს როგორც ხანმოკლე მოქმედების სეროტონინის უკუმიტაცების სელექციურ ინჰიბიტორს, ინდივიდუალურად მომზადებულ 30 მგ პერორალურ ფორმაში.",
-    "infoUse": "დოსიე განიხილავს ნაადრევ ეაკულაციას 18-დან 64 წლამდე მამაკაცებში და სქესობრივ აქტამდე საჭიროების მიხედვით მიღებას. ზუსტი დრო და სიხშირე დანიშნულებას უნდა შეესაბამებოდეს. გულის წასვლა, წამოდგომისას წნევის ვარდნა, გულ-სისხლძარღვთა ან ღვიძლის მდგომარეობები, სეროტონინერგული ურთიერთქმედებები და ალკოჰოლი კლინიკურ შეფასებას საჭიროებს.",
-    "infoStorage": "მოწოდებული დოსიე მიუთითებს, რომ პრეპარატი უნდა ინახებოდეს ოთახის ტემპერატურაზე, მშრალ და პირდაპირი სინათლისგან დაცულ ადგილას, ბავშვებისთვის მიუწვდომლად. უპირატესობა ენიჭება გაცემული პრეპარატის ეტიკეტზე მითითებულ შენახვის პირობასა და გამოყენების საბოლოო ვადას."
+    "nameComposition": "",
+    "pharmacology": "",
+    "indications": "",
+    "dosageAdministration": "",
+    "sideEffects": "",
+    "contraindications": "",
+    "warningsPrecautions": "",
+    "storageConditions": "",
+    "manufacturer": ""
   },
   "packUnit": "tablets",
   "preparation": "Compounded · oral",
-  "infoOverview": "The supplied dossier describes dapoxetine as a short-acting selective serotonin reuptake inhibitor in a compounded 30 mg oral preparation.",
-  "infoUse": "The dossier discusses premature ejaculation in men aged 18 to 64 and on-demand administration before sexual activity. Exact timing and frequency must follow the prescription. Fainting, postural hypotension, cardiovascular or liver conditions, serotonergic interactions and alcohol use require clinical review.",
-  "infoStorage": "The supplied dossier states to keep this preparation at room temperature, dry and protected from direct light, out of reach of children. The storage instruction and beyond-use date on the dispensing label take precedence."
+  "nameComposition": "",
+  "pharmacology": "",
+  "indications": "",
+  "dosageAdministration": "",
+  "sideEffects": "",
+  "contraindications": "",
+  "warningsPrecautions": "",
+  "storageConditions": "",
+  "manufacturer": ""
 }

@@ -12,9 +12,6 @@
   "order": 24,
   "category": "Infectious diseases",
   "tag": "Antiparasitic reference",
-  "context": "The FDA Stromectol oral reference label describes intestinal strongyloidiasis and onchocerciasis. Diagnosis, the parasite involved and body weight determine the appropriate clinical approach.",
-  "caution": "Neurologic toxicity and severe inflammatory reactions require attention. Assess possible Loa loa exposure and interactions, including warfarin, before treatment.",
-  "note": "Reference-product information does not establish approval or equivalence of this Fortis preparation. Confirm the formulation and indication-specific instructions with the prescriber and pharmacist.",
   "refs": [
     "stromectol"
   ],
@@ -38,9 +35,6 @@
     "preparation": "კომპოზიტური · პერორალური",
     "category": "ინფექციური დაავადებები",
     "tag": "ანტიპარაზიტული რეფერენსული კონტექსტი",
-    "context": "FDA-ს სტრომექტოლის პერორალური რეფერენსული ინსტრუქცია აღწერს ნაწლავურ სტრონგილოიდოზსა და ონქოცერკოზს. კლინიკური მიდგომა დამოკიდებულია დიაგნოზზე, გამომწვევ პარაზიტსა და სხეულის წონაზე.",
-    "caution": "ყურადღებას საჭიროებს ნევროლოგიური ტოქსიკურობა და მძიმე ანთებითი რეაქციები. მკურნალობამდე შესაფასებელია Loa loa-ს შესაძლო ექსპოზიცია და ურთიერთქმედებები, მათ შორის ვარფარინთან.",
-    "note": "რეფერენსული პრეპარატის ინფორმაცია ფორტისის ფორმულის დამტკიცებას ან ეკვივალენტობას არ ადასტურებს. შემადგენლობა და კონკრეტული ჩვენების შესაბამისი მითითებები ექიმთან და ფარმაცევტთან უნდა დაზუსტდეს.",
     "facets": {
       "specialty": [
         "ინფექციური დაავადებები",
@@ -54,11 +48,23 @@
         "კანი და თვალები"
       ]
     },
-    "infoOverview": "მოწოდებული დოსიე აღწერს ივერმექტინის შემცველ ინდივიდუალურად მომზადებულ 3 მგ პერორალურ პრეპარატს. ივერმექტინი ანტიპარაზიტული ნივთიერებაა, რომელიც პარაზიტის ქლორიდულ არხებზე მოქმედებს.",
-    "infoUse": "მოწოდებული დოსიე ძირითადად მუნს განიხილავს. ციტირებული FDA-ს პერორალური რეფერენსული ინსტრუქცია მოიცავს ნაწლავის სტრონგილოიდოზსა და ონქოცერკოზს და არა მუნს. რეფერენსული ჩვენებების ფარგლებს გარეთ ნებისმიერი გამოყენება, მათ შორის მუნისას, ინდივიდუალურ დანიშნულებასა და ექიმის მეთვალყურეობას საჭიროებს.",
-    "infoStorage": "მოწოდებული დოსიე მიუთითებს, რომ პრეპარატი უნდა ინახებოდეს ოთახის ტემპერატურაზე, მშრალ და პირდაპირი სინათლისგან დაცულ ადგილას, ბავშვებისთვის მიუწვდომლად. უპირატესობა ენიჭება გაცემული პრეპარატის ეტიკეტზე მითითებულ შენახვის პირობასა და გამოყენების საბოლოო ვადას."
+    "nameComposition": "",
+    "pharmacology": "",
+    "indications": "",
+    "dosageAdministration": "",
+    "sideEffects": "",
+    "contraindications": "",
+    "warningsPrecautions": "",
+    "storageConditions": "",
+    "manufacturer": ""
   },
-  "infoOverview": "The supplied dossier identifies a compounded 3 mg oral preparation containing ivermectin, an antiparasitic ingredient that acts on parasite chloride channels.",
-  "infoUse": "The supplied dossier focuses on scabies. The cited FDA oral reference label covers strongyloidiasis of the intestinal tract and onchocerciasis, not scabies. Any use outside the reference indications, including scabies, requires an individual prescription and clinician supervision.",
-  "infoStorage": "The supplied dossier states to keep this preparation at room temperature, dry and protected from direct light, out of reach of children. The storage instruction and beyond-use date on the dispensing label take precedence."
+  "nameComposition": "",
+  "pharmacology": "",
+  "indications": "",
+  "dosageAdministration": "",
+  "sideEffects": "",
+  "contraindications": "",
+  "warningsPrecautions": "",
+  "storageConditions": "",
+  "manufacturer": ""
 }

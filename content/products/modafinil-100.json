@@ -5,9 +5,6 @@
   "pack": 30,
   "category": "Sleep medicine",
   "tag": "Wakefulness-promoting ingredient",
-  "context": "The FDA reference label describes modafinil for excessive sleepiness associated with adult narcolepsy, obstructive sleep apnea or shift-work disorder. It does not treat the underlying airway obstruction.",
-  "caution": "Serious rash, psychiatric effects, cardiovascular concerns and drug interactions require review. Modafinil can reduce the effectiveness of steroidal contraceptives. It is not presented here as a cognitive-enhancement product.",
-  "note": "Reference-product evidence does not establish approval or equivalence for the specific Fortis compounded formulation.",
   "refs": [
     "provigil"
   ],
@@ -30,9 +27,6 @@
     "name": "მოდაფინილი",
     "category": "ძილის მედიცინა",
     "tag": "სიფხიზლის ხელშემწყობი ნივთიერება",
-    "context": "FDA-ს რეფერენსული ინსტრუქცია აღწერს მოდაფინილის გამოყენებას მოზრდილებში ნარკოლეფსიასთან, ძილის ობსტრუქციულ აპნოესთან ან ცვლაში მუშაობით გამოწვეულ ძილის დარღვევასთან დაკავშირებული ჭარბი ძილიანობის დროს. იგი არ მკურნალობს სასუნთქი გზების ძირითად ობსტრუქციას.",
-    "caution": "მძიმე გამონაყარი, ფსიქიატრიული ეფექტები, გულ-სისხლძარღვთა რისკები და წამალთაშორისი ურთიერთქმედება შეფასებას საჭიროებს. მოდაფინილმა შეიძლება შეამციროს სტეროიდული კონტრაცეპტივების ეფექტურობა. აქ იგი არ არის წარმოდგენილი როგორც კოგნიტიური უნარების გასაუმჯობესებელი საშუალება.",
-    "note": "რეფერენსული პროდუქტის მტკიცებულებები არ ადასტურებს ფორტისის კონკრეტული ფორმულის დამტკიცებას ან ეკვივალენტობას.",
     "form": "ტაბლეტი",
     "facets": {
       "specialty": [
@@ -47,13 +41,25 @@
     },
     "packUnit": "ტაბლეტი",
     "preparation": "კომპოზიტური · პერორალური",
-    "infoOverview": "მოწოდებული დოსიე აღწერს მოდაფინილის შემცველ ინდივიდუალურად მომზადებულ 100 მგ პერორალურ პრეპარატს, რომელიც სიფხიზლეს უწყობს ხელს. მოქმედების მექანიზმი სრულად დადგენილი არ არის; რეფერენსული ინსტრუქცია აღწერს დოფამინის ტრანსპორტერებთან დაკავშირებულ ეფექტებს.",
-    "infoUse": "დოსიე და FDA-ს რეფერენსული ინსტრუქცია განიხილავს ნარკოლეფსიასთან, ძილის ობსტრუქციულ აპნოესთან და ცვლაში მუშაობით გამოწვეულ დარღვევასთან დაკავშირებულ ჭარბ ძილიანობას. პრეპარატი სასუნთქი გზების ძირითადი ობსტრუქციის მკურნალობას არ ცვლის. შესაფასებელია მძიმე გამონაყარი, ფსიქიატრიული სიმპტომები, გულ-სისხლძარღვთა რისკები, ბოროტად გამოყენების პოტენციალი და სტეროიდული კონტრაცეპტივების ეფექტურობის შემცირება.",
-    "infoStorage": "მოწოდებული დოსიე მიუთითებს, რომ პრეპარატი უნდა ინახებოდეს ოთახის ტემპერატურაზე, მშრალ და პირდაპირი სინათლისგან დაცულ ადგილას, ბავშვებისთვის მიუწვდომლად. უპირატესობა ენიჭება გაცემული პრეპარატის ეტიკეტზე მითითებულ შენახვის პირობასა და გამოყენების საბოლოო ვადას."
+    "nameComposition": "",
+    "pharmacology": "",
+    "indications": "",
+    "dosageAdministration": "",
+    "sideEffects": "",
+    "contraindications": "",
+    "warningsPrecautions": "",
+    "storageConditions": "",
+    "manufacturer": ""
   },
   "packUnit": "tablets",
   "preparation": "Compounded · oral",
-  "infoOverview": "The supplied dossier identifies a compounded 100 mg oral preparation containing modafinil, a wakefulness-promoting ingredient. Its mechanism is not fully established; the reference label describes effects involving dopamine transporters.",
-  "infoUse": "The dossier and FDA reference label discuss excessive sleepiness associated with narcolepsy, obstructive sleep apnea and shift-work disorder. It does not replace treatment of the underlying airway obstruction. Serious rash, psychiatric symptoms, cardiovascular risks, abuse potential and reduced effectiveness of steroidal contraceptives require review.",
-  "infoStorage": "The supplied dossier states to keep this preparation at room temperature, dry and protected from direct light, out of reach of children. The storage instruction and beyond-use date on the dispensing label take precedence."
+  "nameComposition": "",
+  "pharmacology": "",
+  "indications": "",
+  "dosageAdministration": "",
+  "sideEffects": "",
+  "contraindications": "",
+  "warningsPrecautions": "",
+  "storageConditions": "",
+  "manufacturer": ""
 }
