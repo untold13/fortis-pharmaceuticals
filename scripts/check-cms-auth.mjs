@@ -201,15 +201,19 @@ try {
     );
   const path = "content/products/psk-90.json",
     before = files.get(path).sha,
-    changed = { ...product, note: "Updated reference context for test only." };
+    changed = {
+      ...product,
+      manufacturer: "Test manufacturer",
+      ka: { ...product.ka, manufacturer: "სატესტო მწარმოებელი" },
+    };
   r = await call("save", { path, sha: before, data: changed }, cookie);
   assert.equal(r.statusCode, 200);
   assert.notEqual(r.data.sha, before);
   assert.equal(
     (await call("load", undefined, cookie)).data.products.find(
       (p) => p.path === path,
-    ).data.note,
-    changed.note,
+    ).data.manufacturer,
+    changed.manufacturer,
   );
   assert.equal(
     (await call("save", { path, sha: before, data: product }, cookie))
@@ -290,6 +294,10 @@ try {
   );
   assert.throws(
     () => validateContent(path, JSON.parse('{"__proto__":{}}')),
+    (e) => e.status === 400,
+  );
+  assert.throws(
+    () => validateContent(path, { ...product, context: "obsolete" }),
     (e) => e.status === 400,
   );
   const logout = await call("logout", {}, cookie);

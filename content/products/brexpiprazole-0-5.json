@@ -2,9 +2,6 @@
   "name": "Brexpiprazole",
   "category": "Mental health",
   "tag": "Atypical antipsychotic ingredient",
-  "context": "Brexpiprazole is an atypical antipsychotic. The FDA Rexulti reference label covers treatment of adult major depressive disorder as an adjunct to an antidepressant, schizophrenia in adults and patients aged 13 years and older, and agitation associated with Alzheimer dementia. It is not an as-needed treatment for agitation.",
-  "caution": "The reference label warns of increased mortality in older people with dementia-related psychosis and suicidal thoughts or behavior. Metabolic and weight changes, movement disorders, orthostatic symptoms and interactions require assessment.",
-  "note": "These strengths appear in the cited reference label. Reference-product approval does not establish approval or equivalence of a Fortis compounded preparation.",
   "refs": [
     "rexulti"
   ],
@@ -33,9 +30,6 @@
     "name": "ბრექსპიპრაზოლი",
     "category": "ფსიქიკური ჯანმრთელობა",
     "tag": "ატიპური ანტიფსიქოზური ნივთიერება",
-    "context": "ბრექსპიპრაზოლი ატიპური ანტიფსიქოზური ნივთიერებაა. FDA-ს Rexulti-ის რეფერენსული ინსტრუქცია მოიცავს ზრდასრულთა მაჟორული დეპრესიული აშლილობის მკურნალობას ანტიდეპრესანტთან ერთად, შიზოფრენიას ზრდასრულებსა და 13 წლიდან პაციენტებში, ასევე ალცჰაიმერის დემენციასთან დაკავშირებულ აგზნებას. იგი აგზნებისას საჭიროების მიხედვით მისაღებ პრეპარატად არ განიხილება.",
-    "caution": "რეფერენსული ინსტრუქცია აფრთხილებს დემენციასთან დაკავშირებული ფსიქოზის მქონე ხანდაზმულებში სიკვდილიანობის მატებისა და სუიციდური აზრების ან ქცევის რისკის შესახებ. შესაფასებელია მეტაბოლური და წონის ცვლილებები, მოძრაობითი დარღვევები, წამოდგომისას სიმპტომები და წამლებთან ურთიერთქმედება.",
-    "note": "ეს დოზები მითითებულია ციტირებულ რეფერენსულ ინსტრუქციაში. რეფერენსული პრეპარატის დამტკიცება ფორტისის პრეპარატის დამტკიცებას ან ეკვივალენტობას არ ნიშნავს.",
     "form": "ტაბლეტი",
     "facets": {
       "specialty": [
@@ -52,13 +46,25 @@
     },
     "packUnit": "ტაბლეტი",
     "preparation": "კომპოზიტური · პერორალური",
-    "infoOverview": "მოწოდებული დოსიე აღწერს ბრექსიპრაზოლის შემცველ ინდივიდუალურად მომზადებულ პერორალურ პრეპარატს. მისი ფარმაკოლოგიური მოქმედება მოიცავს ნაწილობრივ აგონისტურ აქტივობას დოფამინის D2 და სეროტონინის 5-HT1A რეცეპტორებზე და ანტაგონისტურ აქტივობას სეროტონინის 5-HT2A რეცეპტორებზე.",
-    "infoUse": "დოსიე განიხილავს შიზოფრენიასა და მაჟორული დეპრესიული აშლილობის დამატებით მკურნალობას. ციტირებული FDA-ს ინსტრუქცია ასევე მოიცავს ალცჰაიმერის დემენციასთან დაკავშირებულ აგზნებას. წონისა და მეტაბოლური ცვლილებები, აკათიზია, წამოდგომისას სიმპტომები, ძილიანობა და წამლებთან ურთიერთქმედება ექიმის შეფასებას საჭიროებს.",
-    "infoStorage": "მოწოდებული დოსიე მიუთითებს, რომ პრეპარატი უნდა ინახებოდეს ოთახის ტემპერატურაზე, მშრალ და პირდაპირი სინათლისგან დაცულ ადგილას, ბავშვებისთვის მიუწვდომლად. უპირატესობა ენიჭება გაცემული პრეპარატის ეტიკეტზე მითითებულ შენახვის პირობასა და გამოყენების საბოლოო ვადას."
+    "nameComposition": "",
+    "pharmacology": "",
+    "indications": "",
+    "dosageAdministration": "",
+    "sideEffects": "",
+    "contraindications": "",
+    "warningsPrecautions": "",
+    "storageConditions": "",
+    "manufacturer": ""
   },
   "packUnit": "tablets",
   "preparation": "Compounded · oral",
-  "infoOverview": "The supplied dossier identifies a compounded oral preparation containing brexpiprazole. Its pharmacology includes partial agonist activity at dopamine D2 and serotonin 5-HT1A receptors and antagonist activity at serotonin 5-HT2A receptors.",
-  "infoUse": "The dossier discusses schizophrenia and adjunctive treatment of major depressive disorder. The cited FDA label also covers agitation associated with Alzheimer dementia. Weight and metabolic changes, akathisia, orthostatic symptoms, sedation and interacting medicines require prescriber review.",
-  "infoStorage": "The supplied dossier states to keep this preparation at room temperature, dry and protected from direct light, out of reach of children. The storage instruction and beyond-use date on the dispensing label take precedence."
+  "nameComposition": "",
+  "pharmacology": "",
+  "indications": "",
+  "dosageAdministration": "",
+  "sideEffects": "",
+  "contraindications": "",
+  "warningsPrecautions": "",
+  "storageConditions": "",
+  "manufacturer": ""
 }

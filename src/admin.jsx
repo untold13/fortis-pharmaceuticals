@@ -126,20 +126,32 @@ function Login({ onLogin, configured, sessionError }) {
     </main>
   );
 }
-const languageFields = [
+const productInformationFields = [
   ["name", "Name / დასახელება"],
   ["form", "Dosage form / წამლის ფორმა"],
-  ["packUnit", "Pack unit / შეფუთვის ერთეული"],
   ["preparation", "Preparation and route / მომზადება და მიღების გზა"],
   ["category", "Medical area / მიმართულება"],
   ["tag", "Short description / მოკლე აღწერა"],
-  ["context", "Clinical context / კლინიკური კონტექსტი"],
-  ["caution", "Clinical considerations / სიფრთხილის საკითხები"],
-  ["note", "Formulation notes / ფორმულის შეზღუდვები"],
-  ["infoOverview", "Product overview / პროდუქტის მიმოხილვა"],
-  ["infoUse", "Use and safety / გამოყენება და უსაფრთხოება"],
-  ["infoStorage", "Storage and handling / შენახვა და მოპყრობა"],
+  ["nameComposition", "Name and Composition / დასახელება და შემადგენლობა"],
+  [
+    "pharmacology",
+    "Pharmacological Properties and Mechanism of Action / ფარმაკოლოგიური თვისებები და მოქმედების მექანიზმი",
+  ],
+  ["indications", "Indications / გამოყენების ჩვენებები"],
+  [
+    "dosageAdministration",
+    "Dosage and Administration / დოზირება და მიღების წესი",
+  ],
+  ["sideEffects", "Side Effects / გვერდითი მოვლენები"],
+  ["contraindications", "Contraindications / უკუჩვენებები"],
+  [
+    "warningsPrecautions",
+    "Special Warnings and Precautions / განსაკუთრებული მითითებები",
+  ],
+  ["storageConditions", "Storage Conditions / შენახვის პირობები"],
+  ["manufacturer", "Manufacturer / მწარმოებელი"],
 ];
+const longProductFields = new Set(productInformationFields.slice(5).map(([key]) => key));
 const emptyProduct = () => ({
   slug: "",
   published: false,
@@ -154,12 +166,15 @@ const emptyProduct = () => ({
   image: "",
   category: "",
   tag: "",
-  context: "",
-  caution: "",
-  note: "",
-  infoOverview: "",
-  infoUse: "",
-  infoStorage: "",
+  nameComposition: "",
+  pharmacology: "",
+  indications: "",
+  dosageAdministration: "",
+  sideEffects: "",
+  contraindications: "",
+  warningsPrecautions: "",
+  storageConditions: "",
+  manufacturer: "",
   refs: [],
   facets: { specialty: [], use: [], system: [] },
   ka: {
@@ -169,12 +184,15 @@ const emptyProduct = () => ({
     preparation: "კომპოზიტური · პერორალური",
     category: "",
     tag: "",
-    context: "",
-    caution: "",
-    note: "",
-    infoOverview: "",
-    infoUse: "",
-    infoStorage: "",
+    nameComposition: "",
+    pharmacology: "",
+    indications: "",
+    dosageAdministration: "",
+    sideEffects: "",
+    contraindications: "",
+    warningsPrecautions: "",
+    storageConditions: "",
+    manufacturer: "",
     facets: { specialty: [], use: [], system: [] },
   },
 });
@@ -289,6 +307,20 @@ function ProductEditor({ record, sources, onSave, onCancel, onError }) {
               onChange={(v) => update("order", v)}
             />
           </div>
+          <div className="admin-grid">
+            <Field
+              label="Pack unit in English / შეფუთვის ერთეული ინგლისურად"
+              value={data.packUnit}
+              onChange={(v) => update("packUnit", v)}
+            />
+            <Field
+              label="Pack unit in Georgian / შეფუთვის ერთეული ქართულად"
+              value={data.ka.packUnit}
+              onChange={(v) =>
+                setData((d) => ({ ...d, ka: { ...d.ka, packUnit: v } }))
+              }
+            />
+          </div>
           <Toggle
             label="Published / გამოქვეყნებული"
             value={data.published}
@@ -324,20 +356,14 @@ function ProductEditor({ record, sources, onSave, onCancel, onError }) {
           ქართული
         </button>
       </div>
-      {languageFields.map(([key, label]) => (
+      <h3>Product information / პროდუქტის ინფორმაცია</h3>
+      {productInformationFields.map(([key, label]) => (
         <Field
           key={key}
           label={label}
           value={localized[key]}
           onChange={(v) => updateLanguage(key, v)}
-          multiline={[
-            "context",
-            "caution",
-            "note",
-            "infoOverview",
-            "infoUse",
-            "infoStorage",
-          ].includes(key)}
+          multiline={longProductFields.has(key)}
         />
       ))}
       <h3>Catalog filters / კატალოგის ფილტრები</h3>

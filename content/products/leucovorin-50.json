@@ -2,9 +2,6 @@
   "name": "Leucovorin (calcium folinate)",
   "category": "Specialist folate therapy",
   "tag": "Reduced folate ingredient",
-  "context": "The March 2026 FDA Wellcovorin label describes reduction of methotrexate toxicity with impaired elimination and folate-antagonist overdose in adults. It also covers cerebral folate transport deficiency with a confirmed FOLR1 variant in adults and children.",
-  "caution": "Rescue timing and protocols are critical. Hypersensitivity and interactions with trimethoprim-sulfamethoxazole or anticonvulsants require review. Leucovorin can enhance fluorouracil toxicity. Specialist supervision is essential.",
-  "note": "50 mg is the supplied Fortis strength and is not a listed tablet strength in the cited March 2026 reference label. Dose and route depend on the indication and require specialist prescribing; this formulation must not be assumed interchangeable with a reference tablet or injectable rescue treatment.",
   "refs": [
     "wellcovorin"
   ],
@@ -34,9 +31,6 @@
     "name": "ლეიკოვორინი (კალციუმის ფოლინატი)",
     "category": "ფოლატით სპეციალიზებული თერაპია",
     "tag": "აღდგენილი ფოლატის ფორმა",
-    "context": "FDA-ს Wellcovorin-ის 2026 წლის მარტის ინსტრუქცია აღწერს ზრდასრულებში მეთოტრექსატის ტოქსიკურობის შემცირებას მისი დაქვეითებული გამოყოფისას და ფოლატის ანტაგონისტის ჭარბი დოზის დროს. ასევე მოიცავს ცერებრალური ფოლატის ტრანსპორტის დეფიციტს დადასტურებული FOLR1 ვარიანტით, ზრდასრულებსა და ბავშვებში.",
-    "caution": "ტოქსიკურობის შემცირებისას კრიტიკულად მნიშვნელოვანია დროისა და შესაბამისი პროტოკოლის დაცვა. შესაფასებელია ჰიპერმგრძნობელობა და ურთიერთქმედება ტრიმეტოპრიმ-სულფამეთოქსაზოლთან ან ანტიკონვულსანტებთან. ლეიკოვორინმა შესაძლოა ფტორურაცილის ტოქსიკურობა გააძლიეროს. აუცილებელია სპეციალისტის ზედამხედველობა.",
-    "note": "50 მგ ფორტისის მიერ მოწოდებული დოზაა და ციტირებულ, 2026 წლის მარტის რეფერენსულ ინსტრუქციაში ტაბლეტის დოზად მითითებული არ არის. დოზა და მიღების გზა დამოკიდებულია ჩვენებაზე და სპეციალისტის დანიშნულებას მოითხოვს; ეს ფორმულა რეფერენსული ტაბლეტის ან საინექციო ანტიფოლატური ტოქსიკურობის საწინააღმდეგო მკურნალობის ურთიერთჩანაცვლებად ფორმად არ უნდა ჩაითვალოს.",
     "form": "ტაბლეტი",
     "facets": {
       "specialty": [
@@ -54,13 +48,25 @@
     },
     "packUnit": "ტაბლეტი",
     "preparation": "კომპოზიტური · პერორალური",
-    "infoOverview": "მოწოდებული დოსიე აღწერს ლეუკოვორინ კალციუმს, ანუ კალციუმის ფოლინატს, როგორც აღდგენილ ფოლატს ინდივიდუალურად მომზადებულ პერორალურ პრეპარატში. მას შეუძლია დიჰიდროფოლატრედუქტაზის დაბლოკილი გზების გვერდის ავლა.",
-    "infoUse": "FDA-ს მიმდინარე რეფერენსული ინსტრუქცია მოიცავს მეტოტრექსატის შეფერხებული გამოყოფით ან ფოლის მჟავის ანტაგონისტების ჭარბი დოზით გამოწვეული ტოქსიკურობის შემცირებას და დადასტურებული FOLR1-თან დაკავშირებული ცერებრული ფოლატის ტრანსპორტის დეფიციტის მკურნალობას. დოზასა და მიღების გზას ჩვენება განსაზღვრავს. შესაფასებელია ჰიპერმგრძნობელობა და ურთიერთქმედება ფლუოროურაცილთან, ტრიმეტოპრიმ-სულფამეტოქსაზოლთან და ზოგიერთ ანტიეპილეფსიურ პრეპარატთან.",
-    "infoStorage": "მოწოდებული დოსიე მიუთითებს, რომ პრეპარატი უნდა ინახებოდეს ოთახის ტემპერატურაზე, მშრალ და პირდაპირი სინათლისგან დაცულ ადგილას, ბავშვებისთვის მიუწვდომლად. უპირატესობა ენიჭება გაცემული პრეპარატის ეტიკეტზე მითითებულ შენახვის პირობასა და გამოყენების საბოლოო ვადას."
+    "nameComposition": "",
+    "pharmacology": "",
+    "indications": "",
+    "dosageAdministration": "",
+    "sideEffects": "",
+    "contraindications": "",
+    "warningsPrecautions": "",
+    "storageConditions": "",
+    "manufacturer": ""
   },
   "packUnit": "tablets",
   "preparation": "Compounded · oral",
-  "infoOverview": "The supplied dossier identifies leucovorin calcium, also called calcium folinate, as a reduced folate used in an oral compounded preparation. It can bypass blocked dihydrofolate reductase pathways.",
-  "infoUse": "The current FDA reference label covers reduction of toxicity from impaired methotrexate elimination or overdose of folic-acid antagonists and treatment of confirmed FOLR1-related cerebral folate transport deficiency. The indication determines the dose and route. Hypersensitivity and interactions with fluorouracil, trimethoprim-sulfamethoxazole and certain antiepileptic medicines require review.",
-  "infoStorage": "The supplied dossier states to keep this preparation at room temperature, dry and protected from direct light, out of reach of children. The storage instruction and beyond-use date on the dispensing label take precedence."
+  "nameComposition": "",
+  "pharmacology": "",
+  "indications": "",
+  "dosageAdministration": "",
+  "sideEffects": "",
+  "contraindications": "",
+  "warningsPrecautions": "",
+  "storageConditions": "",
+  "manufacturer": ""
 }

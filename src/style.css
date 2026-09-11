@@ -950,6 +950,12 @@ footer {
   border-left: 1px solid var(--line);
   padding-left: 30px;
 }
+.product-information-grid article:nth-child(3n + 1) {
+  border-left: 0;
+}
+.product-information-grid article:nth-child(n + 4) {
+  border-top: 1px solid var(--line);
+}
 .product-information-grid small {
   display: block;
   color: #6f858e;

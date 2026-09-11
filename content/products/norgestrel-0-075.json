@@ -12,9 +12,6 @@
   "order": 23,
   "category": "Gynecology",
   "tag": "Progestin-only contraceptive reference",
-  "context": "Norgestrel is a progestin. FDA information for the 0.075 mg Opill reference product describes oral contraception for pregnancy prevention. Consistent daily timing is important to contraceptive effectiveness.",
-  "caution": "A history of breast cancer is a contraindication. Some medicines reduce contraceptive effectiveness. Discuss relevant conditions and interactions with a clinician; this method does not protect against sexually transmitted infections.",
-  "note": "Reference-product information does not establish approval or equivalence of this Fortis preparation. Confirm the formulation and indication-specific instructions with the prescriber and pharmacist.",
   "refs": [
     "opill"
   ],
@@ -36,9 +33,6 @@
     "preparation": "კომპოზიტური · პერორალური",
     "category": "გინეკოლოგია",
     "tag": "მხოლოდ პროგესტინის შემცველი კონტრაცეფციის რეფერენსი",
-    "context": "ნორგესტრელი პროგესტინია. FDA-ს ინფორმაცია 0.075 მგ Opill-ის რეფერენსულ პრეპარატზე აღწერს პერორალურ კონტრაცეფციას ორსულობის თავიდან ასაცილებლად. ეფექტურობისთვის მნიშვნელოვანია ყოველდღიურად მიღების დროის დაცვა.",
-    "caution": "ძუძუს კიბოს ისტორია უკუჩვენებაა. ზოგი მედიკამენტი კონტრაცეფციის ეფექტურობას ამცირებს. თანმხლები მდგომარეობები და ურთიერთქმედებები ექიმთან უნდა შეფასდეს; ეს მეთოდი სქესობრივი გზით გადამდები ინფექციებისგან არ იცავს.",
-    "note": "რეფერენსული პრეპარატის ინფორმაცია ფორტისის ფორმულის დამტკიცებას ან ეკვივალენტობას არ ადასტურებს. შემადგენლობა და კონკრეტული ჩვენების შესაბამისი მითითებები ექიმთან და ფარმაცევტთან უნდა დაზუსტდეს.",
     "facets": {
       "specialty": [
         "გინეკოლოგია"
@@ -50,11 +44,23 @@
         "რეპროდუქციული სისტემა"
       ]
     },
-    "infoOverview": "მოწოდებული დოსიე აღწერს ინდივიდუალურად მომზადებულ პერორალურ ტაბლეტს, რომელიც შეიცავს 0.075 მგ ნორგესტრელს, პროგესტინურ ნივთიერებას.",
-    "infoUse": "დოსიე და FDA-ს ინფორმაცია რეფერენსულ პრეპარატზე განიხილავს ორსულობის თავიდან აცილებას. მნიშვნელოვანია ყოველდღიურად ერთსა და იმავე დროს მიღება და კონკრეტული პროდუქტის გამოტოვებული დოზის ინსტრუქციის დაცვა. ძუძუს კიბოს ისტორია და წამლებთან ურთიერთქმედება შეფასებას საჭიროებს; ეს მეთოდი სქესობრივი გზით გადამდები ინფექციებისგან არ იცავს.",
-    "infoStorage": "მოწოდებული დოსიე მიუთითებს, რომ პრეპარატი უნდა ინახებოდეს ოთახის ტემპერატურაზე, მშრალ და პირდაპირი სინათლისგან დაცულ ადგილას, ბავშვებისთვის მიუწვდომლად. უპირატესობა ენიჭება გაცემული პრეპარატის ეტიკეტზე მითითებულ შენახვის პირობასა და გამოყენების საბოლოო ვადას."
+    "nameComposition": "",
+    "pharmacology": "",
+    "indications": "",
+    "dosageAdministration": "",
+    "sideEffects": "",
+    "contraindications": "",
+    "warningsPrecautions": "",
+    "storageConditions": "",
+    "manufacturer": ""
   },
-  "infoOverview": "The supplied dossier identifies a compounded oral tablet containing norgestrel 0.075 mg, a progestin ingredient.",
-  "infoUse": "The dossier and FDA information for the reference product discuss pregnancy prevention. Consistent daily timing and the product-specific missed-dose instructions matter. Breast-cancer history and interacting medicines require review, and this method does not protect against sexually transmitted infections.",
-  "infoStorage": "The supplied dossier states to keep this preparation at room temperature, dry and protected from direct light, out of reach of children. The storage instruction and beyond-use date on the dispensing label take precedence."
+  "nameComposition": "",
+  "pharmacology": "",
+  "indications": "",
+  "dosageAdministration": "",
+  "sideEffects": "",
+  "contraindications": "",
+  "warningsPrecautions": "",
+  "storageConditions": "",
+  "manufacturer": ""
 }

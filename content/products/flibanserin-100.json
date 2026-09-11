@@ -12,9 +12,6 @@
   "order": 22,
   "category": "Sexual medicine",
   "tag": "Hypoactive sexual desire reference",
-  "context": "The December 2025 FDA Addyi label covers acquired, generalized hypoactive sexual desire disorder causing marked distress in women younger than 65. The low desire must not be caused by a medical or psychiatric condition, medication effects or relationship problems.",
-  "caution": "Severe low blood pressure and fainting can occur with alcohol. Moderate or strong CYP3A4 inhibitors and liver impairment are contraindications. Sedation and other interactions require careful review.",
-  "note": "Reference-product information does not establish approval or equivalence of this Fortis preparation. Confirm the formulation and indication-specific instructions with the prescriber and pharmacist.",
   "refs": [
     "addyi"
   ],
@@ -38,9 +35,6 @@
     "preparation": "კომპოზიტური · პერორალური",
     "category": "სექსუალური მედიცინა",
     "tag": "ჰიპოაქტიური სექსუალური ლტოლვის რეფერენსული კონტექსტი",
-    "context": "FDA-ს Addyi-ის 2025 წლის დეკემბრის ინსტრუქცია მოიცავს შეძენილ, გენერალიზებულ ჰიპოაქტიურ სექსუალურ ლტოლვას, რომელიც გამოხატულ დისკომფორტს იწვევს 65 წლამდე ქალებში. ლტოლვის დაქვეითება არ უნდა იყოს გამოწვეული სამედიცინო ან ფსიქიკური მდგომარეობით, მედიკამენტების გავლენით ან ურთიერთობაში არსებული პრობლემებით.",
-    "caution": "ალკოჰოლთან ერთად შესაძლებელია წნევის მკვეთრი დაქვეითება და გულის წასვლა. უკუნაჩვენებია CYP3A4-ის ზომიერ ან ძლიერ ინჰიბიტორებთან და ღვიძლის ფუნქციის დარღვევისას. შესაფასებელია სედაცია და სხვა ურთიერთქმედებები.",
-    "note": "რეფერენსული პრეპარატის ინფორმაცია ფორტისის ფორმულის დამტკიცებას ან ეკვივალენტობას არ ადასტურებს. შემადგენლობა და კონკრეტული ჩვენების შესაბამისი მითითებები ექიმთან და ფარმაცევტთან უნდა დაზუსტდეს.",
     "facets": {
       "specialty": [
         "გინეკოლოგია",
@@ -54,11 +48,23 @@
         "თავის ტვინი და ნერვული სისტემა"
       ]
     },
-    "infoOverview": "მოწოდებული დოსიე აღწერს ფლიბანსერინის შემცველ ინდივიდუალურად მომზადებულ 100 მგ პერორალურ პრეპარატს. რეფერენსული ჩვენებისთვის მოქმედების ზუსტი მექანიზმი ცნობილი არ არის; ნივთიერება ცენტრალურ ნერვულ სისტემაში სეროტონინის რეცეპტორებზე მოქმედებს.",
-    "infoUse": "FDA-ს მიმდინარე რეფერენსული ინსტრუქცია მოიცავს შეძენილ, გენერალიზებულ ჰიპოაქტიურ სქესობრივი სურვილის აშლილობას, რომელიც მნიშვნელოვან დისკომფორტს იწვევს 65 წლამდე ქალებში, როდესაც დაბალი სურვილი სხვა დაავადებით, მედიკამენტით ან ურთიერთობის პრობლემით არ არის გამოწვეული. ალკოჰოლი, CYP3A4-ის საშუალო ან ძლიერი ინჰიბიტორები, ღვიძლის ფუნქციის დარღვევა, დაბალი არტერიული წნევა და სედაცია განსაკუთრებულ შეფასებას საჭიროებს.",
-    "infoStorage": "მოწოდებული დოსიე მიუთითებს, რომ პრეპარატი უნდა ინახებოდეს ოთახის ტემპერატურაზე, მშრალ და პირდაპირი სინათლისგან დაცულ ადგილას, ბავშვებისთვის მიუწვდომლად. უპირატესობა ენიჭება გაცემული პრეპარატის ეტიკეტზე მითითებულ შენახვის პირობასა და გამოყენების საბოლოო ვადას."
+    "nameComposition": "",
+    "pharmacology": "",
+    "indications": "",
+    "dosageAdministration": "",
+    "sideEffects": "",
+    "contraindications": "",
+    "warningsPrecautions": "",
+    "storageConditions": "",
+    "manufacturer": ""
   },
-  "infoOverview": "The supplied dossier identifies a compounded 100 mg oral preparation containing flibanserin. Its exact mechanism for the reference indication is not known; it acts at serotonin receptors in the central nervous system.",
-  "infoUse": "The current FDA reference label covers acquired, generalized hypoactive sexual desire disorder causing marked distress in women younger than 65 when low desire is not caused by another condition, medication effect or relationship problem. Alcohol, moderate or strong CYP3A4 inhibitors, liver impairment, low blood pressure and sedation require careful review.",
-  "infoStorage": "The supplied dossier states to keep this preparation at room temperature, dry and protected from direct light, out of reach of children. The storage instruction and beyond-use date on the dispensing label take precedence."
+  "nameComposition": "",
+  "pharmacology": "",
+  "indications": "",
+  "dosageAdministration": "",
+  "sideEffects": "",
+  "contraindications": "",
+  "warningsPrecautions": "",
+  "storageConditions": "",
+  "manufacturer": ""
 }

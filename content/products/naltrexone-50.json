@@ -5,9 +5,6 @@
   "pack": 10,
   "category": "Addiction medicine",
   "tag": "Opioid antagonist",
-  "context": "Naltrexone blocks opioid receptors. The FDA reference label describes treatment of alcohol dependence and blockade of externally administered opioids as part of a comprehensive management plan.",
-  "caution": "Current opioid use or dependence can make naltrexone inappropriate and may lead to precipitated withdrawal. Liver concerns and vulnerability to opioid overdose need clinical assessment.",
-  "note": "The reference label concerns Revia. It does not establish approval, equivalence or clinical performance of this Fortis compounded preparation.",
   "refs": [
     "revia"
   ],
@@ -31,9 +28,6 @@
     "name": "ნალტრექსონის ჰიდროქლორიდი",
     "category": "ადიქტოლოგია",
     "tag": "ოპიოიდური რეცეპტორების ანტაგონისტი",
-    "context": "ნალტრექსონი ბლოკავს ოპიოიდურ რეცეპტორებს. FDA-ს რეფერენსული ინსტრუქცია აღწერს ალკოჰოლზე დამოკიდებულების მკურნალობასა და გარედან მიღებული ოპიოიდების მოქმედების ბლოკირებას, კომპლექსური მართვის გეგმის ფარგლებში.",
-    "caution": "ოპიოიდების მიმდინარე მოხმარების ან მათზე დამოკიდებულების დროს ნალტრექსონი შეიძლება არ იყოს მიზანშეწონილი და მწვავედ გამოიწვიოს მოხსნის სინდრომი. ღვიძლის პრობლემები და ოპიოიდების ჭარბი დოზირებისადმი მოწყვლადობა კლინიკურ შეფასებას საჭიროებს.",
-    "note": "მითითებული ინსტრუქცია ეხება Revia-ს. ის არ ადასტურებს ფორტისის ამ პრეპარატის დამტკიცებას, ეკვივალენტობას ან კლინიკურ შედეგიანობას.",
     "form": "ტაბლეტი",
     "facets": {
       "specialty": [
@@ -49,13 +43,25 @@
     },
     "packUnit": "ტაბლეტი",
     "preparation": "კომპოზიტური · პერორალური",
-    "infoOverview": "მოწოდებული დოსიე აღწერს ნალტრექსონის ჰიდროქლორიდის შემცველ ინდივიდუალურად მომზადებულ 50 მგ პერორალურ პრეპარატს. ნალტრექსონი ოპიოიდური რეცეპტორების კონკურენტული ანტაგონისტია.",
-    "infoUse": "დოსიე და ციტირებული FDA-ს რეფერენსული ინსტრუქცია განიხილავს ალკოჰოლზე დამოკიდებულებასა და გარედან მიღებული ოპიოიდების ეფექტის ბლოკირებას, კომპლექსური მართვის გეგმის ფარგლებში. მკურნალობის დაწყებამდე პაციენტი სათანადო დროის განმავლობაში ოპიოიდებისგან თავისუფალი უნდა იყოს. მწვავე მოხსნის სინდრომი, ღვიძლის დაზიანება და შეწყვეტის შემდეგ ჭარბი დოზირებისადმი მომატებული მოწყვლადობა კლინიკურ დაგეგმვას საჭიროებს.",
-    "infoStorage": "მოწოდებული დოსიე მიუთითებს, რომ პრეპარატი უნდა ინახებოდეს ოთახის ტემპერატურაზე, მშრალ და პირდაპირი სინათლისგან დაცულ ადგილას, ბავშვებისთვის მიუწვდომლად. უპირატესობა ენიჭება გაცემული პრეპარატის ეტიკეტზე მითითებულ შენახვის პირობასა და გამოყენების საბოლოო ვადას."
+    "nameComposition": "",
+    "pharmacology": "",
+    "indications": "",
+    "dosageAdministration": "",
+    "sideEffects": "",
+    "contraindications": "",
+    "warningsPrecautions": "",
+    "storageConditions": "",
+    "manufacturer": ""
   },
   "packUnit": "tablets",
   "preparation": "Compounded · oral",
-  "infoOverview": "The supplied dossier identifies a compounded 50 mg oral preparation containing naltrexone hydrochloride, a competitive opioid-receptor antagonist.",
-  "infoUse": "The dossier and cited FDA reference label discuss alcohol dependence and blockade of externally administered opioids as part of a comprehensive management plan. Patients must be appropriately opioid-free before treatment. Precipitated withdrawal, liver injury and increased overdose vulnerability after discontinuation require clinical planning.",
-  "infoStorage": "The supplied dossier states to keep this preparation at room temperature, dry and protected from direct light, out of reach of children. The storage instruction and beyond-use date on the dispensing label take precedence."
+  "nameComposition": "",
+  "pharmacology": "",
+  "indications": "",
+  "dosageAdministration": "",
+  "sideEffects": "",
+  "contraindications": "",
+  "warningsPrecautions": "",
+  "storageConditions": "",
+  "manufacturer": ""
 }

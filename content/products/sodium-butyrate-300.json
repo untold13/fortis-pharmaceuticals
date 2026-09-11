@@ -12,9 +12,6 @@
   "order": 27,
   "category": "Product information",
   "tag": "Butyrate formulation information",
-  "context": "Sodium butyrate is the sodium salt of butyric acid. The FDA substance record identifies the ingredient. The cited EMA designation concerns an investigational rectal preparation and does not establish an indication for these 300 mg oral capsules.",
-  "caution": "The intended use, formulation, tolerability and interactions require individual review with the clinician and pharmacist.",
-  "note": "A substance identifier and an orphan designation are not marketing approval or proof of clinical benefit for this Fortis oral formulation.",
   "refs": [
     "butyrate_identity",
     "butyrate_ema"
@@ -37,9 +34,6 @@
     "preparation": "კომპოზიტური · პერორალური · ნაწლავში ხსნადი",
     "category": "პროდუქტის ინფორმაცია",
     "tag": "ინფორმაცია ბუტირატის ფორმულის შესახებ",
-    "context": "ნატრიუმის ბუტირატი ბუტირის მჟავას ნატრიუმის მარილია. FDA-ს ჩანაწერი ნივთიერების იდენტიფიკაციას ეხება. EMA-ს ციტირებული სტატუსი კვლევით რექტალურ ფორმას შეეხება და ამ 300 მგ პერორალური კაფსულებისთვის ჩვენებას არ ადგენს.",
-    "caution": "გამოყენების მიზანი, შემადგენლობა, ამტანობა და ურთიერთქმედებები ექიმმა და ფარმაცევტმა ინდივიდუალურად უნდა შეაფასონ.",
-    "note": "ნივთიერების იდენტიფიკატორი და იშვიათი დაავადებისთვის განკუთვნილი საკვლევი პრეპარატის სტატუსი ფორტისის ამ პერორალური ფორმულის დამტკიცებას ან კლინიკური სარგებლის მტკიცებულებას არ წარმოადგენს.",
     "facets": {
       "specialty": [
         "სპეციალისტის კონსულტაცია"
@@ -51,11 +45,23 @@
         "მითითებული არ არის"
       ]
     },
-    "infoOverview": "მოწოდებული დოსიე აღწერს ინდივიდუალურად მომზადებულ, ნაწლავში ხსნად 300 მგ კაფსულას, რომელიც შეიცავს ნატრიუმის ბუტირატს, მოკლეჯაჭვიანი ცხიმოვანი ბუტირის მჟავას ნატრიუმის მარილს.",
-    "infoUse": "დოსიე განიხილავს რამდენიმე კუჭ-ნაწლავის გამოყენებას. ციტირებული წყაროები ამ კონკრეტული პერორალური პრეპარატისთვის დამტკიცებულ ჩვენებას ან კლინიკურ სარგებელს არ ადგენს, ამიტომ ფართო განაცხადები მკურნალობის მტკიცებულებად არ არის გადმოტანილი. მიზანშეწონილობა, ამტანობა და ურთიერთქმედებები ინდივიდუალურ შეფასებას საჭიროებს.",
-    "infoStorage": "მოწოდებული დოსიე მიუთითებს, რომ პრეპარატი უნდა ინახებოდეს ოთახის ტემპერატურაზე, მშრალ და პირდაპირი სინათლისგან დაცულ ადგილას, ბავშვებისთვის მიუწვდომლად. უპირატესობა ენიჭება გაცემული პრეპარატის ეტიკეტზე მითითებულ შენახვის პირობასა და გამოყენების საბოლოო ვადას."
+    "nameComposition": "",
+    "pharmacology": "",
+    "indications": "",
+    "dosageAdministration": "",
+    "sideEffects": "",
+    "contraindications": "",
+    "warningsPrecautions": "",
+    "storageConditions": "",
+    "manufacturer": ""
   },
-  "infoOverview": "The supplied dossier identifies a compounded 300 mg enteric-coated capsule containing sodium butyrate, the sodium salt of the short-chain fatty acid butyric acid.",
-  "infoUse": "The dossier discusses several gastrointestinal applications. The cited sources do not establish an approved indication or clinical benefit for this exact oral preparation, so those broad claims are not reproduced as treatment claims. Suitability, tolerability and interactions require individual review.",
-  "infoStorage": "The supplied dossier states to keep this preparation at room temperature, dry and protected from direct light, out of reach of children. The storage instruction and beyond-use date on the dispensing label take precedence."
+  "nameComposition": "",
+  "pharmacology": "",
+  "indications": "",
+  "dosageAdministration": "",
+  "sideEffects": "",
+  "contraindications": "",
+  "warningsPrecautions": "",
+  "storageConditions": "",
+  "manufacturer": ""
 }

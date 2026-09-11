@@ -37,6 +37,40 @@ const paths = [
   "/privacy",
   ...products.map((p) => `/products/${p.slug}`),
 ];
+const productFieldLabels = {
+  en: [
+    "Name",
+    "Dosage form",
+    "Preparation and route",
+    "Medical area",
+    "Short description",
+    "Name and Composition",
+    "Pharmacological Properties and Mechanism of Action",
+    "Indications",
+    "Dosage and Administration",
+    "Side Effects",
+    "Contraindications",
+    "Special Warnings and Precautions",
+    "Storage Conditions",
+    "Manufacturer",
+  ],
+  ka: [
+    "დასახელება",
+    "წამლის ფორმა",
+    "მომზადება და მიღების გზა",
+    "მიმართულება",
+    "მოკლე აღწერა",
+    "დასახელება და შემადგენლობა",
+    "ფარმაკოლოგიური თვისებები და მოქმედების მექანიზმი",
+    "გამოყენების ჩვენებები",
+    "დოზირება და მიღების წესი",
+    "გვერდითი მოვლენები",
+    "უკუჩვენებები",
+    "განსაკუთრებული მითითებები",
+    "შენახვის პირობები",
+    "მწარმოებელი",
+  ],
+};
 const errors = [];
 let checked = 0;
 try {
@@ -122,6 +156,16 @@ try {
                   i.naturalWidth > 0,
               ),
             source,
+          );
+          assert.deepEqual(
+            await page.locator(".product-information-grid small").allTextContents(),
+            productFieldLabels[language],
+            `${path} product fields`,
+          );
+          assert.equal(
+            await page.getByText("Ingredient context", { exact: true }).count(),
+            0,
+            `${path} obsolete fields`,
           );
         }
         checked++;
