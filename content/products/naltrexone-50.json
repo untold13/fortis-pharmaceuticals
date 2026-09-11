@@ -1,60 +1,31 @@
 {
   "slug": "naltrexone-50",
-  "name": "Naltrexone hydrochloride",
-  "strength": "50 mg",
+  "name": "ნალტრექსონის ჰიდროქლორიდი",
+  "strength": "50 მგ",
   "pack": 10,
-  "category": "Addiction medicine",
-  "tag": "Opioid antagonist",
+  "category": "ადიქტოლოგია",
+  "tag": "ოპიოიდური რეცეპტორების ანტაგონისტი",
   "refs": [
     "revia"
   ],
   "facets": {
     "specialty": [
-      "Addiction medicine"
+      "ადიქტოლოგია"
     ],
     "use": [
-      "Alcohol dependence (reference context)",
-      "Opioid blockade (reference context)"
+      "ალკოჰოლზე დამოკიდებულება (რეფერენსული პრეპარატი)",
+      "ოპიოიდების მოქმედების ბლოკადა (რეფერენსული პრეპარატი)"
     ],
     "system": [
-      "Brain & nervous system"
+      "თავის ტვინი და ნერვული სისტემა"
     ]
   },
   "image": "/products/naltrexone-50.png",
-  "form": "Tablet",
+  "form": "ტაბლეტი",
   "published": true,
   "order": 3,
-  "ka": {
-    "name": "ნალტრექსონის ჰიდროქლორიდი",
-    "category": "ადიქტოლოგია",
-    "tag": "ოპიოიდური რეცეპტორების ანტაგონისტი",
-    "form": "ტაბლეტი",
-    "facets": {
-      "specialty": [
-        "ადიქტოლოგია"
-      ],
-      "use": [
-        "ალკოჰოლზე დამოკიდებულება (რეფერენსული პრეპარატი)",
-        "ოპიოიდების მოქმედების ბლოკადა (რეფერენსული პრეპარატი)"
-      ],
-      "system": [
-        "თავის ტვინი და ნერვული სისტემა"
-      ]
-    },
-    "packUnit": "ტაბლეტი",
-    "preparation": "კომპოზიტური · პერორალური",
-    "nameComposition": "",
-    "pharmacology": "",
-    "indications": "",
-    "dosageAdministration": "",
-    "sideEffects": "",
-    "contraindications": "",
-    "warningsPrecautions": "",
-    "storageConditions": "",
-    "manufacturer": ""
-  },
-  "packUnit": "tablets",
-  "preparation": "Compounded · oral",
+  "packUnit": "ტაბლეტი",
+  "preparation": "კომპოზიტური · პერორალური",
   "nameComposition": "",
   "pharmacology": "",
   "indications": "",

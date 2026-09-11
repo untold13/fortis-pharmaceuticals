@@ -178,7 +178,7 @@ try {
   for (const data of [
     { sections: null },
     { sections: [null] },
-    { sections: [{ published: true, page: "/", en: { title: {} }, ka: {} }] },
+    { sections: [{ published: true, page: "/", title: {}, body: "" }] },
   ])
     assert.equal(
       (await call("save", { path: "content/home.json", data }, cookie))
@@ -190,7 +190,7 @@ try {
     { sources: [null] },
     {
       sources: [
-        { id: "x", title: 2, titleKa: "x", url: "https://www.fda.gov/x" },
+        { id: "x", title: 2, url: "https://www.fda.gov/x" },
       ],
     },
   ])
@@ -203,18 +203,15 @@ try {
     before = files.get(path).sha,
     changed = {
       ...product,
-      manufacturer: "Test manufacturer",
-      ka: { ...product.ka, manufacturer: "სატესტო მწარმოებელი" },
+      manufacturer: "სატესტო მწარმოებელი",
     };
   r = await call("save", { path, sha: before, data: changed }, cookie);
   assert.equal(r.statusCode, 200);
   assert.notEqual(r.data.sha, before);
-  assert.equal(
-    (await call("load", undefined, cookie)).data.products.find(
-      (p) => p.path === path,
-    ).data.manufacturer,
-    changed.manufacturer,
-  );
+  const savedProduct = (await call("load", undefined, cookie)).data.products.find(
+    (p) => p.path === path,
+  ).data;
+  assert.equal(savedProduct.manufacturer, "სატესტო მწარმოებელი");
   assert.equal(
     (await call("save", { path, sha: before, data: product }, cookie))
       .statusCode,

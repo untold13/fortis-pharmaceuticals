@@ -30,11 +30,11 @@ import { BottleArtwork } from "./bottle-art";
 import { ThemeArtwork } from "./theme-art";
 import { facets, emptyFilters, filterProducts } from "./catalog-model";
 const nav = [
-  ["/", "Home"],
-  ["/compounding", "Compounding"],
-  ["/about", "About / Laboratory"],
-  ["/products", "Products"],
-  ["/contact", "Contact"],
+  ["/", "მთავარი"],
+  ["/compounding", "კომპოზიტური ფარმაცია"],
+  ["/about", "ჩვენ შესახებ / ლაბორატორია"],
+  ["/products", "პროდუქტები"],
+  ["/contact", "კონტაქტი"],
 ];
 const A = ({ children, ...props }) => <a {...props}>{children}</a>;
 const Icon = ({ type: Type, ...p }) => (
@@ -43,7 +43,7 @@ const Icon = ({ type: Type, ...p }) => (
 function Brand() {
   const { t } = usePreferences();
   return (
-    <A href="/" className="brand" aria-label={t("Fortis Pharmaceuticals home")}>
+    <A href="/" className="brand" aria-label={t("ფორტის ფარმაცევტიკალსის მთავარი გვერდი")}>
       <span className="brand-icon">
         <BrandArtwork symbol />
       </span>
@@ -55,7 +55,7 @@ function Brand() {
   );
 }
 function Header() {
-  const { t, language, setLanguage, theme, setTheme } = usePreferences();
+  const { t, theme, setTheme } = usePreferences();
   const [open, setOpen] = useState(false);
   return (
     <header className="header">
@@ -63,7 +63,7 @@ function Header() {
         <Brand />
         <nav
           id="main-navigation"
-          aria-label={t("Main navigation")}
+          aria-label={t("მთავარი ნავიგაცია")}
           className={open ? "nav open" : "nav"}
         >
           {nav.map(([url, name]) => (
@@ -77,30 +77,17 @@ function Header() {
           ))}
         </nav>
         <A href="tel:+995322053191" className="contact-nav">
-          {t("Call pharmacy ")}
+          {t("დარეკეთ აფთიაქში ")}
           <Icon type={Phone} />
         </A>
         <div className="preferences-controls">
           <button
-            className="language-button"
-            onClick={() => setLanguage(language === "en" ? "ka" : "en")}
-            aria-label={
-              language === "en" ? "ქართული ენის არჩევა" : "Switch to English"
-            }
-            title={
-              language === "en" ? "ქართული ენის არჩევა" : "Switch to English"
-            }
-            lang={language === "en" ? "ka" : "en"}
-          >
-            {language === "en" ? "KA" : "EN"}
-          </button>
-          <button
             className="theme-switch"
             role="switch"
             aria-checked={theme === "dark"}
-            aria-label={t("Night mode")}
+            aria-label={t("ღამის რეჟიმი")}
             title={t(
-              theme === "dark" ? "Switch to light mode" : "Switch to dark mode",
+              theme === "dark" ? "დღის რეჟიმზე გადასვლა" : "ღამის რეჟიმზე გადასვლა",
             )}
             onClick={() => setTheme(theme === "light" ? "dark" : "light")}
           >
@@ -111,7 +98,7 @@ function Header() {
           aria-controls="main-navigation"
           className="menu-button"
           onClick={() => setOpen(!open)}
-          aria-label={t(open ? "Close menu" : "Open menu")}
+          aria-label={t(open ? "მენიუს დახურვა" : "მენიუს გახსნა")}
           aria-expanded={open}
         >
           <Icon type={open ? X : Menu} />
@@ -139,13 +126,13 @@ function Footer() {
         <div>
           <Brand />
           <p>
-            {t("Individual needs.")}
+            {t("ინდივიდუალური საჭიროებები.")}
             <br />
-            {t("Thoughtful preparation.")}
+            {t("ყურადღებით მომზადებული მედიკამენტები.")}
           </p>
         </div>
         <div>
-          <small>{t("DISCOVER")}</small>
+          <small>{t("გაიგეთ მეტი")}</small>
           {nav.slice(1, 4).map(([h, n]) => (
             <A key={h} href={h}>
               {t(n)}
@@ -153,34 +140,34 @@ function Footer() {
           ))}
         </div>
         <div>
-          <small>{t("FIND US")}</small>
+          <small>{t("გვიპოვეთ")}</small>
           <A href="/contact">
-            {t("9 Givi Zhvania Street")}
+            {t("გივი ჟვანიას ქუჩა 9")}
             <br />
-            {t("Tbilisi, Georgia")}
+            {t("თბილისი, საქართველო")}
           </A>
           <A href="tel:+995322053191">+995 32 205 31 91</A>
         </div>
         <div>
-          <small>{t("FOR PROFESSIONALS")}</small>
+          <small>{t("პროფესიონალებისთვის")}</small>
           <A href="https://fortislibrary.com" target="_blank" rel="noreferrer">
-            {t("Fortis Library ")}
+            {t("ფორტის ბიბლიოთეკა ")}
             <Icon type={ArrowUpRight} />
           </A>
-          <A href="/editorial">{t("Information & references")}</A>
+          <A href="/editorial">{t("ინფორმაცია და წყაროები")}</A>
         </div>
       </div>
       <div className="footer-bottom wrap">
         <span>
           © {new Date().getFullYear()}
-          {t(" Fortis Pharmaceuticals")}
+          {t(" ფორტის ფარმაცევტიკალს")}
         </span>
         <span>
           {t(
-            "Compounded preparations require individual professional assessment.",
+            "ინდივიდუალურად მომზადებული პრეპარატის გამოყენება სპეციალისტის შეფასებას საჭიროებს.",
           )}
         </span>
-        <A href="/privacy">{t("Privacy")}</A>
+        <A href="/privacy">{t("კონფიდენციალურობა")}</A>
       </div>
     </footer>
   );
@@ -208,7 +195,7 @@ function DeferredProductImage({ p }) {
     <img
       ref={ref}
       src={visible ? p.image : undefined}
-      alt={`${t(p.name)} ${t(p.strength)}, ${p.pack} ${t(p.packUnit)} - ${t("supplied packaging illustration")}`}
+      alt={`${t(p.name)} ${t(p.strength)}, ${p.pack} ${t(p.packUnit)} - ${t("მოწოდებული შეფუთვის ილუსტრაცია")}`}
       width={p.imageWidth}
       height={p.imageHeight}
       decoding="async"
@@ -254,27 +241,27 @@ function Hero() {
     <section className="simple-hero">
       <div className="wrap simple-hero-grid">
         <div className="hero-copy">
-          <Eyebrow>{t("FORTIS COMPOUNDING PHARMACY")}</Eyebrow>
+          <Eyebrow>{t("ფორტის კომპოზიტური აფთიაქი")}</Eyebrow>
           <h1>
-            {t("Precision")}
+            {t("სიზუსტით")}
             <br />
-            {t("compounding.")}
+            {t("მომზადებული.")}
           </h1>
           <p>
             {t(
-              "Prepared in Tbilisi. Individual medicines, carefully compounded around the needs of each patient.",
+              "თბილისში ვამზადებთ მედიკამენტებს, თითოეული პაციენტის საჭიროებისა და ექიმის დანიშნულების მიხედვით.",
             )}
           </p>
           <div className="hero-actions">
-            <Button href="/products">{t("Explore medicines")}</Button>
+            <Button href="/products">{t("პრეპარატების ნახვა")}</Button>
             <A href="/compounding" className="text-link">
-              {t("Our approach ")}
+              {t("ჩვენი მიდგომა ")}
               <Icon type={ArrowRight} />
             </A>
           </div>
         </div>
         <div className="hero-artwork">
-          <BottleArtwork label={t("Hand-drawn amber Fortis medicine bottle")} />
+          <BottleArtwork label={t("ფორტისის ქარვისფერი ფლაკონის გრაფიკული ესკიზი")} />
         </div>
       </div>
     </section>
@@ -285,24 +272,24 @@ function Approach() {
   return (
     <section className="section wrap approach" id="approach">
       <h2>
-        {t("Medicine shaped around")}
+        {t("მედიკამენტი, მორგებული")}
         <br />
-        {t("individual needs.")}
+        {t("ინდივიდუალურ საჭიროებებს.")}
       </h2>
       <div className="approach-content">
         <div>
           <p className="lead">
             {t(
-              "When a standard preparation does not meet an individual’s needs, compounding opens a conversation.",
+              "როდესაც სტანდარტული პრეპარატი პაციენტის საჭიროებებს ვერ პასუხობს, განიხილება ინდივიდუალური მომზადების შესაძლებლობა.",
             )}
           </p>
           <p>
             {t(
-              "Fortis prepares medicines locally, using active pharmaceutical ingredients sourced from the US and Europe. The prescriber and pharmacist assess each formulation together.",
+              "ფორტისი მედიკამენტებს ადგილზე ამზადებს, აშშ-დან და ევროპიდან მიღებული აქტიური ფარმაცევტული ინგრედიენტებით. თითოეულ ფორმულას ექიმი და ფარმაცევტი ერთობლივად აფასებენ.",
             )}
           </p>
           <A href="/compounding" className="text-link">
-            {t("Discover compounding ")}
+            {t("კომპოზიტური ფარმაციის შესახებ ")}
             <Icon type={ArrowUpRight} />
           </A>
         </div>
@@ -310,18 +297,18 @@ function Approach() {
           {[
             [
               SlidersHorizontal,
-              "Individual formulations",
-              "Preparation shaped around the prescription and the person.",
+              "ინდივიდუალური ფორმულები",
+              "მომზადება დანიშნულებისა და პაციენტის საჭიროებების მიხედვით.",
             ],
             [
               FlaskConical,
-              "Purposeful preparation",
-              "Small-batch work, with attention to each stage.",
+              "ყურადღება თითოეულ ეტაპზე",
+              "მცირე პარტიებით მუშაობა და ყურადღება თითოეული ეტაპის მიმართ.",
             ],
             [
               ShieldCheck,
-              "A focus on quality",
-              "Considered processes, documentation and professional review.",
+              "ხარისხზე ზრუნვა",
+              "მომზადების პროცესის დოკუმენტირება და ფარმაცევტის პროფესიული შეფასება.",
             ],
           ].map(([I, h, b]) => (
             <div key={h}>
@@ -344,10 +331,10 @@ function Featured() {
       <div className="wrap">
         <div className="section-heading">
           <div>
-            <h2>{t("Featured preparations.")}</h2>
+            <h2>{t("შერჩეული პრეპარატები.")}</h2>
           </div>
           <Button href="/products" secondary>
-            {t("View all products")}
+            {t("ყველა პროდუქტის ნახვა")}
           </Button>
         </div>
         <div className="product-grid featured-grid">
@@ -359,7 +346,7 @@ function Featured() {
         </div>
         <p className="quiet-note">
           {t(
-            "Illustrative packaging. Follow your prescription and pharmacist’s instructions. Product information is not a recommendation for self-treatment.",
+            "შეფუთვა საილუსტრაციოა. დაიცავით თქვენი დანიშნულება და ფარმაცევტის მითითებები. პროდუქტის შესახებ ინფორმაცია თვითმკურნალობის რეკომენდაცია არ არის.",
           )}
         </p>
       </div>
@@ -371,41 +358,41 @@ function PreparationGuide() {
   return (
     <section className="section wrap preparation-guide">
       <div className="preparation-guide-intro">
-        <h2>{t("The prescription is just the beginning.")}</h2>
+        <h2>{t("ყველაფერი დანიშნულებით იწყება.")}</h2>
         <p>
           {t(
-            "An individual preparation starts with a clear understanding of the patient’s needs. These are the details to discuss with your prescriber and the Fortis pharmacist.",
+            "ინდივიდუალური მედიკამენტის მომზადებამდე მნიშვნელოვანია პაციენტის საჭიროებების გააზრება. ეს საკითხები თქვენს ექიმსა და ფორტისის ფარმაცევტთან ერთად განიხილეთ.",
           )}
         </p>
       </div>
       <dl className="preparation-guide-topics">
         <div>
-          <dt>{t("Strength and formulation")}</dt>
+          <dt>{t("დოზა და ფორმულა")}</dt>
           <dd>
             {t(
-              "The ingredient, strength and dosage form need to match the prescription. Release characteristics matter; preparations with similar ingredient names are not automatically interchangeable.",
+              "მოქმედი ნივთიერება, დოზა და წამლის ფორმა დანიშნულებას უნდა შეესაბამებოდეს. მნიშვნელოვანია ნივთიერების გამოთავისუფლების თავისებურებებიც. ერთი და იმავე ნივთიერების შემცველი პრეპარატები ყოველთვის ურთიერთჩანაცვლებადი არ არის.",
             )}
           </dd>
         </div>
         <div>
-          <dt>{t("Ingredients and individual needs")}</dt>
+          <dt>{t("შემადგენლობა და ინდივიდუალური საჭიროებები")}</dt>
           <dd>
             {t(
-              "Discuss allergies, excipient tolerance and any formulation requirements before preparation. Fortis describes sourcing active pharmaceutical ingredients from the US and Europe for local compounding in Tbilisi.",
+              "მომზადებამდე აცნობეთ ფარმაცევტს ალერგიის, დამხმარე ნივთიერებების აუტანლობისა და ფორმულის მიმართ სხვა მოთხოვნების შესახებ. კომპანიის ინფორმაციით, ფორტისი მედიკამენტებს თბილისში ამზადებს, აშშ-დან და ევროპიდან მიღებული აქტიური ნივთიერებებით.",
             )}
           </dd>
         </div>
         <div>
-          <dt>{t("Guidance at dispensing")}</dt>
+          <dt>{t("მითითებები მედიკამენტის მიღებისას")}</dt>
           <dd>
             {t(
-              "Confirm your own directions, storage conditions and beyond-use date with the pharmacist. The information and packaging illustrations on this website do not replace your prescription.",
+              "ფარმაცევტთან გადაამოწმეთ მიღების წესი, შენახვის პირობები და გამოყენების საბოლოო ვადა. ვებგვერდის ინფორმაცია და შეფუთვის ილუსტრაციები თქვენს დანიშნულებას ვერ ჩაანაცვლებს.",
             )}
           </dd>
         </div>
       </dl>
       <A href="/compounding" className="text-link">
-        {t("How individual preparation works")}
+        {t("როგორ მზადდება ინდივიდუალური მედიკამენტი")}
         <Icon type={ArrowRight} />
       </A>
     </section>
@@ -415,59 +402,55 @@ function LabTeaser() {
   const { t } = usePreferences();
   return (
     <section className="section wrap company-overview">
-      <Eyebrow>{t("OUR STORY & LABORATORY")}</Eyebrow>
+      <Eyebrow>{t("ჩვენი ისტორია და ლაბორატორია")}</Eyebrow>
       <h2>
-        {t("Prepared locally.")}
+        {t("მზადდება საქართველოში.")}
         <br />
-        {t("With care at every stage.")}
+        {t("ზრუნვით, ყოველ ეტაპზე.")}
       </h2>
       <div className="company-overview-body">
         <p>
           {t(
-            "Fortis was founded around the needs of patients and healthcare professionals. Our pharmacy brings magistral and officinal compounding to Tbilisi, with attention to preparation, handling and storage.",
+            "ფორტისი პაციენტებისა და ჯანდაცვის სპეციალისტების საჭიროებების საპასუხოდ შეიქმნა. თბილისში მედიკამენტებს მაგისტრალური და ოფიცინალური რეცეპტებით ვამზადებთ და განსაკუთრებულ ყურადღებას მომზადებისა და შენახვის პირობებს ვუთმობთ.",
           )}
         </p>
         <div>
-          <h3>{t("Inside Fortis")}</h3>
+          <h3>{t("გაიცანით ფორტისი")}</h3>
           <p>
             {t(
-              "Learn about our founding vision, laboratory approach and commitment to professional collaboration.",
+              "გაეცანით ჩვენი შექმნის იდეას, ლაბორატორიის მუშაობის პრინციპებსა და პროფესიული თანამშრომლობის ხედვას.",
             )}
           </p>
           <A href="/about" className="text-link">
-            {t("Our story & laboratory ")}
+            {t("ჩვენი ისტორია და ლაბორატორია ")}
             <Icon type={ArrowUpRight} />
           </A>
         </div>
       </div>
       <BrandArtwork
         className="company-brand"
-        label={t(
-          "Fortis Pharmaceuticals / Compounding Pharmacy, in Georgian and English",
-        )}
+        label="ფორტის ფარმაცევტიკალსი / კომპოზიტური აფთიაქი"
       />
     </section>
   );
 }
 function ExtraContent() {
-  const { language } = usePreferences();
   const path = location.pathname.replace(/\/$/, "") || "/";
   return extraSections
     .filter((s) => s.published && (s.page || "/") === path)
     .map((s, i) => {
-      const copy = s[language] || s.en;
       return (
         <section className="section wrap added-content" key={i}>
-          <h2>{copy.title}</h2>
+          <h2>{s.title}</h2>
           <div>
-            {copy.body.split(/\n\s*\n/).map((p, j) => (
+            {s.body.split(/\n\s*\n/).map((p, j) => (
               <p key={j}>{p}</p>
             ))}
           </div>
           {s.image && (
             <img
               src={s.image}
-              alt={copy.imageAlt || copy.title}
+              alt={s.imageAlt || s.title}
               loading="lazy"
             />
           )}
@@ -482,12 +465,12 @@ function ContactBand() {
       <div className="wrap">
         <div>
           <h2>
-            {t("A question about")}
+            {t("გაქვთ კითხვა")}
             <br />
-            {t("individual preparation?")}
+            {t("ინდივიდუალურ მომზადებაზე?")}
           </h2>
         </div>
-        <Button href="/contact">{t("Talk to Fortis")}</Button>
+        <Button href="/contact">{t("დაუკავშირდით ფორტისს")}</Button>
       </div>
     </section>
   );
@@ -542,22 +525,22 @@ function Catalog() {
           ?.querySelectorAll("details[open]")
           .forEach((d) => (d.open = false));
     };
-    document.addEventListener("pointerdown", close);
-    return () => document.removeEventListener("pointerdown", close);
+    document.addEventListener("click", close);
+    return () => document.removeEventListener("click", close);
   }, []);
   return (
     <>
       <PageIntro
-        eyebrow={t("THE FORTIS PORTFOLIO")}
+        eyebrow={t("ფორტის პროდუქტები")}
         title={
           <>
-            {t("Individual preparations.")}
+            {t("ინდივიდუალური პრეპარატები.")}
             <br />
-            <em>{t("Clearly presented.")}</em>
+            <em>{t("გასაგები ინფორმაცია.")}</em>
           </>
         }
         description={t(
-          "Find a preparation by ingredient, strength, specialty or use context. Read its individual information and references before discussing it with your prescriber.",
+          "მოძებნეთ პრეპარატი მოქმედი ნივთიერებით, დოზით ან სამედიცინო მიმართულებით. გაეცანით მის შესახებ ინფორმაციასა და წყაროებს, შემდეგ კი განიხილეთ თქვენს ექიმთან.",
         )}
       />
       <section className="wrap catalog">
@@ -568,16 +551,16 @@ function Catalog() {
               id="product-search"
               value={q}
               onChange={(e) => setQ(e.target.value)}
-              placeholder={t("Search name or strength")}
-              aria-label={t("Search products")}
+              placeholder={t("დასახელება ან დოზა")}
+              aria-label={t("პროდუქტების ძიება")}
             />
             {q && (
-              <button onClick={() => setQ("")} aria-label={t("Clear search")}>
+              <button onClick={() => setQ("")} aria-label={t("ძიების გასუფთავება")}>
                 <Icon type={X} />
               </button>
             )}
           </label>
-          <p>{t("Choose more than one option in each filter.")}</p>
+          <p>{t("თითოეულ ფილტრში შეგიძლიათ რამდენიმე ვარიანტი მონიშნოთ.")}</p>
         </div>
         <div className="catalog-facets" ref={filterRef}>
           {facets.map((f) => (
@@ -620,7 +603,7 @@ function Catalog() {
                 {f.key === "form" && (
                   <p>
                     {t(
-                      "Available forms reflect the currently published preparations.",
+                      "მოცემულია გამოქვეყნებული პრეპარატების შესაბამისი ფორმები.",
                     )}
                   </p>
                 )}
@@ -631,22 +614,22 @@ function Catalog() {
         <div className="catalog-results-bar">
           <p role="status" aria-live="polite" aria-atomic="true">
             <strong>{shown.length}</strong>
-            {t(" preparations")} <span> / {products.length}</span>
+            {t(" პრეპარატი")} <span> / {products.length}</span>
           </p>
           {(active.length > 0 || q) && (
             <button className="reset-filters" onClick={reset}>
-              {t("Reset filters")}
+              {t("ფილტრების გასუფთავება")}
               <Icon type={X} />
             </button>
           )}
         </div>
         {active.length > 0 && (
-          <div className="active-filters" aria-label={t("Active filters")}>
+          <div className="active-filters" aria-label={t("არჩეული ფილტრები")}>
             {active.map((f) => (
               <button
                 key={f.key + f.value}
                 onClick={() => toggle(f.key, f.value)}
-                aria-label={`${t("Remove filter")}: ${t(f.label)}: ${t(f.value)}`}
+                aria-label={`${t("ფილტრის მოხსნა")}: ${t(f.label)}: ${t(f.value)}`}
               >
                 <span>
                   <small>{t(f.label)}:</small> {t(f.value)}
@@ -658,7 +641,7 @@ function Catalog() {
         )}
         <p className="filter-note">
           {t(
-            "Filters describe ingredient reference or research contexts, not approved indications for Fortis preparations. Off-label uses are marked; study results and formulation limits remain on each product page.",
+            "ფილტრები მოქმედი ნივთიერების რეფერენსულ პრეპარატებს ან კვლევით გამოყენებას აღწერს და ფორტისის პრეპარატების დამტკიცებულ ჩვენებებს არ განსაზღვრავს. არარეგისტრირებული ჩვენებები მონიშნულია. კვლევების შედეგები და კონკრეტული ფორმულის შეზღუდვები პროდუქტის გვერდზეა განმარტებული.",
           )}
         </p>
         <div className="product-grid">
@@ -668,13 +651,13 @@ function Catalog() {
         </div>
         {!shown.length && (
           <div className="empty">
-            <h2>{t("No preparations found.")}</h2>
-            <p>{t("Try another ingredient or reset the filters.")}</p>
+            <h2>{t("პრეპარატი ვერ მოიძებნა.")}</h2>
+            <p>{t("სცადეთ სხვა მოქმედი ნივთიერება ან გაასუფთავეთ ფილტრები.")}</p>
           </div>
         )}
         <p className="quiet-note">
           {t(
-            "Illustrative packaging. Follow your prescription and pharmacist’s instructions. Availability and formulation details should be confirmed with Fortis.",
+            "შეფუთვა საილუსტრაციოა. დაიცავით თქვენი დანიშნულება და ფარმაცევტის მითითებები. ხელმისაწვდომობა და ფორმულის დეტალები გადაამოწმეთ ფორტისთან.",
           )}
         </p>
       </section>
@@ -685,25 +668,20 @@ function Catalog() {
 function Product({ p }) {
   const { t } = usePreferences();
   const information = [
-    ["Name", p.name],
-    ["Dosage form", p.form],
-    ["Preparation and route", p.preparation],
-    ["Medical area", p.category],
-    ["Short description", p.tag],
-    ["Name and Composition", p.nameComposition],
-    ["Pharmacological Properties and Mechanism of Action", p.pharmacology],
-    ["Indications", p.indications],
-    ["Dosage and Administration", p.dosageAdministration],
-    ["Side Effects", p.sideEffects],
-    ["Contraindications", p.contraindications],
-    ["Special Warnings and Precautions", p.warningsPrecautions],
-    ["Storage Conditions", p.storageConditions],
-    ["Manufacturer", p.manufacturer],
+    ["დასახელება და შემადგენლობა", "nameComposition"],
+    ["ფარმაკოლოგიური თვისებები და მოქმედების მექანიზმი", "pharmacology"],
+    ["გამოყენების ჩვენებები", "indications"],
+    ["დოზირება და მიღების წესი", "dosageAdministration"],
+    ["გვერდითი მოვლენები", "sideEffects"],
+    ["უკუჩვენებები", "contraindications"],
+    ["განსაკუთრებული მითითებები", "warningsPrecautions"],
+    ["შენახვის პირობები", "storageConditions"],
+    ["მწარმოებელი", "manufacturer"],
   ];
   return (
     <>
       <div className="wrap breadcrumb">
-        <A href="/products">{t("Products")}</A>
+        <A href="/products">{t("პროდუქტები")}</A>
         <span>/</span>
         <span>
           {t(p.name)} · {t(p.strength)}
@@ -713,13 +691,13 @@ function Product({ p }) {
         <div className="detail-visual">
           <img
             src={p.image}
-            alt={`${t(p.name)} ${t(p.strength)}, ${p.pack} ${t(p.packUnit)} - ${t("supplied packaging illustration")}`}
+            alt={`${t(p.name)} ${t(p.strength)}, ${p.pack} ${t(p.packUnit)} - ${t("მოწოდებული შეფუთვის ილუსტრაცია")}`}
             width={p.imageWidth}
             height={p.imageHeight}
           />
           <p>
             {t(
-              "Illustrative packaging. Follow your prescription and pharmacist’s instructions.",
+              "შეფუთვა საილუსტრაციოა. დაიცავით თქვენი დანიშნულება და ფარმაცევტის მითითებები.",
             )}
           </p>
         </div>
@@ -729,41 +707,44 @@ function Product({ p }) {
           <div className="detail-strength">{t(p.strength)}</div>
           <div className="specs">
             <div>
-              <small>{t("PACK SIZE")}</small>
+              <small>{t("შეფუთვა")}</small>
               <strong>
                 {p.pack} {t(p.packUnit)}
               </strong>
             </div>
             <div>
-              <small>{t("PREPARATION")}</small>
+              <small>{t("პრეპარატის ფორმა")}</small>
               <strong>{t(p.preparation)}</strong>
             </div>
           </div>
-          <Button href="/contact">{t("Ask about this preparation")}</Button>
+          <span className="tag">{t(p.tag)}</span>
+          <div className="product-narrative">
+            {information.map(([label, key], index) => {
+              const Heading = index === 0 ? "h2" : "h3";
+              const value = p[key]?.trim();
+              return (
+                <section
+                  className={`medicine-section ${key === "indications" ? "clinical-note" : ""}`}
+                  key={key}
+                >
+                  <Heading>{t(label)}</Heading>
+                  <p>{value || t("მითითებული არ არის")}</p>
+                </section>
+              );
+            })}
+          </div>
+          <Button href="/contact">{t("იკითხეთ ამ პრეპარატის შესახებ")}</Button>
           <p className="detail-small">
             {t(
-              "Selection, directions, excipients, release characteristics and beyond-use date must be confirmed by the prescribing clinician and dispensing pharmacist.",
+              "პრეპარატის შერჩევა, მიღების წესი, დამხმარე ნივთიერებები, გამოთავისუფლების მახასიათებლები და მომზადების შემდეგ გამოყენების საბოლოო ვადა უნდა დააზუსტოთ მკურნალ ექიმთან და გამცემ ფარმაცევტთან.",
             )}
           </p>
         </div>
       </section>
-      <section id="product-information" className="wrap product-information">
-        <div className="product-information-heading">
-          <h2>{t("Product information")}</h2>
-        </div>
-        <div className="product-information-grid">
-          {information.map(([label, value]) => (
-            <article key={label}>
-              <small>{t(label)}</small>
-              <p>{value?.trim() ? t(value) : t("Not specified")}</p>
-            </article>
-          ))}
-        </div>
-      </section>
       <section className="wrap references">
         <div>
-          <Eyebrow>{t("READ THE EVIDENCE")}</Eyebrow>
-          <h2>{t("Sources & perspective.")}</h2>
+          <Eyebrow>{t("გაეცანით მტკიცებულებებს")}</Eyebrow>
+          <h2>{t("წყაროები და კონტექსტი.")}</h2>
         </div>
         <div>
           {p.refs.map((key) => (
@@ -779,11 +760,11 @@ function Product({ p }) {
           ))}
           <p>
             {t(
-              "These references describe ingredients or reference medicines, not FDA or EMA approval of Fortis compounded preparations. Archived labels may not reflect the latest labeling. This overview is not a complete safety guide or prescribing advice.",
+              "წყაროები აღწერს მოქმედ ნივთიერებებს ან რეფერენსულ მედიკამენტებს და არ ნიშნავს ფორტისის მიერ მომზადებული პრეპარატების FDA-ს ან EMA-ს მიერ დამტკიცებას. საარქივო ინსტრუქციები შესაძლოა უახლეს ინფორმაციას არ ასახავდეს. ეს მიმოხილვა არ წარმოადგენს უსაფრთხოების სრულ სახელმძღვანელოს ან დანიშნულების რეკომენდაციას.",
             )}
           </p>
           <A href="/editorial" className="text-link">
-            {t("How we present product information ")}
+            {t("როგორ წარმოვადგენთ პროდუქტის ინფორმაციას ")}
             <Icon type={ArrowRight} />
           </A>
         </div>
@@ -794,20 +775,20 @@ function Product({ p }) {
 }
 const questions = [
   [
-    "What is pharmaceutical compounding?",
-    "Compounding is the preparation of a medicine to a defined formulation. Magistral preparations respond to an individual prescription; officinal preparations follow a recognized pharmacopoeial formula, subject to the applicable local framework.",
+    "რა არის კომპოზიტური ფარმაცია?",
+    "კომპოზიტური ფარმაცია განსაზღვრული ფორმულით მედიკამენტის მომზადებას გულისხმობს. მაგისტრალური პრეპარატი ინდივიდუალური დანიშნულების მიხედვით მზადდება, ხოლო ოფიცინალური პრეპარატი აღიარებულ ფარმაკოპეულ ფორმულას ეყრდნობა, მოქმედი ადგილობრივი მოთხოვნების შესაბამისად.",
   ],
   [
-    "When might a tailored preparation be considered?",
-    "A prescriber may identify a need related to a particular strength, dosage form or an excipient intolerance. The pharmacist assesses what can appropriately be prepared. Compounding does not automatically make a medicine safer or more effective.",
+    "როდის შეიძლება განიხილებოდეს ინდივიდუალური მომზადება?",
+    "ექიმმა შეიძლება გამოავლინოს კონკრეტული დოზის, წამლის ფორმის ან დამხმარე ნივთიერების აუტანლობასთან დაკავშირებული საჭიროება. ფარმაცევტი აფასებს, რისი მომზადებაა მიზანშეწონილი. ინდივიდუალური მომზადება ავტომატურად არ ნიშნავს, რომ მედიკამენტი უფრო უსაფრთხო ან ეფექტურია.",
   ],
   [
-    "How do I discuss a preparation?",
-    "Contact the pharmacy to discuss practical requirements. Your prescriber and pharmacist determine suitability, formulation and instructions. Do not change or start a medicine based on this website.",
+    "როგორ განვიხილო პრეპარატის მომზადება?",
+    "პრაქტიკული მოთხოვნების განსახილველად დაუკავშირდით აფთიაქს. მიზანშეწონილობას, ფორმულასა და მიღების წესს ექიმი და ფარმაცევტი განსაზღვრავენ. ამ ვებგვერდის საფუძველზე არ დაიწყოთ და არ შეცვალოთ მედიკამენტის მიღება.",
   ],
   [
-    "Can I order through this website?",
-    "This website is an information portfolio. Contact Fortis to confirm availability and the prescription and preparation requirements. There is no online checkout.",
+    "შესაძლებელია ვებგვერდიდან შეკვეთა?",
+    "ეს ვებგვერდი საინფორმაციო კატალოგია. ხელმისაწვდომობის, დანიშნულებისა და მომზადების მოთხოვნების დასაზუსტებლად დაუკავშირდით ფორტისს. ვებგვერდიდან ონლაინ შეძენა არ ხდება.",
   ],
 ];
 function FAQ() {
@@ -831,16 +812,16 @@ function Compounding() {
   return (
     <>
       <PageIntro
-        eyebrow={t("THE ART & SCIENCE OF COMPOUNDING")}
+        eyebrow={t("კომპოზიტური ფარმაციის ხელოვნება და მეცნიერება")}
         title={
           <>
-            {t("Prepared with purpose.")}
+            {t("მომზადებული საჭიროებისთვის.")}
             <br />
-            <em>{t("Centered on the individual.")}</em>
+            <em>{t("პაციენტზე ორიენტირებული.")}</em>
           </>
         }
         description={t(
-          "A considered response when an individual’s pharmaceutical needs call for a tailored preparation.",
+          "გააზრებული მიდგომა, როდესაც პაციენტის ფარმაცევტული საჭიროებები ინდივიდუალურად მომზადებულ პრეპარატს მოითხოვს.",
         )}
       />
       <div className="wrap editorial-layout">
@@ -852,38 +833,38 @@ function Compounding() {
           </div>
         </aside>
         <article>
-          <h2>{t("A prescription is the starting point.")}</h2>
+          <h2>{t("ყველაფერი დანიშნულებით იწყება.")}</h2>
           <p>
             {t(
-              "People may have different requirements relating to strength, formulation, excipient tolerance or coexisting conditions. Compounding brings the prescriber and pharmacist into a conversation about those requirements.",
+              "პაციენტების საჭიროებები შეიძლება განსხვავდებოდეს დოზის, ფორმულის, დამხმარე ნივთიერებების ამტანობისა თუ თანმხლები მდგომარეობების მიხედვით. კომპოზიტური ფარმაცია ამ საჭიროებების განხილვაში ექიმსა და ფარმაცევტს აერთიანებს.",
             )}
           </p>
           <p>
             {t(
-              "Fortis’s company account describes sourcing active pharmaceutical ingredients from the US and Europe and preparing medicines locally in Tbilisi. Each requested preparation requires a professional assessment of suitability and feasibility.",
+              "კომპანიის ინფორმაციით, ფორტისი აქტიურ ფარმაცევტულ ინგრედიენტებს აშშ-დან და ევროპიდან იღებს და მედიკამენტებს თბილისში ამზადებს. თითოეული მოთხოვნა პრეპარატის მიზანშეწონილობისა და მომზადების შესაძლებლობის პროფესიულ შეფასებას საჭიროებს.",
             )}
           </p>
           <div className="steps">
             {[
               [
                 "01",
-                "Understand the need",
-                "Discuss the prescription and the individual formulation requirements.",
+                "საჭიროების გააზრება",
+                "დანიშნულებისა და ინდივიდუალური ფორმულის მოთხოვნების განხილვა.",
               ],
               [
                 "02",
-                "Consider the preparation",
-                "Assess ingredients, formulation, handling and practical limitations.",
+                "მომზადების შეფასება",
+                "ინგრედიენტების, ფორმულის, მოპყრობის წესებისა და პრაქტიკული შეზღუდვების შეფასება.",
               ],
               [
                 "03",
-                "Prepare & review",
-                "Prepare, document and review the medicine before dispensing.",
+                "მომზადება და შემოწმება",
+                "მედიკამენტის მომზადება, დოკუმენტირება და გაცემამდე შემოწმება.",
               ],
               [
                 "04",
-                "Provide clear guidance",
-                "Confirm the specific directions, storage and beyond-use date with the pharmacist.",
+                "გასაგები მითითებები",
+                "მიღების კონკრეტული წესის, შენახვის პირობებისა და მომზადების შემდეგ გამოყენების საბოლოო ვადის დაზუსტება ფარმაცევტთან.",
               ],
             ].map(([n, h, p]) => (
               <div key={n}>
@@ -895,7 +876,7 @@ function Compounding() {
               </div>
             ))}
           </div>
-          <h2>{t("Questions, answered.")}</h2>
+          <h2>{t("პასუხები თქვენს კითხვებზე.")}</h2>
           <FAQ />
         </article>
       </div>
@@ -908,25 +889,25 @@ function About() {
   return (
     <>
       <PageIntro
-        eyebrow={t("ABOUT FORTIS")}
+        eyebrow={t("ფორტისის შესახებ")}
         title={
           <>
-            {t("Rooted in Tbilisi.")}
+            {t("შექმნილია თბილისში.")}
             <br />
-            <em>{t("Focused on individual care.")}</em>
+            <em>{t("ინდივიდუალური ზრუნვისთვის.")}</em>
           </>
         }
         description={t(
-          "A compounding pharmacy built around the relationship between patients, prescribers and pharmacists.",
+          "კომპოზიტური აფთიაქი, რომელიც პაციენტის, ექიმისა და ფარმაცევტის თანამშრომლობას ეფუძნება.",
         )}
       />
       <section className="wrap editorial-layout">
         <aside>
-          <Eyebrow>{t("OUR REASON FOR BEING")}</Eyebrow>
+          <Eyebrow>{t("ჩვენი მიზანი")}</Eyebrow>
           <h2>
-            {t("A personal approach")}
+            {t("ინდივიდუალური მიდგომა")}
             <br />
-            {t("to preparation.")}
+            {t("მედიკამენტის მომზადებასთან.")}
           </h2>
           <p className="georgian">
             ფორტის ფარმაცევტიკალს
@@ -935,15 +916,15 @@ function About() {
           </p>
         </aside>
         <article>
-          <h2>{t("Our story")}</h2>
+          <h2>{t("ჩვენი ისტორია")}</h2>
           <p>
             {t(
-              "Fortis was founded in response to patients’ needs, with the aim of preparing magistral and officinal medicines in a model inspired by European and American compounding pharmacies.",
+              "ფორტისი პაციენტების საჭიროებების საპასუხოდ შეიქმნა. ჩვენი მიზანია მაგისტრალური და ოფიცინალური მედიკამენტების მომზადება ევროპული და ამერიკული კომპოზიტური აფთიაქების გამოცდილების გათვალისწინებით.",
             )}
           </p>
           <p>
             {t(
-              "The company’s founding vision also includes collaboration with healthcare professionals to support continuity of treatment in hospital and after discharge.",
+              "კომპანიის ხედვა ჯანდაცვის სპეციალისტებთან თანამშრომლობასაც მოიცავს, რათა ხელი შეუწყოს მკურნალობის უწყვეტობას როგორც სტაციონარში, ისე გაწერის შემდეგ.",
             )}
           </p>
           <blockquote lang="ka">
@@ -952,28 +933,28 @@ function About() {
             მედიკამენტების დამზადებას მაგისტრალური და ოფიცინალური რეცეპტის
             საფუძველზე.
           </blockquote>
-          <h2 id="laboratory">{t("Inside the laboratory")}</h2>
+          <h2 id="laboratory">{t("ლაბორატორიის შესახებ")}</h2>
           <p>
             {t(
-              "Fortis describes a laboratory equipped for small-batch preparation, with climate control, sterilization and autoclaving, and separate sterile and nonsterile working zones.",
+              "ფორტისის ინფორმაციით, ლაბორატორია აღჭურვილია მცირე პარტიებით მომზადებისთვის. გათვალისწინებულია კლიმატის კონტროლი, სტერილიზაცია და ავტოკლავირება, ასევე ცალკე სტერილური და არასტერილური სამუშაო ზონები.",
             )}
           </p>
           <div className="quality-grid">
             {[
               [
                 FlaskConical,
-                "Preparation",
-                "Small-batch pharmaceutical equipment and defined preparation processes.",
+                "მომზადება",
+                "მცირე პარტიებისთვის განკუთვნილი ფარმაცევტული აღჭურვილობა და განსაზღვრული მომზადების პროცესები.",
               ],
               [
                 Microscope,
-                "Environment",
-                "Attention to hygiene, the preparation environment and handling.",
+                "სამუშაო გარემო",
+                "ყურადღება ჰიგიენის, მომზადების გარემოსა და მოპყრობის წესების მიმართ.",
               ],
               [
                 ShieldCheck,
-                "Review",
-                "Checks across preparation and storage, with testing in accredited laboratories as described by the company.",
+                "შემოწმება",
+                "მომზადებისა და შენახვის ეტაპების შემოწმება, კომპანიის ინფორმაციით, აკრედიტებულ ლაბორატორიებში ტესტირებით.",
               ],
             ].map(([I, h, b]) => (
               <div key={h}>
@@ -983,25 +964,25 @@ function About() {
               </div>
             ))}
           </div>
-          <h2>{t("Practice & documentation")}</h2>
+          <h2>{t("პრაქტიკა და დოკუმენტაცია")}</h2>
           <p>
-            {t("The company reports permit ")}
+            {t("კომპანია უთითებს ნებართვას ")}
             <strong>{t("სფსრს N00036")}</strong>
             {t(
-              " for preparation and sale under officinal and magistral prescriptions.",
+              " ოფიცინალური და მაგისტრალური რეცეპტებით მედიკამენტების მომზადებისა და რეალიზაციისთვის.",
             )}
           </p>
           <p>
             <strong>
               {t(
-                "The Good Pharmacy Practice (GPP) certification process has started.",
+                "დაწყებულია კარგი სააფთიაქო პრაქტიკის (GPP) სერტიფიცირების პროცესი.",
               )}
             </strong>{" "}
-            {t("Fortis is not presented on this website as GPP certified.")}
+            {t("ამ ვებგვერდზე ფორტისი არ არის წარმოდგენილი როგორც GPP-სერტიფიცირებული აფთიაქი.")}
           </p>
           <p className="quiet-note">
             {t(
-              "Company and laboratory descriptions are based on information supplied by Fortis. They are not an independent audit or verification of certification.",
+              "კომპანიისა და ლაბორატორიის აღწერა ფორტისის მიერ მოწოდებულ ინფორმაციას ეფუძნება. იგი არ წარმოადგენს დამოუკიდებელ აუდიტს ან სერტიფიცირების დადასტურებას.",
             )}
           </p>
         </article>
@@ -1015,16 +996,16 @@ function Contact() {
   return (
     <>
       <PageIntro
-        eyebrow={t("CONTACT FORTIS")}
+        eyebrow={t("დაუკავშირდით ფორტისს")}
         title={
           <>
-            {t("A conversation.")}
+            {t("დავიწყოთ საუბრით.")}
             <br />
-            <em>{t("A more individual approach.")}</em>
+            <em>{t("ვიპოვოთ ინდივიდუალური მიდგომა.")}</em>
           </>
         }
         description={t(
-          "For preparation questions, product availability or professional enquiries, speak with the pharmacy.",
+          "მომზადების, პროდუქტის ხელმისაწვდომობისა და პროფესიული თანამშრომლობის საკითხებზე დაუკავშირდით აფთიაქს.",
         )}
       />
       <section className="wrap contact-layout">
@@ -1032,10 +1013,10 @@ function Contact() {
           <A className="contact-option" href="tel:+995322053191">
             <Icon type={Phone} size={30} />
             <div>
-              <small>{t("CALL THE PHARMACY")}</small>
+              <small>{t("დარეკეთ აფთიაქში")}</small>
               <h2>+995 32 205 31 91</h2>
               <span>
-                {t("Speak with our team ")}
+                {t("ესაუბრეთ ჩვენს გუნდს ")}
                 <Icon type={ArrowUpRight} />
               </span>
             </div>
@@ -1043,43 +1024,43 @@ function Contact() {
           <div className="contact-option">
             <Icon type={MapPin} size={30} />
             <div>
-              <small>{t("VISIT FORTIS")}</small>
-              <h2>{t("9 Givi Zhvania Street")}</h2>
-              <p>{t("Tbilisi, Georgia")}</p>
+              <small>{t("გვეწვიეთ ფორტისში")}</small>
+              <h2>{t("გივი ჟვანიას ქუჩა 9")}</h2>
+              <p>{t("თბილისი, საქართველო")}</p>
               <A
                 className="text-link"
                 href="https://www.google.com/maps/search/?api=1&query=9+Givi+Zhvania+Street+Tbilisi"
                 target="_blank"
                 rel="noreferrer"
               >
-                {t("Open directions ")}
+                {t("მარშრუტის ნახვა ")}
                 <Icon type={ArrowUpRight} />
               </A>
             </div>
           </div>
           <p className="quiet-note">
             {t(
-              "Please call before visiting to confirm opening hours and availability.",
+              "ვიზიტამდე დარეკეთ სამუშაო საათებისა და ხელმისაწვდომობის დასაზუსტებლად.",
             )}
           </p>
         </div>
         <div className="contact-panel">
-          <Eyebrow>{t("FOR PATIENTS & PROFESSIONALS")}</Eyebrow>
+          <Eyebrow>{t("პაციენტებისა და პროფესიონალებისთვის")}</Eyebrow>
           <h2>
-            {t("Let’s discuss")}
+            {t("ერთად განვიხილოთ")}
             <br />
-            {t("what’s needed.")}
+            {t("თქვენი საჭიროებები.")}
           </h2>
           <p>
             {t(
-              "Our team can explain preparation requirements and help you identify what to discuss with your prescriber.",
+              "ჩვენი გუნდი აგიხსნით მომზადების მოთხოვნებს და დაგეხმარებათ, განსაზღვროთ, რა საკითხები უნდა განიხილოთ თქვენს ექიმთან.",
             )}
           </p>
           <ul>
-            <li>{t("Individual formulation enquiries")}</li>
-            <li>{t("Ingredient and excipient questions")}</li>
-            <li>{t("Product and strength availability")}</li>
-            <li>{t("Professional collaboration")}</li>
+            <li>{t("კითხვები ინდივიდუალური ფორმულის შესახებ")}</li>
+            <li>{t("კითხვები აქტიურ და დამხმარე ნივთიერებებზე")}</li>
+            <li>{t("პროდუქტებისა და დოზების ხელმისაწვდომობა")}</li>
+            <li>{t("პროფესიული თანამშრომლობა")}</li>
           </ul>
           <div className="contact-resource">
             <Icon type={BookOpen} />
@@ -1088,7 +1069,7 @@ function Contact() {
               target="_blank"
               rel="noreferrer"
             >
-              {t("Explore Fortis Library ")}
+              {t("ფორტის ბიბლიოთეკის ნახვა ")}
               <Icon type={ArrowUpRight} />
             </A>
           </div>
@@ -1102,38 +1083,38 @@ function Editorial() {
   return (
     <>
       <PageIntro
-        eyebrow={t("INFORMATION & REFERENCES")}
-        title={t("Clear context. Defined limits.")}
+        eyebrow={t("ინფორმაცია და წყაროები")}
+        title={t("გასაგები კონტექსტი. მკაფიო ფარგლები.")}
       />
       <article className="wrap text-page">
-        <h2>{t("Our medical source policy")}</h2>
+        <h2>{t("სამედიცინო წყაროების შერჩევის პრინციპი")}</h2>
         <p>
           {t(
-            "Ingredient context uses four selected authorities and publications: FDA, EMA, JAMA Dermatology and Pain Reports. Original journal articles may be accessed through PubMed Central. References are linked on each product page.",
+            "მოქმედი ნივთიერებების შესახებ ინფორმაცია ოთხ შერჩეულ ორგანიზაციასა და გამოცემას ეყრდნობა: FDA, EMA, JAMA Dermatology და Pain Reports. ორიგინალი სტატიები შესაძლოა ხელმისაწვდომი იყოს PubMed Central-ის მეშვეობითაც. წყაროების ბმულები თითოეული პროდუქტის გვერდზეა მითითებული.",
           )}
         </p>
-        <h2>{t("Ingredients and preparations are different")}</h2>
+        <h2>{t("მოქმედი ნივთიერება და მომზადებული პრეპარატი განსხვავდება")}</h2>
         <p>
           {t(
-            "A reference medicine’s approval or study result does not establish the approval, equivalence, bioavailability, safety or efficacy of a particular Fortis compounded preparation. Strength, excipients, release profile and preparation method can matter. Product categories are navigation aids.",
+            "რეფერენსული მედიკამენტის დამტკიცება ან კვლევის შედეგი არ ადასტურებს ფორტისის კონკრეტული პრეპარატის დამტკიცებას, ეკვივალენტობას, ბიოშეღწევადობას, უსაფრთხოებას ან ეფექტურობას. მნიშვნელოვანია დოზა, დამხმარე ნივთიერებები, გამოთავისუფლების პროფილი და მომზადების მეთოდი. პროდუქტის კატეგორიები ძიების გასამარტივებლად გამოიყენება.",
           )}
         </p>
-        <h2>{t("Packaging and prescribing")}</h2>
+        <h2>{t("შეფუთვა და დანიშნულება")}</h2>
         <p>
           {t(
-            "Product images are the original illustrations supplied by Fortis. They are not dispensing instructions. Follow only the directions issued for your own prescription by your clinician and pharmacist; do not use text shown in illustrative packaging to determine treatment, storage or beyond-use dates.",
+            "პროდუქტის სურათები ფორტისის მიერ მოწოდებული ორიგინალი ილუსტრაციებია და არა გაცემისას გასაყოლებელი ინსტრუქციები. იხელმძღვანელეთ მხოლოდ თქვენი დანიშნულებისთვის ექიმისა და ფარმაცევტის მიერ გაცემული მითითებებით. საილუსტრაციო შეფუთვაზე მოცემული ტექსტით არ განსაზღვროთ მკურნალობა, შენახვის პირობები ან გამოყენების საბოლოო ვადა.",
           )}
         </p>
-        <h2>{t("Editorial status")}</h2>
+        <h2>{t("ინფორმაციის განახლება")}</h2>
         <p>
           {t(
-            "Source links checked September 10, 2026. This is a concise educational overview, not comprehensive prescribing information. Archived FDA documents are identified by year and may not be the latest approved labels. Clinical copy requires the pharmacy’s professional review as part of ongoing content maintenance.",
+            "წყაროების ბმულები შემოწმებულია 2026 წლის 10 სექტემბერს. ეს მოკლე საგანმანათლებლო მიმოხილვაა და არა დანიშნულებისთვის საჭირო სრული ინფორმაცია. FDA-ს საარქივო დოკუმენტებს მითითებული აქვს წელი; ისინი შესაძლოა უახლესი დამტკიცებული ინსტრუქციები არ იყოს. ინფორმაციის განახლებისას კლინიკური ტექსტი აფთიაქის პროფესიულ გადამოწმებას საჭიროებს.",
           )}
         </p>
-        <h2>{t("Company information")}</h2>
+        <h2>{t("ინფორმაცია კომპანიის შესახებ")}</h2>
         <p>
           {t(
-            "Company background, permit details and laboratory descriptions were supplied by Fortis and are presented as company information, not independently verified regulatory findings.",
+            "კომპანიის ისტორია, ნებართვის დეტალები და ლაბორატორიის აღწერა მოწოდებულია ფორტისის მიერ. ისინი წარმოდგენილია როგორც კომპანიის ინფორმაცია და არა დამოუკიდებლად გადამოწმებული მარეგულირებელი დასკვნები.",
           )}
         </p>
       </article>
@@ -1145,30 +1126,30 @@ function Privacy() {
   return (
     <>
       <PageIntro
-        eyebrow={t("PRIVACY")}
-        title={t("A simple information website.")}
+        eyebrow={t("კონფიდენციალურობა")}
+        title={t("მარტივი საინფორმაციო ვებგვერდი.")}
       />
       <article className="wrap text-page">
         <p>
           {t(
-            "This website has no checkout, patient registration or patient-information form. It does not ask you to upload prescriptions or health records.",
+            "ვებგვერდს არ აქვს ონლაინ გადახდა, პაციენტის რეგისტრაცია ან პაციენტის მონაცემების ფორმა. იგი არ გთხოვთ რეცეპტების ან სამედიცინო ჩანაწერების ატვირთვას.",
           )}
         </p>
         <p>
           {t(
-            "No advertising trackers or analytics scripts are added by this website. Hosting providers may process technical access logs to operate and secure the site. External links, including maps and reference publications, are governed by their own privacy policies.",
+            "ვებგვერდს არ აქვს დამატებული სარეკლამო თვალთვალის ან ანალიტიკის სკრიპტები. ჰოსტინგის მომწოდებლებმა საიტის მუშაობისა და უსაფრთხოებისთვის შეიძლება დაამუშაონ წვდომის ტექნიკური ჩანაწერები. გარე ბმულებს, მათ შორის რუკებსა და სამეცნიერო გამოცემებს, საკუთარი კონფიდენციალურობის პოლიტიკა აქვს.",
           )}
         </p>
         <p>
           {t(
-            "Your language and appearance choices are saved only in this browser so they remain selected when you return. No health information is stored in these preferences.",
+            "ფერის რეჟიმის არჩევანი მხოლოდ ამ ბრაუზერში ინახება, რათა დაბრუნებისას იგივე პარამეტრი დაგხვდეთ. ამ პარამეტრებში ჯანმრთელობის შესახებ ინფორმაცია არ ინახება.",
           )}
         </p>
         <p>
-          {t("For pharmacy enquiries, call")}{" "}
+          {t("აფთიაქთან დასაკავშირებლად დარეკეთ:")}{" "}
           <A href="tel:+995322053191">+995 32 205 31 91</A>
           {t(
-            ". Discuss sensitive health information through an appropriate channel agreed with the pharmacy.",
+            ". ჯანმრთელობასთან დაკავშირებული კონფიდენციალური ინფორმაცია განიხილეთ აფთიაქთან შეთანხმებული შესაბამისი არხით.",
           )}
         </p>
       </article>
@@ -1179,26 +1160,26 @@ function App() {
   const { t } = usePreferences();
   const path = location.pathname.replace(/\/$/, "") || "/";
   let page;
-  let title = "Precision compounding in Tbilisi";
+  let title = "მედიკამენტების ინდივიდუალური მომზადება თბილისში";
   if (path === "/") page = <Home />;
   else if (path === "/products") {
     page = <Catalog />;
-    title = "Product portfolio";
+    title = "პროდუქტების კატალოგი";
   } else if (path === "/compounding") {
     page = <Compounding />;
-    title = "Compounding";
+    title = "კომპოზიტური ფარმაცია";
   } else if (path === "/about") {
     page = <About />;
-    title = "Our story & laboratory";
+    title = "ჩვენი ისტორია და ლაბორატორია";
   } else if (path === "/contact") {
     page = <Contact />;
-    title = "Contact";
+    title = "კონტაქტი";
   } else if (path === "/editorial") {
     page = <Editorial />;
-    title = "Information & references";
+    title = "ინფორმაცია და წყაროები";
   } else if (path === "/privacy") {
     page = <Privacy />;
-    title = "Privacy";
+    title = "კონფიდენციალურობა";
   } else {
     const p = products.find((p) => path === `/products/${p.slug}`);
     if (p) {
@@ -1207,20 +1188,20 @@ function App() {
     } else {
       page = (
         <div className="wrap not-found">
-          <h1>{t("Page not found.")}</h1>
-          <Button href="/products">{t("Explore the portfolio")}</Button>
+          <h1>{t("გვერდი ვერ მოიძებნა.")}</h1>
+          <Button href="/products">{t("პროდუქტების ნახვა")}</Button>
         </div>
       );
-      title = "Page not found";
+      title = "გვერდი ვერ მოიძებნა";
     }
   }
   useEffect(() => {
-    document.title = `${t(title)} | ${t("Fortis Pharmaceuticals")}`;
+    document.title = `${t(title)} | ${t("ფორტის ფარმაცევტიკალს")}`;
   }, [title, t]);
   return (
     <>
       <a className="skip-link" href="#main">
-        {t("Skip to content")}
+        {t("შინაარსზე გადასვლა")}
       </a>
       <Header />
       <main id="main">

@@ -1,63 +1,33 @@
 {
-  "name": "Brexpiprazole",
-  "category": "Mental health",
-  "tag": "Atypical antipsychotic ingredient",
+  "name": "ბრექსპიპრაზოლი",
+  "category": "ფსიქიკური ჯანმრთელობა",
+  "tag": "ატიპური ანტიფსიქოზური ნივთიერება",
   "refs": [
     "rexulti"
   ],
   "slug": "brexpiprazole-2",
-  "strength": "2 mg",
+  "strength": "2 მგ",
   "pack": 30,
-  "form": "Tablet",
+  "form": "ტაბლეტი",
   "image": "/products/brexpiprazole-2.png",
   "featured": false,
   "published": true,
   "order": 14,
   "facets": {
     "specialty": [
-      "Psychiatry"
+      "ფსიქიატრია"
     ],
     "use": [
-      "Adjunctive depression treatment (reference context)",
-      "Schizophrenia (reference context)",
-      "Alzheimer-related agitation (reference context)"
+      "დეპრესიის დამატებითი მკურნალობა (რეფერენსული პრეპარატი)",
+      "შიზოფრენია (რეფერენსული პრეპარატი)",
+      "ალცჰაიმერთან დაკავშირებული აგზნება (რეფერენსული პრეპარატი)"
     ],
     "system": [
-      "Brain & nervous system"
+      "თავის ტვინი და ნერვული სისტემა"
     ]
   },
-  "ka": {
-    "name": "ბრექსპიპრაზოლი",
-    "category": "ფსიქიკური ჯანმრთელობა",
-    "tag": "ატიპური ანტიფსიქოზური ნივთიერება",
-    "form": "ტაბლეტი",
-    "facets": {
-      "specialty": [
-        "ფსიქიატრია"
-      ],
-      "use": [
-        "დეპრესიის დამატებითი მკურნალობა (რეფერენსული პრეპარატი)",
-        "შიზოფრენია (რეფერენსული პრეპარატი)",
-        "ალცჰაიმერთან დაკავშირებული აგზნება (რეფერენსული პრეპარატი)"
-      ],
-      "system": [
-        "თავის ტვინი და ნერვული სისტემა"
-      ]
-    },
-    "packUnit": "ტაბლეტი",
-    "preparation": "კომპოზიტური · პერორალური",
-    "nameComposition": "",
-    "pharmacology": "",
-    "indications": "",
-    "dosageAdministration": "",
-    "sideEffects": "",
-    "contraindications": "",
-    "warningsPrecautions": "",
-    "storageConditions": "",
-    "manufacturer": ""
-  },
-  "packUnit": "tablets",
-  "preparation": "Compounded · oral",
+  "packUnit": "ტაბლეტი",
+  "preparation": "კომპოზიტური · პერორალური",
   "nameComposition": "",
   "pharmacology": "",
   "indications": "",

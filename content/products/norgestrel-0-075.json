@@ -1,58 +1,30 @@
 {
   "slug": "norgestrel-0-075",
-  "name": "Norgestrel",
-  "strength": "0.075 mg",
+  "name": "ნორგესტრელი",
+  "strength": "0.075 მგ",
   "pack": 28,
-  "form": "Tablet",
-  "packUnit": "tablets",
-  "preparation": "Compounded · oral",
+  "form": "ტაბლეტი",
+  "packUnit": "ტაბლეტი",
+  "preparation": "კომპოზიტური · პერორალური",
   "image": "/products/norgestrel-0-075.png",
   "published": true,
   "featured": false,
   "order": 23,
-  "category": "Gynecology",
-  "tag": "Progestin-only contraceptive reference",
+  "category": "გინეკოლოგია",
+  "tag": "მხოლოდ პროგესტინის შემცველი კონტრაცეფციის რეფერენსი",
   "refs": [
     "opill"
   ],
   "facets": {
     "specialty": [
-      "Gynecology"
+      "გინეკოლოგია"
     ],
     "use": [
-      "Pregnancy prevention (reference context)"
+      "ორსულობის პრევენცია (რეფერენსული პრეპარატი)"
     ],
     "system": [
-      "Reproductive system"
+      "რეპროდუქციული სისტემა"
     ]
-  },
-  "ka": {
-    "name": "ნორგესტრელი",
-    "form": "ტაბლეტი",
-    "packUnit": "ტაბლეტი",
-    "preparation": "კომპოზიტური · პერორალური",
-    "category": "გინეკოლოგია",
-    "tag": "მხოლოდ პროგესტინის შემცველი კონტრაცეფციის რეფერენსი",
-    "facets": {
-      "specialty": [
-        "გინეკოლოგია"
-      ],
-      "use": [
-        "ორსულობის პრევენცია (რეფერენსული პრეპარატი)"
-      ],
-      "system": [
-        "რეპროდუქციული სისტემა"
-      ]
-    },
-    "nameComposition": "",
-    "pharmacology": "",
-    "indications": "",
-    "dosageAdministration": "",
-    "sideEffects": "",
-    "contraindications": "",
-    "warningsPrecautions": "",
-    "storageConditions": "",
-    "manufacturer": ""
   },
   "nameComposition": "",
   "pharmacology": "",

@@ -1,58 +1,30 @@
 {
   "slug": "psk-90",
   "name": "PSK",
-  "strength": "Not specified",
+  "strength": "მითითებული არ არის",
   "pack": 90,
-  "form": "Capsule",
-  "packUnit": "capsules",
-  "preparation": "Compounded · oral",
+  "form": "კაფსულა",
+  "packUnit": "კაფსულა",
+  "preparation": "კომპოზიტური · პერორალური",
   "image": "/products/psk-90.png",
   "published": true,
   "featured": false,
   "order": 25,
-  "category": "Product information",
-  "tag": "Capsule formulation information",
+  "category": "პროდუქტის ინფორმაცია",
+  "tag": "ინფორმაცია კაფსულის ფორმის შესახებ",
   "refs": [
     "supplement_background"
   ],
   "facets": {
     "specialty": [
-      "Specialist consultation"
+      "სპეციალისტის კონსულტაცია"
     ],
     "use": [
-      "Not specified"
+      "მითითებული არ არის"
     ],
     "system": [
-      "Not specified"
+      "მითითებული არ არის"
     ]
-  },
-  "ka": {
-    "name": "PSK",
-    "form": "კაფსულა",
-    "packUnit": "კაფსულა",
-    "preparation": "კომპოზიტური · პერორალური",
-    "category": "პროდუქტის ინფორმაცია",
-    "tag": "ინფორმაცია კაფსულის ფორმის შესახებ",
-    "facets": {
-      "specialty": [
-        "სპეციალისტის კონსულტაცია"
-      ],
-      "use": [
-        "მითითებული არ არის"
-      ],
-      "system": [
-        "მითითებული არ არის"
-      ]
-    },
-    "nameComposition": "",
-    "pharmacology": "",
-    "indications": "",
-    "dosageAdministration": "",
-    "sideEffects": "",
-    "contraindications": "",
-    "warningsPrecautions": "",
-    "storageConditions": "",
-    "manufacturer": ""
   },
   "nameComposition": "",
   "pharmacology": "",

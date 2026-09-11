@@ -17,7 +17,7 @@ export function BottleArtwork({ label }) {
           patternUnits="userSpaceOnUse"
           patternTransform="rotate(28)"
         >
-          <path d="M1 0V9" stroke="#8e551e" strokeWidth="0.7" opacity=".27" />
+          <path d="M1 0V9" stroke="#14243b" strokeWidth="0.7" opacity=".24" />
         </pattern>
       </defs>
       <g className="bottle-float">
@@ -28,14 +28,14 @@ export function BottleArtwork({ label }) {
         >
           <path
             d="M162 113 L161 150 C158 172 127 179 119 201 C111 218 112 245 112 268 L113 414 Q111 442 141 445 Q219 453 298 445 Q325 442 324 416 L324 235 Q325 209 314 194 C301 177 277 173 276 150 L276 113Z"
-            fill="#d69a46"
+            fill="#e58725"
             fillOpacity=".24"
-            stroke="#96622b"
+            stroke="#14243b"
             strokeWidth="2.4"
           />
           <path
             d="M130 214 C135 196 169 181 174 156 L174 123 L263 123 L263 157 Q266 184 294 197 Q310 209 310 236 L311 415 Q312 432 294 434 Q219 442 139 434 Q126 432 125 417L125 233"
-            fill="#c48531"
+            fill="#e58725"
             fillOpacity=".22"
           />
           <path
@@ -49,27 +49,27 @@ export function BottleArtwork({ label }) {
           <path
             d="M123 214 Q125 195 151 184 M119 237L120 392 M122 405L122 418 Q122 434 141 436 M297 187Q318 200 317 218 M316 247L317 400 M151 447Q219 454 289 447"
             fill="none"
-            stroke="#8d5524"
+            stroke="#14243b"
             strokeWidth="1"
             opacity=".6"
           />
           <path
             d="M146 228 Q145 209 165 197 M142 244L142 275 M286 212Q295 220 295 236 M142 397L142 418 Q147 425 160 425"
             fill="none"
-            stroke="#fff4d4"
+            stroke="#fcfaf7"
             strokeWidth="5"
             opacity=".8"
           />
           <path
             d="M121 261 Q219 270 317 260 L317 375 Q221 387 120 375Z"
             className="bottle-label"
-            stroke="#8d704a"
+            stroke="#3e70b7"
             strokeWidth="1.2"
           />
           <path
             d="M129 269 Q221 277 307 268 M129 367Q222 376 308 367"
             fill="none"
-            stroke="#a78f68"
+            stroke="#3e70b7"
             strokeWidth=".65"
           />
           <g
@@ -79,11 +79,11 @@ export function BottleArtwork({ label }) {
           >
             <path
               d="M75 27C33 25 5 34 5 43C12 59 67 64 93 52L111 14M111 14C136 4 104-10 99 5Q99 12 111 14L71 51M122 32Q141 43 131 73"
-              stroke="#2884a1"
+              stroke="#3e70b7"
             />
             <path
               d="M131 73Q107 123 65 117Q21 109 7 66Q39 78 62 74"
-              stroke="#7ea252"
+              stroke="#e58725"
             />
           </g>
           <text
@@ -93,14 +93,14 @@ export function BottleArtwork({ label }) {
             fontFamily="Arial, sans-serif"
             fontSize="24"
             letterSpacing="5"
-            fill="#2b647b"
+            fill="#14243b"
           >
             FORTIS
           </text>
           <path
             d="M162 145Q220 151 276 144 M165 152Q219 158 274 151"
             fill="none"
-            stroke="#94602d"
+            stroke="#14243b"
             strokeWidth="1.5"
           />
           <g className="bottle-cap-motion">

@@ -15,12 +15,12 @@ const escapeHTML = (text) =>
       ],
   );
 const pages = [
-  ["compounding", "Individual pharmaceutical compounding"],
-  ["about", "Our story & laboratory"],
-  ["products", "Product portfolio"],
-  ["contact", "Contact Fortis in Tbilisi"],
-  ["editorial", "Information & references"],
-  ["privacy", "Privacy"],
+  ["compounding", "ინდივიდუალური კომპოზიტური ფარმაცია"],
+  ["about", "ჩვენი ისტორია და ლაბორატორია"],
+  ["products", "პრეპარატების კატალოგი"],
+  ["contact", "დაუკავშირდით ფორტისს თბილისში"],
+  ["editorial", "ინფორმაცია და წყაროები"],
+  ["privacy", "კონფიდენციალურობა"],
   ...products.map((p) => [
     `products/${p.slug}`,
     `${p.name} ${p.strength} - ${p.pack} ${p.packUnit}`,
@@ -39,7 +39,7 @@ for (const [route, title] of pages) {
     `dist/${route}/index.html`,
     pageTemplate.replace(
       /<title>.*?<\/title>/,
-      `<title>${escapeHTML(title)} | Fortis Pharmaceuticals</title>`,
+      `<title>${escapeHTML(title)} | ფორტის ფარმაცევტიკალსი</title>`,
     ),
   );
 }
@@ -47,7 +47,7 @@ await fs.writeFile(
   "dist/404.html",
   withoutHeroPreload.replace(
     /<title>.*?<\/title>/,
-    "<title>Page not found | Fortis Pharmaceuticals</title>",
+    "<title>გვერდი ვერ მოიძებნა | ფორტის ფარმაცევტიკალსი</title>",
   ),
 );
 await fs.writeFile(

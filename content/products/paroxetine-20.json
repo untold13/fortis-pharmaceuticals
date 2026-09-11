@@ -1,63 +1,33 @@
 {
-  "name": "Paroxetine",
-  "category": "Mental health",
-  "tag": "SSRI ingredient",
+  "name": "პაროქსეტინი",
+  "category": "ფსიქიკური ჯანმრთელობა",
+  "tag": "სეროტონინის უკუმიტაცების სელექციური ინჰიბიტორი",
   "refs": [
     "paxil"
   ],
   "slug": "paroxetine-20",
-  "strength": "20 mg",
+  "strength": "20 მგ",
   "pack": 28,
-  "form": "Tablet",
+  "form": "ტაბლეტი",
   "image": "/products/paroxetine-20.png",
   "featured": false,
   "published": true,
   "order": 11,
   "facets": {
     "specialty": [
-      "Psychiatry"
+      "ფსიქიატრია"
     ],
     "use": [
-      "Depression (reference context)",
-      "OCD (reference context)",
-      "Anxiety / PTSD (reference context)"
+      "დეპრესია (რეფერენსული პრეპარატი)",
+      "ობსესიურ-კომპულსიური აშლილობა (რეფერენსული პრეპარატი)",
+      "შფოთვა / პოსტტრავმული სტრესი (რეფერენსული პრეპარატი)"
     ],
     "system": [
-      "Brain & nervous system"
+      "თავის ტვინი და ნერვული სისტემა"
     ]
   },
-  "ka": {
-    "name": "პაროქსეტინი",
-    "category": "ფსიქიკური ჯანმრთელობა",
-    "tag": "სეროტონინის უკუმიტაცების სელექციური ინჰიბიტორი",
-    "form": "ტაბლეტი",
-    "facets": {
-      "specialty": [
-        "ფსიქიატრია"
-      ],
-      "use": [
-        "დეპრესია (რეფერენსული პრეპარატი)",
-        "ობსესიურ-კომპულსიური აშლილობა (რეფერენსული პრეპარატი)",
-        "შფოთვა / პოსტტრავმული სტრესი (რეფერენსული პრეპარატი)"
-      ],
-      "system": [
-        "თავის ტვინი და ნერვული სისტემა"
-      ]
-    },
-    "packUnit": "ტაბლეტი",
-    "preparation": "კომპოზიტური · პერორალური",
-    "nameComposition": "",
-    "pharmacology": "",
-    "indications": "",
-    "dosageAdministration": "",
-    "sideEffects": "",
-    "contraindications": "",
-    "warningsPrecautions": "",
-    "storageConditions": "",
-    "manufacturer": ""
-  },
-  "packUnit": "tablets",
-  "preparation": "Compounded · oral",
+  "packUnit": "ტაბლეტი",
+  "preparation": "კომპოზიტური · პერორალური",
   "nameComposition": "",
   "pharmacology": "",
   "indications": "",

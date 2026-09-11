@@ -1,24 +1,10 @@
 import assert from "node:assert/strict";
 import { chromium } from "playwright";
 import { products } from "../src/products.js";
-import { facets } from "../src/catalog-model.js";
 import fs from "node:fs";
-const ka = JSON.parse(
-  fs.readFileSync(new URL("../src/ka.json", import.meta.url)),
-);
-const clinicalKa = JSON.parse(
-  fs.readFileSync(new URL("../src/ka-products.json", import.meta.url)),
-);
-Object.assign(
-  ka,
-  ...Object.values(clinicalKa.families).map((f) => ({
-    [f.category]: f.category,
-  })),
-);
-ka["Sleep medicine"] = clinicalKa.families.lemborexant.category;
-ka["Dermatology"] = clinicalKa.families.minoxidil.category;
-const text = (s, language) =>
-  language === "ka" ? ka[s] || s.replace(/\bmg\b/g, "მგ") : s;
+
+const copy = JSON.parse(fs.readFileSync("content/copy.json", "utf8"));
+const text = (value) => copy.entries.find(entry => entry.key === value)?.value || value;
 
 const base = process.env.FORTIS_TEST_URL || "http://127.0.0.1:4174";
 const browser = await chromium.launch({
@@ -35,270 +21,206 @@ const paths = [
   "/contact",
   "/editorial",
   "/privacy",
-  ...products.map((p) => `/products/${p.slug}`),
+  ...products.map((product) => `/products/${product.slug}`),
 ];
-const productFieldLabels = {
-  en: [
-    "Name",
-    "Dosage form",
-    "Preparation and route",
-    "Medical area",
-    "Short description",
-    "Name and Composition",
-    "Pharmacological Properties and Mechanism of Action",
-    "Indications",
-    "Dosage and Administration",
-    "Side Effects",
-    "Contraindications",
-    "Special Warnings and Precautions",
-    "Storage Conditions",
-    "Manufacturer",
-  ],
-  ka: [
-    "დასახელება",
-    "წამლის ფორმა",
-    "მომზადება და მიღების გზა",
-    "მიმართულება",
-    "მოკლე აღწერა",
-    "დასახელება და შემადგენლობა",
-    "ფარმაკოლოგიური თვისებები და მოქმედების მექანიზმი",
-    "გამოყენების ჩვენებები",
-    "დოზირება და მიღების წესი",
-    "გვერდითი მოვლენები",
-    "უკუჩვენებები",
-    "განსაკუთრებული მითითებები",
-    "შენახვის პირობები",
-    "მწარმოებელი",
-  ],
-};
+const productFieldLabels = [
+  "დასახელება და შემადგენლობა",
+  "ფარმაკოლოგიური თვისებები და მოქმედების მექანიზმი",
+  "გამოყენების ჩვენებები",
+  "დოზირება და მიღების წესი",
+  "გვერდითი მოვლენები",
+  "უკუჩვენებები",
+  "განსაკუთრებული მითითებები",
+  "შენახვის პირობები",
+  "მწარმოებელი",
+];
 const errors = [];
 let checked = 0;
+
 try {
-  for (const language of ["en", "ka"]) {
-    for (const theme of ["light", "dark"]) {
-      const context = await browser.newContext({
-        viewport: { width: 390, height: 844 },
-      });
-      const page = await context.newPage();
-      page.on("pageerror", (error) => errors.push(error.message));
-      await page.goto(base);
+  for (const theme of ["light", "dark"]) {
+    const context = await browser.newContext({
+      viewport: { width: 390, height: 844 },
+    });
+    const page = await context.newPage();
+    page.on("pageerror", (error) => errors.push(error.message));
+    await page.goto(base);
+    await page.getByRole("heading", { level: 1 }).waitFor();
+    assert.equal(await page.locator(".language-button").count(), 0);
+    if (theme === "dark") await page.getByRole("switch").click();
+
+    for (const path of paths) {
+      await page.goto(base + path);
       await page.getByRole("heading", { level: 1 }).waitFor();
-      if (language === "ka")
-        await page
-          .getByRole("button", { name: "ქართული ენის არჩევა", exact: true })
-          .click();
-      if (theme === "dark") await page.getByRole("switch").click();
-      for (const path of paths) {
-        await page.goto(base + path);
-        await page.getByRole("heading", { level: 1 }).waitFor();
-        const state = await page.evaluate(() => ({
-          language: document.documentElement.lang,
-          theme: document.documentElement.dataset.theme,
-          overflow: document.documentElement.scrollWidth > innerWidth,
-          title: document.title,
-          heading: document.querySelector("h1").textContent,
-        }));
-        assert.equal(state.language, language, path);
-        assert.equal(state.theme, theme, path);
+      const state = await page.evaluate(() => ({
+        language: document.documentElement.lang,
+        theme: document.documentElement.dataset.theme,
+        overflow: document.documentElement.scrollWidth > innerWidth,
+        title: document.title,
+        heading: document.querySelector("h1").textContent,
+      }));
+      assert.equal(state.language, "ka", path);
+      assert.equal(state.theme, theme, path);
+      assert.equal(state.overflow, false, `${theme}${path} overflows`);
+      const localizedProduct = products.find(
+        (product) => path === `/products/${product.slug}`,
+      );
+      if (localizedProduct)
+        assert.equal(state.heading, localizedProduct.name, path);
+      else assert.match(state.heading, /[ა-ჰ]/, path);
+      assert.match(state.title, /ფორტის/, path);
+
+      if (path === "/") {
+        assert.equal(await page.locator(".hero-artwork .bottle-art").count(), 1);
+        assert.equal(await page.locator(".simple-hero img").count(), 0);
         assert.equal(
-          state.overflow,
-          false,
-          `${language}/${theme}${path} overflows`,
-        );
-        if (language === "ka") {
-          const localizedProduct = products.find(
-            (p) => path === `/products/${p.slug}`,
-          );
-          if (localizedProduct)
-            assert.equal(state.heading, localizedProduct.ka.name, path);
-          else assert.match(state.heading, /[ა-ჰ]/, path);
-          assert.match(state.title, /ფორტის/, path);
-        }
-        const product = products.find((p) => path === `/products/${p.slug}`);
-        if (path === "/") {
-          assert.equal(
-            await page.locator(".hero-artwork .bottle-art").count(),
-            1,
-          );
-          assert.equal(await page.locator(".simple-hero img").count(), 0);
-          assert.equal(
-            await page
-              .locator(".bottle-float")
-              .evaluate((e) => getComputedStyle(e).animationName),
-            "fortis-bottle-float",
-          );
-          assert.equal(await page.locator(".hero-motion-control").count(), 0);
-          const animation = await page
+          await page
             .locator(".bottle-float")
-            .evaluate((e) => ({
-              duration: getComputedStyle(e).animationDuration,
-              iterations: getComputedStyle(e).animationIterationCount,
-            }));
-          assert.equal(animation.duration, "4.5s");
-          assert.equal(animation.iterations, "1");
-          await page.emulateMedia({ reducedMotion: "reduce" });
-          assert.equal(
-            await page
-              .locator(".bottle-float")
-              .evaluate((e) => getComputedStyle(e).animationName),
-            "none",
-          );
-          await page.emulateMedia({ reducedMotion: "no-preference" });
-        }
-        if (product) {
-          const source = product.image;
-          await page.waitForFunction(
-            (src) =>
-              [...document.images].some(
-                (i) =>
-                  i.getAttribute("src") === src &&
-                  i.complete &&
-                  i.naturalWidth > 0,
-              ),
-            source,
-          );
-          assert.deepEqual(
-            await page.locator(".product-information-grid small").allTextContents(),
-            productFieldLabels[language],
-            `${path} product fields`,
-          );
-          assert.equal(
-            await page.getByText("Ingredient context", { exact: true }).count(),
-            0,
-            `${path} obsolete fields`,
-          );
-        }
-        checked++;
-      }
-      await page.goto(base + "/products");
-      await page
-        .getByRole("textbox")
-        .fill(language === "ka" ? "მინოქსიდილი" : "Minoxidil");
-      await page.waitForFunction(
-        () => document.querySelectorAll(".product-card").length === 1,
-      );
-      assert.match(
-        await page.locator(".product-card").getAttribute("href"),
-        /minoxidil/,
-      );
-      await page.getByRole("textbox").fill("not-a-product");
-      assert.equal(await page.locator(".product-card").count(), 0);
-      await page
-        .getByRole("button", {
-          name: language === "ka" ? "ფილტრების გასუფთავება" : "Reset filters",
-          exact: true,
-        })
-        .click();
-      assert.equal(
-        await page.locator(".product-card").count(),
-        products.length,
-      );
-      const select = async (key, value) => {
-        const group = page.locator(`[data-facet="${key}"]`);
-        if (
-          !(await group.getAttribute("open")) &&
-          (await group.getAttribute("open")) !== ""
-        )
-          await group.locator("summary").click();
-        await group
-          .getByRole("checkbox", { name: text(value, language), exact: true })
-          .check();
-      };
-      const count = async (n) =>
-        assert.equal(await page.locator(".product-card").count(), n);
-      await select("specialty", "Sleep medicine");
-      await count(4);
-      await select("specialty", "Dermatology");
-      await count(5); // OR within specialty.
-      await select("system", "Skin & hair");
-      await count(1); // AND across dimensions.
-      await select("strength", "1.25 mg");
-      await count(1);
-      await select("form", "Tablet");
-      await count(1);
-      await select("use", "Hair loss (off-label)");
-      await count(1);
-      await page.getByRole("textbox").fill("lemborexant");
-      await count(0);
-      await page.getByRole("textbox").fill("");
-      await count(1);
-      // Keep all five selections on language change.
-      await page
-        .getByRole("button", {
-          name: language === "ka" ? "Switch to English" : "ქართული ენის არჩევა",
-          exact: true,
-        })
-        .click();
-      await count(1);
-      assert.equal(await page.locator(".active-filters button").count(), 6);
-      const other = language === "ka" ? "en" : "ka";
-      await page
-        .getByRole("button", {
-          name: text("Reset filters", other),
-          exact: true,
-        })
-        .click();
-      await count(products.length);
-      await page.setViewportSize({ width: 320, height: 800 });
-      await page.locator('[data-facet="use"] summary').click();
-      assert.equal(
-        await page.evaluate(
-          () => document.documentElement.scrollWidth > innerWidth,
-        ),
-        false,
-        "Open filters fit a 320px screen",
-      );
-      await page.locator('[data-facet="use"] summary').press("Escape");
-      assert.equal(
-        await page.locator('[data-facet="use"]').getAttribute("open"),
-        null,
-      );
-      await page.getByRole("switch").focus();
-      await page.getByRole("switch").press("Space");
-      assert.equal(
-        await page.getByRole("switch").getAttribute("aria-checked"),
-        String(theme !== "dark"),
-      );
-      await page.emulateMedia({ reducedMotion: "reduce" });
-      assert.equal(
-        await page
-          .locator(".theme-thumb")
-          .evaluate((e) => getComputedStyle(e).transitionDuration),
-        "0s",
-      );
-      // Each photo matches its 2:3 frame; never crop or letterbox the source.
-      for (const card of await page.locator(".product-card").all()) {
-        await card.scrollIntoViewIfNeeded();
-        const img = card.locator(".product-image img");
-        await img.waitFor({ state: "visible" });
-        await img.evaluate((e) => e.decode());
-        const size = await img.evaluate((e) => ({
-          w: e.clientWidth,
-          h: e.clientHeight,
-          nw: e.naturalWidth,
-          nh: e.naturalHeight,
-          pw: e.parentElement.clientWidth,
-          ph: e.parentElement.clientHeight,
+            .evaluate((element) => getComputedStyle(element).animationName),
+          "fortis-bottle-float",
+        );
+        assert.equal(await page.locator(".hero-motion-control").count(), 0);
+        const animation = await page.locator(".bottle-float").evaluate((element) => ({
+          duration: getComputedStyle(element).animationDuration,
+          iterations: getComputedStyle(element).animationIterationCount,
         }));
-        assert.ok(size.nw > 0 && size.nh > 0);
-        assert.equal(size.w, size.pw);
-        assert.equal(size.h, size.ph);
-        assert.ok(Math.abs(size.w / size.h - size.nw / size.nh) < 0.01);
+        assert.equal(animation.duration, "4.5s");
+        assert.equal(animation.iterations, "1");
+        await page.emulateMedia({ reducedMotion: "reduce" });
+        assert.equal(
+          await page
+            .locator(".bottle-float")
+            .evaluate((element) => getComputedStyle(element).animationName),
+          "none",
+        );
+        await page.emulateMedia({ reducedMotion: "no-preference" });
       }
-      await page.setViewportSize({ width: 1280, height: 800 });
-      await page.goto(base);
-      assert.equal(
-        await page.evaluate(
-          () => document.documentElement.scrollWidth > innerWidth,
-        ),
-        false,
-      );
-      await context.close();
+
+      if (localizedProduct) {
+        await page.waitForFunction(
+          (source) =>
+            [...document.images].some(
+              (image) =>
+                image.getAttribute("src") === source &&
+                image.complete &&
+                image.naturalWidth > 0,
+            ),
+          localizedProduct.image,
+        );
+        assert.deepEqual(
+          await page.locator(".medicine-section h2, .medicine-section h3").allTextContents(),
+          productFieldLabels,
+          `${path} product fields`,
+        );
+        assert.equal(await page.locator(".product-information-grid").count(), 0);
+      }
+      checked++;
     }
+
+    await page.goto(base + "/products");
+    await page.getByRole("textbox").fill("მინოქსიდილი");
+    await page.waitForFunction(
+      () => document.querySelectorAll(".product-card").length === 1,
+    );
+    assert.match(
+      await page.locator(".product-card").getAttribute("href"),
+      /minoxidil/,
+    );
+    await page.getByRole("textbox").fill("არარსებული-პროდუქტი");
+    assert.equal(await page.locator(".product-card").count(), 0);
+    await page
+      .getByRole("button", { name: "ფილტრების გასუფთავება", exact: true })
+      .click();
+    assert.equal(await page.locator(".product-card").count(), products.length);
+
+    const select = async (key, value) => {
+      const group = page.locator(`[data-facet="${key}"]`);
+      if ((await group.getAttribute("open")) === null)
+        await group.locator("summary").click();
+      await group.getByRole("checkbox", { name: text(value), exact: true }).check();
+    };
+    const count = async (expected) => {
+      await page.waitForFunction(
+        (value) => document.querySelectorAll(".product-card").length === value,
+        expected,
+      );
+      assert.equal(await page.locator(".product-card").count(), expected);
+    };
+    await select("specialty", "ძილის მედიცინა");
+    await count(4);
+    await select("specialty", "დერმატოლოგია");
+    await count(5);
+    await select("system", "კანი და თმა");
+    await count(1);
+    await select("strength", "1.25 მგ");
+    await count(1);
+    await select("form", "ტაბლეტი");
+    await count(1);
+    await select("use", "თმის ცვენა (არარეგისტრირებული ჩვენება)");
+    await count(1);
+    assert.equal(await page.locator(".active-filters button").count(), 6);
+    await page
+      .getByRole("button", { name: "ფილტრების გასუფთავება", exact: true })
+      .click();
+    await count(products.length);
+
+    await page.setViewportSize({ width: 320, height: 800 });
+    await page.locator('[data-facet="use"] summary').click();
+    assert.equal(
+      await page.evaluate(() => document.documentElement.scrollWidth > innerWidth),
+      false,
+      "Open filters fit a 320px screen",
+    );
+    await page.locator('[data-facet="use"] summary').press("Escape");
+    assert.equal(await page.locator('[data-facet="use"]').getAttribute("open"), null);
+    await page.getByRole("switch").focus();
+    await page.getByRole("switch").press("Space");
+    assert.equal(
+      await page.getByRole("switch").getAttribute("aria-checked"),
+      String(theme !== "dark"),
+    );
+    await page.emulateMedia({ reducedMotion: "reduce" });
+    assert.equal(
+      await page
+        .locator(".theme-thumb")
+        .evaluate((element) => getComputedStyle(element).transitionDuration),
+      "0s",
+    );
+
+    for (const card of await page.locator(".product-card").all()) {
+      await card.scrollIntoViewIfNeeded();
+      const image = card.locator(".product-image img");
+      await image.waitFor({ state: "visible" });
+      await image.evaluate((element) => element.decode());
+      const size = await image.evaluate((element) => ({
+        width: element.clientWidth,
+        height: element.clientHeight,
+        naturalWidth: element.naturalWidth,
+        naturalHeight: element.naturalHeight,
+        parentWidth: element.parentElement.clientWidth,
+        parentHeight: element.parentElement.clientHeight,
+      }));
+      assert.ok(size.naturalWidth > 0 && size.naturalHeight > 0);
+      assert.equal(size.width, size.parentWidth);
+      assert.equal(size.height, size.parentHeight);
+      assert.ok(
+        Math.abs(
+          size.width / size.height - size.naturalWidth / size.naturalHeight,
+        ) < 0.01,
+      );
+    }
+
+    await page.setViewportSize({ width: 1280, height: 800 });
+    await page.goto(base);
+    assert.equal(
+      await page.evaluate(() => document.documentElement.scrollWidth > innerWidth),
+      false,
+    );
+    await context.close();
   }
   assert.deepEqual(errors, []);
   console.log(
-    `PASS: ${checked} mobile route/language/theme combinations, saved preferences, original image dimensions, both-language search, five-dimensional AND/OR filters, reset, keyboard/reduced-motion switch, full-frame photos, desktop overflow and no page errors.`,
+    `PASS: ${checked} Georgian route/theme combinations, Georgian-only navigation, restored editorial product fields, filters, theme switch, full-frame photos and no page errors.`,
   );
 } finally {
   await browser.close();

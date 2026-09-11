@@ -7,14 +7,14 @@ export function ThemeArtwork() {
     <span className="theme-landscape" aria-hidden="true">
       <svg viewBox="0 0 100 48" focusable="false">
         <g className="landscape-day">
-          <circle cx="56" cy="34" r="11" fill="#ffe792" />
+          <circle cx="56" cy="34" r="11" fill="#e58725" />
           <path
             d="M13 13q0-4 4-4q2-5 6-2q5-1 5 4h-15M52 12q0-3 3-3q1-4 5-2q3-1 4 3H52"
-            fill="#e2eafa"
+            fill="#fcfaf7"
             opacity=".8"
           />
         </g>
-        <g className="landscape-night" fill="#eff6ff">
+        <g className="landscape-night" fill="#fcfaf7">
           <path d="M29 10a8 8 0 1 0 7 12a8 8 0 0 1-7-12" />
           <circle cx="13" cy="21" r=".9" />
           <circle cx="44" cy="9" r=".9" />
@@ -30,13 +30,13 @@ export function ThemeArtwork() {
         <g className="landscape-tree">
           <path
             d="M65 0H101V15Q95 23 87 19Q76 25 70 17Q60 16 65 8Z"
-            fill="#90c59a"
+            fill="#e58725"
           />
-          <path d="M65 0Q68 14 81 11Q88 21 96 8L101 0" fill="#77b586" />
+          <path d="M65 0Q68 14 81 11Q88 21 96 8L101 0" fill="#3e70b7" />
           <path
             d="M82 0L83 16Q83 26 78 35L89 38Q84 25 87 16L97 9M86 15L86 2M84 19L74 10L72 4M82 13L77 9"
-            fill="#a88960"
-            stroke="#a88960"
+            fill="#14243b"
+            stroke="#14243b"
             strokeWidth="1.5"
           />
         </g>

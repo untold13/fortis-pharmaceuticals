@@ -78,8 +78,8 @@ function Login({ onLogin, configured, sessionError }) {
   return (
     <main className="admin-login">
       <form onSubmit={submit}>
-        <img src="/fortis-logo.jpeg" alt="Fortis Pharmaceuticals" />
-        <h1>Content editor</h1>
+        <img src="/fortis-logo.jpeg" alt="ფორტის ფარმაცევტიკალსი" />
+        <h1>შიგთავსის რედაქტორი</h1>
         <p>ვებგვერდის მართვა</p>
         {sessionError && (
           <p role="alert" className="admin-error">
@@ -88,13 +88,11 @@ function Login({ onLogin, configured, sessionError }) {
         )}
         {configured === false && (
           <p className="admin-notice">
-            Your secure account setup is not complete yet.
-            <br />
             ანგარიშის უსაფრთხო გამართვა ჯერ არ დასრულებულა.
           </p>
         )}
         <Field
-          label="Username / მომხმარებელი"
+          label="მომხმარებელი"
           value={username}
           onChange={setUsername}
           autoComplete="username"
@@ -102,7 +100,7 @@ function Login({ onLogin, configured, sessionError }) {
           autoFocus
         />
         <Field
-          label="Password / პაროლი"
+          label="პაროლი"
           value={password}
           onChange={setPassword}
           type="password"
@@ -119,37 +117,37 @@ function Login({ onLogin, configured, sessionError }) {
           className="admin-primary"
           disabled={busy || configured === false}
         >
-          {busy ? "Signing in…" : "Sign in / შესვლა"}
+          {busy ? "მიმდინარეობს შესვლა…" : "შესვლა"}
         </button>
-        <a href="/">Back to website / ვებგვერდზე დაბრუნება</a>
+        <a href="/">ვებგვერდზე დაბრუნება</a>
       </form>
     </main>
   );
 }
 const productInformationFields = [
-  ["name", "Name / დასახელება"],
-  ["form", "Dosage form / წამლის ფორმა"],
-  ["preparation", "Preparation and route / მომზადება და მიღების გზა"],
-  ["category", "Medical area / მიმართულება"],
-  ["tag", "Short description / მოკლე აღწერა"],
-  ["nameComposition", "Name and Composition / დასახელება და შემადგენლობა"],
+  ["name", "დასახელება"],
+  ["form", "წამლის ფორმა"],
+  ["preparation", "მომზადება და მიღების გზა"],
+  ["category", "მიმართულება"],
+  ["tag", "მოკლე აღწერა"],
+  ["nameComposition", "დასახელება და შემადგენლობა"],
   [
     "pharmacology",
-    "Pharmacological Properties and Mechanism of Action / ფარმაკოლოგიური თვისებები და მოქმედების მექანიზმი",
+    "ფარმაკოლოგიური თვისებები და მოქმედების მექანიზმი",
   ],
-  ["indications", "Indications / გამოყენების ჩვენებები"],
+  ["indications", "გამოყენების ჩვენებები"],
   [
     "dosageAdministration",
-    "Dosage and Administration / დოზირება და მიღების წესი",
+    "დოზირება და მიღების წესი",
   ],
-  ["sideEffects", "Side Effects / გვერდითი მოვლენები"],
-  ["contraindications", "Contraindications / უკუჩვენებები"],
+  ["sideEffects", "გვერდითი მოვლენები"],
+  ["contraindications", "უკუჩვენებები"],
   [
     "warningsPrecautions",
-    "Special Warnings and Precautions / განსაკუთრებული მითითებები",
+    "განსაკუთრებული მითითებები",
   ],
-  ["storageConditions", "Storage Conditions / შენახვის პირობები"],
-  ["manufacturer", "Manufacturer / მწარმოებელი"],
+  ["storageConditions", "შენახვის პირობები"],
+  ["manufacturer", "მწარმოებელი"],
 ];
 const longProductFields = new Set(productInformationFields.slice(5).map(([key]) => key));
 const emptyProduct = () => ({
@@ -160,9 +158,9 @@ const emptyProduct = () => ({
   name: "",
   strength: "",
   pack: 30,
-  form: "Tablet",
-  packUnit: "tablets",
-  preparation: "Compounded · oral",
+  form: "ტაბლეტი",
+  packUnit: "ტაბლეტი",
+  preparation: "კომპოზიტური · პერორალური",
   image: "",
   category: "",
   tag: "",
@@ -177,24 +175,6 @@ const emptyProduct = () => ({
   manufacturer: "",
   refs: [],
   facets: { specialty: [], use: [], system: [] },
-  ka: {
-    name: "",
-    form: "ტაბლეტი",
-    packUnit: "ტაბლეტი",
-    preparation: "კომპოზიტური · პერორალური",
-    category: "",
-    tag: "",
-    nameComposition: "",
-    pharmacology: "",
-    indications: "",
-    dosageAdministration: "",
-    sideEffects: "",
-    contraindications: "",
-    warningsPrecautions: "",
-    storageConditions: "",
-    manufacturer: "",
-    facets: { specialty: [], use: [], system: [] },
-  },
 });
 function ImageField({ value, onChange, onError }) {
   const [busy, setBusy] = useState(false),
@@ -206,7 +186,7 @@ function ImageField({ value, onChange, onError }) {
     try {
       if (file.size > 3 * 1024 * 1024)
         throw new Error(
-          "Choose an image smaller than 3 MB. / აირჩიეთ 3 MB-ზე მცირე სურათი.",
+          "აირჩიეთ 3 MB-ზე მცირე სურათი.",
         );
       const base64 = await new Promise((resolve, reject) => {
         const reader = new FileReader();
@@ -232,13 +212,13 @@ function ImageField({ value, onChange, onError }) {
       {value && (
         <img
           src={preview?.path === value ? preview.src : value}
-          alt="Current product or section image"
+          alt="პროდუქტის ან სექციის მიმდინარე სურათი"
         />
       )}
       <label className="admin-upload">
         {busy
-          ? "Uploading… / იტვირთება…"
-          : "Upload original image / სურათის ატვირთვა"}
+          ? "იტვირთება…"
+          : "სურათის ატვირთვა"}
         <input
           type="file"
           accept="image/png,image/jpeg,image/webp"
@@ -246,94 +226,75 @@ function ImageField({ value, onChange, onError }) {
           onChange={upload}
         />
       </label>
-      <small>PNG, JPEG or WebP · up to 3 MB · originals stay unchanged</small>
+      <small>PNG, JPEG ან WebP · მაქსიმუმ 3 MB</small>
     </div>
   );
 }
 function ProductEditor({ record, sources, onSave, onCancel, onError }) {
-  const [data, setData] = useState(() => clone(record?.data || emptyProduct())),
-    [language, setLanguage] = useState("en");
+  const [data, setData] = useState(() => clone(record?.data || emptyProduct()));
   const update = (key, value) => setData((d) => ({ ...d, [key]: value }));
-  const localized = language === "en" ? data : data.ka;
-  const updateLanguage = (key, value) =>
-    setData((d) =>
-      language === "en"
-        ? { ...d, [key]: value }
-        : { ...d, ka: { ...d.ka, [key]: value } },
-    );
-  const filters = localized.facets || {};
+  const filters = data.facets || {};
   return (
     <section className="admin-editor">
       <div className="admin-editor-title">
         <h2>
-          {record
-            ? "Edit product / რედაქტირება"
-            : "New product / ახალი პრეპარატი"}
+          {record ? "პრეპარატის რედაქტირება" : "ახალი პრეპარატი"}
         </h2>
-        <button onClick={onCancel}>Back / დაბრუნება</button>
+        <button onClick={onCancel}>დაბრუნება</button>
       </div>
       <div className="admin-columns">
         <div>
           <Field
-            label="Page address / გვერდის მისამართი"
+            label="გვერდის მისამართი"
             value={data.slug}
             onChange={(v) => update("slug", v)}
             disabled={!!record}
             placeholder="ingredient-25"
           />
           <p className="admin-hint">
-            Lowercase Latin letters, numbers and hyphens. Existing addresses
-            stay fixed.
+            გამოიყენეთ პატარა ლათინური ასოები, ციფრები და დეფისი. არსებული
+            მისამართი უცვლელი რჩება.
           </p>
           <div className="admin-grid">
             <Field
-              label="Strength / დოზა"
+              label="დოზა"
               value={data.strength}
               onChange={(v) => update("strength", v)}
-              placeholder="25 mg / Not specified"
+              placeholder="25 მგ ან მითითებული არ არის"
             />
             <Field
-              label="Pack quantity / რაოდენობა"
+              label="რაოდენობა"
               type="number"
               min={1}
               value={data.pack}
               onChange={(v) => update("pack", v)}
             />
             <Field
-              label="Display order / თანმიმდევრობა"
+              label="თანმიმდევრობა"
               type="number"
               min={1}
               value={data.order}
               onChange={(v) => update("order", v)}
             />
           </div>
-          <div className="admin-grid">
-            <Field
-              label="Pack unit in English / შეფუთვის ერთეული ინგლისურად"
-              value={data.packUnit}
-              onChange={(v) => update("packUnit", v)}
-            />
-            <Field
-              label="Pack unit in Georgian / შეფუთვის ერთეული ქართულად"
-              value={data.ka.packUnit}
-              onChange={(v) =>
-                setData((d) => ({ ...d, ka: { ...d.ka, packUnit: v } }))
-              }
-            />
-          </div>
+          <Field
+            label="შეფუთვის ერთეული"
+            value={data.packUnit}
+            onChange={(v) => update("packUnit", v)}
+          />
           <Toggle
-            label="Published / გამოქვეყნებული"
+            label="გამოქვეყნებული"
             value={data.published}
             onChange={(v) => update("published", v)}
           />
           <Toggle
-            label="Featured on homepage / მთავარ გვერდზე"
+            label="მთავარ გვერდზე გამოჩენა"
             value={data.featured}
             onChange={(v) => update("featured", v)}
           />
           <p className="admin-hint">
-            Drafts stay outside public pages. Review both languages and clinical
-            references before publishing.
+            მონახაზი საჯარო ვებგვერდზე არ გამოჩნდება. ყველა ველი შეავსეთ
+            ქართულად.
           </p>
         </div>
         <ImageField
@@ -342,38 +303,24 @@ function ProductEditor({ record, sources, onSave, onCancel, onError }) {
           onError={onError}
         />
       </div>
-      <div className="admin-language" aria-label="Content language">
-        <button
-          aria-pressed={language === "en"}
-          onClick={() => setLanguage("en")}
-        >
-          English
-        </button>
-        <button
-          aria-pressed={language === "ka"}
-          onClick={() => setLanguage("ka")}
-        >
-          ქართული
-        </button>
-      </div>
-      <h3>Product information / პროდუქტის ინფორმაცია</h3>
+      <h3>პროდუქტის ინფორმაცია</h3>
       {productInformationFields.map(([key, label]) => (
         <Field
           key={key}
           label={label}
-          value={localized[key]}
-          onChange={(v) => updateLanguage(key, v)}
+          value={data[key]}
+          onChange={(v) => update(key, v)}
           multiline={longProductFields.has(key)}
         />
       ))}
-      <h3>Catalog filters / კატალოგის ფილტრები</h3>
+      <h3>კატალოგის ფილტრები</h3>
       <p className="admin-hint">
-        One item per line. Match English and Georgian items in the same order.
+        თითოეული მნიშვნელობა ჩაწერეთ ცალკე ხაზზე.
       </p>
       {[
-        ["specialty", "Medical specialty / სპეციალობა"],
-        ["use", "Use context / გამოყენების სფერო"],
-        ["system", "Body system / ორგანოთა სისტემა"],
+        ["specialty", "სამედიცინო სპეციალობა"],
+        ["use", "გამოყენების სფერო"],
+        ["system", "ორგანოთა სისტემა"],
       ].map(([key, label]) => (
         <Field
           key={key}
@@ -381,16 +328,16 @@ function ProductEditor({ record, sources, onSave, onCancel, onError }) {
           value={(filters[key] || []).join("\n")}
           multiline
           onChange={(v) =>
-            updateLanguage("facets", { ...filters, [key]: v.split("\n") })
+            update("facets", { ...filters, [key]: v.split("\n") })
           }
         />
       ))}
-      <h3>Clinical references / კლინიკური წყაროები</h3>
+      <h3>კლინიკური წყაროები</h3>
       <div className="admin-reference-list">
         {sources.map((source) => (
           <Toggle
             key={source.id}
-            label={language === "ka" ? source.titleKa : source.title}
+            label={source.title}
             value={data.refs.includes(source.id)}
             onChange={(v) =>
               update(
@@ -414,7 +361,7 @@ function ProductEditor({ record, sources, onSave, onCancel, onError }) {
             })
           }
         >
-          Save product / შენახვა
+          პრეპარატის შენახვა
         </button>
       </div>
     </section>
@@ -425,42 +372,27 @@ function CopyEditor({ record, onSave }) {
     [query, setQuery] = useState("");
   return (
     <section>
-      <h2>Website text / ვებგვერდის ტექსტი</h2>
+      <h2>ვებგვერდის ტექსტი</h2>
       <Field
-        label="Find text / ტექსტის ძებნა"
+        label="ტექსტის ძებნა"
         value={query}
         onChange={setQuery}
       />
       {data.entries
         .map((e, i) => ({ e, i }))
-        .filter(({ e }) =>
-          `${e.en} ${e.ka}`.toLowerCase().includes(query.toLowerCase()),
-        )
+        .filter(({ e }) => e.value.toLowerCase().includes(query.toLowerCase()))
         .map(({ e, i }) => (
           <details className="admin-text-block" key={e.key}>
-            <summary>{e.ka || e.en}</summary>
+            <summary>{e.value}</summary>
             <Field
-              label="English"
+              label="ქართული ტექსტი"
               multiline
-              value={e.en}
+              value={e.value}
               onChange={(v) =>
                 setData((d) => ({
                   ...d,
                   entries: d.entries.map((x, j) =>
-                    j === i ? { ...x, en: v } : x,
-                  ),
-                }))
-              }
-            />
-            <Field
-              label="ქართული"
-              multiline
-              value={e.ka}
-              onChange={(v) =>
-                setData((d) => ({
-                  ...d,
-                  entries: d.entries.map((x, j) =>
-                    j === i ? { ...x, ka: v } : x,
+                    j === i ? { ...x, value: v } : x,
                   ),
                 }))
               }
@@ -472,7 +404,7 @@ function CopyEditor({ record, onSave }) {
           className="admin-primary"
           onClick={() => onSave({ ...record, data })}
         >
-          Save website text / ტექსტის შენახვა
+          ტექსტის შენახვა
         </button>
       </div>
     </section>
@@ -481,8 +413,9 @@ function CopyEditor({ record, onSave }) {
 const emptySection = () => ({
   published: false,
   page: "/",
-  en: { title: "", body: "", imageAlt: "" },
-  ka: { title: "", body: "", imageAlt: "" },
+  title: "",
+  body: "",
+  imageAlt: "",
   image: "",
 });
 function SectionsEditor({ record, onSave, onError }) {
@@ -496,11 +429,11 @@ function SectionsEditor({ record, onSave, onError }) {
     }));
   return (
     <section>
-      <h2>Additional sections / დამატებითი სექციები</h2>
+      <h2>დამატებითი სექციები</h2>
       {data.sections.map((s, i) => (
         <article className="admin-section" key={i}>
           <div className="admin-editor-title">
-            <h3>{s.ka.title || s.en.title || `Section ${i + 1}`}</h3>
+            <h3>{s.title || `სექცია ${i + 1}`}</h3>
             <button
               onClick={() =>
                 setData((d) => ({
@@ -509,26 +442,26 @@ function SectionsEditor({ record, onSave, onError }) {
                 }))
               }
             >
-              Remove / წაშლა
+              წაშლა
             </button>
           </div>
           <Toggle
-            label="Published / გამოქვეყნებული"
+            label="გამოქვეყნებული"
             value={s.published}
             onChange={(v) => update(i, "published", v)}
           />
           <label className="admin-field">
-            <span>Page / გვერდი</span>
+            <span>გვერდი</span>
             <select
               value={s.page}
               onChange={(e) => update(i, "page", e.target.value)}
             >
               {[
-                ["/", "Homepage / მთავარი"],
-                ["/about", "About / ჩვენ შესახებ"],
-                ["/compounding", "Compounding / კომპოზიტური ფარმაცია"],
-                ["/products", "Products / პრეპარატები"],
-                ["/contact", "Contact / კონტაქტი"],
+                ["/", "მთავარი"],
+                ["/about", "ჩვენ შესახებ"],
+                ["/compounding", "კომპოზიტური ფარმაცია"],
+                ["/products", "პრეპარატები"],
+                ["/contact", "კონტაქტი"],
               ].map(([v, t]) => (
                 <option key={v} value={v}>
                   {t}
@@ -536,26 +469,19 @@ function SectionsEditor({ record, onSave, onError }) {
               ))}
             </select>
           </label>
-          <div className="admin-columns">
-            {["en", "ka"].map((l) => (
-              <div key={l}>
-                <h4>{l === "en" ? "English" : "ქართული"}</h4>
-                {[
-                  ["title", "Title / სათაური"],
-                  ["body", "Text / ტექსტი"],
-                  ["imageAlt", "Image description / სურათის აღწერა"],
-                ].map(([k, label]) => (
-                  <Field
-                    key={k}
-                    label={label}
-                    value={s[l][k]}
-                    multiline={k === "body"}
-                    onChange={(v) => update(i, l, { ...s[l], [k]: v })}
-                  />
-                ))}
-              </div>
-            ))}
-          </div>
+          {[
+            ["title", "სათაური"],
+            ["body", "ტექსტი"],
+            ["imageAlt", "სურათის აღწერა"],
+          ].map(([key, label]) => (
+            <Field
+              key={key}
+              label={label}
+              value={s[key]}
+              multiline={key === "body"}
+              onChange={(value) => update(i, key, value)}
+            />
+          ))}
           <ImageField
             value={s.image}
             onChange={(v) => update(i, "image", v)}
@@ -568,14 +494,14 @@ function SectionsEditor({ record, onSave, onError }) {
           setData((d) => ({ ...d, sections: [...d.sections, emptySection()] }))
         }
       >
-        Add section / სექციის დამატება
+        სექციის დამატება
       </button>
       <div className="admin-save">
         <button
           className="admin-primary"
           onClick={() => onSave({ ...record, data })}
         >
-          Save sections / სექციების შენახვა
+          სექციების შენახვა
         </button>
       </div>
     </section>
@@ -590,21 +516,18 @@ function SourcesEditor({ record, onSave }) {
     }));
   return (
     <section>
-      <h2>Clinical references / კლინიკური წყაროები</h2>
+      <h2>კლინიკური წყაროები</h2>
       <p>
-        Keep existing source IDs unchanged. Use professionally reviewed primary
-        sources.
+        არსებული წყაროს კოდი უცვლელი დატოვეთ. გამოიყენეთ პროფესიულად
+        გადამოწმებული პირველადი წყაროები.
       </p>
       {data.sources.map((s, i) => (
         <details className="admin-text-block" key={i}>
-          <summary>
-            {s.titleKa || s.title || "New reference / ახალი წყარო"}
-          </summary>
+          <summary>{s.title || "ახალი წყარო"}</summary>
           {[
-            ["id", "Source ID / წყაროს კოდი"],
-            ["title", "English title"],
-            ["titleKa", "ქართული სათაური"],
-            ["url", "Official URL / ოფიციალური ბმული"],
+            ["id", "წყაროს კოდი"],
+            ["title", "ქართული სათაური"],
+            ["url", "ოფიციალური ბმული"],
           ].map(([k, l]) => (
             <Field
               key={k}
@@ -622,19 +545,19 @@ function SourcesEditor({ record, onSave }) {
             ...d,
             sources: [
               ...d.sources,
-              { id: "", title: "", titleKa: "", url: "" },
+              { id: "", title: "", url: "" },
             ],
           }))
         }
       >
-        Add reference / წყაროს დამატება
+        წყაროს დამატება
       </button>
       <div className="admin-save">
         <button
           className="admin-primary"
           onClick={() => onSave({ ...record, data })}
         >
-          Save references / წყაროების შენახვა
+          წყაროების შენახვა
         </button>
       </div>
     </section>
@@ -707,7 +630,7 @@ function Admin() {
       );
       if (record.path.startsWith("content/products/")) setEditing(saved);
       setMessage(
-        "Saved permanently. The website updates after the deployment finishes. / ცვლილება შენახულია. ვებგვერდი განახლდება გამოქვეყნების დასრულების შემდეგ.",
+        "ცვლილება შენახულია. ვებგვერდი განახლდება გამოქვეყნების დასრულების შემდეგ.",
       );
     } catch (e) {
       setError(e.message);
@@ -728,9 +651,7 @@ function Admin() {
   }
   if (checking)
     return (
-      <main className="admin-loading">
-        Opening your editor… / რედაქტორი იტვირთება…
-      </main>
+      <main className="admin-loading">რედაქტორი იტვირთება…</main>
     );
   if (!user)
     return (
@@ -740,20 +661,20 @@ function Admin() {
   return (
     <>
       <header className="admin-header">
-        <img src="/fortis-logo.jpeg" alt="Fortis Pharmaceuticals" />
+        <img src="/fortis-logo.jpeg" alt="ფორტის ფარმაცევტიკალსი" />
         <span>{user.username}</span>
         <a href="/" target="_blank" rel="noreferrer">
-          View website / ვებგვერდი
+          ვებგვერდის ნახვა
         </a>
-        <button onClick={logout}>Sign out / გასვლა</button>
+        <button onClick={logout}>გასვლა</button>
       </header>
       <div className="admin-layout">
-        <nav aria-label="Editor sections">
+        <nav aria-label="რედაქტორის განყოფილებები">
           {[
-            ["products", "Products / პრეპარატები"],
-            ["copy", "Website text / ტექსტები"],
-            ["sections", "Add sections / სექციები"],
-            ["sources", "References / წყაროები"],
+            ["products", "პრეპარატები"],
+            ["copy", "ვებგვერდის ტექსტები"],
+            ["sections", "დამატებითი სექციები"],
+            ["sources", "წყაროები"],
           ].map(([id, label]) => (
             <button
               key={id}
@@ -780,7 +701,7 @@ function Admin() {
               {message}
             </p>
           )}
-          {busy && <p role="status">Saving or loading… / მიმდინარეობს…</p>}
+          {busy && <p role="status">მიმდინარეობს…</p>}
           <fieldset disabled={busy} className="admin-workspace">
             {content &&
               tab === "products" &&
@@ -796,16 +717,16 @@ function Admin() {
               ) : (
                 <section>
                   <div className="admin-editor-title">
-                    <h1>Products / პრეპარატები</h1>
+                    <h1>პრეპარატები</h1>
                     <button
                       className="admin-primary"
                       onClick={() => setEditing({ new: true })}
                     >
-                      Add product / დამატება
+                      პრეპარატის დამატება
                     </button>
                   </div>
                   <Field
-                    label="Find a product / პრეპარატის ძებნა"
+                    label="პრეპარატის ძებნა"
                     value={query}
                     onChange={setQuery}
                   />
@@ -815,7 +736,7 @@ function Admin() {
                         (a, b) => (a.data.order ?? 999) - (b.data.order ?? 999),
                       )
                       .filter((p) =>
-                        `${p.data.name} ${p.data.ka?.name} ${p.data.strength}`
+                        `${p.data.name} ${p.data.strength}`
                           .toLowerCase()
                           .includes(query.toLowerCase()),
                       )
@@ -823,16 +744,15 @@ function Admin() {
                         <button key={p.path} onClick={() => setEditing(p)}>
                           <img src={p.data.image} alt="" loading="lazy" />
                           <span>
-                            <strong>{p.data.ka?.name || p.data.name}</strong>
+                            <strong>{p.data.name}</strong>
                             <small>
-                              {p.data.name} · {p.data.strength} · {p.data.pack}{" "}
-                              {p.data.packUnit}
+                              {p.data.strength} · {p.data.pack} {p.data.packUnit}
                             </small>
                           </span>
                           <span className="admin-state">
                             {p.data.published
-                              ? "Published / გამოქვეყნებული"
-                              : "Draft / მონახაზი"}
+                              ? "გამოქვეყნებული"
+                              : "მონახაზი"}
                           </span>
                         </button>
                       ))}
@@ -854,7 +774,7 @@ function Admin() {
             )}
           </fieldset>
           {!content && !busy && (
-            <button onClick={load}>Try again / ხელახლა</button>
+            <button onClick={load}>ხელახლა ცდა</button>
           )}
         </main>
       </div>

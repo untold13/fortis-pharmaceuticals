@@ -1,59 +1,31 @@
 {
-  "name": "Fluvoxamine",
-  "category": "Mental health",
-  "tag": "SSRI ingredient",
+  "name": "ფლუვოქსამინი",
+  "category": "ფსიქიკური ჯანმრთელობა",
+  "tag": "სეროტონინის უკუმიტაცების სელექციური ინჰიბიტორი",
   "refs": [
     "fluvoxamine"
   ],
   "slug": "fluvoxamine-50",
-  "strength": "50 mg",
+  "strength": "50 მგ",
   "pack": 30,
-  "form": "Tablet",
+  "form": "ტაბლეტი",
   "image": "/products/fluvoxamine-50.png",
   "featured": false,
   "published": true,
   "order": 16,
   "facets": {
     "specialty": [
-      "Psychiatry"
+      "ფსიქიატრია"
     ],
     "use": [
-      "OCD (reference context)"
+      "ობსესიურ-კომპულსიური აშლილობა (რეფერენსული პრეპარატი)"
     ],
     "system": [
-      "Brain & nervous system"
+      "თავის ტვინი და ნერვული სისტემა"
     ]
   },
-  "ka": {
-    "name": "ფლუვოქსამინი",
-    "category": "ფსიქიკური ჯანმრთელობა",
-    "tag": "სეროტონინის უკუმიტაცების სელექციური ინჰიბიტორი",
-    "form": "ტაბლეტი",
-    "facets": {
-      "specialty": [
-        "ფსიქიატრია"
-      ],
-      "use": [
-        "ობსესიურ-კომპულსიური აშლილობა (რეფერენსული პრეპარატი)"
-      ],
-      "system": [
-        "თავის ტვინი და ნერვული სისტემა"
-      ]
-    },
-    "packUnit": "ტაბლეტი",
-    "preparation": "კომპოზიტური · პერორალური",
-    "nameComposition": "",
-    "pharmacology": "",
-    "indications": "",
-    "dosageAdministration": "",
-    "sideEffects": "",
-    "contraindications": "",
-    "warningsPrecautions": "",
-    "storageConditions": "",
-    "manufacturer": ""
-  },
-  "packUnit": "tablets",
-  "preparation": "Compounded · oral",
+  "packUnit": "ტაბლეტი",
+  "preparation": "კომპოზიტური · პერორალური",
   "nameComposition": "",
   "pharmacology": "",
   "indications": "",

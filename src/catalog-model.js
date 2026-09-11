@@ -1,16 +1,16 @@
 import { products } from "./products.js";
 
-// Separate dimensions come from reviewed, bilingual CMS product records.
+// Separate dimensions come from reviewed, Georgian CMS product records.
 export const catalogProducts = products.map((p) => ({
   ...p,
   facets: { ...p.facets, strength: [p.strength], form: [p.form] },
 }));
 export const facets = [
-  { key: "strength", label: "Strength" },
-  { key: "specialty", label: "Medical specialty" },
-  { key: "use", label: "Use context" },
-  { key: "system", label: "Body system" },
-  { key: "form", label: "Form" },
+  { key: "strength", label: "დოზა" },
+  { key: "specialty", label: "სპეციალობა" },
+  { key: "use", label: "გამოყენების სფერო" },
+  { key: "system", label: "ორგანოთა სისტემა" },
+  { key: "form", label: "ფორმა" },
 ].map((f) => ({
   ...f,
   options: [...new Set(catalogProducts.flatMap((p) => p.facets[f.key]))].sort(

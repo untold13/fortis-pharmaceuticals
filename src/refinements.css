@@ -614,3 +614,262 @@ html[data-theme="dark"] .bottle-cap-line {
   object-fit: contain;
   margin-top: 32px;
 }
+
+/* Fortis palette supplied for the Georgian-only release. */
+:root {
+  --ink: #14243b;
+  --muted: #14243bb8;
+  --blue: #3e70b7;
+  --green: #e58725;
+  --orange: #e58725;
+  --line: #14243b1f;
+  --pale: #e587250d;
+  --surface: #fcfaf7;
+  --raised: #e5872512;
+  color: var(--ink);
+  background: var(--surface);
+}
+html,
+body,
+#root {
+  background: var(--surface);
+  color: var(--ink);
+}
+h1,
+h2,
+h3,
+dt,
+strong {
+  color: var(--ink);
+}
+p,
+.quiet-note,
+.filter-note,
+.breadcrumb,
+.footer-bottom,
+.footer-top > div > small {
+  color: var(--muted);
+}
+.header,
+footer {
+  background: #fcfaf7f5;
+  border-color: var(--line);
+}
+.brand strong,
+.nav a:hover,
+.nav a[aria-current],
+.text-link,
+.breadcrumb a,
+.product-card-bottom strong,
+.detail-strength,
+.catalog-facet summary b {
+  color: var(--blue);
+}
+.brand small,
+.eyebrow,
+h1 em,
+h2 > span,
+.editorial-layout .georgian,
+blockquote,
+.quality-grid svg,
+.editorial-layout aside,
+.contact-option > svg,
+.steps > div > span {
+  color: var(--orange);
+}
+.nav a {
+  color: var(--ink);
+}
+.nav a[aria-current] {
+  text-decoration-color: var(--orange);
+}
+.simple-hero {
+  background:
+    radial-gradient(circle at 82% 23%, #e5872526, transparent 30%),
+    radial-gradient(circle at 67% 74%, #3e70b71a, transparent 34%),
+    var(--surface);
+}
+.featured,
+.contact-band,
+.quality-grid > div,
+.contact-panel,
+.search,
+.simple-hero-image,
+.detail-visual,
+.product-image {
+  background: #3e70b70d;
+  border-color: var(--line);
+}
+.button,
+.contact-band .button {
+  background: var(--orange);
+  border-color: var(--orange);
+  color: var(--ink);
+}
+.button:hover,
+.button:active,
+.contact-band .button:hover {
+  background: var(--blue);
+  border-color: var(--blue);
+  color: var(--surface);
+}
+.button.secondary {
+  background: transparent;
+  border-color: var(--blue);
+  color: var(--blue);
+}
+.button.secondary:hover {
+  background: #3e70b712;
+  color: var(--ink);
+}
+.tag {
+  background: #e587251a;
+  color: var(--ink);
+}
+.medicine-section.clinical-note,
+.clinical-note {
+  background: #e5872512;
+  border-left-color: var(--orange);
+}
+.medicine-section {
+  border-color: var(--line);
+}
+.references > div > a:not(.text-link) {
+  color: var(--blue);
+}
+.contact-nav,
+.catalog-facet summary,
+.facet-options,
+.active-filters button,
+.filters button {
+  border-color: var(--line);
+}
+.catalog-facet[open] summary,
+.filters button[aria-pressed="true"] {
+  border-color: var(--orange);
+}
+.filters button[aria-pressed="true"],
+.active-filters button {
+  background: #e5872514;
+  color: var(--ink);
+}
+.round-arrow {
+  background: var(--orange);
+  color: var(--ink);
+}
+.bottle-label {
+  fill: #fcfaf7;
+}
+.bottle-cap {
+  fill: #fcfaf7;
+  stroke: #14243b;
+}
+.bottle-cap-line {
+  stroke: #14243b;
+}
+.theme-landscape {
+  background: #3e70b74d;
+}
+.landscape-far,
+.landscape-near {
+  fill: #e58725;
+}
+.landscape-mid,
+.landscape-shrub {
+  fill: #3e70b7;
+}
+.landscape-tree path {
+  fill: #e58725;
+  stroke: #14243b;
+}
+.theme-switch[aria-checked="true"] .theme-landscape {
+  background: #14243b;
+}
+.theme-switch[aria-checked="true"] .landscape-far,
+.theme-switch[aria-checked="true"] .landscape-near {
+  fill: #3e70b7;
+}
+.theme-switch[aria-checked="true"] .landscape-mid,
+.theme-switch[aria-checked="true"] .landscape-shrub {
+  fill: #e58725;
+}
+
+html[data-theme="dark"] {
+  --ink: #fcfaf7;
+  --muted: #fcfaf7bd;
+  --blue: #3e70b7;
+  --green: #e58725;
+  --orange: #e58725;
+  --line: #fcfaf72b;
+  --pale: #3e70b71a;
+  --surface: #14243b;
+  --raised: #3e70b71f;
+  color: var(--ink);
+  background: var(--surface);
+}
+html[data-theme="dark"] .header,
+html[data-theme="dark"] footer,
+html[data-theme="dark"] .nav {
+  background: #14243bf5;
+}
+html[data-theme="dark"] h1,
+html[data-theme="dark"] h2,
+html[data-theme="dark"] h3,
+html[data-theme="dark"] dt,
+html[data-theme="dark"] strong,
+html[data-theme="dark"] .nav a {
+  color: #fcfaf7;
+}
+html[data-theme="dark"] .simple-hero {
+  background:
+    radial-gradient(circle at 82% 23%, #e587252b, transparent 30%),
+    radial-gradient(circle at 67% 74%, #3e70b738, transparent 34%),
+    #14243b;
+}
+html[data-theme="dark"] .featured,
+html[data-theme="dark"] .contact-band,
+html[data-theme="dark"] .quality-grid > div,
+html[data-theme="dark"] .contact-panel,
+html[data-theme="dark"] .search,
+html[data-theme="dark"] .clinical-note,
+html[data-theme="dark"] .catalog-facet summary,
+html[data-theme="dark"] .facet-options,
+html[data-theme="dark"] .active-filters button,
+html[data-theme="dark"] .filters button {
+  background: #3e70b71a;
+  border-color: var(--line);
+}
+html[data-theme="dark"] .brand strong,
+html[data-theme="dark"] .nav a[aria-current],
+html[data-theme="dark"] .product-card-bottom strong,
+html[data-theme="dark"] .detail-strength,
+html[data-theme="dark"] .text-link,
+html[data-theme="dark"] .references > div > a:not(.text-link) {
+  color: #e58725;
+}
+html[data-theme="dark"] .button,
+html[data-theme="dark"] .contact-band .button {
+  background: #e58725;
+  border-color: #e58725;
+  color: #14243b;
+}
+html[data-theme="dark"] .button:hover,
+html[data-theme="dark"] .contact-band .button:hover {
+  background: #3e70b7;
+  border-color: #3e70b7;
+  color: #fcfaf7;
+}
+html[data-theme="dark"] .tag {
+  background: #e5872526;
+  color: #fcfaf7;
+}
+html[data-theme="dark"] .bottle-label {
+  fill: #fcfaf7;
+}
+html[data-theme="dark"] .bottle-cap {
+  fill: #fcfaf7;
+  stroke: #3e70b7;
+}
+html[data-theme="dark"] .bottle-cap-line {
+  stroke: #3e70b7;
+}

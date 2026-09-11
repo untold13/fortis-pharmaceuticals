@@ -1,1179 +1,912 @@
 {
   "entries": [
     {
-      "key": "Fortis Pharmaceuticals home",
-      "en": "Fortis Pharmaceuticals home",
-      "ka": "ფორტის ფარმაცევტიკალსის მთავარი გვერდი"
+      "key": "ფორტის ფარმაცევტიკალსის მთავარი გვერდი",
+      "value": "ფორტის ფარმაცევტიკალსის მთავარი გვერდი"
     },
     {
-      "key": "Main navigation",
-      "en": "Main navigation",
-      "ka": "მთავარი ნავიგაცია"
+      "key": "მთავარი ნავიგაცია",
+      "value": "მთავარი ნავიგაცია"
     },
     {
-      "key": "Home",
-      "en": "Home",
-      "ka": "მთავარი"
+      "key": "მთავარი",
+      "value": "მთავარი"
     },
     {
-      "key": "Compounding",
-      "en": "Compounding",
-      "ka": "კომპოზიტური ფარმაცია"
+      "key": "კომპოზიტური ფარმაცია",
+      "value": "კომპოზიტური ფარმაცია"
     },
     {
-      "key": "About / Laboratory",
-      "en": "About / Laboratory",
-      "ka": "ჩვენ შესახებ / ლაბორატორია"
+      "key": "ჩვენ შესახებ / ლაბორატორია",
+      "value": "ჩვენ შესახებ / ლაბორატორია"
     },
     {
-      "key": "Products",
-      "en": "Products",
-      "ka": "პროდუქტები"
+      "key": "პროდუქტები",
+      "value": "პროდუქტები"
     },
     {
-      "key": "Contact",
-      "en": "Contact",
-      "ka": "კონტაქტი"
+      "key": "კონტაქტი",
+      "value": "კონტაქტი"
     },
     {
-      "key": "Call pharmacy",
-      "en": "Call pharmacy",
-      "ka": "დარეკეთ აფთიაქში"
+      "key": "დარეკეთ აფთიაქში",
+      "value": "დარეკეთ აფთიაქში"
     },
     {
-      "key": "Close menu",
-      "en": "Close menu",
-      "ka": "მენიუს დახურვა"
+      "key": "მენიუს დახურვა",
+      "value": "მენიუს დახურვა"
     },
     {
-      "key": "Open menu",
-      "en": "Open menu",
-      "ka": "მენიუს გახსნა"
+      "key": "მენიუს გახსნა",
+      "value": "მენიუს გახსნა"
     },
     {
-      "key": "Night mode",
-      "en": "Night mode",
-      "ka": "ღამის რეჟიმი"
+      "key": "ღამის რეჟიმი",
+      "value": "ღამის რეჟიმი"
     },
     {
-      "key": "Switch to light mode",
-      "en": "Switch to light mode",
-      "ka": "დღის რეჟიმზე გადასვლა"
+      "key": "დღის რეჟიმზე გადასვლა",
+      "value": "დღის რეჟიმზე გადასვლა"
     },
     {
-      "key": "Switch to dark mode",
-      "en": "Switch to dark mode",
-      "ka": "ღამის რეჟიმზე გადასვლა"
+      "key": "ღამის რეჟიმზე გადასვლა",
+      "value": "ღამის რეჟიმზე გადასვლა"
     },
     {
-      "key": "Individual needs.",
-      "en": "Individual needs.",
-      "ka": "ინდივიდუალური საჭიროებები."
+      "key": "ინდივიდუალური საჭიროებები.",
+      "value": "ინდივიდუალური საჭიროებები."
     },
     {
-      "key": "Thoughtful preparation.",
-      "en": "Thoughtful preparation.",
-      "ka": "ყურადღებით მომზადებული მედიკამენტები."
+      "key": "ყურადღებით მომზადებული მედიკამენტები.",
+      "value": "ყურადღებით მომზადებული მედიკამენტები."
     },
     {
-      "key": "DISCOVER",
-      "en": "DISCOVER",
-      "ka": "გაიგეთ მეტი"
+      "key": "გაიგეთ მეტი",
+      "value": "გაიგეთ მეტი"
     },
     {
-      "key": "FIND US",
-      "en": "FIND US",
-      "ka": "გვიპოვეთ"
+      "key": "გვიპოვეთ",
+      "value": "გვიპოვეთ"
     },
     {
-      "key": "9 Givi Zhvania Street",
-      "en": "9 Givi Zhvania Street",
-      "ka": "გივი ჟვანიას ქუჩა 9"
+      "key": "გივი ჟვანიას ქუჩა 9",
+      "value": "გივი ჟვანიას ქუჩა 9"
     },
     {
-      "key": "Tbilisi, Georgia",
-      "en": "Tbilisi, Georgia",
-      "ka": "თბილისი, საქართველო"
+      "key": "თბილისი, საქართველო",
+      "value": "თბილისი, საქართველო"
     },
     {
-      "key": "FOR PROFESSIONALS",
-      "en": "FOR PROFESSIONALS",
-      "ka": "პროფესიონალებისთვის"
+      "key": "პროფესიონალებისთვის",
+      "value": "პროფესიონალებისთვის"
     },
     {
-      "key": "Fortis Library",
-      "en": "Fortis Library",
-      "ka": "ფორტის ბიბლიოთეკა"
+      "key": "ფორტის ბიბლიოთეკა",
+      "value": "ფორტის ბიბლიოთეკა"
     },
     {
-      "key": "Information & references",
-      "en": "Information & references",
-      "ka": "ინფორმაცია და წყაროები"
+      "key": "ინფორმაცია და წყაროები",
+      "value": "ინფორმაცია და წყაროები"
     },
     {
-      "key": "Fortis Pharmaceuticals",
-      "en": "Fortis Pharmaceuticals",
-      "ka": "ფორტის ფარმაცევტიკალს"
+      "key": "ფორტის ფარმაცევტიკალს",
+      "value": "ფორტის ფარმაცევტიკალს"
     },
     {
-      "key": "Compounded preparations require individual professional assessment.",
-      "en": "Compounded preparations require individual professional assessment.",
-      "ka": "ინდივიდუალურად მომზადებული პრეპარატის გამოყენება სპეციალისტის შეფასებას საჭიროებს."
+      "key": "ინდივიდუალურად მომზადებული პრეპარატის გამოყენება სპეციალისტის შეფასებას საჭიროებს.",
+      "value": "ინდივიდუალურად მომზადებული პრეპარატის გამოყენება სპეციალისტის შეფასებას საჭიროებს."
     },
     {
-      "key": "Privacy",
-      "en": "Privacy",
-      "ka": "კონფიდენციალურობა"
+      "key": "კონფიდენციალურობა",
+      "value": "კონფიდენციალურობა"
     },
     {
-      "key": "tablets",
-      "en": "tablets",
-      "ka": "ტაბლეტი"
+      "key": "ტაბლეტი",
+      "value": "ტაბლეტი"
     },
     {
-      "key": "FORTIS COMPOUNDING PHARMACY",
-      "en": "FORTIS COMPOUNDING PHARMACY",
-      "ka": "ფორტის კომპოზიტური აფთიაქი"
+      "key": "ფორტის კომპოზიტური აფთიაქი",
+      "value": "ფორტის კომპოზიტური აფთიაქი"
     },
     {
-      "key": "Precision",
-      "en": "Precision",
-      "ka": "სიზუსტით"
+      "key": "სიზუსტით",
+      "value": "სიზუსტით"
     },
     {
-      "key": "compounding.",
-      "en": "compounding.",
-      "ka": "მომზადებული."
+      "key": "მომზადებული.",
+      "value": "მომზადებული."
     },
     {
-      "key": "Prepared in Tbilisi. Individual medicines, carefully compounded around the needs of each patient.",
-      "en": "Prepared in Tbilisi. Individual medicines, carefully compounded around the needs of each patient.",
-      "ka": "თბილისში ვამზადებთ მედიკამენტებს, თითოეული პაციენტის საჭიროებისა და ექიმის დანიშნულების მიხედვით."
+      "key": "თბილისში ვამზადებთ მედიკამენტებს, თითოეული პაციენტის საჭიროებისა და ექიმის დანიშნულების მიხედვით.",
+      "value": "თბილისში ვამზადებთ მედიკამენტებს, თითოეული პაციენტის საჭიროებისა და ექიმის დანიშნულების მიხედვით."
     },
     {
-      "key": "Explore medicines",
-      "en": "Explore medicines",
-      "ka": "პრეპარატების ნახვა"
+      "key": "პრეპარატების ნახვა",
+      "value": "პრეპარატების ნახვა"
     },
     {
-      "key": "Our approach",
-      "en": "Our approach",
-      "ka": "ჩვენი მიდგომა"
+      "key": "ჩვენი მიდგომა",
+      "value": "ჩვენი მიდგომა"
     },
     {
-      "key": "Original Fortis naltrexone hydrochloride 1.5 mg bottle illustration",
-      "en": "Original Fortis naltrexone hydrochloride 1.5 mg bottle illustration",
-      "ka": "ფორტის ნალტრექსონის ჰიდროქლორიდი 1.5 მგ, ფლაკონის ორიგინალი ილუსტრაცია"
+      "key": "ფორტის ნალტრექსონის ჰიდროქლორიდი 1.5 მგ, ფლაკონის ორიგინალი ილუსტრაცია",
+      "value": "ფორტის ნალტრექსონის ჰიდროქლორიდი 1.5 მგ, ფლაკონის ორიგინალი ილუსტრაცია"
     },
     {
-      "key": "Illustrative packaging. Follow your prescription.",
-      "en": "Illustrative packaging. Follow your prescription.",
-      "ka": "შეფუთვა საილუსტრაციოა. იხელმძღვანელეთ თქვენი დანიშნულებით."
+      "key": "შეფუთვა საილუსტრაციოა. იხელმძღვანელეთ თქვენი დანიშნულებით.",
+      "value": "შეფუთვა საილუსტრაციოა. იხელმძღვანელეთ თქვენი დანიშნულებით."
     },
     {
-      "key": "Medicine shaped around",
-      "en": "Medicine shaped around",
-      "ka": "მედიკამენტი, მორგებული"
+      "key": "მედიკამენტი, მორგებული",
+      "value": "მედიკამენტი, მორგებული"
     },
     {
-      "key": "individual needs.",
-      "en": "individual needs.",
-      "ka": "ინდივიდუალურ საჭიროებებს."
+      "key": "ინდივიდუალურ საჭიროებებს.",
+      "value": "ინდივიდუალურ საჭიროებებს."
     },
     {
-      "key": "When a standard preparation does not meet an individual’s needs, compounding opens a conversation.",
-      "en": "When a standard preparation does not meet an individual’s needs, compounding opens a conversation.",
-      "ka": "როდესაც სტანდარტული პრეპარატი პაციენტის საჭიროებებს ვერ პასუხობს, განიხილება ინდივიდუალური მომზადების შესაძლებლობა."
+      "key": "როდესაც სტანდარტული პრეპარატი პაციენტის საჭიროებებს ვერ პასუხობს, განიხილება ინდივიდუალური მომზადების შესაძლებლობა.",
+      "value": "როდესაც სტანდარტული პრეპარატი პაციენტის საჭიროებებს ვერ პასუხობს, განიხილება ინდივიდუალური მომზადების შესაძლებლობა."
     },
     {
-      "key": "Fortis prepares medicines locally, using active pharmaceutical ingredients sourced from the US and Europe. The prescriber and pharmacist assess each formulation together.",
-      "en": "Fortis prepares medicines locally, using active pharmaceutical ingredients sourced from the US and Europe. The prescriber and pharmacist assess each formulation together.",
-      "ka": "ფორტისი მედიკამენტებს ადგილზე ამზადებს, აშშ-დან და ევროპიდან მიღებული აქტიური ფარმაცევტული ინგრედიენტებით. თითოეულ ფორმულას ექიმი და ფარმაცევტი ერთობლივად აფასებენ."
+      "key": "ფორტისი მედიკამენტებს ადგილზე ამზადებს, აშშ-დან და ევროპიდან მიღებული აქტიური ფარმაცევტული ინგრედიენტებით. თითოეულ ფორმულას ექიმი და ფარმაცევტი ერთობლივად აფასებენ.",
+      "value": "ფორტისი მედიკამენტებს ადგილზე ამზადებს, აშშ-დან და ევროპიდან მიღებული აქტიური ფარმაცევტული ინგრედიენტებით. თითოეულ ფორმულას ექიმი და ფარმაცევტი ერთობლივად აფასებენ."
     },
     {
-      "key": "Discover compounding",
-      "en": "Discover compounding",
-      "ka": "კომპოზიტური ფარმაციის შესახებ"
+      "key": "კომპოზიტური ფარმაციის შესახებ",
+      "value": "კომპოზიტური ფარმაციის შესახებ"
     },
     {
-      "key": "Individual formulations",
-      "en": "Individual formulations",
-      "ka": "ინდივიდუალური ფორმულები"
+      "key": "ინდივიდუალური ფორმულები",
+      "value": "ინდივიდუალური ფორმულები"
     },
     {
-      "key": "Preparation shaped around the prescription and the person.",
-      "en": "Preparation shaped around the prescription and the person.",
-      "ka": "მომზადება დანიშნულებისა და პაციენტის საჭიროებების მიხედვით."
+      "key": "მომზადება დანიშნულებისა და პაციენტის საჭიროებების მიხედვით.",
+      "value": "მომზადება დანიშნულებისა და პაციენტის საჭიროებების მიხედვით."
     },
     {
-      "key": "Purposeful preparation",
-      "en": "Purposeful preparation",
-      "ka": "ყურადღება თითოეულ ეტაპზე"
+      "key": "ყურადღება თითოეულ ეტაპზე",
+      "value": "ყურადღება თითოეულ ეტაპზე"
     },
     {
-      "key": "Small-batch work, with attention to each stage.",
-      "en": "Small-batch work, with attention to each stage.",
-      "ka": "მცირე პარტიებით მუშაობა და ყურადღება თითოეული ეტაპის მიმართ."
+      "key": "მცირე პარტიებით მუშაობა და ყურადღება თითოეული ეტაპის მიმართ.",
+      "value": "მცირე პარტიებით მუშაობა და ყურადღება თითოეული ეტაპის მიმართ."
     },
     {
-      "key": "A focus on quality",
-      "en": "A focus on quality",
-      "ka": "ხარისხზე ზრუნვა"
+      "key": "ხარისხზე ზრუნვა",
+      "value": "ხარისხზე ზრუნვა"
     },
     {
-      "key": "Considered processes, documentation and professional review.",
-      "en": "Considered processes, documentation and professional review.",
-      "ka": "მომზადების პროცესის დოკუმენტირება და ფარმაცევტის პროფესიული შეფასება."
+      "key": "მომზადების პროცესის დოკუმენტირება და ფარმაცევტის პროფესიული შეფასება.",
+      "value": "მომზადების პროცესის დოკუმენტირება და ფარმაცევტის პროფესიული შეფასება."
     },
     {
-      "key": "Featured preparations.",
-      "en": "Featured preparations.",
-      "ka": "შერჩეული პრეპარატები."
+      "key": "შერჩეული პრეპარატები.",
+      "value": "შერჩეული პრეპარატები."
     },
     {
-      "key": "View all products",
-      "en": "View all products",
-      "ka": "ყველა პროდუქტის ნახვა"
+      "key": "ყველა პროდუქტის ნახვა",
+      "value": "ყველა პროდუქტის ნახვა"
     },
     {
-      "key": "Illustrative packaging. Follow your prescription and pharmacist’s instructions. Product information is not a recommendation for self-treatment.",
-      "en": "Illustrative packaging. Follow your prescription and pharmacist’s instructions. Product information is not a recommendation for self-treatment.",
-      "ka": "შეფუთვა საილუსტრაციოა. დაიცავით თქვენი დანიშნულება და ფარმაცევტის მითითებები. პროდუქტის შესახებ ინფორმაცია თვითმკურნალობის რეკომენდაცია არ არის."
+      "key": "შეფუთვა საილუსტრაციოა. დაიცავით თქვენი დანიშნულება და ფარმაცევტის მითითებები. პროდუქტის შესახებ ინფორმაცია თვითმკურნალობის რეკომენდაცია არ არის.",
+      "value": "შეფუთვა საილუსტრაციოა. დაიცავით თქვენი დანიშნულება და ფარმაცევტის მითითებები. პროდუქტის შესახებ ინფორმაცია თვითმკურნალობის რეკომენდაცია არ არის."
     },
     {
-      "key": "OUR STORY & LABORATORY",
-      "en": "OUR STORY & LABORATORY",
-      "ka": "ჩვენი ისტორია და ლაბორატორია"
+      "key": "ჩვენი ისტორია და ლაბორატორია",
+      "value": "ჩვენი ისტორია და ლაბორატორია"
     },
     {
-      "key": "Prepared locally.",
-      "en": "Prepared locally.",
-      "ka": "მზადდება საქართველოში."
+      "key": "მზადდება საქართველოში.",
+      "value": "მზადდება საქართველოში."
     },
     {
-      "key": "With care at every stage.",
-      "en": "With care at every stage.",
-      "ka": "ზრუნვით, ყოველ ეტაპზე."
+      "key": "ზრუნვით, ყოველ ეტაპზე.",
+      "value": "ზრუნვით, ყოველ ეტაპზე."
     },
     {
-      "key": "Fortis was founded around the needs of patients and healthcare professionals. Our pharmacy brings magistral and officinal compounding to Tbilisi, with attention to preparation, handling and storage.",
-      "en": "Fortis was founded around the needs of patients and healthcare professionals. Our pharmacy brings magistral and officinal compounding to Tbilisi, with attention to preparation, handling and storage.",
-      "ka": "ფორტისი პაციენტებისა და ჯანდაცვის სპეციალისტების საჭიროებების საპასუხოდ შეიქმნა. თბილისში მედიკამენტებს მაგისტრალური და ოფიცინალური რეცეპტებით ვამზადებთ და განსაკუთრებულ ყურადღებას მომზადებისა და შენახვის პირობებს ვუთმობთ."
+      "key": "ფორტისი პაციენტებისა და ჯანდაცვის სპეციალისტების საჭიროებების საპასუხოდ შეიქმნა. თბილისში მედიკამენტებს მაგისტრალური და ოფიცინალური რეცეპტებით ვამზადებთ და განსაკუთრებულ ყურადღებას მომზადებისა და შენახვის პირობებს ვუთმობთ.",
+      "value": "ფორტისი პაციენტებისა და ჯანდაცვის სპეციალისტების საჭიროებების საპასუხოდ შეიქმნა. თბილისში მედიკამენტებს მაგისტრალური და ოფიცინალური რეცეპტებით ვამზადებთ და განსაკუთრებულ ყურადღებას მომზადებისა და შენახვის პირობებს ვუთმობთ."
     },
     {
-      "key": "Inside Fortis",
-      "en": "Inside Fortis",
-      "ka": "გაიცანით ფორტისი"
+      "key": "გაიცანით ფორტისი",
+      "value": "გაიცანით ფორტისი"
     },
     {
-      "key": "Learn about our founding vision, laboratory approach and commitment to professional collaboration.",
-      "en": "Learn about our founding vision, laboratory approach and commitment to professional collaboration.",
-      "ka": "გაეცანით ჩვენი შექმნის იდეას, ლაბორატორიის მუშაობის პრინციპებსა და პროფესიული თანამშრომლობის ხედვას."
+      "key": "გაეცანით ჩვენი შექმნის იდეას, ლაბორატორიის მუშაობის პრინციპებსა და პროფესიული თანამშრომლობის ხედვას.",
+      "value": "გაეცანით ჩვენი შექმნის იდეას, ლაბორატორიის მუშაობის პრინციპებსა და პროფესიული თანამშრომლობის ხედვას."
     },
     {
-      "key": "Our story & laboratory",
-      "en": "Our story & laboratory",
-      "ka": "ჩვენი ისტორია და ლაბორატორია"
+      "key": "ფორტის ფარმაცევტიკალსი / კომპოზიტური აფთიაქი",
+      "value": "ფორტის ფარმაცევტიკალსი / კომპოზიტური აფთიაქი"
     },
     {
-      "key": "Fortis Pharmaceuticals / Compounding Pharmacy, in Georgian and English",
-      "en": "Fortis Pharmaceuticals / Compounding Pharmacy, in Georgian and English",
-      "ka": "ფორტის ფარმაცევტიკალსი / კომპოზიტური აფთიაქი, ქართულ და ინგლისურ ენებზე"
+      "key": "გაქვთ კითხვა",
+      "value": "გაქვთ კითხვა"
     },
     {
-      "key": "A question about",
-      "en": "A question about",
-      "ka": "გაქვთ კითხვა"
+      "key": "ინდივიდუალურ მომზადებაზე?",
+      "value": "ინდივიდუალურ მომზადებაზე?"
     },
     {
-      "key": "individual preparation?",
-      "en": "individual preparation?",
-      "ka": "ინდივიდუალურ მომზადებაზე?"
+      "key": "დაუკავშირდით ფორტისს",
+      "value": "დაუკავშირდით ფორტისს"
     },
     {
-      "key": "Talk to Fortis",
-      "en": "Talk to Fortis",
-      "ka": "დაუკავშირდით ფორტისს"
+      "key": "ფორტის პროდუქტები",
+      "value": "ფორტის პროდუქტები"
     },
     {
-      "key": "THE FORTIS PORTFOLIO",
-      "en": "THE FORTIS PORTFOLIO",
-      "ka": "ფორტის პროდუქტები"
+      "key": "ინდივიდუალური პრეპარატები.",
+      "value": "ინდივიდუალური პრეპარატები."
     },
     {
-      "key": "Individual preparations.",
-      "en": "Individual preparations.",
-      "ka": "ინდივიდუალური პრეპარატები."
+      "key": "გასაგები ინფორმაცია.",
+      "value": "გასაგები ინფორმაცია."
     },
     {
-      "key": "Clearly presented.",
-      "en": "Clearly presented.",
-      "ka": "გასაგები ინფორმაცია."
+      "key": "მოძებნეთ პრეპარატი მოქმედი ნივთიერების, დოზის ან სამედიცინო მიმართულების მიხედვით. თითოეულ პრეპარატს საკუთარი საინფორმაციო გვერდი აქვს.",
+      "value": "მოძებნეთ პრეპარატი მოქმედი ნივთიერების, დოზის ან სამედიცინო მიმართულების მიხედვით. თითოეულ პრეპარატს საკუთარი საინფორმაციო გვერდი აქვს."
     },
     {
-      "key": "Explore our portfolio by ingredient, strength or area of care. Each preparation has its own information page.",
-      "en": "Explore our portfolio by ingredient, strength or area of care. Each preparation has its own information page.",
-      "ka": "მოძებნეთ პრეპარატი მოქმედი ნივთიერების, დოზის ან სამედიცინო მიმართულების მიხედვით. თითოეულ პრეპარატს საკუთარი საინფორმაციო გვერდი აქვს."
+      "key": "პროდუქტის ძიება დასახელებით ან დოზით",
+      "value": "პროდუქტის ძიება დასახელებით ან დოზით"
     },
     {
-      "key": "Search products by name or strength",
-      "en": "Search products by name or strength",
-      "ka": "პროდუქტის ძიება დასახელებით ან დოზით"
+      "key": "დასახელება ან დოზა",
+      "value": "დასახელება ან დოზა"
     },
     {
-      "key": "Search name or strength",
-      "en": "Search name or strength",
-      "ka": "დასახელება ან დოზა"
+      "key": "პროდუქტების ძიება",
+      "value": "პროდუქტების ძიება"
     },
     {
-      "key": "Search products",
-      "en": "Search products",
-      "ka": "პროდუქტების ძიება"
+      "key": "ძიების გასუფთავება",
+      "value": "ძიების გასუფთავება"
     },
     {
-      "key": "Clear search",
-      "en": "Clear search",
-      "ka": "ძიების გასუფთავება"
+      "key": "პრეპარატი",
+      "value": "პრეპარატი"
     },
     {
-      "key": "preparations",
-      "en": "preparations",
-      "ka": "პრეპარატი"
+      "key": "ფილტრი სამედიცინო მიმართულებით",
+      "value": "ფილტრი სამედიცინო მიმართულებით"
     },
     {
-      "key": "Filter by area of care",
-      "en": "Filter by area of care",
-      "ka": "ფილტრი სამედიცინო მიმართულებით"
+      "key": "ყველა პრეპარატი",
+      "value": "ყველა პრეპარატი"
     },
     {
-      "key": "All preparations",
-      "en": "All preparations",
-      "ka": "ყველა პრეპარატი"
+      "key": "სამედიცინო მიმართულებები მხოლოდ ძიების გამარტივებას ემსახურება და ინდივიდუალურად მომზადებული პრეპარატის ჩვენებას არ განსაზღვრავს.",
+      "value": "სამედიცინო მიმართულებები მხოლოდ ძიების გამარტივებას ემსახურება და ინდივიდუალურად მომზადებული პრეპარატის ჩვენებას არ განსაზღვრავს."
     },
     {
-      "key": "Areas of care are navigation aids; they do not establish an indication for a compounded preparation.",
-      "en": "Areas of care are navigation aids; they do not establish an indication for a compounded preparation.",
-      "ka": "სამედიცინო მიმართულებები მხოლოდ ძიების გამარტივებას ემსახურება და ინდივიდუალურად მომზადებული პრეპარატის ჩვენებას არ განსაზღვრავს."
+      "key": "პრეპარატი ვერ მოიძებნა.",
+      "value": "პრეპარატი ვერ მოიძებნა."
     },
     {
-      "key": "No preparations found.",
-      "en": "No preparations found.",
-      "ka": "პრეპარატი ვერ მოიძებნა."
+      "key": "სცადეთ სხვა მოქმედი ნივთიერება ან გაასუფთავეთ ფილტრები.",
+      "value": "სცადეთ სხვა მოქმედი ნივთიერება ან გაასუფთავეთ ფილტრები."
     },
     {
-      "key": "Try another ingredient or reset the filters.",
-      "en": "Try another ingredient or reset the filters.",
-      "ka": "სცადეთ სხვა მოქმედი ნივთიერება ან გაასუფთავეთ ფილტრები."
+      "key": "ფილტრების გასუფთავება",
+      "value": "ფილტრების გასუფთავება"
     },
     {
-      "key": "Reset filters",
-      "en": "Reset filters",
-      "ka": "ფილტრების გასუფთავება"
+      "key": "შეფუთვა საილუსტრაციოა. დაიცავით თქვენი დანიშნულება და ფარმაცევტის მითითებები. ხელმისაწვდომობა და ფორმულის დეტალები გადაამოწმეთ ფორტისთან.",
+      "value": "შეფუთვა საილუსტრაციოა. დაიცავით თქვენი დანიშნულება და ფარმაცევტის მითითებები. ხელმისაწვდომობა და ფორმულის დეტალები გადაამოწმეთ ფორტისთან."
     },
     {
-      "key": "Illustrative packaging. Follow your prescription and pharmacist’s instructions. Availability and formulation details should be confirmed with Fortis.",
-      "en": "Illustrative packaging. Follow your prescription and pharmacist’s instructions. Availability and formulation details should be confirmed with Fortis.",
-      "ka": "შეფუთვა საილუსტრაციოა. დაიცავით თქვენი დანიშნულება და ფარმაცევტის მითითებები. ხელმისაწვდომობა და ფორმულის დეტალები გადაამოწმეთ ფორტისთან."
+      "key": "შეფუთვა საილუსტრაციოა. დაიცავით თქვენი დანიშნულება და ფარმაცევტის მითითებები.",
+      "value": "შეფუთვა საილუსტრაციოა. დაიცავით თქვენი დანიშნულება და ფარმაცევტის მითითებები."
     },
     {
-      "key": "Illustrative packaging. Follow your prescription and pharmacist’s instructions.",
-      "en": "Illustrative packaging. Follow your prescription and pharmacist’s instructions.",
-      "ka": "შეფუთვა საილუსტრაციოა. დაიცავით თქვენი დანიშნულება და ფარმაცევტის მითითებები."
+      "key": "მოწოდებული შეფუთვის ილუსტრაცია",
+      "value": "მოწოდებული შეფუთვის ილუსტრაცია"
     },
     {
-      "key": "supplied packaging illustration",
-      "en": "supplied packaging illustration",
-      "ka": "მოწოდებული შეფუთვის ილუსტრაცია"
+      "key": "შეფუთვა",
+      "value": "შეფუთვა"
     },
     {
-      "key": "PACK SIZE",
-      "en": "PACK SIZE",
-      "ka": "შეფუთვა"
+      "key": "პრეპარატის ფორმა",
+      "value": "პრეპარატის ფორმა"
     },
     {
-      "key": "PREPARATION",
-      "en": "PREPARATION",
-      "ka": "პრეპარატის ფორმა"
+      "key": "აფთიაქში მომზადებული · პერორალური",
+      "value": "აფთიაქში მომზადებული · პერორალური"
     },
     {
-      "key": "Compounded · oral",
-      "en": "Compounded · oral",
-      "ka": "აფთიაქში მომზადებული · პერორალური"
+      "key": "იკითხეთ ამ პრეპარატის შესახებ",
+      "value": "იკითხეთ ამ პრეპარატის შესახებ"
     },
     {
-      "key": "Ask about this preparation",
-      "en": "Ask about this preparation",
-      "ka": "იკითხეთ ამ პრეპარატის შესახებ"
+      "key": "პრეპარატის შერჩევა, მიღების წესი, დამხმარე ნივთიერებები, გამოთავისუფლების მახასიათებლები და მომზადების შემდეგ გამოყენების საბოლოო ვადა უნდა დააზუსტოთ მკურნალ ექიმთან და გამცემ ფარმაცევტთან.",
+      "value": "პრეპარატის შერჩევა, მიღების წესი, დამხმარე ნივთიერებები, გამოთავისუფლების მახასიათებლები და მომზადების შემდეგ გამოყენების საბოლოო ვადა უნდა დააზუსტოთ მკურნალ ექიმთან და გამცემ ფარმაცევტთან."
     },
     {
-      "key": "Selection, directions, excipients, release characteristics and beyond-use date must be confirmed by the prescribing clinician and dispensing pharmacist.",
-      "en": "Selection, directions, excipients, release characteristics and beyond-use date must be confirmed by the prescribing clinician and dispensing pharmacist.",
-      "ka": "პრეპარატის შერჩევა, მიღების წესი, დამხმარე ნივთიერებები, გამოთავისუფლების მახასიათებლები და მომზადების შემდეგ გამოყენების საბოლოო ვადა უნდა დააზუსტოთ მკურნალ ექიმთან და გამცემ ფარმაცევტთან."
+      "key": "გაეცანით მტკიცებულებებს",
+      "value": "გაეცანით მტკიცებულებებს"
     },
     {
-      "key": "READ THE EVIDENCE",
-      "en": "READ THE EVIDENCE",
-      "ka": "გაეცანით მტკიცებულებებს"
+      "key": "წყაროები და კონტექსტი.",
+      "value": "წყაროები და კონტექსტი."
     },
     {
-      "key": "Sources & perspective.",
-      "en": "Sources & perspective.",
-      "ka": "წყაროები და კონტექსტი."
+      "key": "წყაროები აღწერს მოქმედ ნივთიერებებს ან რეფერენსულ მედიკამენტებს და არ ნიშნავს ფორტისის მიერ მომზადებული პრეპარატების FDA-ს ან EMA-ს მიერ დამტკიცებას. საარქივო ინსტრუქციები შესაძლოა უახლეს ინფორმაციას არ ასახავდეს. ეს მიმოხილვა არ წარმოადგენს უსაფრთხოების სრულ სახელმძღვანელოს ან დანიშნულების რეკომენდაციას.",
+      "value": "წყაროები აღწერს მოქმედ ნივთიერებებს ან რეფერენსულ მედიკამენტებს და არ ნიშნავს ფორტისის მიერ მომზადებული პრეპარატების FDA-ს ან EMA-ს მიერ დამტკიცებას. საარქივო ინსტრუქციები შესაძლოა უახლეს ინფორმაციას არ ასახავდეს. ეს მიმოხილვა არ წარმოადგენს უსაფრთხოების სრულ სახელმძღვანელოს ან დანიშნულების რეკომენდაციას."
     },
     {
-      "key": "These references describe ingredients or reference medicines, not FDA or EMA approval of Fortis compounded preparations. Archived labels may not reflect the latest labeling. This overview is not a complete safety guide or prescribing advice.",
-      "en": "These references describe ingredients or reference medicines, not FDA or EMA approval of Fortis compounded preparations. Archived labels may not reflect the latest labeling. This overview is not a complete safety guide or prescribing advice.",
-      "ka": "წყაროები აღწერს მოქმედ ნივთიერებებს ან რეფერენსულ მედიკამენტებს და არ ნიშნავს ფორტისის მიერ მომზადებული პრეპარატების FDA-ს ან EMA-ს მიერ დამტკიცებას. საარქივო ინსტრუქციები შესაძლოა უახლეს ინფორმაციას არ ასახავდეს. ეს მიმოხილვა არ წარმოადგენს უსაფრთხოების სრულ სახელმძღვანელოს ან დანიშნულების რეკომენდაციას."
+      "key": "როგორ წარმოვადგენთ პროდუქტის ინფორმაციას",
+      "value": "როგორ წარმოვადგენთ პროდუქტის ინფორმაციას"
     },
     {
-      "key": "How we present product information",
-      "en": "How we present product information",
-      "ka": "როგორ წარმოვადგენთ პროდუქტის ინფორმაციას"
+      "key": "კომპოზიტური ფარმაციის ხელოვნება და მეცნიერება",
+      "value": "კომპოზიტური ფარმაციის ხელოვნება და მეცნიერება"
     },
     {
-      "key": "THE ART & SCIENCE OF COMPOUNDING",
-      "en": "THE ART & SCIENCE OF COMPOUNDING",
-      "ka": "კომპოზიტური ფარმაციის ხელოვნება და მეცნიერება"
+      "key": "მომზადებული საჭიროებისთვის.",
+      "value": "მომზადებული საჭიროებისთვის."
     },
     {
-      "key": "Prepared with purpose.",
-      "en": "Prepared with purpose.",
-      "ka": "მომზადებული საჭიროებისთვის."
+      "key": "პაციენტზე ორიენტირებული.",
+      "value": "პაციენტზე ორიენტირებული."
     },
     {
-      "key": "Centered on the individual.",
-      "en": "Centered on the individual.",
-      "ka": "პაციენტზე ორიენტირებული."
+      "key": "გააზრებული მიდგომა, როდესაც პაციენტის ფარმაცევტული საჭიროებები ინდივიდუალურად მომზადებულ პრეპარატს მოითხოვს.",
+      "value": "გააზრებული მიდგომა, როდესაც პაციენტის ფარმაცევტული საჭიროებები ინდივიდუალურად მომზადებულ პრეპარატს მოითხოვს."
     },
     {
-      "key": "A considered response when an individual’s pharmaceutical needs call for a tailored preparation.",
-      "en": "A considered response when an individual’s pharmaceutical needs call for a tailored preparation.",
-      "ka": "გააზრებული მიდგომა, როდესაც პაციენტის ფარმაცევტული საჭიროებები ინდივიდუალურად მომზადებულ პრეპარატს მოითხოვს."
+      "key": "ყველაფერი დანიშნულებით იწყება.",
+      "value": "ყველაფერი დანიშნულებით იწყება."
     },
     {
-      "key": "A prescription is the starting point.",
-      "en": "A prescription is the starting point.",
-      "ka": "ყველაფერი დანიშნულებით იწყება."
+      "key": "პაციენტების საჭიროებები შეიძლება განსხვავდებოდეს დოზის, ფორმულის, დამხმარე ნივთიერებების ამტანობისა თუ თანმხლები მდგომარეობების მიხედვით. კომპოზიტური ფარმაცია ამ საჭიროებების განხილვაში ექიმსა და ფარმაცევტს აერთიანებს.",
+      "value": "პაციენტების საჭიროებები შეიძლება განსხვავდებოდეს დოზის, ფორმულის, დამხმარე ნივთიერებების ამტანობისა თუ თანმხლები მდგომარეობების მიხედვით. კომპოზიტური ფარმაცია ამ საჭიროებების განხილვაში ექიმსა და ფარმაცევტს აერთიანებს."
     },
     {
-      "key": "People may have different requirements relating to strength, formulation, excipient tolerance or coexisting conditions. Compounding brings the prescriber and pharmacist into a conversation about those requirements.",
-      "en": "People may have different requirements relating to strength, formulation, excipient tolerance or coexisting conditions. Compounding brings the prescriber and pharmacist into a conversation about those requirements.",
-      "ka": "პაციენტების საჭიროებები შეიძლება განსხვავდებოდეს დოზის, ფორმულის, დამხმარე ნივთიერებების ამტანობისა თუ თანმხლები მდგომარეობების მიხედვით. კომპოზიტური ფარმაცია ამ საჭიროებების განხილვაში ექიმსა და ფარმაცევტს აერთიანებს."
+      "key": "კომპანიის ინფორმაციით, ფორტისი აქტიურ ფარმაცევტულ ინგრედიენტებს აშშ-დან და ევროპიდან იღებს და მედიკამენტებს თბილისში ამზადებს. თითოეული მოთხოვნა პრეპარატის მიზანშეწონილობისა და მომზადების შესაძლებლობის პროფესიულ შეფასებას საჭიროებს.",
+      "value": "კომპანიის ინფორმაციით, ფორტისი აქტიურ ფარმაცევტულ ინგრედიენტებს აშშ-დან და ევროპიდან იღებს და მედიკამენტებს თბილისში ამზადებს. თითოეული მოთხოვნა პრეპარატის მიზანშეწონილობისა და მომზადების შესაძლებლობის პროფესიულ შეფასებას საჭიროებს."
     },
     {
-      "key": "Fortis’s company account describes sourcing active pharmaceutical ingredients from the US and Europe and preparing medicines locally in Tbilisi. Each requested preparation requires a professional assessment of suitability and feasibility.",
-      "en": "Fortis’s company account describes sourcing active pharmaceutical ingredients from the US and Europe and preparing medicines locally in Tbilisi. Each requested preparation requires a professional assessment of suitability and feasibility.",
-      "ka": "კომპანიის ინფორმაციით, ფორტისი აქტიურ ფარმაცევტულ ინგრედიენტებს აშშ-დან და ევროპიდან იღებს და მედიკამენტებს თბილისში ამზადებს. თითოეული მოთხოვნა პრეპარატის მიზანშეწონილობისა და მომზადების შესაძლებლობის პროფესიულ შეფასებას საჭიროებს."
+      "key": "საჭიროების გააზრება",
+      "value": "საჭიროების გააზრება"
     },
     {
-      "key": "Understand the need",
-      "en": "Understand the need",
-      "ka": "საჭიროების გააზრება"
+      "key": "დანიშნულებისა და ინდივიდუალური ფორმულის მოთხოვნების განხილვა.",
+      "value": "დანიშნულებისა და ინდივიდუალური ფორმულის მოთხოვნების განხილვა."
     },
     {
-      "key": "Discuss the prescription and the individual formulation requirements.",
-      "en": "Discuss the prescription and the individual formulation requirements.",
-      "ka": "დანიშნულებისა და ინდივიდუალური ფორმულის მოთხოვნების განხილვა."
+      "key": "მომზადების შეფასება",
+      "value": "მომზადების შეფასება"
     },
     {
-      "key": "Consider the preparation",
-      "en": "Consider the preparation",
-      "ka": "მომზადების შეფასება"
+      "key": "ინგრედიენტების, ფორმულის, მოპყრობის წესებისა და პრაქტიკული შეზღუდვების შეფასება.",
+      "value": "ინგრედიენტების, ფორმულის, მოპყრობის წესებისა და პრაქტიკული შეზღუდვების შეფასება."
     },
     {
-      "key": "Assess ingredients, formulation, handling and practical limitations.",
-      "en": "Assess ingredients, formulation, handling and practical limitations.",
-      "ka": "ინგრედიენტების, ფორმულის, მოპყრობის წესებისა და პრაქტიკული შეზღუდვების შეფასება."
+      "key": "მომზადება და შემოწმება",
+      "value": "მომზადება და შემოწმება"
     },
     {
-      "key": "Prepare & review",
-      "en": "Prepare & review",
-      "ka": "მომზადება და შემოწმება"
+      "key": "მედიკამენტის მომზადება, დოკუმენტირება და გაცემამდე შემოწმება.",
+      "value": "მედიკამენტის მომზადება, დოკუმენტირება და გაცემამდე შემოწმება."
     },
     {
-      "key": "Prepare, document and review the medicine before dispensing.",
-      "en": "Prepare, document and review the medicine before dispensing.",
-      "ka": "მედიკამენტის მომზადება, დოკუმენტირება და გაცემამდე შემოწმება."
+      "key": "გასაგები მითითებები",
+      "value": "გასაგები მითითებები"
     },
     {
-      "key": "Provide clear guidance",
-      "en": "Provide clear guidance",
-      "ka": "გასაგები მითითებები"
+      "key": "მიღების კონკრეტული წესის, შენახვის პირობებისა და მომზადების შემდეგ გამოყენების საბოლოო ვადის დაზუსტება ფარმაცევტთან.",
+      "value": "მიღების კონკრეტული წესის, შენახვის პირობებისა და მომზადების შემდეგ გამოყენების საბოლოო ვადის დაზუსტება ფარმაცევტთან."
     },
     {
-      "key": "Confirm the specific directions, storage and beyond-use date with the pharmacist.",
-      "en": "Confirm the specific directions, storage and beyond-use date with the pharmacist.",
-      "ka": "მიღების კონკრეტული წესის, შენახვის პირობებისა და მომზადების შემდეგ გამოყენების საბოლოო ვადის დაზუსტება ფარმაცევტთან."
+      "key": "პასუხები თქვენს კითხვებზე.",
+      "value": "პასუხები თქვენს კითხვებზე."
     },
     {
-      "key": "Questions, answered.",
-      "en": "Questions, answered.",
-      "ka": "პასუხები თქვენს კითხვებზე."
+      "key": "რა არის კომპოზიტური ფარმაცია?",
+      "value": "რა არის კომპოზიტური ფარმაცია?"
     },
     {
-      "key": "What is pharmaceutical compounding?",
-      "en": "What is pharmaceutical compounding?",
-      "ka": "რა არის კომპოზიტური ფარმაცია?"
+      "key": "კომპოზიტური ფარმაცია განსაზღვრული ფორმულით მედიკამენტის მომზადებას გულისხმობს. მაგისტრალური პრეპარატი ინდივიდუალური დანიშნულების მიხედვით მზადდება, ხოლო ოფიცინალური პრეპარატი აღიარებულ ფარმაკოპეულ ფორმულას ეყრდნობა, მოქმედი ადგილობრივი მოთხოვნების შესაბამისად.",
+      "value": "კომპოზიტური ფარმაცია განსაზღვრული ფორმულით მედიკამენტის მომზადებას გულისხმობს. მაგისტრალური პრეპარატი ინდივიდუალური დანიშნულების მიხედვით მზადდება, ხოლო ოფიცინალური პრეპარატი აღიარებულ ფარმაკოპეულ ფორმულას ეყრდნობა, მოქმედი ადგილობრივი მოთხოვნების შესაბამისად."
     },
     {
-      "key": "Compounding is the preparation of a medicine to a defined formulation. Magistral preparations respond to an individual prescription; officinal preparations follow a recognized pharmacopoeial formula, subject to the applicable local framework.",
-      "en": "Compounding is the preparation of a medicine to a defined formulation. Magistral preparations respond to an individual prescription; officinal preparations follow a recognized pharmacopoeial formula, subject to the applicable local framework.",
-      "ka": "კომპოზიტური ფარმაცია განსაზღვრული ფორმულით მედიკამენტის მომზადებას გულისხმობს. მაგისტრალური პრეპარატი ინდივიდუალური დანიშნულების მიხედვით მზადდება, ხოლო ოფიცინალური პრეპარატი აღიარებულ ფარმაკოპეულ ფორმულას ეყრდნობა, მოქმედი ადგილობრივი მოთხოვნების შესაბამისად."
+      "key": "როდის შეიძლება განიხილებოდეს ინდივიდუალური მომზადება?",
+      "value": "როდის შეიძლება განიხილებოდეს ინდივიდუალური მომზადება?"
     },
     {
-      "key": "When might a tailored preparation be considered?",
-      "en": "When might a tailored preparation be considered?",
-      "ka": "როდის შეიძლება განიხილებოდეს ინდივიდუალური მომზადება?"
+      "key": "ექიმმა შეიძლება გამოავლინოს კონკრეტული დოზის, წამლის ფორმის ან დამხმარე ნივთიერების აუტანლობასთან დაკავშირებული საჭიროება. ფარმაცევტი აფასებს, რისი მომზადებაა მიზანშეწონილი. ინდივიდუალური მომზადება ავტომატურად არ ნიშნავს, რომ მედიკამენტი უფრო უსაფრთხო ან ეფექტურია.",
+      "value": "ექიმმა შეიძლება გამოავლინოს კონკრეტული დოზის, წამლის ფორმის ან დამხმარე ნივთიერების აუტანლობასთან დაკავშირებული საჭიროება. ფარმაცევტი აფასებს, რისი მომზადებაა მიზანშეწონილი. ინდივიდუალური მომზადება ავტომატურად არ ნიშნავს, რომ მედიკამენტი უფრო უსაფრთხო ან ეფექტურია."
     },
     {
-      "key": "A prescriber may identify a need related to a particular strength, dosage form or an excipient intolerance. The pharmacist assesses what can appropriately be prepared. Compounding does not automatically make a medicine safer or more effective.",
-      "en": "A prescriber may identify a need related to a particular strength, dosage form or an excipient intolerance. The pharmacist assesses what can appropriately be prepared. Compounding does not automatically make a medicine safer or more effective.",
-      "ka": "ექიმმა შეიძლება გამოავლინოს კონკრეტული დოზის, წამლის ფორმის ან დამხმარე ნივთიერების აუტანლობასთან დაკავშირებული საჭიროება. ფარმაცევტი აფასებს, რისი მომზადებაა მიზანშეწონილი. ინდივიდუალური მომზადება ავტომატურად არ ნიშნავს, რომ მედიკამენტი უფრო უსაფრთხო ან ეფექტურია."
+      "key": "როგორ განვიხილო პრეპარატის მომზადება?",
+      "value": "როგორ განვიხილო პრეპარატის მომზადება?"
     },
     {
-      "key": "How do I discuss a preparation?",
-      "en": "How do I discuss a preparation?",
-      "ka": "როგორ განვიხილო პრეპარატის მომზადება?"
+      "key": "პრაქტიკული მოთხოვნების განსახილველად დაუკავშირდით აფთიაქს. მიზანშეწონილობას, ფორმულასა და მიღების წესს ექიმი და ფარმაცევტი განსაზღვრავენ. ამ ვებგვერდის საფუძველზე არ დაიწყოთ და არ შეცვალოთ მედიკამენტის მიღება.",
+      "value": "პრაქტიკული მოთხოვნების განსახილველად დაუკავშირდით აფთიაქს. მიზანშეწონილობას, ფორმულასა და მიღების წესს ექიმი და ფარმაცევტი განსაზღვრავენ. ამ ვებგვერდის საფუძველზე არ დაიწყოთ და არ შეცვალოთ მედიკამენტის მიღება."
     },
     {
-      "key": "Contact the pharmacy to discuss practical requirements. Your prescriber and pharmacist determine suitability, formulation and instructions. Do not change or start a medicine based on this website.",
-      "en": "Contact the pharmacy to discuss practical requirements. Your prescriber and pharmacist determine suitability, formulation and instructions. Do not change or start a medicine based on this website.",
-      "ka": "პრაქტიკული მოთხოვნების განსახილველად დაუკავშირდით აფთიაქს. მიზანშეწონილობას, ფორმულასა და მიღების წესს ექიმი და ფარმაცევტი განსაზღვრავენ. ამ ვებგვერდის საფუძველზე არ დაიწყოთ და არ შეცვალოთ მედიკამენტის მიღება."
+      "key": "შესაძლებელია ვებგვერდიდან შეკვეთა?",
+      "value": "შესაძლებელია ვებგვერდიდან შეკვეთა?"
     },
     {
-      "key": "Can I order through this website?",
-      "en": "Can I order through this website?",
-      "ka": "შესაძლებელია ვებგვერდიდან შეკვეთა?"
+      "key": "ეს ვებგვერდი საინფორმაციო კატალოგია. ხელმისაწვდომობის, დანიშნულებისა და მომზადების მოთხოვნების დასაზუსტებლად დაუკავშირდით ფორტისს. ვებგვერდიდან ონლაინ შეძენა არ ხდება.",
+      "value": "ეს ვებგვერდი საინფორმაციო კატალოგია. ხელმისაწვდომობის, დანიშნულებისა და მომზადების მოთხოვნების დასაზუსტებლად დაუკავშირდით ფორტისს. ვებგვერდიდან ონლაინ შეძენა არ ხდება."
     },
     {
-      "key": "This website is an information portfolio. Contact Fortis to confirm availability and the prescription and preparation requirements. There is no online checkout.",
-      "en": "This website is an information portfolio. Contact Fortis to confirm availability and the prescription and preparation requirements. There is no online checkout.",
-      "ka": "ეს ვებგვერდი საინფორმაციო კატალოგია. ხელმისაწვდომობის, დანიშნულებისა და მომზადების მოთხოვნების დასაზუსტებლად დაუკავშირდით ფორტისს. ვებგვერდიდან ონლაინ შეძენა არ ხდება."
+      "key": "ფორტისის შესახებ",
+      "value": "ფორტისის შესახებ"
     },
     {
-      "key": "ABOUT FORTIS",
-      "en": "ABOUT FORTIS",
-      "ka": "ფორტისის შესახებ"
+      "key": "შექმნილია თბილისში.",
+      "value": "შექმნილია თბილისში."
     },
     {
-      "key": "Rooted in Tbilisi.",
-      "en": "Rooted in Tbilisi.",
-      "ka": "შექმნილია თბილისში."
+      "key": "ინდივიდუალური ზრუნვისთვის.",
+      "value": "ინდივიდუალური ზრუნვისთვის."
     },
     {
-      "key": "Focused on individual care.",
-      "en": "Focused on individual care.",
-      "ka": "ინდივიდუალური ზრუნვისთვის."
+      "key": "კომპოზიტური აფთიაქი, რომელიც პაციენტის, ექიმისა და ფარმაცევტის თანამშრომლობას ეფუძნება.",
+      "value": "კომპოზიტური აფთიაქი, რომელიც პაციენტის, ექიმისა და ფარმაცევტის თანამშრომლობას ეფუძნება."
     },
     {
-      "key": "A compounding pharmacy built around the relationship between patients, prescribers and pharmacists.",
-      "en": "A compounding pharmacy built around the relationship between patients, prescribers and pharmacists.",
-      "ka": "კომპოზიტური აფთიაქი, რომელიც პაციენტის, ექიმისა და ფარმაცევტის თანამშრომლობას ეფუძნება."
+      "key": "ჩვენი მიზანი",
+      "value": "ჩვენი მიზანი"
     },
     {
-      "key": "OUR REASON FOR BEING",
-      "en": "OUR REASON FOR BEING",
-      "ka": "ჩვენი მიზანი"
+      "key": "ინდივიდუალური მიდგომა",
+      "value": "ინდივიდუალური მიდგომა"
     },
     {
-      "key": "A personal approach",
-      "en": "A personal approach",
-      "ka": "ინდივიდუალური მიდგომა"
+      "key": "მედიკამენტის მომზადებასთან.",
+      "value": "მედიკამენტის მომზადებასთან."
     },
     {
-      "key": "to preparation.",
-      "en": "to preparation.",
-      "ka": "მედიკამენტის მომზადებასთან."
+      "key": "ჩვენი ისტორია",
+      "value": "ჩვენი ისტორია"
     },
     {
-      "key": "Our story",
-      "en": "Our story",
-      "ka": "ჩვენი ისტორია"
+      "key": "ფორტისი პაციენტების საჭიროებების საპასუხოდ შეიქმნა. ჩვენი მიზანია მაგისტრალური და ოფიცინალური მედიკამენტების მომზადება ევროპული და ამერიკული კომპოზიტური აფთიაქების გამოცდილების გათვალისწინებით.",
+      "value": "ფორტისი პაციენტების საჭიროებების საპასუხოდ შეიქმნა. ჩვენი მიზანია მაგისტრალური და ოფიცინალური მედიკამენტების მომზადება ევროპული და ამერიკული კომპოზიტური აფთიაქების გამოცდილების გათვალისწინებით."
     },
     {
-      "key": "Fortis was founded in response to patients’ needs, with the aim of preparing magistral and officinal medicines in a model inspired by European and American compounding pharmacies.",
-      "en": "Fortis was founded in response to patients’ needs, with the aim of preparing magistral and officinal medicines in a model inspired by European and American compounding pharmacies.",
-      "ka": "ფორტისი პაციენტების საჭიროებების საპასუხოდ შეიქმნა. ჩვენი მიზანია მაგისტრალური და ოფიცინალური მედიკამენტების მომზადება ევროპული და ამერიკული კომპოზიტური აფთიაქების გამოცდილების გათვალისწინებით."
+      "key": "კომპანიის ხედვა ჯანდაცვის სპეციალისტებთან თანამშრომლობასაც მოიცავს, რათა ხელი შეუწყოს მკურნალობის უწყვეტობას როგორც სტაციონარში, ისე გაწერის შემდეგ.",
+      "value": "კომპანიის ხედვა ჯანდაცვის სპეციალისტებთან თანამშრომლობასაც მოიცავს, რათა ხელი შეუწყოს მკურნალობის უწყვეტობას როგორც სტაციონარში, ისე გაწერის შემდეგ."
     },
     {
-      "key": "The company’s founding vision also includes collaboration with healthcare professionals to support continuity of treatment in hospital and after discharge.",
-      "en": "The company’s founding vision also includes collaboration with healthcare professionals to support continuity of treatment in hospital and after discharge.",
-      "ka": "კომპანიის ხედვა ჯანდაცვის სპეციალისტებთან თანამშრომლობასაც მოიცავს, რათა ხელი შეუწყოს მკურნალობის უწყვეტობას როგორც სტაციონარში, ისე გაწერის შემდეგ."
+      "key": "ლაბორატორიის შესახებ",
+      "value": "ლაბორატორიის შესახებ"
     },
     {
-      "key": "Inside the laboratory",
-      "en": "Inside the laboratory",
-      "ka": "ლაბორატორიის შესახებ"
+      "key": "ფორტისის ინფორმაციით, ლაბორატორია აღჭურვილია მცირე პარტიებით მომზადებისთვის. გათვალისწინებულია კლიმატის კონტროლი, სტერილიზაცია და ავტოკლავირება, ასევე ცალკე სტერილური და არასტერილური სამუშაო ზონები.",
+      "value": "ფორტისის ინფორმაციით, ლაბორატორია აღჭურვილია მცირე პარტიებით მომზადებისთვის. გათვალისწინებულია კლიმატის კონტროლი, სტერილიზაცია და ავტოკლავირება, ასევე ცალკე სტერილური და არასტერილური სამუშაო ზონები."
     },
     {
-      "key": "Fortis describes a laboratory equipped for small-batch preparation, with climate control, sterilization and autoclaving, and separate sterile and nonsterile working zones.",
-      "en": "Fortis describes a laboratory equipped for small-batch preparation, with climate control, sterilization and autoclaving, and separate sterile and nonsterile working zones.",
-      "ka": "ფორტისის ინფორმაციით, ლაბორატორია აღჭურვილია მცირე პარტიებით მომზადებისთვის. გათვალისწინებულია კლიმატის კონტროლი, სტერილიზაცია და ავტოკლავირება, ასევე ცალკე სტერილური და არასტერილური სამუშაო ზონები."
+      "key": "მომზადება",
+      "value": "მომზადება"
     },
     {
-      "key": "Preparation",
-      "en": "Preparation",
-      "ka": "მომზადება"
+      "key": "მცირე პარტიებისთვის განკუთვნილი ფარმაცევტული აღჭურვილობა და განსაზღვრული მომზადების პროცესები.",
+      "value": "მცირე პარტიებისთვის განკუთვნილი ფარმაცევტული აღჭურვილობა და განსაზღვრული მომზადების პროცესები."
     },
     {
-      "key": "Small-batch pharmaceutical equipment and defined preparation processes.",
-      "en": "Small-batch pharmaceutical equipment and defined preparation processes.",
-      "ka": "მცირე პარტიებისთვის განკუთვნილი ფარმაცევტული აღჭურვილობა და განსაზღვრული მომზადების პროცესები."
+      "key": "სამუშაო გარემო",
+      "value": "სამუშაო გარემო"
     },
     {
-      "key": "Environment",
-      "en": "Environment",
-      "ka": "სამუშაო გარემო"
+      "key": "ყურადღება ჰიგიენის, მომზადების გარემოსა და მოპყრობის წესების მიმართ.",
+      "value": "ყურადღება ჰიგიენის, მომზადების გარემოსა და მოპყრობის წესების მიმართ."
     },
     {
-      "key": "Attention to hygiene, the preparation environment and handling.",
-      "en": "Attention to hygiene, the preparation environment and handling.",
-      "ka": "ყურადღება ჰიგიენის, მომზადების გარემოსა და მოპყრობის წესების მიმართ."
+      "key": "შემოწმება",
+      "value": "შემოწმება"
     },
     {
-      "key": "Review",
-      "en": "Review",
-      "ka": "შემოწმება"
+      "key": "მომზადებისა და შენახვის ეტაპების შემოწმება, კომპანიის ინფორმაციით, აკრედიტებულ ლაბორატორიებში ტესტირებით.",
+      "value": "მომზადებისა და შენახვის ეტაპების შემოწმება, კომპანიის ინფორმაციით, აკრედიტებულ ლაბორატორიებში ტესტირებით."
     },
     {
-      "key": "Checks across preparation and storage, with testing in accredited laboratories as described by the company.",
-      "en": "Checks across preparation and storage, with testing in accredited laboratories as described by the company.",
-      "ka": "მომზადებისა და შენახვის ეტაპების შემოწმება, კომპანიის ინფორმაციით, აკრედიტებულ ლაბორატორიებში ტესტირებით."
+      "key": "პრაქტიკა და დოკუმენტაცია",
+      "value": "პრაქტიკა და დოკუმენტაცია"
     },
     {
-      "key": "Practice & documentation",
-      "en": "Practice & documentation",
-      "ka": "პრაქტიკა და დოკუმენტაცია"
+      "key": "კომპანია უთითებს ნებართვას",
+      "value": "კომპანია უთითებს ნებართვას"
     },
     {
-      "key": "The company reports permit",
-      "en": "The company reports permit",
-      "ka": "კომპანია უთითებს ნებართვას"
+      "key": "ოფიცინალური და მაგისტრალური რეცეპტებით მედიკამენტების მომზადებისა და რეალიზაციისთვის.",
+      "value": "ოფიცინალური და მაგისტრალური რეცეპტებით მედიკამენტების მომზადებისა და რეალიზაციისთვის."
     },
     {
-      "key": "for preparation and sale under officinal and magistral prescriptions.",
-      "en": "for preparation and sale under officinal and magistral prescriptions.",
-      "ka": "ოფიცინალური და მაგისტრალური რეცეპტებით მედიკამენტების მომზადებისა და რეალიზაციისთვის."
+      "key": "დაწყებულია კარგი სააფთიაქო პრაქტიკის (GPP) სერტიფიცირების პროცესი.",
+      "value": "დაწყებულია კარგი სააფთიაქო პრაქტიკის (GPP) სერტიფიცირების პროცესი."
     },
     {
-      "key": "The Good Pharmacy Practice (GPP) certification process has started.",
-      "en": "The Good Pharmacy Practice (GPP) certification process has started.",
-      "ka": "დაწყებულია კარგი სააფთიაქო პრაქტიკის (GPP) სერტიფიცირების პროცესი."
+      "key": "ამ ვებგვერდზე ფორტისი არ არის წარმოდგენილი როგორც GPP-სერტიფიცირებული აფთიაქი.",
+      "value": "ამ ვებგვერდზე ფორტისი არ არის წარმოდგენილი როგორც GPP-სერტიფიცირებული აფთიაქი."
     },
     {
-      "key": "Fortis is not presented on this website as GPP certified.",
-      "en": "Fortis is not presented on this website as GPP certified.",
-      "ka": "ამ ვებგვერდზე ფორტისი არ არის წარმოდგენილი როგორც GPP-სერტიფიცირებული აფთიაქი."
+      "key": "კომპანიისა და ლაბორატორიის აღწერა ფორტისის მიერ მოწოდებულ ინფორმაციას ეფუძნება. იგი არ წარმოადგენს დამოუკიდებელ აუდიტს ან სერტიფიცირების დადასტურებას.",
+      "value": "კომპანიისა და ლაბორატორიის აღწერა ფორტისის მიერ მოწოდებულ ინფორმაციას ეფუძნება. იგი არ წარმოადგენს დამოუკიდებელ აუდიტს ან სერტიფიცირების დადასტურებას."
     },
     {
-      "key": "Company and laboratory descriptions are based on information supplied by Fortis. They are not an independent audit or verification of certification.",
-      "en": "Company and laboratory descriptions are based on information supplied by Fortis. They are not an independent audit or verification of certification.",
-      "ka": "კომპანიისა და ლაბორატორიის აღწერა ფორტისის მიერ მოწოდებულ ინფორმაციას ეფუძნება. იგი არ წარმოადგენს დამოუკიდებელ აუდიტს ან სერტიფიცირების დადასტურებას."
+      "key": "დავიწყოთ საუბრით.",
+      "value": "დავიწყოთ საუბრით."
     },
     {
-      "key": "CONTACT FORTIS",
-      "en": "CONTACT FORTIS",
-      "ka": "დაუკავშირდით ფორტისს"
+      "key": "ვიპოვოთ ინდივიდუალური მიდგომა.",
+      "value": "ვიპოვოთ ინდივიდუალური მიდგომა."
     },
     {
-      "key": "A conversation.",
-      "en": "A conversation.",
-      "ka": "დავიწყოთ საუბრით."
+      "key": "მომზადების, პროდუქტის ხელმისაწვდომობისა და პროფესიული თანამშრომლობის საკითხებზე დაუკავშირდით აფთიაქს.",
+      "value": "მომზადების, პროდუქტის ხელმისაწვდომობისა და პროფესიული თანამშრომლობის საკითხებზე დაუკავშირდით აფთიაქს."
     },
     {
-      "key": "A more individual approach.",
-      "en": "A more individual approach.",
-      "ka": "ვიპოვოთ ინდივიდუალური მიდგომა."
+      "key": "ესაუბრეთ ჩვენს გუნდს",
+      "value": "ესაუბრეთ ჩვენს გუნდს"
     },
     {
-      "key": "For preparation questions, product availability or professional enquiries, speak with the pharmacy.",
-      "en": "For preparation questions, product availability or professional enquiries, speak with the pharmacy.",
-      "ka": "მომზადების, პროდუქტის ხელმისაწვდომობისა და პროფესიული თანამშრომლობის საკითხებზე დაუკავშირდით აფთიაქს."
+      "key": "გვეწვიეთ ფორტისში",
+      "value": "გვეწვიეთ ფორტისში"
     },
     {
-      "key": "CALL THE PHARMACY",
-      "en": "CALL THE PHARMACY",
-      "ka": "დარეკეთ აფთიაქში"
+      "key": "მარშრუტის ნახვა",
+      "value": "მარშრუტის ნახვა"
     },
     {
-      "key": "Speak with our team",
-      "en": "Speak with our team",
-      "ka": "ესაუბრეთ ჩვენს გუნდს"
+      "key": "ვიზიტამდე დარეკეთ სამუშაო საათებისა და ხელმისაწვდომობის დასაზუსტებლად.",
+      "value": "ვიზიტამდე დარეკეთ სამუშაო საათებისა და ხელმისაწვდომობის დასაზუსტებლად."
     },
     {
-      "key": "VISIT FORTIS",
-      "en": "VISIT FORTIS",
-      "ka": "გვეწვიეთ ფორტისში"
+      "key": "პაციენტებისა და პროფესიონალებისთვის",
+      "value": "პაციენტებისა და პროფესიონალებისთვის"
     },
     {
-      "key": "Open directions",
-      "en": "Open directions",
-      "ka": "მარშრუტის ნახვა"
+      "key": "ერთად განვიხილოთ",
+      "value": "ერთად განვიხილოთ"
     },
     {
-      "key": "Please call before visiting to confirm opening hours and availability.",
-      "en": "Please call before visiting to confirm opening hours and availability.",
-      "ka": "ვიზიტამდე დარეკეთ სამუშაო საათებისა და ხელმისაწვდომობის დასაზუსტებლად."
+      "key": "თქვენი საჭიროებები.",
+      "value": "თქვენი საჭიროებები."
     },
     {
-      "key": "FOR PATIENTS & PROFESSIONALS",
-      "en": "FOR PATIENTS & PROFESSIONALS",
-      "ka": "პაციენტებისა და პროფესიონალებისთვის"
+      "key": "ჩვენი გუნდი აგიხსნით მომზადების მოთხოვნებს და დაგეხმარებათ, განსაზღვროთ, რა საკითხები უნდა განიხილოთ თქვენს ექიმთან.",
+      "value": "ჩვენი გუნდი აგიხსნით მომზადების მოთხოვნებს და დაგეხმარებათ, განსაზღვროთ, რა საკითხები უნდა განიხილოთ თქვენს ექიმთან."
     },
     {
-      "key": "Let’s discuss",
-      "en": "Let’s discuss",
-      "ka": "ერთად განვიხილოთ"
+      "key": "კითხვები ინდივიდუალური ფორმულის შესახებ",
+      "value": "კითხვები ინდივიდუალური ფორმულის შესახებ"
     },
     {
-      "key": "what’s needed.",
-      "en": "what’s needed.",
-      "ka": "თქვენი საჭიროებები."
+      "key": "კითხვები აქტიურ და დამხმარე ნივთიერებებზე",
+      "value": "კითხვები აქტიურ და დამხმარე ნივთიერებებზე"
     },
     {
-      "key": "Our team can explain preparation requirements and help you identify what to discuss with your prescriber.",
-      "en": "Our team can explain preparation requirements and help you identify what to discuss with your prescriber.",
-      "ka": "ჩვენი გუნდი აგიხსნით მომზადების მოთხოვნებს და დაგეხმარებათ, განსაზღვროთ, რა საკითხები უნდა განიხილოთ თქვენს ექიმთან."
+      "key": "პროდუქტებისა და დოზების ხელმისაწვდომობა",
+      "value": "პროდუქტებისა და დოზების ხელმისაწვდომობა"
     },
     {
-      "key": "Individual formulation enquiries",
-      "en": "Individual formulation enquiries",
-      "ka": "კითხვები ინდივიდუალური ფორმულის შესახებ"
+      "key": "პროფესიული თანამშრომლობა",
+      "value": "პროფესიული თანამშრომლობა"
     },
     {
-      "key": "Ingredient and excipient questions",
-      "en": "Ingredient and excipient questions",
-      "ka": "კითხვები აქტიურ და დამხმარე ნივთიერებებზე"
+      "key": "ფორტის ბიბლიოთეკის ნახვა",
+      "value": "ფორტის ბიბლიოთეკის ნახვა"
     },
     {
-      "key": "Product and strength availability",
-      "en": "Product and strength availability",
-      "ka": "პროდუქტებისა და დოზების ხელმისაწვდომობა"
+      "key": "გასაგები კონტექსტი. მკაფიო ფარგლები.",
+      "value": "გასაგები კონტექსტი. მკაფიო ფარგლები."
     },
     {
-      "key": "Professional collaboration",
-      "en": "Professional collaboration",
-      "ka": "პროფესიული თანამშრომლობა"
+      "key": "სამედიცინო წყაროების შერჩევის პრინციპი",
+      "value": "სამედიცინო წყაროების შერჩევის პრინციპი"
     },
     {
-      "key": "Explore Fortis Library",
-      "en": "Explore Fortis Library",
-      "ka": "ფორტის ბიბლიოთეკის ნახვა"
+      "key": "მოქმედი ნივთიერებების შესახებ ინფორმაცია ოთხ შერჩეულ ორგანიზაციასა და გამოცემას ეყრდნობა: FDA, EMA, JAMA Dermatology და Pain Reports. ორიგინალი სტატიები შესაძლოა ხელმისაწვდომი იყოს PubMed Central-ის მეშვეობითაც. წყაროების ბმულები თითოეული პროდუქტის გვერდზეა მითითებული.",
+      "value": "მოქმედი ნივთიერებების შესახებ ინფორმაცია ოთხ შერჩეულ ორგანიზაციასა და გამოცემას ეყრდნობა: FDA, EMA, JAMA Dermatology და Pain Reports. ორიგინალი სტატიები შესაძლოა ხელმისაწვდომი იყოს PubMed Central-ის მეშვეობითაც. წყაროების ბმულები თითოეული პროდუქტის გვერდზეა მითითებული."
     },
     {
-      "key": "INFORMATION & REFERENCES",
-      "en": "INFORMATION & REFERENCES",
-      "ka": "ინფორმაცია და წყაროები"
+      "key": "მოქმედი ნივთიერება და მომზადებული პრეპარატი განსხვავდება",
+      "value": "მოქმედი ნივთიერება და მომზადებული პრეპარატი განსხვავდება"
     },
     {
-      "key": "Clear context. Defined limits.",
-      "en": "Clear context. Defined limits.",
-      "ka": "გასაგები კონტექსტი. მკაფიო ფარგლები."
+      "key": "რეფერენსული მედიკამენტის დამტკიცება ან კვლევის შედეგი არ ადასტურებს ფორტისის კონკრეტული პრეპარატის დამტკიცებას, ეკვივალენტობას, ბიოშეღწევადობას, უსაფრთხოებას ან ეფექტურობას. მნიშვნელოვანია დოზა, დამხმარე ნივთიერებები, გამოთავისუფლების პროფილი და მომზადების მეთოდი. პროდუქტის კატეგორიები ძიების გასამარტივებლად გამოიყენება.",
+      "value": "რეფერენსული მედიკამენტის დამტკიცება ან კვლევის შედეგი არ ადასტურებს ფორტისის კონკრეტული პრეპარატის დამტკიცებას, ეკვივალენტობას, ბიოშეღწევადობას, უსაფრთხოებას ან ეფექტურობას. მნიშვნელოვანია დოზა, დამხმარე ნივთიერებები, გამოთავისუფლების პროფილი და მომზადების მეთოდი. პროდუქტის კატეგორიები ძიების გასამარტივებლად გამოიყენება."
     },
     {
-      "key": "Our medical source policy",
-      "en": "Our medical source policy",
-      "ka": "სამედიცინო წყაროების შერჩევის პრინციპი"
+      "key": "შეფუთვა და დანიშნულება",
+      "value": "შეფუთვა და დანიშნულება"
     },
     {
-      "key": "Ingredient context uses four selected authorities and publications: FDA, EMA, JAMA Dermatology and Pain Reports. Original journal articles may be accessed through PubMed Central. References are linked on each product page.",
-      "en": "Ingredient context uses four selected authorities and publications: FDA, EMA, JAMA Dermatology and Pain Reports. Original journal articles may be accessed through PubMed Central. References are linked on each product page.",
-      "ka": "მოქმედი ნივთიერებების შესახებ ინფორმაცია ოთხ შერჩეულ ორგანიზაციასა და გამოცემას ეყრდნობა: FDA, EMA, JAMA Dermatology და Pain Reports. ორიგინალი სტატიები შესაძლოა ხელმისაწვდომი იყოს PubMed Central-ის მეშვეობითაც. წყაროების ბმულები თითოეული პროდუქტის გვერდზეა მითითებული."
+      "key": "პროდუქტის სურათები ფორტისის მიერ მოწოდებული ორიგინალი ილუსტრაციებია და არა გაცემისას გასაყოლებელი ინსტრუქციები. იხელმძღვანელეთ მხოლოდ თქვენი დანიშნულებისთვის ექიმისა და ფარმაცევტის მიერ გაცემული მითითებებით. საილუსტრაციო შეფუთვაზე მოცემული ტექსტით არ განსაზღვროთ მკურნალობა, შენახვის პირობები ან გამოყენების საბოლოო ვადა.",
+      "value": "პროდუქტის სურათები ფორტისის მიერ მოწოდებული ორიგინალი ილუსტრაციებია და არა გაცემისას გასაყოლებელი ინსტრუქციები. იხელმძღვანელეთ მხოლოდ თქვენი დანიშნულებისთვის ექიმისა და ფარმაცევტის მიერ გაცემული მითითებებით. საილუსტრაციო შეფუთვაზე მოცემული ტექსტით არ განსაზღვროთ მკურნალობა, შენახვის პირობები ან გამოყენების საბოლოო ვადა."
     },
     {
-      "key": "Ingredients and preparations are different",
-      "en": "Ingredients and preparations are different",
-      "ka": "მოქმედი ნივთიერება და მომზადებული პრეპარატი განსხვავდება"
+      "key": "ინფორმაციის განახლება",
+      "value": "ინფორმაციის განახლება"
     },
     {
-      "key": "A reference medicine’s approval or study result does not establish the approval, equivalence, bioavailability, safety or efficacy of a particular Fortis compounded preparation. Strength, excipients, release profile and preparation method can matter. Product categories are navigation aids.",
-      "en": "A reference medicine’s approval or study result does not establish the approval, equivalence, bioavailability, safety or efficacy of a particular Fortis compounded preparation. Strength, excipients, release profile and preparation method can matter. Product categories are navigation aids.",
-      "ka": "რეფერენსული მედიკამენტის დამტკიცება ან კვლევის შედეგი არ ადასტურებს ფორტისის კონკრეტული პრეპარატის დამტკიცებას, ეკვივალენტობას, ბიოშეღწევადობას, უსაფრთხოებას ან ეფექტურობას. მნიშვნელოვანია დოზა, დამხმარე ნივთიერებები, გამოთავისუფლების პროფილი და მომზადების მეთოდი. პროდუქტის კატეგორიები ძიების გასამარტივებლად გამოიყენება."
+      "key": "წყაროების ბმულები შემოწმებულია 2026 წლის 10 სექტემბერს. ეს მოკლე საგანმანათლებლო მიმოხილვაა და არა დანიშნულებისთვის საჭირო სრული ინფორმაცია. FDA-ს საარქივო დოკუმენტებს მითითებული აქვს წელი; ისინი შესაძლოა უახლესი დამტკიცებული ინსტრუქციები არ იყოს. ინფორმაციის განახლებისას კლინიკური ტექსტი აფთიაქის პროფესიულ გადამოწმებას საჭიროებს.",
+      "value": "წყაროების ბმულები შემოწმებულია 2026 წლის 10 სექტემბერს. ეს მოკლე საგანმანათლებლო მიმოხილვაა და არა დანიშნულებისთვის საჭირო სრული ინფორმაცია. FDA-ს საარქივო დოკუმენტებს მითითებული აქვს წელი; ისინი შესაძლოა უახლესი დამტკიცებული ინსტრუქციები არ იყოს. ინფორმაციის განახლებისას კლინიკური ტექსტი აფთიაქის პროფესიულ გადამოწმებას საჭიროებს."
     },
     {
-      "key": "Packaging and prescribing",
-      "en": "Packaging and prescribing",
-      "ka": "შეფუთვა და დანიშნულება"
+      "key": "ინფორმაცია კომპანიის შესახებ",
+      "value": "ინფორმაცია კომპანიის შესახებ"
     },
     {
-      "key": "Product images are the original illustrations supplied by Fortis. They are not dispensing instructions. Follow only the directions issued for your own prescription by your clinician and pharmacist; do not use text shown in illustrative packaging to determine treatment, storage or beyond-use dates.",
-      "en": "Product images are the original illustrations supplied by Fortis. They are not dispensing instructions. Follow only the directions issued for your own prescription by your clinician and pharmacist; do not use text shown in illustrative packaging to determine treatment, storage or beyond-use dates.",
-      "ka": "პროდუქტის სურათები ფორტისის მიერ მოწოდებული ორიგინალი ილუსტრაციებია და არა გაცემისას გასაყოლებელი ინსტრუქციები. იხელმძღვანელეთ მხოლოდ თქვენი დანიშნულებისთვის ექიმისა და ფარმაცევტის მიერ გაცემული მითითებებით. საილუსტრაციო შეფუთვაზე მოცემული ტექსტით არ განსაზღვროთ მკურნალობა, შენახვის პირობები ან გამოყენების საბოლოო ვადა."
+      "key": "კომპანიის ისტორია, ნებართვის დეტალები და ლაბორატორიის აღწერა მოწოდებულია ფორტისის მიერ. ისინი წარმოდგენილია როგორც კომპანიის ინფორმაცია და არა დამოუკიდებლად გადამოწმებული მარეგულირებელი დასკვნები.",
+      "value": "კომპანიის ისტორია, ნებართვის დეტალები და ლაბორატორიის აღწერა მოწოდებულია ფორტისის მიერ. ისინი წარმოდგენილია როგორც კომპანიის ინფორმაცია და არა დამოუკიდებლად გადამოწმებული მარეგულირებელი დასკვნები."
     },
     {
-      "key": "Editorial status",
-      "en": "Editorial status",
-      "ka": "ინფორმაციის განახლება"
+      "key": "მარტივი საინფორმაციო ვებგვერდი.",
+      "value": "მარტივი საინფორმაციო ვებგვერდი."
     },
     {
-      "key": "Source links checked September 10, 2026. This is a concise educational overview, not comprehensive prescribing information. Archived FDA documents are identified by year and may not be the latest approved labels. Clinical copy requires the pharmacy’s professional review as part of ongoing content maintenance.",
-      "en": "Source links checked September 10, 2026. This is a concise educational overview, not comprehensive prescribing information. Archived FDA documents are identified by year and may not be the latest approved labels. Clinical copy requires the pharmacy’s professional review as part of ongoing content maintenance.",
-      "ka": "წყაროების ბმულები შემოწმებულია 2026 წლის 10 სექტემბერს. ეს მოკლე საგანმანათლებლო მიმოხილვაა და არა დანიშნულებისთვის საჭირო სრული ინფორმაცია. FDA-ს საარქივო დოკუმენტებს მითითებული აქვს წელი; ისინი შესაძლოა უახლესი დამტკიცებული ინსტრუქციები არ იყოს. ინფორმაციის განახლებისას კლინიკური ტექსტი აფთიაქის პროფესიულ გადამოწმებას საჭიროებს."
+      "key": "ვებგვერდს არ აქვს ონლაინ გადახდა, პაციენტის რეგისტრაცია ან პაციენტის მონაცემების ფორმა. იგი არ გთხოვთ რეცეპტების ან სამედიცინო ჩანაწერების ატვირთვას.",
+      "value": "ვებგვერდს არ აქვს ონლაინ გადახდა, პაციენტის რეგისტრაცია ან პაციენტის მონაცემების ფორმა. იგი არ გთხოვთ რეცეპტების ან სამედიცინო ჩანაწერების ატვირთვას."
     },
     {
-      "key": "Company information",
-      "en": "Company information",
-      "ka": "ინფორმაცია კომპანიის შესახებ"
+      "key": "ვებგვერდს არ აქვს დამატებული სარეკლამო თვალთვალის ან ანალიტიკის სკრიპტები. ჰოსტინგის მომწოდებლებმა საიტის მუშაობისა და უსაფრთხოებისთვის შეიძლება დაამუშაონ წვდომის ტექნიკური ჩანაწერები. გარე ბმულებს, მათ შორის რუკებსა და სამეცნიერო გამოცემებს, საკუთარი კონფიდენციალურობის პოლიტიკა აქვს.",
+      "value": "ვებგვერდს არ აქვს დამატებული სარეკლამო თვალთვალის ან ანალიტიკის სკრიპტები. ჰოსტინგის მომწოდებლებმა საიტის მუშაობისა და უსაფრთხოებისთვის შეიძლება დაამუშაონ წვდომის ტექნიკური ჩანაწერები. გარე ბმულებს, მათ შორის რუკებსა და სამეცნიერო გამოცემებს, საკუთარი კონფიდენციალურობის პოლიტიკა აქვს."
     },
     {
-      "key": "Company background, permit details and laboratory descriptions were supplied by Fortis and are presented as company information, not independently verified regulatory findings.",
-      "en": "Company background, permit details and laboratory descriptions were supplied by Fortis and are presented as company information, not independently verified regulatory findings.",
-      "ka": "კომპანიის ისტორია, ნებართვის დეტალები და ლაბორატორიის აღწერა მოწოდებულია ფორტისის მიერ. ისინი წარმოდგენილია როგორც კომპანიის ინფორმაცია და არა დამოუკიდებლად გადამოწმებული მარეგულირებელი დასკვნები."
+      "key": "აფთიაქთან დასაკავშირებლად დარეკეთ:",
+      "value": "აფთიაქთან დასაკავშირებლად დარეკეთ:"
     },
     {
-      "key": "PRIVACY",
-      "en": "PRIVACY",
-      "ka": "კონფიდენციალურობა"
+      "key": ". ჯანმრთელობასთან დაკავშირებული კონფიდენციალური ინფორმაცია განიხილეთ აფთიაქთან შეთანხმებული შესაბამისი არხით.",
+      "value": ". ჯანმრთელობასთან დაკავშირებული კონფიდენციალური ინფორმაცია განიხილეთ აფთიაქთან შეთანხმებული შესაბამისი არხით."
     },
     {
-      "key": "A simple information website.",
-      "en": "A simple information website.",
-      "ka": "მარტივი საინფორმაციო ვებგვერდი."
+      "key": "ფერის რეჟიმის არჩევანი მხოლოდ ამ ბრაუზერში ინახება, რათა დაბრუნებისას იგივე პარამეტრი დაგხვდეთ. ამ პარამეტრებში ჯანმრთელობის შესახებ ინფორმაცია არ ინახება.",
+      "value": "ფერის რეჟიმის არჩევანი მხოლოდ ამ ბრაუზერში ინახება, რათა დაბრუნებისას იგივე პარამეტრი დაგხვდეთ. ამ პარამეტრებში ჯანმრთელობის შესახებ ინფორმაცია არ ინახება."
     },
     {
-      "key": "This website has no checkout, patient registration or patient-information form. It does not ask you to upload prescriptions or health records.",
-      "en": "This website has no checkout, patient registration or patient-information form. It does not ask you to upload prescriptions or health records.",
-      "ka": "ვებგვერდს არ აქვს ონლაინ გადახდა, პაციენტის რეგისტრაცია ან პაციენტის მონაცემების ფორმა. იგი არ გთხოვთ რეცეპტების ან სამედიცინო ჩანაწერების ატვირთვას."
+      "key": "გვერდი ვერ მოიძებნა.",
+      "value": "გვერდი ვერ მოიძებნა."
     },
     {
-      "key": "No advertising trackers or analytics scripts are added by this website. Hosting providers may process technical access logs to operate and secure the site. External links, including maps and reference publications, are governed by their own privacy policies.",
-      "en": "No advertising trackers or analytics scripts are added by this website. Hosting providers may process technical access logs to operate and secure the site. External links, including maps and reference publications, are governed by their own privacy policies.",
-      "ka": "ვებგვერდს არ აქვს დამატებული სარეკლამო თვალთვალის ან ანალიტიკის სკრიპტები. ჰოსტინგის მომწოდებლებმა საიტის მუშაობისა და უსაფრთხოებისთვის შეიძლება დაამუშაონ წვდომის ტექნიკური ჩანაწერები. გარე ბმულებს, მათ შორის რუკებსა და სამეცნიერო გამოცემებს, საკუთარი კონფიდენციალურობის პოლიტიკა აქვს."
+      "key": "გვერდი ვერ მოიძებნა",
+      "value": "გვერდი ვერ მოიძებნა"
     },
     {
-      "key": "For pharmacy enquiries, call",
-      "en": "For pharmacy enquiries, call",
-      "ka": "აფთიაქთან დასაკავშირებლად დარეკეთ:"
+      "key": "პროდუქტების ნახვა",
+      "value": "პროდუქტების ნახვა"
     },
     {
-      "key": ". Discuss sensitive health information through an appropriate channel agreed with the pharmacy.",
-      "en": ". Discuss sensitive health information through an appropriate channel agreed with the pharmacy.",
-      "ka": ". ჯანმრთელობასთან დაკავშირებული კონფიდენციალური ინფორმაცია განიხილეთ აფთიაქთან შეთანხმებული შესაბამისი არხით."
+      "key": "შინაარსზე გადასვლა",
+      "value": "შინაარსზე გადასვლა"
     },
     {
-      "key": "Your language and appearance choices are saved only in this browser so they remain selected when you return. No health information is stored in these preferences.",
-      "en": "Your language and appearance choices are saved only in this browser so they remain selected when you return. No health information is stored in these preferences.",
-      "ka": "ენისა და ფერის რეჟიმის არჩევანი მხოლოდ ამ ბრაუზერში ინახება, რათა დაბრუნებისას იგივე პარამეტრები დაგხვდეთ. ამ პარამეტრებში ჯანმრთელობის შესახებ ინფორმაცია არ ინახება."
+      "key": "მედიკამენტების ინდივიდუალური მომზადება თბილისში",
+      "value": "მედიკამენტების ინდივიდუალური მომზადება თბილისში"
     },
     {
-      "key": "Page not found.",
-      "en": "Page not found.",
-      "ka": "გვერდი ვერ მოიძებნა."
+      "key": "პროდუქტების კატალოგი",
+      "value": "პროდუქტების კატალოგი"
     },
     {
-      "key": "Page not found",
-      "en": "Page not found",
-      "ka": "გვერდი ვერ მოიძებნა"
+      "key": "ფორტისის ქარვისფერი ფლაკონის გრაფიკული ესკიზი",
+      "value": "ფორტისის ქარვისფერი ფლაკონის გრაფიკული ესკიზი"
     },
     {
-      "key": "Explore the portfolio",
-      "en": "Explore the portfolio",
-      "ka": "პროდუქტების ნახვა"
+      "key": "მოძებნეთ პრეპარატი მოქმედი ნივთიერებით, დოზით ან სამედიცინო მიმართულებით. გაეცანით მის შესახებ ინფორმაციასა და წყაროებს, შემდეგ კი განიხილეთ თქვენს ექიმთან.",
+      "value": "მოძებნეთ პრეპარატი მოქმედი ნივთიერებით, დოზით ან სამედიცინო მიმართულებით. გაეცანით მის შესახებ ინფორმაციასა და წყაროებს, შემდეგ კი განიხილეთ თქვენს ექიმთან."
     },
     {
-      "key": "Skip to content",
-      "en": "Skip to content",
-      "ka": "შინაარსზე გადასვლა"
+      "key": "თითოეულ ფილტრში შეგიძლიათ რამდენიმე ვარიანტი მონიშნოთ.",
+      "value": "თითოეულ ფილტრში შეგიძლიათ რამდენიმე ვარიანტი მონიშნოთ."
     },
     {
-      "key": "Precision compounding in Tbilisi",
-      "en": "Precision compounding in Tbilisi",
-      "ka": "მედიკამენტების ინდივიდუალური მომზადება თბილისში"
+      "key": "დოზა",
+      "value": "დოზა"
     },
     {
-      "key": "Product portfolio",
-      "en": "Product portfolio",
-      "ka": "პროდუქტების კატალოგი"
+      "key": "სპეციალობა",
+      "value": "სპეციალობა"
     },
     {
-      "key": "Hand-drawn amber Fortis medicine bottle",
-      "en": "Hand-drawn amber Fortis medicine bottle",
-      "ka": "ფორტისის ქარვისფერი ფლაკონის გრაფიკული ესკიზი"
+      "key": "გამოყენების სფერო",
+      "value": "გამოყენების სფერო"
     },
     {
-      "key": "Find a preparation by ingredient, strength, specialty or use context. Read its individual information and references before discussing it with your prescriber.",
-      "en": "Find a preparation by ingredient, strength, specialty or use context. Read its individual information and references before discussing it with your prescriber.",
-      "ka": "მოძებნეთ პრეპარატი მოქმედი ნივთიერებით, დოზით ან სამედიცინო მიმართულებით. გაეცანით მის შესახებ ინფორმაციასა და წყაროებს, შემდეგ კი განიხილეთ თქვენს ექიმთან."
+      "key": "ორგანოთა სისტემა",
+      "value": "ორგანოთა სისტემა"
     },
     {
-      "key": "Choose more than one option in each filter.",
-      "en": "Choose more than one option in each filter.",
-      "ka": "თითოეულ ფილტრში შეგიძლიათ რამდენიმე ვარიანტი მონიშნოთ."
+      "key": "ფორმა",
+      "value": "ფორმა"
     },
     {
-      "key": "Strength",
-      "en": "Strength",
-      "ka": "დოზა"
+      "key": "ტკივილის მედიცინა / კვლევა",
+      "value": "ტკივილის მედიცინა / კვლევა"
     },
     {
-      "key": "Medical specialty",
-      "en": "Medical specialty",
-      "ka": "სპეციალობა"
+      "key": "სიმსუქნის მართვა",
+      "value": "სიმსუქნის მართვა"
     },
     {
-      "key": "Use context",
-      "en": "Use context",
-      "ka": "გამოყენების სფერო"
+      "key": "ფსიქიატრია",
+      "value": "ფსიქიატრია"
     },
     {
-      "key": "Body system",
-      "en": "Body system",
-      "ka": "ორგანოთა სისტემა"
+      "key": "ტკივილის კვლევა (არარეგისტრირებული ჩვენება)",
+      "value": "ტკივილის კვლევა (არარეგისტრირებული ჩვენება)"
     },
     {
-      "key": "Form",
-      "en": "Form",
-      "ka": "ფორმა"
+      "key": "ალკოჰოლზე დამოკიდებულება (რეფერენსული პრეპარატი)",
+      "value": "ალკოჰოლზე დამოკიდებულება (რეფერენსული პრეპარატი)"
     },
     {
-      "key": "Tablet",
-      "en": "Tablet",
-      "ka": "ტაბლეტი"
+      "key": "ოპიოიდების მოქმედების ბლოკადა (რეფერენსული პრეპარატი)",
+      "value": "ოპიოიდების მოქმედების ბლოკადა (რეფერენსული პრეპარატი)"
     },
     {
-      "key": "Pain medicine / research",
-      "en": "Pain medicine / research",
-      "ka": "ტკივილის მედიცინა / კვლევა"
+      "key": "წონის მართვა (რეფერენსული პრეპარატი)",
+      "value": "წონის მართვა (რეფერენსული პრეპარატი)"
     },
     {
-      "key": "Obesity medicine",
-      "en": "Obesity medicine",
-      "ka": "სიმსუქნის მართვა"
+      "key": "დეპრესია (რეფერენსული პრეპარატი)",
+      "value": "დეპრესია (რეფერენსული პრეპარატი)"
     },
     {
-      "key": "Psychiatry",
-      "en": "Psychiatry",
-      "ka": "ფსიქიატრია"
+      "key": "ჭარბი ძილიანობა (რეფერენსული პრეპარატი)",
+      "value": "ჭარბი ძილიანობა (რეფერენსული პრეპარატი)"
     },
     {
-      "key": "Pain research (off-label)",
-      "en": "Pain research (off-label)",
-      "ka": "ტკივილის კვლევა (არარეგისტრირებული ჩვენება)"
+      "key": "თმის ცვენა (არარეგისტრირებული ჩვენება)",
+      "value": "თმის ცვენა (არარეგისტრირებული ჩვენება)"
     },
     {
-      "key": "Alcohol dependence (reference context)",
-      "en": "Alcohol dependence (reference context)",
-      "ka": "ალკოჰოლზე დამოკიდებულება (რეფერენსული პრეპარატი)"
+      "key": "უძილობა (რეფერენსული პრეპარატი)",
+      "value": "უძილობა (რეფერენსული პრეპარატი)"
     },
     {
-      "key": "Opioid blockade (reference context)",
-      "en": "Opioid blockade (reference context)",
-      "ka": "ოპიოიდების მოქმედების ბლოკადა (რეფერენსული პრეპარატი)"
+      "key": "თავის ტვინი და ნერვული სისტემა",
+      "value": "თავის ტვინი და ნერვული სისტემა"
     },
     {
-      "key": "Weight management (reference context)",
-      "en": "Weight management (reference context)",
-      "ka": "წონის მართვა (რეფერენსული პრეპარატი)"
+      "key": "კანი და თმა",
+      "value": "კანი და თმა"
     },
     {
-      "key": "Depression (reference context)",
-      "en": "Depression (reference context)",
-      "ka": "დეპრესია (რეფერენსული პრეპარატი)"
+      "key": "წონის რეგულაცია / მეტაბოლური სფერო",
+      "value": "წონის რეგულაცია / მეტაბოლური სფერო"
     },
     {
-      "key": "Excessive sleepiness (reference context)",
-      "en": "Excessive sleepiness (reference context)",
-      "ka": "ჭარბი ძილიანობა (რეფერენსული პრეპარატი)"
+      "key": "ინდივიდუალური / კვლევითი კონტექსტი",
+      "value": "ინდივიდუალური / კვლევითი კონტექსტი"
     },
     {
-      "key": "Hair loss (off-label)",
-      "en": "Hair loss (off-label)",
-      "ka": "თმის ცვენა (არარეგისტრირებული ჩვენება)"
+      "key": "კატალოგში მოცემული ათივე პრეპარატი ტაბლეტია.",
+      "value": "კატალოგში მოცემული ათივე პრეპარატი ტაბლეტია."
     },
     {
-      "key": "Insomnia (reference context)",
-      "en": "Insomnia (reference context)",
-      "ka": "უძილობა (რეფერენსული პრეპარატი)"
+      "key": "არჩეული ფილტრები",
+      "value": "არჩეული ფილტრები"
     },
     {
-      "key": "Brain & nervous system",
-      "en": "Brain & nervous system",
-      "ka": "თავის ტვინი და ნერვული სისტემა"
+      "key": "ფილტრის მოხსნა",
+      "value": "ფილტრის მოხსნა"
     },
     {
-      "key": "Skin & hair",
-      "en": "Skin & hair",
-      "ka": "კანი და თმა"
+      "key": "ფილტრები მოქმედი ნივთიერების რეფერენსულ პრეპარატებს ან კვლევით გამოყენებას აღწერს და ფორტისის პრეპარატების დამტკიცებულ ჩვენებებს არ განსაზღვრავს. არარეგისტრირებული ჩვენებები მონიშნულია. კვლევების შედეგები და კონკრეტული ფორმულის შეზღუდვები პროდუქტის გვერდზეა განმარტებული.",
+      "value": "ფილტრები მოქმედი ნივთიერების რეფერენსულ პრეპარატებს ან კვლევით გამოყენებას აღწერს და ფორტისის პრეპარატების დამტკიცებულ ჩვენებებს არ განსაზღვრავს. არარეგისტრირებული ჩვენებები მონიშნულია. კვლევების შედეგები და კონკრეტული ფორმულის შეზღუდვები პროდუქტის გვერდზეა განმარტებული."
     },
     {
-      "key": "Weight regulation / metabolic context",
-      "en": "Weight regulation / metabolic context",
-      "ka": "წონის რეგულაცია / მეტაბოლური სფერო"
+      "key": "ინდივიდუალური მედიკამენტის მომზადებამდე მნიშვნელოვანია პაციენტის საჭიროებების გააზრება. ეს საკითხები თქვენს ექიმსა და ფორტისის ფარმაცევტთან ერთად განიხილეთ.",
+      "value": "ინდივიდუალური მედიკამენტის მომზადებამდე მნიშვნელოვანია პაციენტის საჭიროებების გააზრება. ეს საკითხები თქვენს ექიმსა და ფორტისის ფარმაცევტთან ერთად განიხილეთ."
     },
     {
-      "key": "Individualized / research context",
-      "en": "Individualized / research context",
-      "ka": "ინდივიდუალური / კვლევითი კონტექსტი"
+      "key": "დოზა და ფორმულა",
+      "value": "დოზა და ფორმულა"
     },
     {
-      "key": "All 10 listed preparations are tablets.",
-      "en": "All 10 listed preparations are tablets.",
-      "ka": "კატალოგში მოცემული ათივე პრეპარატი ტაბლეტია."
+      "key": "მოქმედი ნივთიერება, დოზა და წამლის ფორმა დანიშნულებას უნდა შეესაბამებოდეს. მნიშვნელოვანია ნივთიერების გამოთავისუფლების თავისებურებებიც. ერთი და იმავე ნივთიერების შემცველი პრეპარატები ყოველთვის ურთიერთჩანაცვლებადი არ არის.",
+      "value": "მოქმედი ნივთიერება, დოზა და წამლის ფორმა დანიშნულებას უნდა შეესაბამებოდეს. მნიშვნელოვანია ნივთიერების გამოთავისუფლების თავისებურებებიც. ერთი და იმავე ნივთიერების შემცველი პრეპარატები ყოველთვის ურთიერთჩანაცვლებადი არ არის."
     },
     {
-      "key": "Active filters",
-      "en": "Active filters",
-      "ka": "არჩეული ფილტრები"
+      "key": "შემადგენლობა და ინდივიდუალური საჭიროებები",
+      "value": "შემადგენლობა და ინდივიდუალური საჭიროებები"
     },
     {
-      "key": "Remove filter",
-      "en": "Remove filter",
-      "ka": "ფილტრის მოხსნა"
+      "key": "მომზადებამდე აცნობეთ ფარმაცევტს ალერგიის, დამხმარე ნივთიერებების აუტანლობისა და ფორმულის მიმართ სხვა მოთხოვნების შესახებ. კომპანიის ინფორმაციით, ფორტისი მედიკამენტებს თბილისში ამზადებს, აშშ-დან და ევროპიდან მიღებული აქტიური ნივთიერებებით.",
+      "value": "მომზადებამდე აცნობეთ ფარმაცევტს ალერგიის, დამხმარე ნივთიერებების აუტანლობისა და ფორმულის მიმართ სხვა მოთხოვნების შესახებ. კომპანიის ინფორმაციით, ფორტისი მედიკამენტებს თბილისში ამზადებს, აშშ-დან და ევროპიდან მიღებული აქტიური ნივთიერებებით."
     },
     {
-      "key": "Filters describe ingredient reference or research contexts, not approved indications for Fortis preparations. Off-label uses are marked; study results and formulation limits remain on each product page.",
-      "en": "Filters describe ingredient reference or research contexts, not approved indications for Fortis preparations. Off-label uses are marked; study results and formulation limits remain on each product page.",
-      "ka": "ფილტრები მოქმედი ნივთიერების რეფერენსულ პრეპარატებს ან კვლევით გამოყენებას აღწერს და ფორტისის პრეპარატების დამტკიცებულ ჩვენებებს არ განსაზღვრავს. არარეგისტრირებული ჩვენებები მონიშნულია. კვლევების შედეგები და კონკრეტული ფორმულის შეზღუდვები პროდუქტის გვერდზეა განმარტებული."
+      "key": "მითითებები მედიკამენტის მიღებისას",
+      "value": "მითითებები მედიკამენტის მიღებისას"
     },
     {
-      "key": "The prescription is just the beginning.",
-      "en": "The prescription is just the beginning.",
-      "ka": "ყველაფერი დანიშნულებით იწყება."
+      "key": "ფარმაცევტთან გადაამოწმეთ მიღების წესი, შენახვის პირობები და გამოყენების საბოლოო ვადა. ვებგვერდის ინფორმაცია და შეფუთვის ილუსტრაციები თქვენს დანიშნულებას ვერ ჩაანაცვლებს.",
+      "value": "ფარმაცევტთან გადაამოწმეთ მიღების წესი, შენახვის პირობები და გამოყენების საბოლოო ვადა. ვებგვერდის ინფორმაცია და შეფუთვის ილუსტრაციები თქვენს დანიშნულებას ვერ ჩაანაცვლებს."
     },
     {
-      "key": "An individual preparation starts with a clear understanding of the patient’s needs. These are the details to discuss with your prescriber and the Fortis pharmacist.",
-      "en": "An individual preparation starts with a clear understanding of the patient’s needs. These are the details to discuss with your prescriber and the Fortis pharmacist.",
-      "ka": "ინდივიდუალური მედიკამენტის მომზადებამდე მნიშვნელოვანია პაციენტის საჭიროებების გააზრება. ეს საკითხები თქვენს ექიმსა და ფორტისის ფარმაცევტთან ერთად განიხილეთ."
+      "key": "როგორ მზადდება ინდივიდუალური მედიკამენტი",
+      "value": "როგორ მზადდება ინდივიდუალური მედიკამენტი"
     },
     {
-      "key": "Strength and formulation",
-      "en": "Strength and formulation",
-      "ka": "დოზა და ფორმულა"
+      "key": "ფლაკონის მოძრაობის ჩართვა",
+      "value": "ფლაკონის მოძრაობის ჩართვა"
     },
     {
-      "key": "The ingredient, strength and dosage form need to match the prescription. Release characteristics matter; preparations with similar ingredient names are not automatically interchangeable.",
-      "en": "The ingredient, strength and dosage form need to match the prescription. Release characteristics matter; preparations with similar ingredient names are not automatically interchangeable.",
-      "ka": "მოქმედი ნივთიერება, დოზა და წამლის ფორმა დანიშნულებას უნდა შეესაბამებოდეს. მნიშვნელოვანია ნივთიერების გამოთავისუფლების თავისებურებებიც. ერთი და იმავე ნივთიერების შემცველი პრეპარატები ყოველთვის ურთიერთჩანაცვლებადი არ არის."
+      "key": "ფლაკონის მოძრაობის შეჩერება",
+      "value": "ფლაკონის მოძრაობის შეჩერება"
     },
     {
-      "key": "Ingredients and individual needs",
-      "en": "Ingredients and individual needs",
-      "ka": "შემადგენლობა და ინდივიდუალური საჭიროებები"
+      "key": "მოცემულია გამოქვეყნებული პრეპარატების შესაბამისი ფორმები.",
+      "value": "მოცემულია გამოქვეყნებული პრეპარატების შესაბამისი ფორმები."
     },
     {
-      "key": "Discuss allergies, excipient tolerance and any formulation requirements before preparation. Fortis describes sourcing active pharmaceutical ingredients from the US and Europe for local compounding in Tbilisi.",
-      "en": "Discuss allergies, excipient tolerance and any formulation requirements before preparation. Fortis describes sourcing active pharmaceutical ingredients from the US and Europe for local compounding in Tbilisi.",
-      "ka": "მომზადებამდე აცნობეთ ფარმაცევტს ალერგიის, დამხმარე ნივთიერებების აუტანლობისა და ფორმულის მიმართ სხვა მოთხოვნების შესახებ. კომპანიის ინფორმაციით, ფორტისი მედიკამენტებს თბილისში ამზადებს, აშშ-დან და ევროპიდან მიღებული აქტიური ნივთიერებებით."
+      "key": "მითითებული არ არის",
+      "value": "მითითებული არ არის"
     },
     {
-      "key": "Guidance at dispensing",
-      "en": "Guidance at dispensing",
-      "ka": "მითითებები მედიკამენტის მიღებისას"
+      "key": "კაფსულა",
+      "value": "კაფსულა"
     },
     {
-      "key": "Confirm your own directions, storage conditions and beyond-use date with the pharmacist. The information and packaging illustrations on this website do not replace your prescription.",
-      "en": "Confirm your own directions, storage conditions and beyond-use date with the pharmacist. The information and packaging illustrations on this website do not replace your prescription.",
-      "ka": "ფარმაცევტთან გადაამოწმეთ მიღების წესი, შენახვის პირობები და გამოყენების საბოლოო ვადა. ვებგვერდის ინფორმაცია და შეფუთვის ილუსტრაციები თქვენს დანიშნულებას ვერ ჩაანაცვლებს."
+      "key": "პროდუქტის ინფორმაცია",
+      "value": "პროდუქტის ინფორმაცია"
     },
     {
-      "key": "How individual preparation works",
-      "en": "How individual preparation works",
-      "ka": "როგორ მზადდება ინდივიდუალური მედიკამენტი"
+      "key": "დასახელება",
+      "value": "დასახელება"
     },
     {
-      "key": "Play bottle animation",
-      "en": "Play bottle animation",
-      "ka": "ფლაკონის მოძრაობის ჩართვა"
+      "key": "წამლის ფორმა",
+      "value": "წამლის ფორმა"
     },
     {
-      "key": "Pause bottle animation",
-      "en": "Pause bottle animation",
-      "ka": "ფლაკონის მოძრაობის შეჩერება"
+      "key": "მომზადება და მიღების გზა",
+      "value": "მომზადება და მიღების გზა"
     },
     {
-      "key": "Available forms reflect the currently published preparations.",
-      "en": "Available forms reflect the currently published preparations.",
-      "ka": "მოცემულია გამოქვეყნებული პრეპარატების შესაბამისი ფორმები."
+      "key": "მიმართულება",
+      "value": "მიმართულება"
     },
     {
-      "key": "Not specified",
-      "en": "Not specified",
-      "ka": "მითითებული არ არის"
+      "key": "მოკლე აღწერა",
+      "value": "მოკლე აღწერა"
     },
     {
-      "key": "Capsule",
-      "en": "Capsule",
-      "ka": "კაფსულა"
+      "key": "დასახელება და შემადგენლობა",
+      "value": "დასახელება და შემადგენლობა"
     },
     {
-      "key": "capsules",
-      "en": "capsules",
-      "ka": "კაფსულა"
+      "key": "ფარმაკოლოგიური თვისებები და მოქმედების მექანიზმი",
+      "value": "ფარმაკოლოგიური თვისებები და მოქმედების მექანიზმი"
     },
     {
-      "key": "Product information",
-      "en": "Product information",
-      "ka": "პროდუქტის ინფორმაცია"
+      "key": "გამოყენების ჩვენებები",
+      "value": "გამოყენების ჩვენებები"
     },
     {
-      "key": "Name",
-      "en": "Name",
-      "ka": "დასახელება"
+      "key": "დოზირება და მიღების წესი",
+      "value": "დოზირება და მიღების წესი"
     },
     {
-      "key": "Dosage form",
-      "en": "Dosage form",
-      "ka": "წამლის ფორმა"
+      "key": "გვერდითი მოვლენები",
+      "value": "გვერდითი მოვლენები"
     },
     {
-      "key": "Preparation and route",
-      "en": "Preparation and route",
-      "ka": "მომზადება და მიღების გზა"
+      "key": "უკუჩვენებები",
+      "value": "უკუჩვენებები"
     },
     {
-      "key": "Medical area",
-      "en": "Medical area",
-      "ka": "მიმართულება"
+      "key": "განსაკუთრებული მითითებები",
+      "value": "განსაკუთრებული მითითებები"
     },
     {
-      "key": "Short description",
-      "en": "Short description",
-      "ka": "მოკლე აღწერა"
+      "key": "შენახვის პირობები",
+      "value": "შენახვის პირობები"
     },
     {
-      "key": "Name and Composition",
-      "en": "Name and Composition",
-      "ka": "დასახელება და შემადგენლობა"
-    },
-    {
-      "key": "Pharmacological Properties and Mechanism of Action",
-      "en": "Pharmacological Properties and Mechanism of Action",
-      "ka": "ფარმაკოლოგიური თვისებები და მოქმედების მექანიზმი"
-    },
-    {
-      "key": "Indications",
-      "en": "Indications",
-      "ka": "გამოყენების ჩვენებები"
-    },
-    {
-      "key": "Dosage and Administration",
-      "en": "Dosage and Administration",
-      "ka": "დოზირება და მიღების წესი"
-    },
-    {
-      "key": "Side Effects",
-      "en": "Side Effects",
-      "ka": "გვერდითი მოვლენები"
-    },
-    {
-      "key": "Contraindications",
-      "en": "Contraindications",
-      "ka": "უკუჩვენებები"
-    },
-    {
-      "key": "Special Warnings and Precautions",
-      "en": "Special Warnings and Precautions",
-      "ka": "განსაკუთრებული მითითებები"
-    },
-    {
-      "key": "Storage Conditions",
-      "en": "Storage Conditions",
-      "ka": "შენახვის პირობები"
-    },
-    {
-      "key": "Manufacturer",
-      "en": "Manufacturer",
-      "ka": "მწარმოებელი"
+      "key": "მწარმოებელი",
+      "value": "მწარმოებელი"
     }
   ]
 }

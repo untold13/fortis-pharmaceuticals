@@ -1,59 +1,31 @@
 {
-  "name": "Mirtazapine",
-  "category": "Mental health",
-  "tag": "Antidepressant ingredient",
+  "name": "მირტაზაპინი",
+  "category": "ფსიქიკური ჯანმრთელობა",
+  "tag": "ანტიდეპრესანტი ნივთიერება",
   "refs": [
     "remeron"
   ],
   "slug": "mirtazapine-7-5",
-  "strength": "7.5 mg",
+  "strength": "7.5 მგ",
   "pack": 30,
-  "form": "Tablet",
+  "form": "ტაბლეტი",
   "image": "/products/mirtazapine-7-5.png",
   "featured": false,
   "published": true,
   "order": 19,
   "facets": {
     "specialty": [
-      "Psychiatry"
+      "ფსიქიატრია"
     ],
     "use": [
-      "Depression (reference context)"
+      "დეპრესია (რეფერენსული პრეპარატი)"
     ],
     "system": [
-      "Brain & nervous system"
+      "თავის ტვინი და ნერვული სისტემა"
     ]
   },
-  "ka": {
-    "name": "მირტაზაპინი",
-    "category": "ფსიქიკური ჯანმრთელობა",
-    "tag": "ანტიდეპრესანტი ნივთიერება",
-    "form": "ტაბლეტი",
-    "facets": {
-      "specialty": [
-        "ფსიქიატრია"
-      ],
-      "use": [
-        "დეპრესია (რეფერენსული პრეპარატი)"
-      ],
-      "system": [
-        "თავის ტვინი და ნერვული სისტემა"
-      ]
-    },
-    "packUnit": "ტაბლეტი",
-    "preparation": "კომპოზიტური · პერორალური",
-    "nameComposition": "",
-    "pharmacology": "",
-    "indications": "",
-    "dosageAdministration": "",
-    "sideEffects": "",
-    "contraindications": "",
-    "warningsPrecautions": "",
-    "storageConditions": "",
-    "manufacturer": ""
-  },
-  "packUnit": "tablets",
-  "preparation": "Compounded · oral",
+  "packUnit": "ტაბლეტი",
+  "preparation": "კომპოზიტური · პერორალური",
   "nameComposition": "",
   "pharmacology": "",
   "indications": "",
