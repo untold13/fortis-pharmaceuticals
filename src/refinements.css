@@ -873,3 +873,70 @@ html[data-theme="dark"] .bottle-cap {
 html[data-theme="dark"] .bottle-cap-line {
   stroke: #3e70b7;
 }
+
+/* Selected pharmacy popup: orange accent panel and theme-aware contact surface. */
+.detail-visual,
+html[data-theme="dark"] .detail-visual {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
+}
+.pharmacy-call-trigger { display: inline-flex; align-items: center; background: transparent; cursor: pointer; }
+.pharmacy-call {
+  width: min(574px, calc(100% - 32px));
+  max-height: calc(100dvh - 32px);
+  margin: auto;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+  color: var(--ink);
+  box-shadow: 0 24px 80px #08132345;
+  overscroll-behavior: contain;
+}
+.pharmacy-call::backdrop { background: #14243b80; backdrop-filter: blur(4px); }
+html[data-theme="dark"] .pharmacy-call::backdrop { background: #081323b3; }
+.pharmacy-call-layout { position: relative; display: grid; grid-template-columns: 180px minmax(0, 1fr); }
+.pharmacy-call-close { position: absolute; right: 8px; top: 8px; width: 44px; height: 44px; display: grid; place-items: center; border: 0; border-radius: 5px; background: transparent; color: var(--muted); z-index: 1; }
+.pharmacy-call-close:hover { color: var(--ink); background: var(--pale); }
+.pharmacy-call-close:focus-visible { outline-offset: -4px; }
+.pharmacy-call-aside { padding: 32px 23px; display: flex; flex-direction: column; justify-content: space-between; gap: 45px; background: var(--orange); color: #14243b; }
+.pharmacy-call-icon { width: 46px; height: 46px; display: grid; place-items: center; flex-shrink: 0; border: 1px solid #14243b38; border-radius: 50%; background: #14243b0c; }
+.pharmacy-call .pharmacy-call-aside h2 { margin: 0; color: #14243b; font-size: 25px; line-height: 1.5; font-weight: 500; letter-spacing: -.6px; }
+.pharmacy-call-main { padding: 49px 28px 27px; min-width: 0; }
+.pharmacy-call-main p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.8; }
+.pharmacy-call-number { margin-top: 18px; font-size: 27px; line-height: 1.4; font-weight: 500; letter-spacing: -1px; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.pharmacy-call-main .pharmacy-call-hours { margin-top: 8px; font-size: 12px; }
+.pharmacy-call-location { display: flex; gap: 10px; margin: 21px 0; padding-top: 17px; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; line-height: 1.7; }
+.pharmacy-call-location svg { flex-shrink: 0; }
+.pharmacy-call-action { display: flex; align-items: center; justify-content: center; gap: 10px; min-height: 48px; padding: 12px 20px; border-radius: 5px; background: var(--orange); color: #14243b; font-size: 14px; font-weight: 600; }
+.pharmacy-call-action:hover { background: #ee963c; }
+.pharmacy-call-action:active { transform: translateY(1px); }
+@media (max-width: 1420px) {
+  .pharmacy-call-trigger { display: inline-flex; justify-content: center; width: 44px; height: 44px; padding: 0; flex-shrink: 0; }
+  .pharmacy-call-trigger span { display: none; }
+}
+@media (max-width: 560px) {
+  .pharmacy-call-layout { grid-template-columns: 1fr; }
+  .pharmacy-call-aside { padding: 28px 42px 28px 22px; flex-direction: row; justify-content: flex-start; align-items: center; gap: 16px; }
+  .pharmacy-call .pharmacy-call-aside h2 { font-size: 20px; }
+  .pharmacy-call-close { color: #14243b; right: 2px; top: 2px; }
+  .pharmacy-call-close:hover { color: #14243b; background: #14243b0c; }
+  .pharmacy-call-main { padding: 24px; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .pharmacy-call[open] { animation: pharmacy-call-enter .5s cubic-bezier(.22, 1, .36, 1); }
+  .pharmacy-call[open]::backdrop { animation: pharmacy-backdrop-enter .3s ease-out; }
+  .pharmacy-call[open] .pharmacy-call-number, .pharmacy-call[open] .pharmacy-call-action { animation: pharmacy-content-enter .33s .17s backwards cubic-bezier(.22, 1, .36, 1); }
+  .pharmacy-call[open] .pharmacy-call-action { animation-delay: .23s; }
+  .pharmacy-call[open] .pharmacy-call-icon { animation: pharmacy-phone-ring .65s .22s ease-in-out; }
+  .pharmacy-call[open].is-closing { animation: pharmacy-call-exit .18s ease-in forwards; }
+  .pharmacy-call[open].is-closing::backdrop { animation: pharmacy-backdrop-enter .18s ease-in reverse forwards; }
+}
+@keyframes pharmacy-call-enter { from { opacity: 0; transform: translateX(32px); } to { opacity: 1; transform: none; } }
+@keyframes pharmacy-content-enter { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+@keyframes pharmacy-call-exit { to { opacity: 0; transform: translateY(8px) scale(.98); } }
+@keyframes pharmacy-backdrop-enter { from { opacity: 0; } to { opacity: 1; } }
+@keyframes pharmacy-phone-ring { 0%, 100% { transform: rotate(0); } 25% { transform: rotate(-11deg); } 50% { transform: rotate(8deg); } 75% { transform: rotate(-4deg); } }
