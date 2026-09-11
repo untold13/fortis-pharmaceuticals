@@ -1,4 +1,4 @@
-/* Compact language and day/night controls, following the reference interaction. */
+/* Compact day/night control, following the reference interaction. */
 :root {
   --surface: #fff;
   --raised: #f3f6f7;
@@ -16,18 +16,6 @@ blockquote { color: #526c51; }
   align-items: center;
   gap: 9px;
   flex-shrink: 0;
-}
-.language-button {
-  width: 42px;
-  height: 42px;
-  border: 1px solid var(--line);
-  border-radius: 50%;
-  background: var(--ink);
-  color: var(--surface);
-  font:
-    600 12px "DM Sans Variable",
-    sans-serif;
-  padding: 0;
 }
 .theme-switch {
   position: relative;
@@ -74,10 +62,6 @@ blockquote { color: #526c51; }
 }
 .theme-switch[aria-checked="true"] .day-icon {
   opacity: 0;
-}
-.language-button:hover {
-  outline: 1px solid var(--blue);
-  outline-offset: 3px;
 }
 .menu-button {
   min-width: 36px;
@@ -338,11 +322,6 @@ html[data-theme="dark"] .contact-resource {
   }
   .preferences-controls {
     gap: 6px;
-  }
-  .language-button {
-    width: 36px;
-    height: 38px;
-    font-size: 11px;
   }
   .theme-switch {
     width: 58px;

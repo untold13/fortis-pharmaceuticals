@@ -294,15 +294,6 @@ h4 {
   margin-top: 4px;
   accent-color: #1766a4;
 }
-.admin-language {
-  display: flex;
-  gap: 10px;
-  margin: 32px 0;
-}
-.admin-language [aria-pressed="true"] {
-  background: #173346;
-  color: #fff;
-}
 .admin-reference-list {
   border: 1px solid #d8e2e7;
   padding: 0 20px;
@@ -386,4 +377,52 @@ h4 {
   .admin-login img {
     width: 220px;
   }
+}
+
+/* Fortis palette */
+:root {
+  --fortis-white: #fcfaf7;
+  --fortis-orange: #e58725;
+  --fortis-blue: #3e70b7;
+  --fortis-ink: #14243b;
+}
+body,
+.admin-shell,
+.admin-save {
+  color: var(--fortis-ink);
+  background: var(--fortis-white);
+}
+.admin-header,
+.admin-layout nav,
+.admin-editor,
+.admin-text-block,
+.admin-section,
+.admin-login form,
+.admin-field input,
+.admin-field textarea,
+.admin-field select {
+  background: var(--fortis-white);
+  color: var(--fortis-ink);
+  border-color: #14243b24;
+}
+.admin-primary,
+.admin-upload {
+  background: var(--fortis-orange);
+  border-color: var(--fortis-orange);
+  color: var(--fortis-ink);
+}
+.admin-primary:hover,
+.admin-upload:hover {
+  background: var(--fortis-blue);
+  border-color: var(--fortis-blue);
+  color: var(--fortis-white);
+}
+.admin-header a,
+.admin-login a,
+.admin-product-list strong {
+  color: var(--fortis-blue);
+}
+.admin-layout nav button[aria-current="page"] {
+  border-color: var(--fortis-orange);
+  background: #e5872514;
 }
