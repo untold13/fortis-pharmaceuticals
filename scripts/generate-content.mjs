@@ -42,5 +42,5 @@ await fs.writeFile(
   `// Generated from authenticated CMS content. Do not edit.\nexport const records=${JSON.stringify(records)};\nexport const sourceRecords=${JSON.stringify(sources)};\nexport const siteCopy=${JSON.stringify(copy.entries)};\nexport const extraSections=${JSON.stringify(home.sections.filter((s) => s.published))};\n`,
 );
 console.log(
-  `Generated ${records.length} published products and bilingual site content.`,
+  `Generated ${records.length} published products and Georgian site content.`,
 );

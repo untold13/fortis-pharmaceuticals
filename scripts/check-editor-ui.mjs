@@ -89,18 +89,18 @@ try {
   const base = process.env.FORTIS_TEST_URL || "http://127.0.0.1:4174";
   await page.goto(base + "/admin/");
   await page
-    .getByRole("heading", { name: "Content editor", exact: true })
+    .getByRole("heading", { name: "შიგთავსის რედაქტორი", exact: true })
     .waitFor();
   assert.equal(await page.getByText(/GitHub/).count(), 0);
-  await page.getByLabel("Username / მომხმარებელი").fill("FortisAdmin");
-  await page.getByLabel("Password / პაროლი").fill("wrong");
+  await page.getByLabel("მომხმარებელი").fill("FortisAdmin");
+  await page.getByLabel("პაროლი").fill("wrong");
   await page
-    .getByRole("button", { name: "Sign in / შესვლა", exact: true })
+    .getByRole("button", { name: "შესვლა", exact: true })
     .click();
   await page.getByRole("alert").waitFor();
-  await page.getByLabel("Password / პაროლი").fill("test-only-password");
+  await page.getByLabel("პაროლი").fill("test-only-password");
   await page
-    .getByRole("button", { name: "Sign in / შესვლა", exact: true })
+    .getByRole("button", { name: "შესვლა", exact: true })
     .click();
   await page.locator(".admin-product-list > button").first().waitFor();
   assert.equal(await page.locator(".admin-product-list > button").count(), 29);
@@ -111,53 +111,41 @@ try {
     audit.violations.map((v) => v.id),
     [],
   );
-  await page.getByLabel("Find a product / პრეპარატის ძებნა").fill("PSK");
+  await page.getByLabel("პრეპარატის ძებნა").fill("PSK");
   await page.locator(".admin-product-list > button").first().click();
   for (const label of [
-    "Name / დასახელება",
-    "Dosage form / წამლის ფორმა",
-    "Preparation and route / მომზადება და მიღების გზა",
-    "Medical area / მიმართულება",
-    "Short description / მოკლე აღწერა",
-    "Name and Composition / დასახელება და შემადგენლობა",
-    "Pharmacological Properties and Mechanism of Action / ფარმაკოლოგიური თვისებები და მოქმედების მექანიზმი",
-    "Indications / გამოყენების ჩვენებები",
-    "Dosage and Administration / დოზირება და მიღების წესი",
-    "Side Effects / გვერდითი მოვლენები",
-    "Contraindications / უკუჩვენებები",
-    "Special Warnings and Precautions / განსაკუთრებული მითითებები",
-    "Storage Conditions / შენახვის პირობები",
-    "Manufacturer / მწარმოებელი",
+    "დასახელება",
+    "წამლის ფორმა",
+    "მომზადება და მიღების გზა",
+    "მიმართულება",
+    "მოკლე აღწერა",
+    "დასახელება და შემადგენლობა",
+    "ფარმაკოლოგიური თვისებები და მოქმედების მექანიზმი",
+    "გამოყენების ჩვენებები",
+    "დოზირება და მიღების წესი",
+    "გვერდითი მოვლენები",
+    "უკუჩვენებები",
+    "განსაკუთრებული მითითებები",
+    "შენახვის პირობები",
+    "მწარმოებელი",
   ])
     assert.equal(await page.getByLabel(label, { exact: true }).count(), 1, label);
   await page
-    .getByLabel("Manufacturer / მწარმოებელი", { exact: true })
-    .fill("Test manufacturer");
-  await page.getByRole("button", { name: "ქართული", exact: true }).click();
-  await page
-    .getByLabel("Manufacturer / მწარმოებელი", { exact: true })
+    .getByLabel("მწარმოებელი", { exact: true })
     .fill("სატესტო მწარმოებელი");
-  await page.getByRole("button", { name: "English", exact: true }).click();
   await page
-    .getByRole("button", { name: "Save product / შენახვა", exact: true })
+    .getByRole("button", { name: "პრეპარატის შენახვა", exact: true })
     .click();
   await page
     .getByRole("status")
-    .filter({ hasText: "Saved permanently" })
+    .filter({ hasText: "ცვლილება შენახულია" })
     .waitFor();
   await page.reload();
-  await page.getByLabel("Find a product / პრეპარატის ძებნა").fill("PSK");
+  await page.getByLabel("პრეპარატის ძებნა").fill("PSK");
   await page.locator(".admin-product-list > button").first().click();
   assert.equal(
     await page
-      .getByLabel("Manufacturer / მწარმოებელი", { exact: true })
-      .inputValue(),
-    "Test manufacturer",
-  );
-  await page.getByRole("button", { name: "ქართული", exact: true }).click();
-  assert.equal(
-    await page
-      .getByLabel("Manufacturer / მწარმოებელი", { exact: true })
+      .getByLabel("მწარმოებელი", { exact: true })
       .inputValue(),
     "სატესტო მწარმოებელი",
   );
@@ -176,45 +164,40 @@ try {
       .evaluate((i) => i.complete && i.naturalWidth > 0),
   );
   await page
-    .getByRole("button", { name: "Back / დაბრუნება", exact: true })
+    .getByRole("button", { name: "დაბრუნება", exact: true })
     .click();
   await page
-    .getByRole("button", { name: "Add product / დამატება", exact: true })
+    .getByRole("button", { name: "პრეპარატის დამატება", exact: true })
     .click();
-  await page.getByLabel("Page address / გვერდის მისამართი").fill("test-draft");
+  await page.getByLabel("გვერდის მისამართი").fill("test-draft");
   await page
-    .getByRole("button", { name: "Save product / შენახვა", exact: true })
+    .getByRole("button", { name: "პრეპარატის შენახვა", exact: true })
     .click();
   await page
     .getByRole("status")
-    .filter({ hasText: "Saved permanently" })
+    .filter({ hasText: "ცვლილება შენახულია" })
     .waitFor();
   await page
-    .getByRole("button", { name: "Add sections / სექციები", exact: true })
+    .getByRole("button", { name: "დამატებითი სექციები", exact: true })
     .click();
   await page
     .getByRole("button", {
-      name: "Add section / სექციის დამატება",
+      name: "სექციის დამატება",
       exact: true,
     })
     .click();
   await page
-    .getByLabel("Title / სათაური", { exact: true })
-    .nth(0)
-    .fill("New section");
-  await page
-    .getByLabel("Title / სათაური", { exact: true })
-    .nth(1)
+    .getByLabel("სათაური", { exact: true })
     .fill("ახალი სექცია");
   await page
     .getByRole("button", {
-      name: "Save sections / სექციების შენახვა",
+      name: "სექციების შენახვა",
       exact: true,
     })
     .click();
   await page
     .getByRole("status")
-    .filter({ hasText: "Saved permanently" })
+    .filter({ hasText: "ცვლილება შენახულია" })
     .waitFor();
   await page.setViewportSize({ width: 390, height: 844 });
   await page.screenshot({
@@ -235,10 +218,10 @@ try {
     [],
   );
   await page
-    .getByRole("button", { name: "Sign out / გასვლა", exact: true })
+    .getByRole("button", { name: "გასვლა", exact: true })
     .click();
   await page
-    .getByRole("heading", { name: "Content editor", exact: true })
+    .getByRole("heading", { name: "შიგთავსის რედაქტორი", exact: true })
     .waitFor();
   await page.screenshot({
     path: "/tmp/fortis-admin-login.png",
@@ -252,7 +235,7 @@ try {
   );
   assert.deepEqual(errors, []);
   console.log(
-    "PASS: custom editor login/error, 29 records, requested bilingual product fields, edit/save/reload, original-image preview, unchanged catalog filters, new draft, added section, logout, mobile overflow and WCAG AA checks. Browser API responses mocked; live setup required.",
+    "PASS: custom editor login/error, 29 records, Georgian-only product fields, edit/save/reload, original-image preview, unchanged catalog filters, new draft, added section, logout, mobile overflow and WCAG AA checks. Browser API responses mocked; live setup required.",
   );
 } catch (e) {
   console.log({ errors, body: await page.locator("body").innerText() });
