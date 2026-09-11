@@ -1,29 +1,26 @@
 <!doctype html>
-<html lang="en">
+<html lang="ka">
   <head>
     <meta charset="UTF-8" />
     <script>
       (() => {
-        let language = "en",
-          theme = "light";
+        let theme = "light";
         try {
-          language =
-            localStorage.getItem("fortis-language") === "ka" ? "ka" : "en";
           theme =
             localStorage.getItem("fortis-theme") === "dark" ? "dark" : "light";
         } catch {}
-        document.documentElement.lang = language;
+        document.documentElement.lang = "ka";
         document.documentElement.dataset.theme = theme;
         document.documentElement.style.colorScheme = theme;
       })();
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#123245" />
+    <meta name="theme-color" content="#fcfaf7" />
     <meta
       name="description"
-      content="Fortis Pharmaceuticals - individual compounding, a considered approach to preparation, and a focused medicine portfolio. Prepared in Tbilisi, Georgia."
+      content="ფორტის ფარმაცევტიკალსი — ინდივიდუალური კომპოზიტური ფარმაცია და პრეპარატების საინფორმაციო კატალოგი თბილისში."
     />
-    <title>Fortis Pharmaceuticals - Precision compounding in Tbilisi</title>
+    <title>ფორტის ფარმაცევტიკალსი — კომპოზიტური ფარმაცია თბილისში</title>
   </head>
   <body>
     <div id="root"></div>
