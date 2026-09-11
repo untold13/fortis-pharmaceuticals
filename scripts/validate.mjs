@@ -10,7 +10,23 @@ assert.equal(
 import { allowedSourceHosts as allowed } from "../lib/cms-validation.js";
 for (const p of products) {
   assert.ok(existsSync(`public${p.image}`), `Missing image for ${p.slug}`);
-  assert.ok(p.strength && p.name && p.pack && p.context && p.caution && p.note);
+  assert.ok(p.strength && p.name && p.pack && p.form && p.preparation);
+  for (const key of [
+    "nameComposition",
+    "pharmacology",
+    "indications",
+    "dosageAdministration",
+    "sideEffects",
+    "contraindications",
+    "warningsPrecautions",
+    "storageConditions",
+    "manufacturer",
+  ]) {
+    assert.equal(typeof p[key], "string", `Missing ${key} for ${p.slug}`);
+    assert.equal(typeof p.ka[key], "string", `Missing Georgian ${key} for ${p.slug}`);
+  }
+  for (const removed of ["context", "caution", "note", "infoOverview", "infoUse", "infoStorage"])
+    assert.equal(removed in p || removed in p.ka, false, `Obsolete ${removed} remains on ${p.slug}`);
   for (const r of p.refs) {
     assert.ok(sources[r], `Missing source ${r}`);
     assert.ok(allowed.has(new URL(sources[r].url).hostname));
@@ -22,5 +38,5 @@ if (existsSync("dist"))
     assert.ok(h.includes(p.name), `Missing route metadata ${p.slug}`);
   }
 console.log(
-  `PASS: ${products.length} unique product pages, original images, complete clinical notes and allowed reference domains.`,
+  `PASS: ${products.length} unique product pages, original images, new bilingual product-information fields and allowed reference domains.`,
 );

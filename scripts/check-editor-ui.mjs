@@ -113,9 +113,31 @@ try {
   );
   await page.getByLabel("Find a product / პრეპარატის ძებნა").fill("PSK");
   await page.locator(".admin-product-list > button").first().click();
+  for (const label of [
+    "Name / დასახელება",
+    "Dosage form / წამლის ფორმა",
+    "Preparation and route / მომზადება და მიღების გზა",
+    "Medical area / მიმართულება",
+    "Short description / მოკლე აღწერა",
+    "Name and Composition / დასახელება და შემადგენლობა",
+    "Pharmacological Properties and Mechanism of Action / ფარმაკოლოგიური თვისებები და მოქმედების მექანიზმი",
+    "Indications / გამოყენების ჩვენებები",
+    "Dosage and Administration / დოზირება და მიღების წესი",
+    "Side Effects / გვერდითი მოვლენები",
+    "Contraindications / უკუჩვენებები",
+    "Special Warnings and Precautions / განსაკუთრებული მითითებები",
+    "Storage Conditions / შენახვის პირობები",
+    "Manufacturer / მწარმოებელი",
+  ])
+    assert.equal(await page.getByLabel(label, { exact: true }).count(), 1, label);
   await page
-    .getByLabel("Formulation notes / ფორმულის შეზღუდვები", { exact: true })
-    .fill("Saved test note");
+    .getByLabel("Manufacturer / მწარმოებელი", { exact: true })
+    .fill("Test manufacturer");
+  await page.getByRole("button", { name: "ქართული", exact: true }).click();
+  await page
+    .getByLabel("Manufacturer / მწარმოებელი", { exact: true })
+    .fill("სატესტო მწარმოებელი");
+  await page.getByRole("button", { name: "English", exact: true }).click();
   await page
     .getByRole("button", { name: "Save product / შენახვა", exact: true })
     .click();
@@ -128,16 +150,16 @@ try {
   await page.locator(".admin-product-list > button").first().click();
   assert.equal(
     await page
-      .getByLabel("Formulation notes / ფორმულის შეზღუდვები", { exact: true })
+      .getByLabel("Manufacturer / მწარმოებელი", { exact: true })
       .inputValue(),
-    "Saved test note",
+    "Test manufacturer",
   );
   await page.getByRole("button", { name: "ქართული", exact: true }).click();
-  assert.match(
+  assert.equal(
     await page
-      .getByLabel("Clinical context / კლინიკური კონტექსტი")
+      .getByLabel("Manufacturer / მწარმოებელი", { exact: true })
       .inputValue(),
-    /[ა-ჰ]/,
+    "სატესტო მწარმოებელი",
   );
   await page
     .locator("input[type=file]")
@@ -230,7 +252,7 @@ try {
   );
   assert.deepEqual(errors, []);
   console.log(
-    "PASS: custom editor login/error, 29 records, edit/save/reload, Georgian fields, original-image preview, new draft, added section, logout, mobile overflow and WCAG AA checks. Browser API responses mocked; live setup required.",
+    "PASS: custom editor login/error, 29 records, requested bilingual product fields, edit/save/reload, original-image preview, unchanged catalog filters, new draft, added section, logout, mobile overflow and WCAG AA checks. Browser API responses mocked; live setup required.",
   );
 } catch (e) {
   console.log({ errors, body: await page.locator("body").innerText() });
