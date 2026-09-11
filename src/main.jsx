@@ -76,10 +76,7 @@ function Header() {
             </A>
           ))}
         </nav>
-        <A href="tel:+995322053191" className="contact-nav">
-          {t("დარეკეთ აფთიაქში ")}
-          <Icon type={Phone} />
-        </A>
+        <PharmacyCall />
         <div className="preferences-controls">
           <button
             className="theme-switch"
@@ -105,6 +102,76 @@ function Header() {
         </button>
       </div>
     </header>
+  );
+}
+function PharmacyCall() {
+  const dialog = useRef(null);
+  const closeTimer = useRef(null);
+  const previousOverflow = useRef(null);
+  const restoreScroll = () => {
+    if (previousOverflow.current !== null) {
+      document.body.style.overflow = previousOverflow.current;
+      previousOverflow.current = null;
+    }
+  };
+  useEffect(() => () => {
+    clearTimeout(closeTimer.current);
+    restoreScroll();
+  }, []);
+  const open = () => {
+    clearTimeout(closeTimer.current);
+    dialog.current.classList.remove("is-closing");
+    previousOverflow.current = document.body.style.overflow;
+    dialog.current.showModal();
+    document.body.style.overflow = "hidden";
+  };
+  const close = () => {
+    if (dialog.current.classList.contains("is-closing")) return;
+    const finish = () => {
+      dialog.current.close();
+      dialog.current.classList.remove("is-closing");
+      restoreScroll();
+    };
+    if (matchMedia("(prefers-reduced-motion: reduce)").matches) finish();
+    else {
+      dialog.current.classList.add("is-closing");
+      closeTimer.current = setTimeout(finish, 180);
+    }
+  };
+  const keepFocusInside = (event) => {
+    if (event.key !== "Tab") return;
+    const first = dialog.current.querySelector("button");
+    const last = dialog.current.querySelector("a");
+    if (event.shiftKey && document.activeElement === first) {
+      event.preventDefault();
+      last.focus();
+    } else if (!event.shiftKey && document.activeElement === last) {
+      event.preventDefault();
+      first.focus();
+    }
+  };
+  return (
+    <>
+      <button type="button" className="contact-nav pharmacy-call-trigger" aria-label="დარეკეთ აფთიაქში" aria-haspopup="dialog" aria-controls="pharmacy-call" onClick={open}>
+        <span>დარეკეთ აფთიაქში</span><Icon type={Phone} />
+      </button>
+      <dialog ref={dialog} id="pharmacy-call" className="pharmacy-call" aria-labelledby="pharmacy-call-title" aria-describedby="pharmacy-call-description" onKeyDown={keepFocusInside} onCancel={(event) => { event.preventDefault(); close(); }} onClose={restoreScroll} onClick={(event) => { if (event.target === event.currentTarget) close(); }}>
+        <div className="pharmacy-call-layout">
+          <button type="button" className="pharmacy-call-close" aria-label="ფანჯრის დახურვა" onClick={close} autoFocus><Icon type={X} /></button>
+          <div className="pharmacy-call-aside">
+            <span className="pharmacy-call-icon"><Icon type={Phone} size={24} /></span>
+            <h2 id="pharmacy-call-title">დავიწყოთ საუბრით.</h2>
+          </div>
+          <div className="pharmacy-call-main">
+            <p id="pharmacy-call-description">ჩვენი გუნდი თქვენს კითხვებს უპასუხებს.</p>
+            <div className="pharmacy-call-number">032 2 05 31 91</div>
+            <p className="pharmacy-call-hours">ყოველდღე · 10:00–20:00</p>
+            <div className="pharmacy-call-location"><Icon type={MapPin} /><span>გივი ჟვანიას ქუჩა 9<br />თბილისი, საქართველო</span></div>
+            <a className="pharmacy-call-action" href="tel:+995322053191" aria-label="დარეკვა: 032 2 05 31 91">დარეკვა <Icon type={ArrowUpRight} /></a>
+          </div>
+        </div>
+      </dialog>
+    </>
   );
 }
 function Button({ children, href, secondary = false }) {
@@ -146,7 +213,7 @@ function Footer() {
             <br />
             {t("თბილისი, საქართველო")}
           </A>
-          <A href="tel:+995322053191">+995 32 205 31 91</A>
+          <A href="tel:+995322053191">032 2 05 31 91</A>
         </div>
         <div>
           <small>{t("პროფესიონალებისთვის")}</small>
@@ -695,11 +762,6 @@ function Product({ p }) {
             width={p.imageWidth}
             height={p.imageHeight}
           />
-          <p>
-            {t(
-              "შეფუთვა საილუსტრაციოა. დაიცავით თქვენი დანიშნულება და ფარმაცევტის მითითებები.",
-            )}
-          </p>
         </div>
         <div className="detail-copy">
           <Eyebrow>{t(p.category)}</Eyebrow>
@@ -1014,7 +1076,7 @@ function Contact() {
             <Icon type={Phone} size={30} />
             <div>
               <small>{t("დარეკეთ აფთიაქში")}</small>
-              <h2>+995 32 205 31 91</h2>
+              <h2>032 2 05 31 91</h2>
               <span>
                 {t("ესაუბრეთ ჩვენს გუნდს ")}
                 <Icon type={ArrowUpRight} />
@@ -1147,7 +1209,7 @@ function Privacy() {
         </p>
         <p>
           {t("აფთიაქთან დასაკავშირებლად დარეკეთ:")}{" "}
-          <A href="tel:+995322053191">+995 32 205 31 91</A>
+          <A href="tel:+995322053191">032 2 05 31 91</A>
           {t(
             ". ჯანმრთელობასთან დაკავშირებული კონფიდენციალური ინფორმაცია განიხილეთ აფთიაქთან შეთანხმებული შესაბამისი არხით.",
           )}
