@@ -401,21 +401,6 @@
       "ka": "აფთიაქში მომზადებული · პერორალური"
     },
     {
-      "key": "Ingredient context",
-      "en": "Ingredient context",
-      "ka": "მოქმედი ნივთიერების შესახებ"
-    },
-    {
-      "key": "Clinical considerations",
-      "en": "Clinical considerations",
-      "ka": "კლინიკური საკითხები"
-    },
-    {
-      "key": "About this formulation",
-      "en": "About this formulation",
-      "ka": "ამ ფორმულის შესახებ"
-    },
-    {
       "key": "Ask about this preparation",
       "en": "Ask about this preparation",
       "ka": "იკითხეთ ამ პრეპარატის შესახებ"
@@ -1116,34 +1101,79 @@
       "ka": "კაფსულა"
     },
     {
-      "key": "PRODUCT INFORMATION",
-      "en": "PRODUCT INFORMATION",
+      "key": "Product information",
+      "en": "Product information",
       "ka": "პროდუქტის ინფორმაცია"
     },
     {
-      "key": "Reviewed details for this preparation.",
-      "en": "Reviewed details for this preparation.",
-      "ka": "ამ პრეპარატის გადამოწმებული დეტალები."
+      "key": "Name",
+      "en": "Name",
+      "ka": "დასახელება"
     },
     {
-      "key": "This summary reflects the supplied Fortis product dossier, checked against the cited reference sources. Follow the dispensing label and clinician’s instructions.",
-      "en": "This summary reflects the supplied Fortis product dossier, checked against the cited reference sources. Follow the dispensing label and clinician’s instructions.",
-      "ka": "ეს მიმოხილვა ეფუძნება ფორტისის მოწოდებულ პროდუქტის დოსიეს და გადამოწმებულია მითითებულ რეფერენსულ წყაროებთან. დაიცავით გაცემული პრეპარატის ეტიკეტი და ექიმის მითითებები."
+      "key": "Dosage form",
+      "en": "Dosage form",
+      "ka": "წამლის ფორმა"
     },
     {
-      "key": "FORMULATION OVERVIEW",
-      "en": "FORMULATION OVERVIEW",
-      "ka": "ფორმულის მიმოხილვა"
+      "key": "Preparation and route",
+      "en": "Preparation and route",
+      "ka": "მომზადება და მიღების გზა"
     },
     {
-      "key": "USE AND SAFETY",
-      "en": "USE AND SAFETY",
-      "ka": "გამოყენება და უსაფრთხოება"
+      "key": "Medical area",
+      "en": "Medical area",
+      "ka": "მიმართულება"
     },
     {
-      "key": "STORAGE AND HANDLING",
-      "en": "STORAGE AND HANDLING",
-      "ka": "შენახვა და მოპყრობა"
+      "key": "Short description",
+      "en": "Short description",
+      "ka": "მოკლე აღწერა"
+    },
+    {
+      "key": "Name and Composition",
+      "en": "Name and Composition",
+      "ka": "დასახელება და შემადგენლობა"
+    },
+    {
+      "key": "Pharmacological Properties and Mechanism of Action",
+      "en": "Pharmacological Properties and Mechanism of Action",
+      "ka": "ფარმაკოლოგიური თვისებები და მოქმედების მექანიზმი"
+    },
+    {
+      "key": "Indications",
+      "en": "Indications",
+      "ka": "გამოყენების ჩვენებები"
+    },
+    {
+      "key": "Dosage and Administration",
+      "en": "Dosage and Administration",
+      "ka": "დოზირება და მიღების წესი"
+    },
+    {
+      "key": "Side Effects",
+      "en": "Side Effects",
+      "ka": "გვერდითი მოვლენები"
+    },
+    {
+      "key": "Contraindications",
+      "en": "Contraindications",
+      "ka": "უკუჩვენებები"
+    },
+    {
+      "key": "Special Warnings and Precautions",
+      "en": "Special Warnings and Precautions",
+      "ka": "განსაკუთრებული მითითებები"
+    },
+    {
+      "key": "Storage Conditions",
+      "en": "Storage Conditions",
+      "ka": "შენახვის პირობები"
+    },
+    {
+      "key": "Manufacturer",
+      "en": "Manufacturer",
+      "ka": "მწარმოებელი"
     }
   ]
 }
