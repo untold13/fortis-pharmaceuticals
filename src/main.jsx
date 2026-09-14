@@ -44,13 +44,7 @@ function Brand() {
   const { t } = usePreferences();
   return (
     <A href="/" className="brand" aria-label={t("ფორტის ფარმაცევტიკალსის მთავარი გვერდი")}>
-      <span className="brand-icon">
-        <BrandArtwork symbol />
-      </span>
-      <span>
-        <strong>FORTIS</strong>
-        <small>PHARMACEUTICALS</small>
-      </span>
+      <BrandArtwork className="brand-logo" />
     </A>
   );
 }

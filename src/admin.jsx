@@ -78,7 +78,7 @@ function Login({ onLogin, configured, sessionError }) {
   return (
     <main className="admin-login">
       <form onSubmit={submit}>
-        <img src="/fortis-logo.jpeg" alt="ფორტის ფარმაცევტიკალსი" />
+        <img src="/fortis-logo.png" alt="ფორტის ფარმაცევტიკალსი" />
         <h1>შიგთავსის რედაქტორი</h1>
         <p>ვებგვერდის მართვა</p>
         {sessionError && (
@@ -661,7 +661,7 @@ function Admin() {
   return (
     <>
       <header className="admin-header">
-        <img src="/fortis-logo.jpeg" alt="ფორტის ფარმაცევტიკალსი" />
+        <img src="/fortis-logo.png" alt="ფორტის ფარმაცევტიკალსი" />
         <span>{user.username}</span>
         <a href="/" target="_blank" rel="noreferrer">
           ვებგვერდის ნახვა

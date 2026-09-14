@@ -72,31 +72,14 @@ export function BottleArtwork({ label }) {
             stroke="#3e70b7"
             strokeWidth=".65"
           />
-          <g
-            transform="translate(189 278) scale(.45)"
-            fill="none"
-            strokeWidth="6"
-          >
-            <path
-              d="M75 27C33 25 5 34 5 43C12 59 67 64 93 52L111 14M111 14C136 4 104-10 99 5Q99 12 111 14L71 51M122 32Q141 43 131 73"
-              stroke="#3e70b7"
-            />
-            <path
-              d="M131 73Q107 123 65 117Q21 109 7 66Q39 78 62 74"
-              stroke="#e58725"
-            />
-          </g>
-          <text
-            x="220"
-            y="348"
-            textAnchor="middle"
-            fontFamily="Arial, sans-serif"
-            fontSize="24"
-            letterSpacing="5"
-            fill="#14243b"
-          >
-            FORTIS
-          </text>
+          <image
+            href="/fortis-logo.png"
+            x="132"
+            y="290"
+            width="174"
+            height="57"
+            preserveAspectRatio="xMidYMid meet"
+          />
           <path
             d="M162 145Q220 151 276 144 M165 152Q219 158 274 151"
             fill="none"
