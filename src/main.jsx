@@ -651,15 +651,20 @@ function Catalog() {
               </summary>
               <fieldset className="facet-options">
                 <legend className="sr-only">{t(f.label)}</legend>
-                {f.options.map((value) => (
-                  <label key={value}>
-                    <input
-                      type="checkbox"
-                      checked={selected[f.key].includes(value)}
-                      onChange={() => toggle(f.key, value)}
-                    />
-                    <span>{t(value)}</span>
-                  </label>
+                {(f.groups || [{ label: "", options: f.options }]).map((group) => (
+                  <div className="facet-option-group" key={group.label}>
+                    {group.label && <h4>{t(group.label)}</h4>}
+                    {group.options.map((value) => (
+                      <label key={value}>
+                        <input
+                          type="checkbox"
+                          checked={selected[f.key].includes(value)}
+                          onChange={() => toggle(f.key, value)}
+                        />
+                        <span>{t(value)}</span>
+                      </label>
+                    ))}
+                  </div>
                 ))}
                 {f.key === "form" && (
                   <p>

@@ -960,3 +960,7 @@ html[data-theme="dark"] .company-brand {
 @media (max-width: 380px) {
   .brand-logo { width: 110px; }
 }
+
+/* Long lists supplied for the catalogue stay inside the viewport. */
+.facet-options { max-height: min(60vh, 520px); overflow-y: auto; overscroll-behavior: contain; }
+.facet-option-group h4 { margin: 14px 10px 6px; font-size: 13px; line-height: 1.7; color: var(--ink); }
