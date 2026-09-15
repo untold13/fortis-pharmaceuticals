@@ -165,7 +165,7 @@ try {
     true,
   );
   const loaded = await call("load", undefined, cookie);
-  assert.equal(loaded.data.products.length, 29);
+  assert.equal(loaded.data.products.length, readdirSync("content/products").filter((f) => f.endsWith(".json")).length);
   assert.equal(tokenRequests, 1);
   assert.equal(
     (await call("save", { path: "package.json", data: {} }, cookie)).statusCode,
@@ -204,6 +204,7 @@ try {
     changed = {
       ...product,
       manufacturer: "სატესტო მწარმოებელი",
+      facets: { specialty: ["ონკოლოგია", "იმუნოლოგია"], use: ["იმუნიტეტის გაძლიერება და იმუნომოდულაციური თერაპია"], system: ["იმუნური და ონკოლოგიური სისტემა"] },
     };
   r = await call("save", { path, sha: before, data: changed }, cookie);
   assert.equal(r.statusCode, 200);
@@ -212,6 +213,7 @@ try {
     (p) => p.path === path,
   ).data;
   assert.equal(savedProduct.manufacturer, "სატესტო მწარმოებელი");
+  assert.deepEqual(savedProduct.facets, changed.facets);
   assert.equal(
     (await call("save", { path, sha: before, data: product }, cookie))
       .statusCode,
