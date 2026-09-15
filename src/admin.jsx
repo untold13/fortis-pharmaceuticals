@@ -2,6 +2,7 @@ import React, { useEffect, useState, useId } from "react";
 import { createRoot } from "react-dom/client";
 import "@fontsource-variable/noto-sans-georgian";
 import "./admin.css";
+import { ProductFilterFields } from "./product-filter-fields.jsx";
 import { validateContent } from "../lib/cms-validation.js";
 const clone = (value) => structuredClone(value);
 async function api(action, body) {
@@ -233,7 +234,6 @@ function ImageField({ value, onChange, onError }) {
 function ProductEditor({ record, sources, onSave, onCancel, onError }) {
   const [data, setData] = useState(() => clone(record?.data || emptyProduct()));
   const update = (key, value) => setData((d) => ({ ...d, [key]: value }));
-  const filters = data.facets || {};
   return (
     <section className="admin-editor">
       <div className="admin-editor-title">
@@ -313,25 +313,10 @@ function ProductEditor({ record, sources, onSave, onCancel, onError }) {
           multiline={longProductFields.has(key)}
         />
       ))}
-      <h3>კატალოგის ფილტრები</h3>
-      <p className="admin-hint">
-        თითოეული მნიშვნელობა ჩაწერეთ ცალკე ხაზზე.
-      </p>
-      {[
-        ["specialty", "სამედიცინო სპეციალობა"],
-        ["use", "გამოყენების სფერო"],
-        ["system", "ორგანოთა სისტემა"],
-      ].map(([key, label]) => (
-        <Field
-          key={key}
-          label={label}
-          value={(filters[key] || []).join("\n")}
-          multiline
-          onChange={(v) =>
-            update("facets", { ...filters, [key]: v.split("\n") })
-          }
-        />
-      ))}
+      <ProductFilterFields
+        value={data.facets}
+        onChange={(value) => update("facets", value)}
+      />
       <h3>კლინიკური წყაროები</h3>
       <div className="admin-reference-list">
         {sources.map((source) => (

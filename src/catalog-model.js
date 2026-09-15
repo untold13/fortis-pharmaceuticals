@@ -1,21 +1,27 @@
 import { products } from "./products.js";
+import { filterDefinitions, resolveFilterSelections } from "./filter-options.js";
 
 // Separate dimensions come from reviewed, Georgian CMS product records.
 export const catalogProducts = products.map((p) => ({
   ...p,
-  facets: { ...p.facets, strength: [p.strength], form: [p.form] },
+  facets: {
+    ...Object.fromEntries(filterDefinitions.map((f) => [
+      f.key, resolveFilterSelections(f.key, p.facets[f.key]).selected,
+    ])),
+    strength: [p.strength], form: [p.form],
+  },
 }));
 export const facets = [
   { key: "strength", label: "დოზა" },
-  { key: "specialty", label: "სპეციალობა" },
-  { key: "use", label: "გამოყენების სფერო" },
-  { key: "system", label: "ორგანოთა სისტემა" },
+  ...["specialty", "use", "system"].map((key) => {
+    const definition = filterDefinitions.find((f) => f.key === key);
+    return { ...definition, options: definition.groups.flatMap((g) => g.options) };
+  }),
   { key: "form", label: "ფორმა" },
 ].map((f) => ({
   ...f,
-  options: [...new Set(catalogProducts.flatMap((p) => p.facets[f.key]))].sort(
-    (a, b) =>
-      f.key === "strength" ? parseFloat(a) - parseFloat(b) : a.localeCompare(b),
+  options: f.options || [...new Set(catalogProducts.flatMap((p) => p.facets[f.key]))].sort(
+    (a, b) => f.key === "strength" ? parseFloat(a) - parseFloat(b) : a.localeCompare(b),
   ),
 }));
 export const emptyFilters = () =>
