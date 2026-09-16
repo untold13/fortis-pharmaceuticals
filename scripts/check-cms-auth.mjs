@@ -295,6 +295,18 @@ try {
     () => validateContent(path, JSON.parse('{"__proto__":{}}')),
     (e) => e.status === 400,
   );
+  const optionalRefsPath = "content/products/optional-references.json";
+  const optionalRefsProduct = { ...product, slug: "optional-references", published: true, refs: [] };
+  const noRefsSave = await call("save", { path: optionalRefsPath, data: optionalRefsProduct }, cookie);
+  assert.equal(noRefsSave.statusCode, 200, "Published products can be created without references");
+  const noRefsReload = (await call("load", undefined, cookie)).data.products.find((p) => p.path === optionalRefsPath);
+  assert.deepEqual(noRefsReload.data.refs, []);
+  assert.equal(noRefsReload.data.published, true);
+  assert.equal((await call("save", {
+    path: optionalRefsPath,
+    sha: noRefsSave.data.sha,
+    data: { ...optionalRefsProduct, refs: ["missing-reference"] },
+  }, cookie)).statusCode, 400, "Selected references must still exist");
   assert.throws(
     () => validateContent(path, { ...product, context: "obsolete" }),
     (e) => e.status === 400,
