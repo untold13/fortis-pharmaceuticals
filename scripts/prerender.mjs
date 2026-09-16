@@ -15,10 +15,10 @@ const escapeHTML = (text) =>
       ],
   );
 const pages = [
-  ["compounding", "ინდივიდუალური კომპოზიტური ფარმაცია"],
+  ["compounding", "პერსონალური ფარმაცია"],
   ["about", "ჩვენი ისტორია და ლაბორატორია"],
   ["products", "პრეპარატების კატალოგი"],
-  ["contact", "დაუკავშირდით ფორტისს თბილისში"],
+  ["contact", "კონტაქტი"],
   ["editorial", "ინფორმაცია და წყაროები"],
   ["privacy", "კონფიდენციალურობა"],
   ...products.map((p) => [
@@ -39,7 +39,7 @@ for (const [route, title] of pages) {
     `dist/${route}/index.html`,
     pageTemplate.replace(
       /<title>.*?<\/title>/,
-      `<title>${escapeHTML(title)} | ფორტის ფარმაცევტიკალსი</title>`,
+      `<title>${escapeHTML(title)} | ფორტის ფარმაცეუტიკალსი</title>`,
     ),
   );
 }
@@ -47,7 +47,7 @@ await fs.writeFile(
   "dist/404.html",
   withoutHeroPreload.replace(
     /<title>.*?<\/title>/,
-    "<title>გვერდი ვერ მოიძებნა | ფორტის ფარმაცევტიკალსი</title>",
+    "<title>გვერდი ვერ მოიძებნა | ფორტის ფარმაცეუტიკალსი</title>",
   ),
 );
 await fs.writeFile(
