@@ -318,6 +318,9 @@ function ProductEditor({ record, sources, onSave, onCancel, onError }) {
         onChange={(value) => update("facets", value)}
       />
       <h3>კლინიკური წყაროები</h3>
+      <p className="admin-hint">
+        არასავალდებულოა — პრეპარატის შენახვა და გამოქვეყნება წყაროს მონიშვნის გარეშეც შეგიძლიათ.
+      </p>
       <div className="admin-reference-list">
         {sources.map((source) => (
           <Toggle
