@@ -30,10 +30,9 @@ import { BottleArtwork } from "./bottle-art";
 import { ThemeArtwork } from "./theme-art";
 import { facets, emptyFilters, filterProducts } from "./catalog-model";
 import { pageCopy as copy } from "./page-copy";
-import "./page-copy.css";
 const nav = [
   ["/", "მთავარი"],
-  ["/compounding", "პერსონალური ფარმაცია"],
+  ["/compounding", "ქომფაუნდინგი"],
   ["/about", "ჩვენ შესახებ"],
   ["/products", "პროდუქტები"],
   ["/contact", "კონტაქტი"],
@@ -101,7 +100,6 @@ function Header() {
   );
 }
 function PharmacyCall() {
-  const { t } = usePreferences();
   const dialog = useRef(null);
   const closeTimer = useRef(null);
   const previousOverflow = useRef(null);
@@ -149,22 +147,22 @@ function PharmacyCall() {
   };
   return (
     <>
-      <button type="button" className="contact-nav pharmacy-call-trigger" aria-label="დაგვირეკეთ" aria-haspopup="dialog" aria-controls="pharmacy-call" onClick={open}>
-        <span>დაგვირეკეთ</span><Icon type={Phone} />
+      <button type="button" className="contact-nav pharmacy-call-trigger" aria-label="დარეკეთ აფთიაქში" aria-haspopup="dialog" aria-controls="pharmacy-call" onClick={open}>
+        <span>დარეკეთ აფთიაქში</span><Icon type={Phone} />
       </button>
       <dialog ref={dialog} id="pharmacy-call" className="pharmacy-call" aria-labelledby="pharmacy-call-title" aria-describedby="pharmacy-call-description" onKeyDown={keepFocusInside} onCancel={(event) => { event.preventDefault(); close(); }} onClose={restoreScroll} onClick={(event) => { if (event.target === event.currentTarget) close(); }}>
         <div className="pharmacy-call-layout">
           <button type="button" className="pharmacy-call-close" aria-label="ფანჯრის დახურვა" onClick={close} autoFocus><Icon type={X} /></button>
           <div className="pharmacy-call-aside">
             <span className="pharmacy-call-icon"><Icon type={Phone} size={24} /></span>
-            <h2 id="pharmacy-call-title">{t("დამატებითი ინფორმაციისთვის დაგვიკავშირდით")}</h2>
+            <h2 id="pharmacy-call-title">დავიწყოთ საუბრით.</h2>
           </div>
           <div className="pharmacy-call-main">
-            <p id="pharmacy-call-description">{t(copy.contact.paragraphs[0])}</p>
+            <p id="pharmacy-call-description">ჩვენი გუნდი თქვენს კითხვებს უპასუხებს.</p>
             <div className="pharmacy-call-number">032 2 05 31 91</div>
             <p className="pharmacy-call-hours">ყოველდღე · 10:00–20:00</p>
             <div className="pharmacy-call-location"><Icon type={MapPin} /><span>გივი ჟვანიას ქუჩა 9<br />თბილისი, საქართველო</span></div>
-            <a className="pharmacy-call-action" href="tel:+995322053191" aria-label="დარეკვა: 032 2 05 31 91">{t("დაგვირეკეთ")} <Icon type={ArrowUpRight} /></a>
+            <a className="pharmacy-call-action" href="tel:+995322053191" aria-label="დარეკვა: 032 2 05 31 91">დარეკვა <Icon type={ArrowUpRight} /></a>
           </div>
         </div>
       </dialog>
@@ -185,36 +183,52 @@ function Eyebrow({ children }) {
 function Footer() {
   const { t } = usePreferences();
   return (
-    <footer className="approved-footer">
+    <footer>
       <div className="footer-top wrap">
         <div>
           <Brand />
-          <p>{t(copy.brand)}</p>
-          <p>{t(copy.shared.footer)}</p>
-          <p className="pharmacopoeia-note">{t(copy.pharmacopoeiaLabel)}</p>
+          <p>
+            {t("ქომფაუნდინგის აფთიაქი.")}
+            <br />
+            {t("ფარმაკოპეის მიხედვით.")}
+          </p>
         </div>
         <div>
           <small>{t("გაიგეთ მეტი")}</small>
-          <A href="/compounding">{t("პერსონალური ფარმაცია")}</A>
-          <A href="/about">{t("ჩვენ შესახებ")}</A>
-          <A href="/editorial">{t("ინფორმაცია და წყაროები")}</A>
-          <A href="/privacy">{t("კონფიდენციალურობა")}</A>
+          {nav.slice(1, 4).map(([h, n]) => (
+            <A key={h} href={h}>
+              {t(n)}
+            </A>
+          ))}
         </div>
         <div>
-          <small>{t("კონტაქტი")}</small>
-          <A href="/contact">{t(copy.contact.address)}</A>
-          <p>{t("სამუშაო საათები")}<br />{t("ყოველდღე, 10:00–20:00")}</p>
+          <small>{t("გვიპოვეთ")}</small>
+          <A href="/contact">
+            {t("გივი ჟვანიას ქუჩა 9")}
+            <br />
+            {t("თბილისი, საქართველო")}
+          </A>
           <A href="tel:+995322053191">032 2 05 31 91</A>
         </div>
         <div>
           <small>{t("პროფესიონალებისთვის")}</small>
           <A href="https://fortislibrary.com" target="_blank" rel="noreferrer">
-            {t(copy.shared.library)}<Icon type={ArrowUpRight} />
+            {t("ფორტის ფარმაცეუტიკალსის ბიბლიოთეკა ")}
+            <Icon type={ArrowUpRight} />
           </A>
+          <A href="/editorial">{t("ინფორმაცია და წყაროები")}</A>
         </div>
       </div>
       <div className="footer-bottom wrap">
-        <span>© {new Date().getFullYear()} {t(copy.brand)}. {t("ყველა უფლება დაცულია.")}</span>
+        <span>
+          © {new Date().getFullYear()}
+          {t(" ფორტის ფარმაცეუტიკალსი")}
+        </span>
+        <span>
+          {t(
+            "ინდივიდუალურად მომზადებული პრეპარატის გამოყენება სპეციალისტის შეფასებას საჭიროებს.",
+          )}
+        </span>
         <A href="/privacy">{t("კონფიდენციალურობა")}</A>
       </div>
     </footer>
@@ -283,36 +297,29 @@ function Card({ p }) {
     </A>
   );
 }
-function CopyParagraphs({ paragraphs }) {
-  const { t } = usePreferences();
-  return paragraphs.map((paragraph) => <p key={paragraph}>{t(paragraph)}</p>);
-}
-function CopyBlocks({ blocks, heading: Heading = "h2" }) {
-  const { t } = usePreferences();
-  return blocks.map((block) => (
-    <section className="copy-block" key={block.title}>
-      <Heading>{t(block.title)}</Heading>
-      <CopyParagraphs paragraphs={block.paragraphs} />
-    </section>
-  ));
-}
-function PharmacopoeiaNote() {
-  const { t } = usePreferences();
-  return <p className="pharmacopoeia-note">{t(copy.pharmacopoeiaNote)}</p>;
-}
 function Hero() {
   const { t } = usePreferences();
   return (
-    <section className="simple-hero approved-hero">
+    <section className="simple-hero">
       <div className="wrap simple-hero-grid">
         <div className="hero-copy">
-          <Eyebrow>{t(copy.hero.eyebrow)}</Eyebrow>
-          <h1>{t(copy.hero.title)}<span className="hero-subtitle">{t(copy.hero.subtitle)}</span></h1>
-          <CopyParagraphs paragraphs={copy.hero.paragraphs} />
-          <p className="pharmacopoeia-note">{t(copy.pharmacopoeiaLabel)}</p>
+          <Eyebrow>{t("ქომფაუნდინგის აფთიაქი")}</Eyebrow>
+          <h1>
+            {t("თქვენთვის")}
+            <br />
+            {t("მომზადებული.")}
+          </h1>
+          <p>
+            {t(
+              "ინდივიდუალურად მომზადებული მედიკამენტები თბილისში, ექიმის დანიშნულებით და ფარმაკოპეის მიხედვით.",
+            )}
+          </p>
           <div className="hero-actions">
-            <Button href="/products">{t(copy.hero.primary)}</Button>
-            <A href="/compounding" className="text-link">{t(copy.hero.secondary)}<Icon type={ArrowRight} /></A>
+            <Button href="/products">{t("გაეცანით პრეპარატებს")}</Button>
+            <A href="/compounding" className="text-link">
+              {t("ჩვენი მიდგომა ")}
+              <Icon type={ArrowRight} />
+            </A>
           </div>
         </div>
         <div className="hero-artwork">
@@ -325,14 +332,57 @@ function Hero() {
 function Approach() {
   const { t } = usePreferences();
   return (
-    <section className="section wrap approved-benefits" id="approach">
-      <div className="approved-intro">
-        <h2>{t(copy.benefits.title)}</h2>
-        <CopyParagraphs paragraphs={copy.benefits.paragraphs} />
-        <PharmacopoeiaNote />
+    <section className="section wrap approach" id="approach">
+      <h2>
+        {t("ინდივიდუალური საჭიროება.")}
+        <br />
+        {t("პერსონალური მიდგომა.")}
+      </h2>
+      <div className="approach-content">
+        <div>
+          <p className="lead">
+            {t(
+              "პაციენტს შესაძლოა განსხვავებული დოზა, წამლის ფორმა ან შემადგენლობა სჭირდებოდეს. პერსონალური ფარმაცია ამ საჭიროებებს ითვალისწინებს, ფარმაკოპეის მიხედვით.",
+            )}
+          </p>
+          <p>
+            {t(
+              "ფორტის ფარმაცეუტიკალსში თითოეულ ფორმულას ექიმის დანიშნულებისა და ფარმაცევტის შეფასების საფუძველზე ვამზადებთ.",
+            )}
+          </p>
+          <A href="/compounding" className="text-link">
+            {t("პერსონალური ფარმაციის შესახებ ")}
+            <Icon type={ArrowUpRight} />
+          </A>
+        </div>
+        <div className="approach-items">
+          {[
+            [
+              SlidersHorizontal,
+              "ინდივიდუალური დოზა",
+              "მომზადება ექიმის მიერ განსაზღვრული დოზით.",
+            ],
+            [
+              FlaskConical,
+              "შესაფერისი წამლის ფორმა",
+              "ფორმის შერჩევა მიღების თავისებურებების გათვალისწინებით.",
+            ],
+            [
+              ShieldCheck,
+              "შერჩეული შემადგენლობა",
+              "ინგრედიენტების შეფასება პაციენტის საჭიროებების მიხედვით.",
+            ],
+          ].map(([I, h, b]) => (
+            <div key={h}>
+              <Icon type={I} size={26} />
+              <div>
+                <h3>{t(h)}</h3>
+                <p>{t(b)}</p>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
-      <div className="approved-copy-grid"><CopyBlocks blocks={copy.benefits.blocks} heading="h3" /></div>
-      <A href="/compounding" className="text-link">{t(copy.benefits.button)}<Icon type={ArrowUpRight} /></A>
     </section>
   );
 }
@@ -368,38 +418,81 @@ function Featured() {
 function PreparationGuide() {
   const { t } = usePreferences();
   return (
-    <section className="section wrap preparation-guide approved-process" id="preparation">
-      <div className="approved-intro">
-        <h2>{t(copy.process.title)}</h2>
-        <CopyParagraphs paragraphs={copy.process.paragraphs} />
+    <section className="section wrap preparation-guide">
+      <div className="preparation-guide-intro">
+        <h2>{t("ყველაფერი დანიშნულებით იწყება.")}</h2>
+        <p>
+          {t(
+            "ფარმაცევტი განიხილავს დანიშნულებას, განსაზღვრავს ფორმულას და აზუსტებს მომზადების დეტალებს.",
+          )}
+        </p>
       </div>
-      <ol className="approved-process-list">
-        {copy.process.blocks.map((block, index) => (
-          <li key={block.title}>
-            <span className="process-number" aria-hidden="true">{String(index + 1).padStart(2, "0")}</span>
-            <div><h3>{t(block.title)}</h3><CopyParagraphs paragraphs={block.paragraphs} /></div>
-          </li>
-        ))}
-      </ol>
-      <A href="/contact" className="text-link">{t(copy.contactButton)}<Icon type={ArrowRight} /></A>
+      <dl className="preparation-guide-topics">
+        <div>
+          <dt>{t("დანიშნულება და ფორმულა")}</dt>
+          <dd>
+            {t(
+              "ექიმი და ფარმაცევტი განსაზღვრავენ მოქმედ ნივთიერებას, დოზას, წამლის ფორმასა და საჭირო რაოდენობას.",
+            )}
+          </dd>
+        </div>
+        <div>
+          <dt>{t("მომზადება და შემოწმება")}</dt>
+          <dd>
+            {t(
+              "მედიკამენტი მზადდება ლაბორატორიაში. გაცემამდე მოწმდება დანიშნულებასთან შესაბამისობა, შეფუთვა და ეტიკეტი.",
+            )}
+          </dd>
+        </div>
+        <div>
+          <dt>{t("გაცემისა და გამოყენების შესახებ")}</dt>
+          <dd>
+            {t(
+              "ფარმაცევტი განმარტავს მიღების წესს, შენახვის პირობებსა და გამოყენების ვადას.",
+            )}
+          </dd>
+        </div>
+      </dl>
+      <A href="/compounding" className="text-link">
+        {t("მომზადების ეტაპები")}
+        <Icon type={ArrowRight} />
+      </A>
     </section>
   );
 }
 function LabTeaser() {
   const { t } = usePreferences();
   return (
-    <section className="section wrap company-overview approved-company">
-      <Eyebrow>{t("ჩვენ შესახებ")}</Eyebrow>
-      <h2>{t(copy.about.title)}</h2>
+    <section className="section wrap company-overview">
+      <Eyebrow>{t("ჩვენი ისტორია და ლაბორატორია")}</Eyebrow>
+      <h2>
+        {t("მზადდება თბილისში.")}
+        <br />
+        {t("თქვენი საჭიროებისთვის.")}
+      </h2>
       <div className="company-overview-body">
-        <div><CopyParagraphs paragraphs={copy.about.paragraphs} /><PharmacopoeiaNote /></div>
+        <p>
+          {t(
+            "ფორტის ფარმაცეუტიკალსი პაციენტებისა და ექიმების საჭიროებების საპასუხოდ შეიქმნა. ჩვენი მიმართულებაა პერსონალური ფარმაცია, ფარმაკოპეის მიხედვით.",
+          )}
+        </p>
         <div>
-          <h3>{t("ლაბორატორია და ხარისხი")}</h3>
-          <p>{t(copy.laboratory.paragraphs[0])}</p>
-          <A href="/about#laboratory" className="text-link">{t(copy.about.button)}<Icon type={ArrowUpRight} /></A>
+          <h3>{t("ჩვენი ლაბორატორია")}</h3>
+          <p>
+            {t(
+              "მედიკამენტებს ადგილზე ვამზადებთ. აქტიური ფარმაცევტული ნივთიერებები შემოგვაქვს ევროპიდან და ამერიკიდან.",
+            )}
+          </p>
+          <A href="/about" className="text-link">
+            {t("გაიგეთ მეტი ჩვენ შესახებ ")}
+            <Icon type={ArrowUpRight} />
+          </A>
         </div>
       </div>
-      <BrandArtwork className="company-brand" label={t("ფორტის ფარმაცეუტიკალსი / ქომფაუნდინგის აფთიაქი")} />
+      <BrandArtwork
+        className="company-brand"
+        label="ფორტის ფარმაცეუტიკალსი / ქომფაუნდინგის აფთიაქი"
+      />
     </section>
   );
 }
@@ -430,10 +523,16 @@ function ExtraContent() {
 function ContactBand() {
   const { t } = usePreferences();
   return (
-    <section className="contact-band approved-contact-band">
+    <section className="contact-band">
       <div className="wrap">
-        <div><h2>{t(copy.shared.title)}</h2><p>{t(copy.shared.description)}</p></div>
-        <Button href="/contact">{t(copy.contactButton)}</Button>
+        <div>
+          <h2>
+            {t("გაქვთ კითხვა")}
+            <br />
+            {t("ინდივიდუალურ მომზადებაზე?")}
+          </h2>
+        </div>
+        <Button href="/contact">{t("დაგვიკავშირდით")}</Button>
       </div>
     </section>
   );
@@ -757,12 +856,77 @@ function Compounding() {
   const { t } = usePreferences();
   return (
     <>
-      <div className="approved-page-intro"><PageIntro eyebrow="პერსონალური ფარმაცია" title={t(copy.compounding.title)} /></div>
-      <div className="wrap editorial-layout approved-editorial">
-        <aside><Eyebrow>{t("პერსონალური ფარმაცია")}</Eyebrow><PharmacopoeiaNote /><Icon type={FlaskConical} size={64} /></aside>
+      <PageIntro
+        eyebrow={t("ქომფაუნდინგის აფთიაქი")}
+        title={
+          <>
+            {t("თქვენი საჭიროებით.")}
+            <br />
+            <em>{t("ექიმის დანიშნულებით.")}</em>
+          </>
+        }
+        description={t(
+          "პერსონალური ფარმაცია, ფარმაკოპეის მიხედვით: ინდივიდუალურად მომზადებული მედიკამენტები შესაბამისი დოზით, ფორმითა და შემადგენლობით.",
+        )}
+      />
+      <div className="wrap editorial-layout">
+        <aside>
+          <span className="georgian">მაგისტრალური რეცეპტი</span>
+          <p>{t("ფარმაკოპეის მიხედვით")}</p>
+          <div className="aside-icon">
+            <Icon type={FlaskConical} size={84} />
+          </div>
+        </aside>
         <article>
-          <CopyParagraphs paragraphs={copy.compounding.paragraphs} />
-          <h2>{t(copy.compounding.faqTitle)}</h2>
+          <h2>{t("დანიშნულებიდან მედიკამენტამდე.")}</h2>
+          <p>
+            {t(
+              "როდესაც მზა პრეპარატი საჭირო დოზით ან ფორმით ხელმისაწვდომი არ არის, ექიმი და ფარმაცევტი ინდივიდუალური მომზადების შესაძლებლობას განიხილავენ.",
+            )}
+          </p>
+          <p>
+            {t(
+              "ფორტის ფარმაცეუტიკალსში მედიკამენტები ადგილზე მზადდება, ევროპიდან და ამერიკიდან მიღებული აქტიური ნივთიერებებით.",
+            )}
+          </p>
+          <div className="steps">
+            {[
+              [
+                "01",
+                "დანიშნულების განხილვა",
+                "ფარმაცევტი ეცნობა დანიშნულებას და პაციენტის საჭიროებებს. დეტალები საჭიროებისამებრ ზუსტდება ექიმთან.",
+              ],
+              [
+                "02",
+                "ფორმულის განსაზღვრა",
+                "განისაზღვრება შემადგენლობა, მომზადების მეთოდი, შენახვის პირობები და მომზადების დრო.",
+              ],
+              [
+                "03",
+                "მომზადება ლაბორატორიაში",
+                "ინგრედიენტები ზუსტად იზომება და მუშავდება განსაზღვრული ფორმულისა და ტექნოლოგიური პროცესის მიხედვით.",
+              ],
+              [
+                "04",
+                "შემოწმება და შეფუთვა",
+                "მოწმდება დანიშნულებასთან შესაბამისობა, რაოდენობა, შეფუთვა და ეტიკეტის ინფორმაცია.",
+              ],
+              [
+                "05",
+                "გაცემისა და გამოყენების შესახებ",
+                "ფარმაცევტი განმარტავს მიღების წესს, შენახვის პირობებსა და გამოყენების ვადას.",
+              ],
+            ].map(([n, h, p]) => (
+              <div key={n}>
+                <span>{t(n)}</span>
+                <div>
+                  <h3>{t(h)}</h3>
+                  <p>{t(p)}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+          <h2>{t("ხშირად დასმული კითხვები.")}</h2>
           <FAQ />
         </article>
       </div>
@@ -774,21 +938,85 @@ function About() {
   const { t } = usePreferences();
   return (
     <>
-      <div className="approved-page-intro"><PageIntro eyebrow="ჩვენ შესახებ" title={t(copy.about.title)} /></div>
-      <section className="wrap editorial-layout approved-editorial">
-        <aside><Eyebrow>{t("პერსონალური ფარმაცია")}</Eyebrow><PharmacopoeiaNote /><BrandArtwork className="company-brand" /></aside>
+      <PageIntro
+        eyebrow={t("ჩვენ შესახებ")}
+        title={
+          <>
+            {t("შექმნილია თბილისში.")}
+            <br />
+            <em>{t("თქვენი საჭიროებისთვის.")}</em>
+          </>
+        }
+        description={t(
+          "ფორტის ფარმაცეუტიკალსი: ქომფაუნდინგის აფთიაქი, რომელიც პაციენტის, ექიმისა და ფარმაცევტის თანამშრომლობას ეფუძნება.",
+        )}
+      />
+      <section className="wrap editorial-layout">
+        <aside>
+          <Eyebrow>{t("ჩვენი მიზანი")}</Eyebrow>
+          <h2>
+            {t("ინდივიდუალურად")}
+            <br />
+            {t("მომზადებული მედიკამენტები.")}
+          </h2>
+          <p className="georgian">
+            {t("ფორტის ფარმაცეუტიკალსი")}
+            <br />
+            {t("ქომფაუნდინგის აფთიაქი")}
+          </p>
+        </aside>
         <article>
-          <CopyParagraphs paragraphs={copy.about.paragraphs} />
-          <CopyBlocks blocks={copy.about.blocks} />
-          <A href="#laboratory" className="text-link">{t(copy.about.button)}<Icon type={ArrowRight} /></A>
-        </article>
-      </section>
-      <section className="wrap editorial-layout approved-editorial approved-laboratory" id="laboratory">
-        <aside><Eyebrow>{t("ლაბორატორია და ხარისხი")}</Eyebrow><Icon type={Microscope} size={64} /></aside>
-        <article>
-          <h2>{t(copy.laboratory.title)}</h2>
-          <CopyParagraphs paragraphs={copy.laboratory.paragraphs} />
-          <CopyBlocks blocks={copy.laboratory.blocks} heading="h3" />
+          <h2>{t("ჩვენი შექმნის იდეა")}</h2>
+          <p>
+            {t(
+              "ფორტის ფარმაცეუტიკალსი პაციენტებისა და ექიმების საჭიროებების საპასუხოდ შეიქმნა. მედიკამენტებს ვამზადებთ მაგისტრალური და ოფიცინალური რეცეპტებით, ევროპული და ამერიკული ქომფაუნდინგის გამოცდილების გათვალისწინებით.",
+            )}
+          </p>
+          <p>
+            {t(
+              "ჩვენი მიზანია, დავეხმაროთ პაციენტს, რომელსაც განსხვავებული დოზა, წამლის ფორმა ან შემადგენლობა სჭირდება. მომზადების შესაძლებლობას ექიმსა და ფარმაცევტთან ერთად განვიხილავთ.",
+            )}
+          </p>
+          <blockquote lang="ka">{t("პერსონალური ფარმაცია, ფარმაკოპეის მიხედვით. ინდივიდუალურად მომზადებული მედიკამენტები თქვენი საჭიროებისთვის.")}</blockquote>
+          <h2 id="laboratory">{t("ჩვენი ლაბორატორია")}</h2>
+          <p>
+            {t(
+              "მედიკამენტები ადგილზე მზადდება. სამუშაო გარემო, აღჭურვილობა და მომზადების მეთოდი შეირჩევა კონკრეტული ფორმულისა და წამლის ფორმის შესაბამისად.",
+            )}
+          </p>
+          <div className="quality-grid">
+            {[
+              [
+                FlaskConical,
+                "მომზადება",
+                "ინგრედიენტების ზუსტი გაზომვა და განსაზღვრული ფორმულით მომზადება.",
+              ],
+              [
+                Microscope,
+                "სამუშაო გარემო",
+                "ჰიგიენისა და შესაბამისი სამუშაო პირობების დაცვა.",
+              ],
+              [
+                ShieldCheck,
+                "შემოწმება",
+                "დანიშნულებასთან შესაბამისობის, შეფუთვისა და ეტიკეტის გადამოწმება.",
+              ],
+            ].map(([I, h, b]) => (
+              <div key={h}>
+                <Icon type={I} size={30} />
+                <h3>{t(h)}</h3>
+                <p>{t(b)}</p>
+              </div>
+            ))}
+          </div>
+          <h2>{t("ფარმაკოპეის მიხედვით")}</h2>
+          <p>{t("ფარმაკოპეა ადგენს მედიკამენტებისა და მათი ინგრედიენტების ხარისხის მოთხოვნებს. მომზადებისას ვხელმძღვანელობთ მოქმედი და დამხმარე ნივთიერებებისა და წამლის ფორმის შესაბამისი მოთხოვნებით.")}</p>
+          <p>{t("ინდივიდუალური ფორმულა განიხილება ექიმის დანიშნულებასთან ერთად. მომზადების პროცესი და გაცემისთვის საჭირო ინფორმაცია დოკუმენტირდება.")}</p>
+          <p className="quiet-note">
+            {t(
+              "შენახვის პირობები და გამოყენების ვადა განისაზღვრება კონკრეტული ფორმულისთვის.",
+            )}
+          </p>
         </article>
       </section>
       <ContactBand />
@@ -799,31 +1027,84 @@ function Contact() {
   const { t } = usePreferences();
   return (
     <>
-      <div className="approved-page-intro"><PageIntro eyebrow="კონტაქტი" title={t(copy.contact.title)} description={copy.contact.paragraphs[0]} /></div>
-      <section className="wrap contact-layout approved-contact">
+      <PageIntro
+        eyebrow={t("დაგვიკავშირდით")}
+        title={
+          <>
+            {t("დავიწყოთ საუბრით.")}
+            <br />
+            <em>{t("განვიხილოთ თქვენი საჭიროება.")}</em>
+          </>
+        }
+        description={t(
+          "მომზადების, ხელმისაწვდომობისა და პროფესიული თანამშრომლობის შესახებ ინფორმაციისთვის დაუკავშირდით ჩვენს გუნდს.",
+        )}
+      />
+      <section className="wrap contact-layout">
         <div>
-          <p>{t(copy.contact.paragraphs[1])}</p>
           <A className="contact-option" href="tel:+995322053191">
             <Icon type={Phone} size={30} />
-            <div><small>{t("ტელეფონი")}</small><h2>032 2 05 31 91</h2><span>{t("დაგვირეკეთ")}<Icon type={ArrowUpRight} /></span></div>
+            <div>
+              <small>{t("დარეკეთ აფთიაქში")}</small>
+              <h2>032 2 05 31 91</h2>
+              <span>
+                {t("ესაუბრეთ ჩვენს გუნდს ")}
+                <Icon type={ArrowUpRight} />
+              </span>
+            </div>
           </A>
           <div className="contact-option">
             <Icon type={MapPin} size={30} />
             <div>
-              <h2>{t("სად მდებარეობს აფთიაქი?")}</h2>
-              <p>{t(copy.contact.address)}<br />{t(copy.contact.formerAddress)}</p>
-              <A className="text-link" href="https://www.google.com/maps/search/?api=1&query=9+Givi+Zhvania+Street+Tbilisi" target="_blank" rel="noreferrer">{t("ნახეთ რუკაზე")}<Icon type={ArrowUpRight} /></A>
+              <small>{t("გვეწვიეთ აფთიაქში")}</small>
+              <h2>{t("გივი ჟვანიას ქუჩა 9")}</h2>
+              <p>{t("თბილისი, საქართველო. ყოფილი ლუბლიანას ქუჩა №31.")}</p>
+              <A
+                className="text-link"
+                href="https://www.google.com/maps/search/?api=1&query=9+Givi+Zhvania+Street+Tbilisi"
+                target="_blank"
+                rel="noreferrer"
+              >
+                {t("მარშრუტის ნახვა ")}
+                <Icon type={ArrowUpRight} />
+              </A>
             </div>
           </div>
-          <div className="contact-option"><div><h2>{t("სამუშაო საათები")}</h2><p>{t(copy.contact.hours)}</p></div></div>
+          <p className="quiet-note">
+            {t(
+              "სამუშაო საათები: ყოველდღე, 10:00–20:00, შაბათ-კვირის ჩათვლით.",
+            )}
+          </p>
         </div>
         <div className="contact-panel">
-          <h2>{t(copy.contact.patientsTitle)}</h2>
-          <p>{t(copy.contact.patientsIntro)}</p>
-          <ul>{copy.contact.patientTopics.map((topic) => <li key={topic}>{t(topic)}</li>)}</ul>
-          <h2>{t(copy.contact.professionalsTitle)}</h2>
-          <CopyParagraphs paragraphs={copy.contact.professionals} />
-          <div className="contact-resource"><Icon type={BookOpen} /><A href="https://fortislibrary.com" target="_blank" rel="noreferrer">{t(copy.shared.library)}<Icon type={ArrowUpRight} /></A></div>
+          <Eyebrow>{t("პაციენტებისა და პროფესიონალებისთვის")}</Eyebrow>
+          <h2>
+            {t("ერთად განვიხილოთ")}
+            <br />
+            {t("თქვენი საჭიროებები.")}
+          </h2>
+          <p>
+            {t(
+              "ფარმაცევტი განიხილავს თქვენს დანიშნულებას და აგიხსნით მომზადების შესაძლებლობასა და შემდეგ ნაბიჯებს.",
+            )}
+          </p>
+          <ul>
+            <li>{t("კითხვები ინდივიდუალური ფორმულის შესახებ")}</li>
+            <li>{t("კითხვები აქტიურ და დამხმარე ნივთიერებებზე")}</li>
+            <li>{t("პროდუქტებისა და დოზების ხელმისაწვდომობა")}</li>
+            <li>{t("პროფესიული თანამშრომლობა")}</li>
+          </ul>
+          <div className="contact-resource">
+            <Icon type={BookOpen} />
+            <A
+              href="https://fortislibrary.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {t("ფორტის ფარმაცეუტიკალსის ბიბლიოთეკა ")}
+              <Icon type={ArrowUpRight} />
+            </A>
+          </div>
         </div>
       </section>
     </>
@@ -833,11 +1114,41 @@ function Editorial() {
   const { t } = usePreferences();
   return (
     <>
-      <div className="approved-page-intro"><PageIntro eyebrow="ინფორმაცია და წყაროები" title={t(copy.editorial.title)} /></div>
-      <article className="wrap text-page approved-text-page">
-        <CopyParagraphs paragraphs={copy.editorial.paragraphs} />
-        <PharmacopoeiaNote />
-        <CopyBlocks blocks={copy.editorial.blocks} />
+      <PageIntro
+        eyebrow={t("ინფორმაცია და წყაროები")}
+        title={t("ინფორმაცია და მისი გამოყენება.")}
+      />
+      <article className="wrap text-page">
+        <h2>{t("სამედიცინო წყაროები")}</h2>
+        <p>
+          {t(
+            "მოქმედი ნივთიერებების შესახებ ინფორმაციისთვის ვიყენებთ FDA-ს, EMA-ს, JAMA Dermatology-სა და Pain Reports-ის მასალებს. სადაც წყარო მითითებულია, ბმულზე გაეცნობით ორიგინალ დოკუმენტს ან კვლევას.",
+          )}
+        </p>
+        <h2>{t("ინდივიდუალური ფორმულის მნიშვნელობა")}</h2>
+        <p>
+          {t(
+            "კვლევის შედეგი ან სხვა პრეპარატის დამტკიცება ავტომატურად არ ადასტურებს ინდივიდუალურად მომზადებული ფორმულის იმავე ეფექტურობას, უსაფრთხოებას, დამტკიცებას ან ურთიერთჩანაცვლებადობას. მნიშვნელობა აქვს დოზას, ფორმას, შემადგენლობასა და მომზადების მეთოდს.",
+          )}
+        </p>
+        <h2>{t("შეფუთვის გამოსახულებები")}</h2>
+        <p>
+          {t(
+            "შეფუთვის გამოსახულებები საილუსტრაციოა. მიღების, შენახვისა და გამოყენების ვადის შესახებ იხელმძღვანელეთ თქვენთვის გაცემული ეტიკეტითა და ექიმის ან ფარმაცევტის მითითებებით.",
+          )}
+        </p>
+        <h2>{t("ინფორმაციის განახლება")}</h2>
+        <p>
+          {t(
+            "წყაროს გაცნობისას გაითვალისწინეთ თარიღი და ვერსია. საარქივო დოკუმენტი შესაძლოა უახლეს ინფორმაციას არ ასახავდეს. კლინიკური ტექსტის განახლება პროფესიულ გადამოწმებას საჭიროებს.",
+          )}
+        </p>
+        <h2>{t("ინფორმაცია კომპანიის შესახებ")}</h2>
+        <p>
+          {t(
+            "აფთიაქის ისტორიისა და ლაბორატორიის შესახებ მასალები წარმოდგენილია ფორტის ფარმაცეუტიკალსის მიერ. ეს აღწერა დამოუკიდებელ აუდიტს ან სერტიფიცირების დადასტურებას არ წარმოადგენს.",
+          )}
+        </p>
       </article>
     </>
   );
@@ -846,11 +1157,33 @@ function Privacy() {
   const { t } = usePreferences();
   return (
     <>
-      <div className="approved-page-intro"><PageIntro eyebrow="კონფიდენციალურობა" title={t(copy.privacy.title)} /></div>
-      <article className="wrap text-page approved-text-page">
-        <CopyParagraphs paragraphs={copy.privacy.paragraphs} />
-        <CopyBlocks blocks={copy.privacy.blocks} />
-        <A href="tel:+995322053191" className="text-link">{t("დაგვირეკეთ")}<Icon type={Phone} /></A>
+      <PageIntro
+        eyebrow={t("კონფიდენციალურობა")}
+        title={t("თქვენი მონაცემების შესახებ.")}
+      />
+      <article className="wrap text-page">
+        <p>
+          {t(
+            "ვებსაიტი საინფორმაციოა. მას არ აქვს ონლაინ გადახდა, პაციენტის რეგისტრაცია, მონაცემების ფორმა ან სამედიცინო ჩანაწერების ატვირთვის ფუნქცია.",
+          )}
+        </p>
+        <p>
+          {t(
+            "ვებსაიტზე არ არის სარეკლამო თვალთვალის ან ანალიტიკის სკრიპტები. ჰოსტინგის მომწოდებელმა მუშაობისა და უსაფრთხოებისთვის შეიძლება დაამუშაოს ტექნიკური ჩანაწერები. გარე რესურსებზე მოქმედებს მათი კონფიდენციალურობის პოლიტიკა.",
+          )}
+        </p>
+        <p>
+          {t(
+            "არჩეული ფერის რეჟიმი მხოლოდ თქვენს ბრაუზერში ინახება. ეს პარამეტრი ჯანმრთელობის შესახებ ინფორმაციას არ შეიცავს.",
+          )}
+        </p>
+        <p>
+          {t("აფთიაქთან დასაკავშირებლად დარეკეთ:")}{" "}
+          <A href="tel:+995322053191">032 2 05 31 91</A>
+          {t(
+            ". კონფიდენციალური ინფორმაციის გაზიარების გზა წინასწარ შეათანხმეთ ჩვენს გუნდთან.",
+          )}
+        </p>
       </article>
     </>
   );
