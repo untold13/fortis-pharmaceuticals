@@ -1,0 +1,233 @@
+/* Layout adjustments for the approved, longer Georgian copy. */
+.approved-hero .hero-copy,
+.approved-page-intro .page-intro,
+.approved-intro,
+.approved-editorial article,
+.approved-contact > div,
+.approved-contact-band .wrap > div,
+.approved-footer .footer-top > div {
+  min-width: 0;
+}
+.approved-hero .hero-copy h1 {
+  font-size: clamp(32px, 3.35vw, 48px);
+  line-height: 1.3;
+  letter-spacing: -0.8px;
+  overflow-wrap: anywhere;
+}
+.approved-hero .hero-subtitle {
+  display: block;
+  margin-top: 18px;
+  font-size: 0.64em;
+  line-height: 1.45;
+  letter-spacing: 0;
+}
+.approved-hero .hero-copy > p {
+  font-size: 16px;
+  line-height: 1.85;
+  max-width: 650px;
+}
+.approved-hero .hero-actions {
+  flex-wrap: wrap;
+}
+.approved-hero .eyebrow {
+  line-height: 1.8;
+  letter-spacing: 0.3px;
+}
+.pharmacopoeia-note {
+  font-size: 14px;
+  font-weight: 550;
+  line-height: 1.85;
+  margin-top: 22px;
+}
+.approved-hero .hero-copy > .pharmacopoeia-note {
+  font-size: 14px;
+  margin-block: 18px;
+}
+.approved-intro {
+  max-width: 860px;
+}
+.approved-intro h2,
+.approved-company > h2,
+.approved-contact-band h2 {
+  font-size: clamp(28px, 3vw, 42px);
+  line-height: 1.4;
+  letter-spacing: -0.5px;
+  overflow-wrap: anywhere;
+}
+.approved-intro p,
+.approved-copy-grid p,
+.approved-process-list p,
+.approved-editorial p,
+.approved-company p,
+.approved-text-page p {
+  font-size: 16px;
+  line-height: 1.9;
+  margin-block: 18px;
+}
+.approved-copy-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 42px 60px;
+  margin-block: 45px 32px;
+}
+.approved-copy-grid .copy-block {
+  border-top: 1px solid var(--line);
+  padding-top: 24px;
+}
+.approved-copy-grid h3,
+.approved-process-list h3,
+.approved-editorial .copy-block h3 {
+  font-size: 22px;
+  line-height: 1.55;
+  letter-spacing: 0;
+}
+.approved-process-list {
+  padding: 0;
+  margin-block: 44px 30px;
+  list-style: none;
+  max-width: 1000px;
+}
+.approved-process-list li {
+  display: grid;
+  grid-template-columns: 45px minmax(0, 1fr);
+  gap: 24px;
+  border-top: 1px solid var(--line);
+  padding-block: 28px;
+}
+.process-number {
+  color: var(--muted);
+  font-size: 15px;
+  padding-top: 5px;
+}
+.approved-page-intro .page-intro h1 {
+  font-size: clamp(32px, 3.8vw, 54px);
+  line-height: 1.4;
+  max-width: 1080px;
+  overflow-wrap: anywhere;
+}
+.approved-page-intro .page-intro p {
+  max-width: 850px;
+  line-height: 1.85;
+}
+.approved-editorial {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  gap: 65px;
+}
+.approved-editorial article h2 {
+  line-height: 1.5;
+}
+.approved-editorial .copy-block {
+  margin-top: 36px;
+}
+.approved-editorial aside > svg {
+  margin-top: 32px;
+}
+.approved-editorial .faq summary {
+  font-size: 17px;
+  line-height: 1.75;
+}
+.approved-editorial .faq summary svg {
+  flex-shrink: 0;
+}
+.approved-laboratory {
+  scroll-margin-top: 105px;
+}
+.approved-company .company-overview-body {
+  margin-top: 30px;
+}
+.approved-contact h2 {
+  line-height: 1.55;
+}
+.approved-contact .contact-panel h2:not(:first-child) {
+  margin-top: 36px;
+}
+.approved-contact .contact-panel p,
+.approved-contact .contact-panel li {
+  font-size: 15px;
+  line-height: 1.9;
+}
+.approved-contact .contact-panel li {
+  margin-bottom: 12px;
+}
+.approved-contact-band .wrap {
+  gap: 45px;
+}
+.approved-contact-band .wrap > div {
+  flex: 1;
+}
+.approved-contact-band p {
+  font-size: 16px;
+  line-height: 1.85;
+  max-width: 750px;
+  margin-top: 24px;
+}
+.approved-contact-band .button {
+  flex: 0 1 325px;
+  min-width: 240px;
+  white-space: normal;
+  line-height: 1.7;
+}
+.approved-footer .footer-top p,
+.approved-footer .footer-top a:not(.brand) {
+  line-height: 1.9;
+  overflow-wrap: anywhere;
+}
+.approved-footer .footer-top p {
+  max-width: 370px;
+  font-size: 13px;
+}
+@media (max-width: 900px) {
+  .approved-editorial {
+    gap: 35px;
+  }
+  .approved-contact-band .wrap {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .approved-contact-band .button {
+    flex: initial;
+    max-width: 100%;
+  }
+}
+@media (max-width: 700px) {
+  .approved-copy-grid,
+  .approved-editorial {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
+  }
+  .approved-hero .hero-copy h1 {
+    font-size: clamp(27px, 7vw, 36px);
+    line-height: 1.4;
+  }
+  .approved-hero .hero-actions > * {
+    max-width: 100%;
+    white-space: normal;
+    line-height: 1.7;
+  }
+  .approved-intro p,
+  .approved-copy-grid p,
+  .approved-process-list p,
+  .approved-editorial p,
+  .approved-company p,
+  .approved-text-page p {
+    font-size: 15px;
+  }
+  .approved-copy-grid h3,
+  .approved-process-list h3,
+  .approved-editorial .copy-block h3 {
+    font-size: 20px;
+  }
+  .approved-process-list li {
+    grid-template-columns: 26px minmax(0, 1fr);
+    gap: 14px;
+  }
+  .approved-contact .contact-panel {
+    padding: 26px;
+  }
+  .approved-contact .contact-panel h2 {
+    font-size: 27px;
+  }
+  .approved-contact-band .button {
+    min-width: 0;
+  }
+}
