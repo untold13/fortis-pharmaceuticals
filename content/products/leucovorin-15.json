@@ -4,16 +4,20 @@
   "strength": "15 მგ",
   "pack": 30,
   "packUnit": "ტაბლეტი",
-  "published": false,
+  "published": true,
   "featured": false,
   "order": 59,
-  "refs": [],
+  "refs": [
+    "butyrate_ema"
+  ],
   "facets": {
     "specialty": [
       "ონკოლოგია",
       "ჰემატოლოგია"
     ],
-    "use": [],
+    "use": [
+      "ოსტეოპოროზის პრევენცია და ძვლების სიმტკიცე"
+    ],
     "system": [
       "იმუნური და ონკოლოგიური სისტემა"
     ]
