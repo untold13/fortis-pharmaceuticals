@@ -1,0 +1,30 @@
+{
+  "slug": "proctiva-200ml",
+  "name": "Proctiva — 200 მლ",
+  "strength": "aaa",
+  "pack": 1,
+  "packUnit": "ერთეული",
+  "form": "aaa",
+  "image": "/products/fortis-logo-placeholder.png",
+  "published": false,
+  "featured": false,
+  "order": 119,
+  "refs": [],
+  "facets": {
+    "specialty": [],
+    "use": [],
+    "system": []
+  },
+  "preparation": "aaa",
+  "category": "aaa",
+  "tag": "aaa",
+  "nameComposition": "aaa",
+  "pharmacology": "aaa",
+  "indications": "aaa",
+  "dosageAdministration": "aaa",
+  "sideEffects": "aaa",
+  "contraindications": "aaa",
+  "warningsPrecautions": "aaa",
+  "storageConditions": "aaa",
+  "manufacturer": "aaa"
+}

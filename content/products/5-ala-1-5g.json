@@ -1,0 +1,30 @@
+{
+  "slug": "5-ala-1-5g",
+  "name": "5-ALA (5-ამინოლევულინის მჟავა)",
+  "strength": "1.5 გ",
+  "pack": 1,
+  "packUnit": "ერთეული",
+  "form": "aaa",
+  "image": "/products/fortis-logo-placeholder.png",
+  "published": false,
+  "featured": false,
+  "order": 104,
+  "refs": [],
+  "facets": {
+    "specialty": [],
+    "use": [],
+    "system": []
+  },
+  "preparation": "aaa",
+  "category": "aaa",
+  "tag": "aaa",
+  "nameComposition": "aaa",
+  "pharmacology": "aaa",
+  "indications": "aaa",
+  "dosageAdministration": "aaa",
+  "sideEffects": "aaa",
+  "contraindications": "aaa",
+  "warningsPrecautions": "aaa",
+  "storageConditions": "aaa",
+  "manufacturer": "aaa"
+}

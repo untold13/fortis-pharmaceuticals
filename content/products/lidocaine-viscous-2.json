@@ -1,0 +1,30 @@
+{
+  "slug": "lidocaine-viscous-2",
+  "name": "ლიდოკაინი — ბლანტი ადგილობრივი ხსნარი",
+  "strength": "2%",
+  "pack": 1,
+  "packUnit": "ერთეული",
+  "form": "ბლანტი ადგილობრივი ხსნარი",
+  "image": "/products/fortis-logo-placeholder.png",
+  "published": false,
+  "featured": false,
+  "order": 112,
+  "refs": [],
+  "facets": {
+    "specialty": [],
+    "use": [],
+    "system": []
+  },
+  "preparation": "aaa",
+  "category": "aaa",
+  "tag": "aaa",
+  "nameComposition": "aaa",
+  "pharmacology": "aaa",
+  "indications": "aaa",
+  "dosageAdministration": "aaa",
+  "sideEffects": "aaa",
+  "contraindications": "aaa",
+  "warningsPrecautions": "aaa",
+  "storageConditions": "aaa",
+  "manufacturer": "aaa"
+}

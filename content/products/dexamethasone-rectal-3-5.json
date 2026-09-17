@@ -1,0 +1,30 @@
+{
+  "slug": "dexamethasone-rectal-3-5",
+  "name": "დექსამეტაზონი — რექტალური სუპოზიტორია",
+  "strength": "3.5 მგ",
+  "pack": 3,
+  "packUnit": "სუპოზიტორია",
+  "form": "რექტალური სუპოზიტორია",
+  "image": "/products/fortis-logo-placeholder.png",
+  "published": false,
+  "featured": false,
+  "order": 101,
+  "refs": [],
+  "facets": {
+    "specialty": [],
+    "use": [],
+    "system": []
+  },
+  "preparation": "aaa",
+  "category": "aaa",
+  "tag": "aaa",
+  "nameComposition": "aaa",
+  "pharmacology": "aaa",
+  "indications": "aaa",
+  "dosageAdministration": "aaa",
+  "sideEffects": "aaa",
+  "contraindications": "aaa",
+  "warningsPrecautions": "aaa",
+  "storageConditions": "aaa",
+  "manufacturer": "aaa"
+}

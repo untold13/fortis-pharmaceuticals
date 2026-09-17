@@ -1,0 +1,30 @@
+{
+  "slug": "protein-90g",
+  "name": "პროტეინი — 90 გ",
+  "strength": "aaa",
+  "pack": 90,
+  "packUnit": "გ",
+  "form": "aaa",
+  "image": "/products/fortis-logo-placeholder.png",
+  "published": false,
+  "featured": false,
+  "order": 105,
+  "refs": [],
+  "facets": {
+    "specialty": [],
+    "use": [],
+    "system": []
+  },
+  "preparation": "aaa",
+  "category": "aaa",
+  "tag": "aaa",
+  "nameComposition": "aaa",
+  "pharmacology": "aaa",
+  "indications": "aaa",
+  "dosageAdministration": "aaa",
+  "sideEffects": "aaa",
+  "contraindications": "aaa",
+  "warningsPrecautions": "aaa",
+  "storageConditions": "aaa",
+  "manufacturer": "aaa"
+}
