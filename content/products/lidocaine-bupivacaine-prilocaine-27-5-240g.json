@@ -6,14 +6,20 @@
   "packUnit": "ერთეული",
   "form": "კრემი",
   "image": "/products/fortis-logo-placeholder.png",
-  "published": false,
+  "published": true,
   "featured": false,
   "order": 116,
   "refs": [],
   "facets": {
-    "specialty": [],
-    "use": [],
-    "system": []
+    "specialty": [
+      "დაუზუსტებელი"
+    ],
+    "use": [
+      "დაუზუსტებელი"
+    ],
+    "system": [
+      "დაუზუსტებელი"
+    ]
   },
   "preparation": "aaa",
   "category": "aaa",

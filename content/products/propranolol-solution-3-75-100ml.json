@@ -6,14 +6,20 @@
   "packUnit": "ერთეული",
   "form": "პერორალური ხსნარი",
   "image": "/products/fortis-logo-placeholder.png",
-  "published": false,
+  "published": true,
   "featured": false,
   "order": 108,
   "refs": [],
   "facets": {
-    "specialty": [],
-    "use": [],
-    "system": []
+    "specialty": [
+      "დაუზუსტებელი"
+    ],
+    "use": [
+      "დაუზუსტებელი"
+    ],
+    "system": [
+      "დაუზუსტებელი"
+    ]
   },
   "preparation": "aaa",
   "category": "aaa",

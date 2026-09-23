@@ -6,7 +6,7 @@
   "packUnit": "სუპოზიტორია",
   "form": "რექტალური სუპოზიტორია",
   "image": "/products/fortis-logo-placeholder.png",
-  "published": false,
+  "published": true,
   "featured": false,
   "order": 101,
   "refs": [],
@@ -15,7 +15,9 @@
       "გასტროენტეროლოგია",
       "პროქტოლოგია"
     ],
-    "use": [],
+    "use": [
+      "დაუზუსტებელი"
+    ],
     "system": [
       "საჭმლის მომნელებელი სისტემა"
     ]
