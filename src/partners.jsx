@@ -49,7 +49,7 @@ export function Partners() {
               return (
                 <li key={partner.id}>
                   <Tag className={`partner-entry ${partner.logo ? "has-logo" : ""}`} {...(partner.url ? { href: partner.url, target: "_blank", rel: "noopener noreferrer", "aria-label": `${partner.name} — ${partner.linkLabel || "ოფიციალური საიტი"}, ახალ ჩანართში` } : {})}>
-                    {(group.id === "international" || partner.logo) && <div className="partner-mark">{partner.logo ? <img src={partner.logo} alt="" width="220" height="88" onError={(event) => { event.currentTarget.style.visibility = "hidden"; }} /> : <span>{partner.name}</span>}</div>}
+                    {(group.id === "international" || partner.logo) && <div className="partner-mark">{partner.logo ? <img src={partner.logo} alt="" width="220" height="88" style={partner.logoFit ? { objectFit: partner.logoFit } : undefined} onError={(event) => { event.currentTarget.style.visibility = "hidden"; }} /> : <span>{partner.name}</span>}</div>}
                     <div className="partner-info">
                       <h3>{partner.name}</h3>
                       {partner.alias && <p>{partner.alias}</p>}
