@@ -52,8 +52,9 @@
       "name": "Hard Eight Nutrition LLC",
       "alias": "BulkSupplements.com",
       "country": "აშშ",
-      "url": "https://www.bulksupplements.com/",
-      "logo": "/partners/bulk.png"
+      "url": "https://goed.nv.gov/wp-content/uploads/2024/01/8-C.-Hard-Eight-Nutrution-LLC-Board-Packet-1.pdf",
+      "logo": "/partners/hard-eight.png",
+      "linkLabel": "კომპანიის დოკუმენტი (PDF)"
     },
     {
       "id": "saneca",
@@ -84,7 +85,9 @@
       "group": "international",
       "name": "Sigma-Aldrich",
       "country": "აშშ",
-      "url": "https://www.sigmaaldrich.com/US/en"
+      "url": "https://www.sigmaaldrich.com/US/en",
+      "logo": "/partners/sigma.jpg",
+      "logoFit": "cover"
     },
     {
       "id": "hemedis",
@@ -126,12 +129,14 @@
       "id": "tsitsishvili",
       "group": "clinics",
       "name": "ი. ციციშვილის სახელობის ბავშვთა კლინიკა",
-      "url": "https://ghg.com.ge/ka/regional-and-community-hospitals/tsitsishvili-children"
+      "url": "https://www.facebook.com/BavshvtaKlinika",
+      "logo": "/partners/tsitsishvili.jpg",
+      "linkLabel": "ფეისბუქის გვერდი"
     },
     {
       "id": "enmedic",
       "group": "clinics",
-      "name": "ენმედიკი",
+      "name": "ენმედიცი",
       "url": "https://enmedic.com/ka",
       "logo": "/partners/enmedic.svg"
     },
@@ -146,42 +151,49 @@
       "id": "bokeria",
       "group": "clinics",
       "name": "ივ. ბოკერიას სახელობის საუნივერსიტეტო ჰოსპიტალი",
-      "url": "https://vian.health/ka/hospitals/bokeria-university-hospital"
+      "url": "https://vian.health/ka/hospitals/bokeria-university-hospital",
+      "logo": "/partners/bokeria.jpg",
+      "logoFit": "cover"
     },
     {
       "id": "neogeni",
       "group": "clinics",
       "name": "ნარკოლოგიური კლინიკა ნეოგენი",
       "url": "https://www.facebook.com/neogeni1",
-      "linkLabel": "ფეისბუქის გვერდი"
+      "linkLabel": "ფეისბუქის გვერდი",
+      "logo": "/partners/neogeni.jpg"
     },
     {
       "id": "libertas",
       "group": "clinics",
       "name": "ნარკოლოგიური კლინიკა ლიბერტასი",
       "url": "https://www.facebook.com/cliniclibertas",
-      "linkLabel": "ფეისბუქის გვერდი"
+      "linkLabel": "ფეისბუქის გვერდი",
+      "logo": "/partners/libertas.png"
     },
     {
       "id": "uranti",
       "group": "clinics",
-      "name": "სამედიცინო ცენტრი ურანტი"
+      "name": "სამედიცინო ცენტრი ურანტი",
+      "logo": "/partners/uranti.png",
+      "url": "https://www.facebook.com/uranti.geo",
+      "linkLabel": "ფეისბუქის გვერდი"
     },
     {
-      "id": "center-to-identify",
+      "id": "addiction-kutaisi",
       "group": "clinics",
-      "name": "ჰანტიქტოლოგიის ცენტი"
+      "name": "ადიქტოლოგიის ცენტრი (ქუთაისი)",
+      "logo": "/partners/addiction-kutaisi.jpg",
+      "url": "https://www.facebook.com/GAMC.Ge",
+      "linkLabel": "ფეისბუქის გვერდი"
     },
     {
       "id": "krystyna-kiel",
       "group": "clinics",
       "name": "კრისტინა კილის სახელობის ონკოლოგიის ცენტრი",
-      "url": "https://ghg.com.ge/ka/large-and-specialty-hospitals/krystyna-kiel"
-    },
-    {
-      "id": "tbilisi-oncology",
-      "group": "clinics",
-      "name": "თბილისის ონკოლოგიური ცენტრი"
+      "url": "https://vian.health/ka/hospitals/krystyna-kiel-oncology-center",
+      "logo": "/partners/krystyna-kiel.jpg",
+      "logoFit": "cover"
     },
     {
       "id": "tsmu-mental",
@@ -191,27 +203,16 @@
       "logo": "/partners/tsmu.png"
     },
     {
-      "id": "kutateladze-clinic",
+      "id": "kutateladze-laboratory",
       "group": "clinics",
-      "name": "ქუთათელაძის კლინიკა"
+      "name": "ქუთათელაძის ლაბორატორია"
     },
     {
-      "id": "mental-health",
+      "id": "talizi",
       "group": "clinics",
-      "name": "ფსიქიკური ჯანმრთელობის და ნარკომანიის პრევენციის ცენტრი",
-      "url": "https://mhpa.ge/",
-      "logo": "/partners/mental-health.jpg"
-    },
-    {
-      "id": "gamkrelidze",
-      "group": "clinics",
-      "name": "აკაკი გამყრელიძის სახელობის ეროვნული ნარკოლოგიური სააგენტო"
-    },
-    {
-      "id": "west-georgia",
-      "group": "clinics",
-      "name": "დასავლეთ საქართველოს სამედიცინო ცენტრი",
-      "url": "https://vian.health/ka/hospitals/west-georgia-medical-centre"
+      "name": "თალიზი",
+      "url": "https://www.talizi.ge/",
+      "logo": "/partners/talizi.png"
     },
     {
       "id": "samkharauli",
