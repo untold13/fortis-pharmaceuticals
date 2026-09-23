@@ -30,11 +30,13 @@ import { BottleArtwork } from "./bottle-art";
 import { ThemeArtwork } from "./theme-art";
 import { facets, emptyFilters, filterProducts } from "./catalog-model";
 import { pageCopy as copy } from "./page-copy";
+import { Partners } from "./partners";
 const nav = [
   ["/", "მთავარი"],
   ["/compounding", "ქომფაუნდინგი"],
   ["/about", "ჩვენ შესახებ"],
   ["/products", "პროდუქტები"],
+  ["/partners", "პარტნიორები"],
   ["/contact", "კონტაქტი"],
 ];
 const A = ({ children, ...props }) => <a {...props}>{children}</a>;
@@ -193,7 +195,7 @@ function Footer() {
         </div>
         <div>
           <small>{t("გაიგეთ მეტი")}</small>
-          {nav.slice(1, 4).map(([h, n]) => (
+          {nav.filter(([h]) => h !== "/" && h !== "/contact").map(([h, n]) => (
             <A key={h} href={h}>
               {t(n)}
             </A>
@@ -1201,6 +1203,9 @@ function App() {
   } else if (path === "/contact") {
     page = <Contact />;
     title = "კონტაქტი";
+  } else if (path === "/partners") {
+    page = <Partners />;
+    title = "პარტნიორები";
   } else if (path === "/editorial") {
     page = <Editorial />;
     title = "ინფორმაცია და წყაროები";
