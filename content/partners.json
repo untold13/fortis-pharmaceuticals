@@ -87,6 +87,14 @@
       "url": "https://www.sigmaaldrich.com/US/en"
     },
     {
+      "id": "hemedis",
+      "group": "international",
+      "name": "HEMEDIS GmbH",
+      "country": "გერმანია",
+      "url": "https://www.hemedis.de/",
+      "logo": "/partners/hemedis.svg"
+    },
+    {
       "id": "curatio",
       "group": "clinics",
       "name": "კურაციო",
