@@ -1,0 +1,237 @@
+{
+  "groups": [
+    {
+      "id": "international",
+      "label": "საერთაშორისო",
+      "title": "საერთაშორისო კომპანიები"
+    },
+    {
+      "id": "clinics",
+      "label": "კლინიკები",
+      "title": "კლინიკები და სამედიცინო ცენტრები"
+    },
+    {
+      "id": "institutions",
+      "label": "ორგანიზაციები",
+      "title": "კვლევითი და საექსპერტო ორგანიზაციები"
+    },
+    {
+      "id": "insurance",
+      "label": "დაზღვევა",
+      "title": "სადაზღვევო პარტნიორები"
+    }
+  ],
+  "partners": [
+    {
+      "id": "teva-api",
+      "group": "international",
+      "name": "Teva API / TAPI",
+      "country": "ისრაელი",
+      "url": "https://tapi.com/",
+      "logo": "/partners/tapi.svg"
+    },
+    {
+      "id": "fagron",
+      "group": "international",
+      "name": "Fagron",
+      "country": "ნიდერლანდები",
+      "url": "https://fagron.com/",
+      "logo": "/partners/fagron.svg"
+    },
+    {
+      "id": "biogrund",
+      "group": "international",
+      "name": "BIOGRUND",
+      "country": "შვეიცარია",
+      "url": "https://www.biogrund.com/",
+      "logo": "/partners/biogrund.jpg"
+    },
+    {
+      "id": "hard-eight",
+      "group": "international",
+      "name": "Hard Eight Nutrition LLC",
+      "alias": "BulkSupplements.com",
+      "country": "აშშ",
+      "url": "https://www.bulksupplements.com/",
+      "logo": "/partners/bulk.png"
+    },
+    {
+      "id": "saneca",
+      "group": "international",
+      "name": "Saneca Pharmaceuticals",
+      "country": "სლოვაკეთი",
+      "url": "https://saneca.com/",
+      "logo": "/partners/saneca.svg"
+    },
+    {
+      "id": "apollo",
+      "group": "international",
+      "name": "Apollo Healthcare Resources",
+      "country": "სინგაპური",
+      "url": "https://www.apollo-healthcare.com.sg/",
+      "logo": "/partners/apollo.png"
+    },
+    {
+      "id": "thermo",
+      "group": "international",
+      "name": "Thermo Fisher Scientific",
+      "country": "აშშ",
+      "url": "https://www.thermofisher.com/",
+      "logo": "/partners/thermo.png"
+    },
+    {
+      "id": "sigma",
+      "group": "international",
+      "name": "Sigma-Aldrich",
+      "country": "აშშ",
+      "url": "https://www.sigmaaldrich.com/US/en"
+    },
+    {
+      "id": "curatio",
+      "group": "clinics",
+      "name": "კურაციო",
+      "url": "https://curatio.ge/",
+      "logo": "/partners/curatio.png"
+    },
+    {
+      "id": "gagua",
+      "group": "clinics",
+      "name": "გაგუას კლინიკა",
+      "url": "https://www.gaguaclinic.ge/",
+      "logo": "/partners/gagua.svg"
+    },
+    {
+      "id": "gudushauri",
+      "group": "clinics",
+      "name": "ღუდუშაურის კლინიკა",
+      "url": "https://gudushauri.ge/",
+      "logo": "/partners/gudushauri.png"
+    },
+    {
+      "id": "joann",
+      "group": "clinics",
+      "name": "ჯო ენის საუნივერსიტეტო ჰოსპიტალი",
+      "url": "https://joann.ge/",
+      "logo": "/partners/joann.png"
+    },
+    {
+      "id": "tsitsishvili",
+      "group": "clinics",
+      "name": "ი. ციციშვილის სახელობის ბავშვთა კლინიკა",
+      "url": "https://ghg.com.ge/ka/regional-and-community-hospitals/tsitsishvili-children"
+    },
+    {
+      "id": "enmedic",
+      "group": "clinics",
+      "name": "ენმედიკი",
+      "url": "https://enmedic.com/ka",
+      "logo": "/partners/enmedic.svg"
+    },
+    {
+      "id": "iashvili",
+      "group": "clinics",
+      "name": "იაშვილის ბავშვთა ცენტრალური საავადმყოფო",
+      "url": "https://iashvilihospital.ge/",
+      "logo": "/partners/iashvili.png"
+    },
+    {
+      "id": "bokeria",
+      "group": "clinics",
+      "name": "ივ. ბოკერიას სახელობის საუნივერსიტეტო ჰოსპიტალი",
+      "url": "https://vian.health/ka/hospitals/bokeria-university-hospital"
+    },
+    {
+      "id": "neogeni",
+      "group": "clinics",
+      "name": "ნარკოლოგიური კლინიკა ნეოგენი",
+      "url": "https://www.facebook.com/neogeni1",
+      "linkLabel": "ფეისბუქის გვერდი"
+    },
+    {
+      "id": "libertas",
+      "group": "clinics",
+      "name": "ნარკოლოგიური კლინიკა ლიბერტასი",
+      "url": "https://www.facebook.com/cliniclibertas",
+      "linkLabel": "ფეისბუქის გვერდი"
+    },
+    {
+      "id": "uranti",
+      "group": "clinics",
+      "name": "სამედიცინო ცენტრი ურანტი"
+    },
+    {
+      "id": "center-to-identify",
+      "group": "clinics",
+      "name": "ჰანტიქტოლოგიის ცენტი"
+    },
+    {
+      "id": "krystyna-kiel",
+      "group": "clinics",
+      "name": "კრისტინა კილის სახელობის ონკოლოგიის ცენტრი",
+      "url": "https://ghg.com.ge/ka/large-and-specialty-hospitals/krystyna-kiel"
+    },
+    {
+      "id": "tbilisi-oncology",
+      "group": "clinics",
+      "name": "თბილისის ონკოლოგიური ცენტრი"
+    },
+    {
+      "id": "tsmu-mental",
+      "group": "clinics",
+      "name": "თსსუ-ის მენტალური ჯანმრთელობის საუნივერსიტეტო კლინიკა",
+      "url": "https://tsmu.edu/ts/content/4/82/326/383/0/0",
+      "logo": "/partners/tsmu.png"
+    },
+    {
+      "id": "kutateladze-clinic",
+      "group": "clinics",
+      "name": "ქუთათელაძის კლინიკა"
+    },
+    {
+      "id": "mental-health",
+      "group": "clinics",
+      "name": "ფსიქიკური ჯანმრთელობის და ნარკომანიის პრევენციის ცენტრი",
+      "url": "https://mhpa.ge/",
+      "logo": "/partners/mental-health.jpg"
+    },
+    {
+      "id": "gamkrelidze",
+      "group": "clinics",
+      "name": "აკაკი გამყრელიძის სახელობის ეროვნული ნარკოლოგიური სააგენტო"
+    },
+    {
+      "id": "west-georgia",
+      "group": "clinics",
+      "name": "დასავლეთ საქართველოს სამედიცინო ცენტრი",
+      "url": "https://vian.health/ka/hospitals/west-georgia-medical-centre"
+    },
+    {
+      "id": "samkharauli",
+      "group": "institutions",
+      "name": "ლევან სამხარაულის სახელობის სასამართლო ექსპერტიზის ეროვნული ბიურო",
+      "url": "https://www.expertiza.gov.ge/",
+      "logo": "https://www.expertiza.gov.ge/assets/img/logo-seeb.png"
+    },
+    {
+      "id": "kutateladze-institute",
+      "group": "institutions",
+      "name": "თსსუ იოველ ქუთათელაძის ფარმაკოქიმიის ინსტიტუტი",
+      "url": "https://ikip.tsmu.edu/ka",
+      "logo": "/partners/kutateladze-institute.png"
+    },
+    {
+      "id": "irao",
+      "group": "insurance",
+      "name": "ირაო",
+      "url": "https://www.irao.ge/",
+      "logo": "/partners/irao.svg"
+    },
+    {
+      "id": "gpi",
+      "group": "insurance",
+      "name": "ჯიპიაი ჰოლდინგი",
+      "url": "https://www.gpih.ge/",
+      "logo": "/partners/gpi.png"
+    }
+  ]
+}
