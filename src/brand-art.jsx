@@ -1,13 +1,16 @@
 import React from "react";
+import { usePreferences } from "./preferences";
 
-// The supplied full logo retains its original lettering and transparent background.
+// Both supplied logos retain their original lettering; the night SVG removes its gray matte.
 export function BrandArtwork({ className, label }) {
+  const { theme } = usePreferences();
+  const night = theme === "dark";
   return (
     <img
       className={className}
-      src="/fortis-logo.png"
-      width="2206"
-      height="713"
+      src={night ? "/fortis-logo-night.svg" : "/fortis-logo.png"}
+      width={night ? 1330 : 2206}
+      height={night ? 440 : 713}
       alt={label || ""}
       aria-hidden={label ? undefined : true}
     />
