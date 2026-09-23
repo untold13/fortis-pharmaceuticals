@@ -42,7 +42,7 @@
       "id": "biogrund",
       "group": "international",
       "name": "BIOGRUND",
-      "country": "შვეიცარია",
+      "country": "შვეიცარია, გერმანია",
       "url": "https://www.biogrund.com/",
       "logo": "/partners/biogrund.jpg"
     },
@@ -201,11 +201,6 @@
       "name": "თსსუ-ის მენტალური ჯანმრთელობის საუნივერსიტეტო კლინიკა",
       "url": "https://tsmu.edu/ts/content/4/82/326/383/0/0",
       "logo": "/partners/tsmu.png"
-    },
-    {
-      "id": "kutateladze-laboratory",
-      "group": "clinics",
-      "name": "ქუთათელაძის ლაბორატორია"
     },
     {
       "id": "talizi",
