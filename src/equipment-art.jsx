@@ -3,7 +3,11 @@ import { Pause, Play, RotateCcw, MoveHorizontal } from "lucide-react";
 import "./equipment-art.css";
 
 const homeRadius = () => matchMedia("(max-width: 760px)").matches ? "100%" : "86%";
-const homeOrbit = () => `14deg 70deg ${homeRadius()}`;
+const SWEEP_START_DEG = -38;
+const SWEEP_END_DEG = 52;
+const SWEEP_LEG_DURATION_MS = 10000;
+const CAMERA_POLAR_DEG = 80;
+const homeOrbit = () => `${SWEEP_START_DEG}deg ${CAMERA_POLAR_DEG}deg ${homeRadius()}`;
 let viewerReady;
 function loadViewer() {
   if (customElements.get("model-viewer")) return Promise.resolve();
@@ -24,15 +28,18 @@ export function EquipmentArtwork() {
   const [moving, setMoving] = useState(() => !matchMedia("(prefers-reduced-motion: reduce)").matches);
   const movingRef = useRef(moving);
   const userCamera = useRef(false);
-  const started = useRef(0);
+  const sweepElapsed = useRef(0);
+  const previousFrame = useRef(null);
   const resetCamera = () => {
     userCamera.current = false;
-    started.current = performance.now();
+    sweepElapsed.current = 0;
+    previousFrame.current = null;
     if (viewer.current) viewer.current.cameraOrbit = homeOrbit();
   };
 
   useEffect(() => {
     movingRef.current = moving;
+    previousFrame.current = null;
     if (!viewer.current?.loaded) return;
     moving ? viewer.current.play() : viewer.current.pause();
   }, [moving]);
@@ -53,17 +60,22 @@ export function EquipmentArtwork() {
       model.dataset.motion = "operating";
       setStatus("ready");
       movingRef.current ? model.play() : model.pause();
-      started.current = performance.now();
-      let last = 0;
+      sweepElapsed.current = 0;
+      previousFrame.current = null;
       let sampleTime = 0;
       const animate = now => {
         if (disposed) return;
-        // Gentle camera movement stops permanently on manual interaction until reset.
-        if (movingRef.current && !userCamera.current && model.modelIsVisible && !document.hidden && now - last > 65) {
-          const seconds = (now - started.current) / 1000;
-          const angle = 14 + Math.sin(seconds / 10) * 10;
-          model.cameraOrbit = `${angle.toFixed(2)}deg 70deg ${homeRadius()}`;
-          last = now;
+        // Count only active, visible time; manual interaction stops the sweep until reset.
+        if (movingRef.current && !userCamera.current && model.modelIsVisible && !document.hidden) {
+          if (previousFrame.current !== null) {
+            sweepElapsed.current = (sweepElapsed.current + now - previousFrame.current) % (2 * SWEEP_LEG_DURATION_MS);
+          }
+          previousFrame.current = now;
+          const progress = (1 - Math.cos(Math.PI * sweepElapsed.current / SWEEP_LEG_DURATION_MS)) / 2;
+          const angle = SWEEP_START_DEG + (SWEEP_END_DEG - SWEEP_START_DEG) * progress;
+          model.cameraOrbit = `${angle.toFixed(3)}deg ${CAMERA_POLAR_DEG}deg ${homeRadius()}`;
+        } else {
+          previousFrame.current = null;
         }
         if (now - sampleTime > 500) {
           model.dataset.animationSeconds = model.currentTime.toFixed(2);
@@ -75,10 +87,14 @@ export function EquipmentArtwork() {
       };
       frame = requestAnimationFrame(animate);
     };
-    const onCameraChange = e => {
-      if (e.detail?.source === "user-interaction") userCamera.current = true;
+    const resetFrameClock = () => { previousFrame.current = null; };
+    const onInteraction = () => {
+      userCamera.current = true;
+      resetFrameClock();
     };
-    const onInteraction = () => { userCamera.current = true; };
+    const onCameraChange = e => {
+      if (e.detail?.source === "user-interaction") onInteraction();
+    };
     const onError = () => !disposed && setStatus("error");
     model.addEventListener("load", onLoad);
     model.addEventListener("error", onError);
@@ -86,6 +102,8 @@ export function EquipmentArtwork() {
     model.addEventListener("pointerdown", onInteraction);
     model.addEventListener("wheel", onInteraction, { passive: true });
     model.addEventListener("keydown", onInteraction);
+    model.addEventListener("model-visibility", resetFrameClock);
+    document.addEventListener("visibilitychange", resetFrameClock);
     loadViewer().catch(onError);
     return () => {
       disposed = true;
@@ -96,6 +114,8 @@ export function EquipmentArtwork() {
       model.removeEventListener("pointerdown", onInteraction);
       model.removeEventListener("wheel", onInteraction);
       model.removeEventListener("keydown", onInteraction);
+      model.removeEventListener("model-visibility", resetFrameClock);
+      document.removeEventListener("visibilitychange", resetFrameClock);
       motionPreference.removeEventListener("change", preferenceChanged);
     };
   }, []);
