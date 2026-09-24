@@ -5,7 +5,7 @@ import "./equipment-art.css";
 const homeRadius = () => matchMedia("(max-width: 760px)").matches ? "100%" : "86%";
 const SWEEP_START_DEG = -38;
 const SWEEP_END_DEG = 52;
-const SWEEP_LEG_DURATION_MS = 6000;
+const SWEEP_LEG_DURATION_MS = 10000;
 const CAMERA_POLAR_DEG = 80;
 const homeOrbit = () => `${SWEEP_START_DEG}deg ${CAMERA_POLAR_DEG}deg ${homeRadius()}`;
 let viewerReady;
