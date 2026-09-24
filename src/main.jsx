@@ -26,7 +26,7 @@ import "./preferences.css";
 import "./refinements.css";
 import { extraSections } from "./generated-content";
 import { BrandArtwork } from "./brand-art";
-import { BottleArtwork } from "./bottle-art";
+import { EquipmentArtwork } from "./equipment-art";
 import { ThemeArtwork } from "./theme-art";
 import { facets, emptyFilters, filterProducts } from "./catalog-model";
 import { pageCopy as copy } from "./page-copy";
@@ -300,7 +300,7 @@ function Card({ p }) {
 function Hero() {
   const { t } = usePreferences();
   return (
-    <section className="simple-hero">
+    <section className="simple-hero equipment-hero">
       <div className="wrap simple-hero-grid">
         <div className="hero-copy">
           <Eyebrow>{t("ქომფაუნდ აფთიაქი")}</Eyebrow>
@@ -323,7 +323,7 @@ function Hero() {
           </div>
         </div>
         <div className="hero-artwork">
-          <BottleArtwork label={t("ფორტის ფარმაცეუტიკალსის ქარვისფერი ფლაკონის გრაფიკული ესკიზი")} />
+          <EquipmentArtwork />
         </div>
       </div>
     </section>

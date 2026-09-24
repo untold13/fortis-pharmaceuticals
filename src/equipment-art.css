@@ -1,0 +1,58 @@
+/* Local 3D hero preview. Original Fortis identity and Georgian copy retained.
+   Native WebGL equipment integrated into the page; no product card or modal. */
+.simple-hero.equipment-hero {
+  background: radial-gradient(ellipse at 79% 46%, #e3e9ee 0%, #edf0f1 24%, transparent 56%), var(--surface);
+  min-height: calc(100svh - var(--fortis-header-height));
+  overflow: clip;
+  padding-block: clamp(24px, 5vh, 60px);
+}
+.equipment-hero .simple-hero-grid {
+  grid-template-columns: minmax(0, .83fr) minmax(0, 1.3fr);
+  gap: clamp(10px, 2vw, 32px);
+  align-items: center;
+}
+.equipment-hero .hero-copy { padding: 0; position: relative; z-index: 1; }
+html[lang="ka"] .equipment-hero .hero-copy h1 {
+  font-size: clamp(38px, 4.3vw, 64px);
+  line-height: 1.24;
+  letter-spacing: -1.7px;
+}
+.equipment-hero .hero-copy .eyebrow { color: var(--muted); }
+.equipment-hero .hero-actions { column-gap: 25px; row-gap: 20px; }
+.equipment-hero .hero-actions .button { white-space: nowrap; }
+.equipment-hero .hero-artwork { width: calc(100% + 40px); margin-right: -40px; }
+.equipment-visual { position: relative; width: 100%; height: clamp(420px, 70svh, 760px); }
+.equipment-visual model-viewer { display: block; width: 100%; height: 100%; background: transparent; --poster-color: transparent; --progress-bar-color: transparent; touch-action: pan-y; opacity: 0; transition: opacity .8s ease; }
+.equipment-ready model-viewer { opacity: 1; }
+.equipment-controls { position: absolute; left: 11%; right: 8%; bottom: 0; display: flex; justify-content: space-between; align-items: center; color: var(--muted); }
+.equipment-hint { display: flex; gap: 10px; align-items: center; font-size: 11px; }
+.equipment-controls > div { display: flex; gap: 4px; }
+.equipment-controls button { display: grid; place-items: center; width: 40px; height: 40px; border: 1px solid transparent; border-radius: 50%; background: transparent; color: var(--ink); cursor: pointer; }
+.equipment-controls button:hover { border-color: var(--line); background: var(--surface); }
+.equipment-controls button:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; }
+.equipment-loading { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px; font-size: 12px; color: var(--muted); }
+.equipment-loading span { width: 90px; height: 1px; background: var(--blue); animation: equipment-loading 1.5s ease-in-out infinite alternate; }
+.equipment-loading a { color: var(--blue); }
+@keyframes equipment-loading { from { opacity: .15; transform: scaleX(.35); } to { opacity: .8; transform: scaleX(1); } }
+html[data-theme="dark"] .simple-hero.equipment-hero { background: radial-gradient(ellipse at 79% 46%, #314658 0%, #1d3146 28%, transparent 59%), var(--surface); }
+@media (max-width: 1100px) and (min-width: 761px) {
+  html[lang="ka"] .equipment-hero .hero-copy h1 { font-size: 38px; letter-spacing: -1px; }
+  .equipment-hero .simple-hero-grid { width: calc(100% - 64px); }
+  .equipment-visual { height: clamp(430px, 65svh, 680px); }
+  .equipment-controls { left: 8%; right: 8%; }
+}
+@media (max-width: 760px) {
+  .simple-hero.equipment-hero { padding-block: 32px 22px; min-height: auto; }
+  .equipment-hero .simple-hero-grid { grid-template-columns: 1fr; width: calc(100% - 40px); gap: 8px; }
+  html[lang="ka"] .equipment-hero .hero-copy h1 { font-size: clamp(32px, 8.4vw, 48px); letter-spacing: -1px; }
+  html[lang="ka"] .equipment-hero .hero-copy p { margin-top: 18px; font-size: 14px; max-width: 34ch; }
+  .equipment-hero .hero-actions { margin-top: 24px; gap: 16px; }
+  .equipment-hero .hero-artwork { width: calc(100% + 32px); margin: 0 -16px; }
+  .equipment-visual { height: clamp(310px, 45svh, 480px); }
+  .equipment-controls { left: 6%; right: 6%; bottom: 0; }
+  .equipment-hint { font-size: 10px; gap: 7px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .equipment-visual model-viewer { transition: none; }
+  .equipment-loading span { animation: none; }
+}
