@@ -1,0 +1,36 @@
+{
+  "slug": "tetracycline-hydrochloride-500-28",
+  "name": "ტეტრაციკლინის ჰიდროქლორიდი USP",
+  "strength": "500 მგ",
+  "pack": 28,
+  "packUnit": "კაფსულა",
+  "form": "კაფსულა",
+  "preparation": "კაფსულა",
+  "image": "/products/fortis-logo-placeholder.png",
+  "published": true,
+  "featured": false,
+  "order": 120,
+  "category": "დაუზუსტებელი",
+  "tag": "500 მგ · 28 კაფსულა",
+  "refs": [],
+  "facets": {
+    "specialty": [
+      "დაუზუსტებელი"
+    ],
+    "use": [
+      "დაუზუსტებელი"
+    ],
+    "system": [
+      "დაუზუსტებელი"
+    ]
+  },
+  "nameComposition": "ტეტრაციკლინის ჰიდროქლორიდი USP (Tetracycline hydrochloride USP), 500 მგ. შეფუთვა: 28 კაფსულა.",
+  "pharmacology": "",
+  "indications": "",
+  "dosageAdministration": "",
+  "sideEffects": "",
+  "contraindications": "",
+  "warningsPrecautions": "",
+  "storageConditions": "",
+  "manufacturer": ""
+}
