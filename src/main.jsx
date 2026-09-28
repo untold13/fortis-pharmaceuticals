@@ -190,7 +190,7 @@ function Footer() {
         <div>
           <Brand />
           <p>
-            {t("ქომფაუნდინგის აფთიაქი.")}
+            {t("compound pharmacy")}
           </p>
         </div>
         <div>
@@ -203,6 +203,7 @@ function Footer() {
         </div>
         <div>
           <small>{t("გვიპოვეთ")}</small>
+          <p>{t("10:00 - 20:00 ყოველდღე")}</p>
           <A href="/contact">
             {t("გივი ჟვანიას ქუჩა 9")}
             <br />
@@ -211,12 +212,16 @@ function Footer() {
           <A href="tel:+995322053191">032 2 05 31 91</A>
         </div>
         <div>
-          <small>{t("პროფესიონალებისთვის")}</small>
+          <small>{t("ლინკები")}</small>
           <A href="https://fortislibrary.com" target="_blank" rel="noreferrer">
             {t("ფორტის ფარმაცეუტიკალსის ბიბლიოთეკა ")}
             <Icon type={ArrowUpRight} />
           </A>
           <A href="/editorial">{t("ინფორმაცია და წყაროები")}</A>
+          <A href="https://velvia.ge" target="_blank" rel="noreferrer">
+            {t("ამერიკული საკვები დანამატები - VELVIA")}
+            <Icon type={ArrowUpRight} />
+          </A>
         </div>
       </div>
       <div className="footer-bottom wrap">
@@ -478,7 +483,7 @@ function LabTeaser() {
           <h3>{t("ჩვენი ლაბორატორია")}</h3>
           <p>
             {t(
-              "მედიკამენტებს ადგილზე ვამზადებთ. აქტიური ფარმაცევტული ნივთიერებები შემოგვაქვს ევროპიდან და ამერიკიდან.",
+              "თანამედროვე ფარმაცევტული მიდგომები, მსოფლიოში აღიარებული GMP სერთიფირებული ქარხნებიდან იმპორტირებული API-ები და დამხმარე პროდუქტები.",
             )}
           </p>
           <A href="/about" className="text-link">
