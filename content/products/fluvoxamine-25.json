@@ -11,7 +11,7 @@
   "form": "ტაბლეტი",
   "image": "/uploads/approved-2026-09-15-fluvoxamine-25.webp",
   "featured": false,
-  "published": true,
+  "published": false,
   "order": 15,
   "facets": {
     "specialty": [
