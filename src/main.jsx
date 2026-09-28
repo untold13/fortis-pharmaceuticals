@@ -303,19 +303,19 @@ function Hero() {
     <section className="simple-hero equipment-hero">
       <div className="wrap simple-hero-grid">
         <div className="hero-copy">
-          <Eyebrow>{t("ქომფაუნდ აფთიაქი")}</Eyebrow>
+          <Eyebrow>{t("compound pharmacy")}</Eyebrow>
           <h1>
-            {t("თქვენთვის")}
+            {t("შენზე მორგებული")}
             <br />
-            {t("მომზადებული.")}
+            {t("ფარმაცია.")}
           </h1>
           <p>
             {t(
-              "ინდივიდუალურად მომზადებული მედიკამენტები თბილისში, ექიმის დანიშნულებით.",
+              "USP (ამერიკული ფარმაკოპეის) და მაგისტრალური რეცეპტების მიხედვით მომზადებული მედიკამენტები საქართველოში.",
             )}
           </p>
           <div className="hero-actions">
-            <Button href="/products">{t("გაეცანით პრეპარატებს")}</Button>
+            <Button href="/products">{t("პროდუქტები")}</Button>
             <A href="/compounding" className="text-link">
               {t("ჩვენი მიდგომა ")}
               <Icon type={ArrowRight} />
@@ -369,8 +369,8 @@ function Approach() {
             ],
             [
               ShieldCheck,
-              "შერჩეული შემადგენლობა",
-              "ინგრედიენტების შეფასება პაციენტის საჭიროებების მიხედვით.",
+              "ფარმაკოპეის მიხედვით მომზადებული ფარმაცევტული პროდუქტები",
+              "პრაქტიკაში გამოცდილი, სანდო ფორმულები.",
             ],
           ].map(([I, h, b]) => (
             <div key={h}>
@@ -423,7 +423,7 @@ function PreparationGuide() {
         <h2>{t("ყველაფერი დანიშნულებით იწყება.")}</h2>
         <p>
           {t(
-            "ფარმაცევტი განიხილავს დანიშნულებას, განსაზღვრავს ფორმულას და აზუსტებს მომზადების დეტალებს.",
+            "შემდეგ იწყება ზუსტად თქვენზე მორგებული მედიკამენტის შექმნა.",
           )}
         </p>
       </div>
@@ -466,9 +466,7 @@ function LabTeaser() {
     <section className="section wrap company-overview">
       <Eyebrow>{t("ჩვენი ისტორია და ლაბორატორია")}</Eyebrow>
       <h2>
-        {t("მზადდება თბილისში.")}
-        <br />
-        {t("თქვენი საჭიროებისთვის.")}
+        {t("პროფესიული ფარმაცევტული გამოცდილება და ინდივიდუალური მიდგომა — თქვენი საჭიროებისთვის")}
       </h2>
       <div className="company-overview-body">
         <p>
