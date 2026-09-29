@@ -6,7 +6,7 @@
   "packUnit": "ერთეული",
   "form": "aaa",
   "image": "/products/fortis-logo-placeholder.png",
-  "published": true,
+  "published": false,
   "featured": false,
   "order": 119,
   "refs": [],
