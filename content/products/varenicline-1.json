@@ -1,0 +1,36 @@
+{
+  "slug": "varenicline-1",
+  "name": "ვარენიკლინი",
+  "strength": "1 მგ",
+  "pack": 60,
+  "packUnit": "ტაბლეტი",
+  "form": "ტაბლეტი",
+  "preparation": "aaaa",
+  "image": "/products/varenicline-1.png",
+  "published": true,
+  "featured": false,
+  "order": 126,
+  "category": "aaaa",
+  "tag": "aaaa",
+  "refs": [],
+  "facets": {
+    "specialty": [
+      "aaaa"
+    ],
+    "use": [
+      "aaaa"
+    ],
+    "system": [
+      "aaaa"
+    ]
+  },
+  "nameComposition": "aaaa",
+  "pharmacology": "aaaa",
+  "indications": "aaaa",
+  "dosageAdministration": "aaaa",
+  "sideEffects": "aaaa",
+  "contraindications": "aaaa",
+  "warningsPrecautions": "aaaa",
+  "storageConditions": "aaaa",
+  "manufacturer": "aaaa"
+}

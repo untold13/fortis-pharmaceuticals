@@ -1,0 +1,36 @@
+{
+  "slug": "vericiguat-5",
+  "name": "ვერიციგუატი",
+  "strength": "5 მგ",
+  "pack": 28,
+  "packUnit": "ტაბლეტი",
+  "form": "ტაბლეტი",
+  "preparation": "aaaa",
+  "image": "/products/vericiguat-5.png",
+  "published": true,
+  "featured": false,
+  "order": 122,
+  "category": "aaaa",
+  "tag": "aaaa",
+  "refs": [],
+  "facets": {
+    "specialty": [
+      "aaaa"
+    ],
+    "use": [
+      "aaaa"
+    ],
+    "system": [
+      "aaaa"
+    ]
+  },
+  "nameComposition": "aaaa",
+  "pharmacology": "aaaa",
+  "indications": "aaaa",
+  "dosageAdministration": "aaaa",
+  "sideEffects": "aaaa",
+  "contraindications": "aaaa",
+  "warningsPrecautions": "aaaa",
+  "storageConditions": "aaaa",
+  "manufacturer": "aaaa"
+}

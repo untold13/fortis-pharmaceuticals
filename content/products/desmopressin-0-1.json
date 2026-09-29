@@ -1,0 +1,36 @@
+{
+  "slug": "desmopressin-0-1",
+  "name": "დესმოპრეზინი",
+  "strength": "0.1 მგ",
+  "pack": 30,
+  "packUnit": "ტაბლეტი",
+  "form": "ტაბლეტი",
+  "preparation": "aaaa",
+  "image": "/products/desmopressin-0-1.png",
+  "published": true,
+  "featured": false,
+  "order": 123,
+  "category": "aaaa",
+  "tag": "aaaa",
+  "refs": [],
+  "facets": {
+    "specialty": [
+      "aaaa"
+    ],
+    "use": [
+      "aaaa"
+    ],
+    "system": [
+      "aaaa"
+    ]
+  },
+  "nameComposition": "aaaa",
+  "pharmacology": "aaaa",
+  "indications": "aaaa",
+  "dosageAdministration": "aaaa",
+  "sideEffects": "aaaa",
+  "contraindications": "aaaa",
+  "warningsPrecautions": "aaaa",
+  "storageConditions": "aaaa",
+  "manufacturer": "aaaa"
+}

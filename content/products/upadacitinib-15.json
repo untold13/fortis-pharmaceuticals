@@ -1,0 +1,36 @@
+{
+  "slug": "upadacitinib-15",
+  "name": "უპადაციტინიბი",
+  "strength": "15 მგ",
+  "pack": 30,
+  "packUnit": "ტაბლეტი",
+  "form": "ტაბლეტი",
+  "preparation": "aaaa",
+  "image": "/products/upadacitinib-15.png",
+  "published": true,
+  "featured": false,
+  "order": 124,
+  "category": "aaaa",
+  "tag": "aaaa",
+  "refs": [],
+  "facets": {
+    "specialty": [
+      "aaaa"
+    ],
+    "use": [
+      "aaaa"
+    ],
+    "system": [
+      "aaaa"
+    ]
+  },
+  "nameComposition": "aaaa",
+  "pharmacology": "aaaa",
+  "indications": "aaaa",
+  "dosageAdministration": "aaaa",
+  "sideEffects": "aaaa",
+  "contraindications": "aaaa",
+  "warningsPrecautions": "aaaa",
+  "storageConditions": "aaaa",
+  "manufacturer": "aaaa"
+}

@@ -1,0 +1,36 @@
+{
+  "slug": "rimegepant-75",
+  "name": "რიმეგეპანტი",
+  "strength": "75 მგ",
+  "pack": 6,
+  "packUnit": "ტაბლეტი",
+  "form": "ტაბლეტი",
+  "preparation": "aaaa",
+  "image": "/products/rimegepant-75.png",
+  "published": true,
+  "featured": false,
+  "order": 120,
+  "category": "aaaa",
+  "tag": "aaaa",
+  "refs": [],
+  "facets": {
+    "specialty": [
+      "aaaa"
+    ],
+    "use": [
+      "aaaa"
+    ],
+    "system": [
+      "aaaa"
+    ]
+  },
+  "nameComposition": "aaaa",
+  "pharmacology": "aaaa",
+  "indications": "aaaa",
+  "dosageAdministration": "aaaa",
+  "sideEffects": "aaaa",
+  "contraindications": "aaaa",
+  "warningsPrecautions": "aaaa",
+  "storageConditions": "aaaa",
+  "manufacturer": "aaaa"
+}
