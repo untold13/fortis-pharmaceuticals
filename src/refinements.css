@@ -63,7 +63,7 @@ html[data-theme="dark"] .bottle-cap-line {
 /* Full original 2:3 photos, edge to edge, including their inherent backgrounds. */
 .product-grid .product-image,
 .featured-grid .product-image {
-  aspect-ratio: 2 / 3;
+  aspect-ratio: var(--product-image-ratio, 2 / 3);
   padding: 0;
   border: 0;
   height: auto;
@@ -401,6 +401,24 @@ html[data-theme="dark"] .bottle-cap-line {
   }
 }
 @media (max-width: 700px) {
+  /* Equal mobile cards, independent of photo dimensions or long product names. */
+  .product-grid,
+  .product-grid:not(.featured-grid) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-rows: 1fr;
+    gap: 28px 14px;
+  }
+  .product-grid .product-card {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+  .product-grid .product-image {
+    width: 100%;
+    min-width: 0;
+    min-height: 0;
+    aspect-ratio: 2 / 3;
+    align-self: start;
+  }
   .simple-hero-grid {
     grid-template-columns: 1fr;
     gap: 4px;
