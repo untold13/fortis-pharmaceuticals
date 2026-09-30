@@ -282,7 +282,7 @@ function Card({ p }) {
     <A href={`/products/${p.slug}`} className="product-card">
       <div
         className="product-image"
-        style={{ aspectRatio: `${p.imageWidth} / ${p.imageHeight}` }}
+        style={{ "--product-image-ratio": `${p.imageWidth} / ${p.imageHeight}` }}
       >
         <DeferredProductImage p={p} />
         <span className="round-arrow">
