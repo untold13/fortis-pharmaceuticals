@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { chromium } from "playwright";
 import { products } from "../src/products.js";
+import { catalogProducts } from "../src/catalog-model.js";
 import fs from "node:fs";
 
 const copy = JSON.parse(fs.readFileSync("content/copy.json", "utf8"));
@@ -146,33 +147,27 @@ try {
       );
       assert.equal(await page.locator(".product-card").count(), expected);
     };
+    assert.equal(await page.locator(".catalog-facet").count(), 1);
+    assert.equal(await page.locator(".catalog-facet summary span").innerText(), "სამედიცინო სპეციალობა");
     await select("specialty", "ძილის მედიცინა");
-    await count(4);
+    await count(catalogProducts.filter((p) => p.facets.specialty.includes("ძილის მედიცინა")).length);
     await select("specialty", "დერმატოლოგია");
-    await count(5);
-    await select("system", "კანი და თმა");
-    await count(1);
-    await select("strength", "1.25 მგ");
-    await count(1);
-    await select("form", "ტაბლეტი");
-    await count(1);
-    await select("use", "თმის ცვენა (არარეგისტრირებული ჩვენება)");
-    await count(1);
-    assert.equal(await page.locator(".active-filters button").count(), 6);
+    await count(catalogProducts.filter((p) => p.facets.specialty.some((s) => ["ძილის მედიცინა", "დერმატოლოგია"].includes(s))).length);
+    assert.equal(await page.locator(".active-filters button").count(), 2);
     await page
       .getByRole("button", { name: "ფილტრების გასუფთავება", exact: true })
       .click();
     await count(products.length);
 
     await page.setViewportSize({ width: 320, height: 800 });
-    await page.locator('[data-facet="use"] summary').click();
+    await page.locator('[data-facet="specialty"] summary').click();
     assert.equal(
       await page.evaluate(() => document.documentElement.scrollWidth > innerWidth),
       false,
       "Open filters fit a 320px screen",
     );
-    await page.locator('[data-facet="use"] summary').press("Escape");
-    assert.equal(await page.locator('[data-facet="use"]').getAttribute("open"), null);
+    await page.locator('[data-facet="specialty"] summary').press("Escape");
+    assert.equal(await page.locator('[data-facet="specialty"]').getAttribute("open"), null);
     await page.getByRole("switch").focus();
     await page.getByRole("switch").press("Space");
     assert.equal(

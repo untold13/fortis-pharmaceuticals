@@ -175,7 +175,7 @@ const emptyProduct = () => ({
   storageConditions: "",
   manufacturer: "",
   refs: [],
-  facets: { specialty: [], use: [], system: [] },
+  facets: { specialty: [] },
 });
 function ImageField({ value, onChange, onError }) {
   const [busy, setBusy] = useState(false),

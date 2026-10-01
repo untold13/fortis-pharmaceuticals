@@ -120,7 +120,7 @@ html[data-theme="dark"] .bottle-cap-line {
 }
 .catalog-facets {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: minmax(0, 490px);
   gap: 10px;
 }
 .catalog-facet {
@@ -173,10 +173,6 @@ html[data-theme="dark"] .bottle-cap-line {
   border: 1px solid var(--line);
   border-radius: 4px;
   box-shadow: 0 12px 32px #1232451c;
-}
-.catalog-facet:nth-last-child(-n + 2) .facet-options {
-  left: auto;
-  right: 0;
 }
 .facet-options label {
   display: flex;
@@ -388,17 +384,6 @@ html[data-theme="dark"] .bottle-cap-line {
   .simple-hero-grid {
     gap: 20px;
   }
-  .catalog-facets {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-  .catalog-facet:nth-last-child(-n + 2) .facet-options {
-    left: 0;
-    right: auto;
-  }
-  .catalog-facet:nth-child(3) .facet-options {
-    left: auto;
-    right: 0;
-  }
 }
 @media (max-width: 700px) {
   /* Equal mobile cards, independent of photo dimensions or long product names. */
@@ -454,10 +439,6 @@ html[data-theme="dark"] .bottle-cap-line {
     max-width: none;
     margin-top: 5px;
     box-shadow: none;
-  }
-  .catalog-facet[data-facet="strength"] .facet-options {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
   }
   .catalog-results-bar {
     align-items: center;
