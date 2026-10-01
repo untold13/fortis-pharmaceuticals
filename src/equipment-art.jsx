@@ -1,8 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Pause, Play, RotateCcw, MoveHorizontal } from "lucide-react";
 import "./equipment-art.css";
+import assets from "./generated-artwork.json";
 
-const homeRadius = () => matchMedia("(max-width: 760px)").matches ? "100%" : "86%";
+const homeRadius = () => typeof matchMedia !== "undefined" && matchMedia("(max-width: 760px)").matches ? "100%" : "86%";
 const SWEEP_START_DEG = -38;
 const SWEEP_END_DEG = 52;
 const SWEEP_LEG_DURATION_MS = 10000;
@@ -14,7 +15,7 @@ function loadViewer() {
   if (!viewerReady) viewerReady = new Promise((resolve, reject) => {
     const script = document.createElement("script");
     script.type = "module";
-    script.src = "/model-viewer-4.3.1.min.js";
+    script.src = assets.viewer;
     script.onload = () => customElements.whenDefined("model-viewer").then(resolve);
     script.onerror = reject;
     document.head.append(script);
@@ -24,8 +25,10 @@ function loadViewer() {
 
 export function EquipmentArtwork() {
   const viewer = useRef(null);
-  const [status, setStatus] = useState("loading");
-  const [moving, setMoving] = useState(() => !matchMedia("(prefers-reduced-motion: reduce)").matches);
+  const [status, setStatus] = useState("preview");
+  const [enabled, setEnabled] = useState(false);
+  const start = () => { setStatus("loading"); setEnabled(true); };
+  const [moving, setMoving] = useState(true);
   const movingRef = useRef(moving);
   const userCamera = useRef(false);
   const sweepElapsed = useRef(0);
@@ -45,11 +48,31 @@ export function EquipmentArtwork() {
   }, [moving]);
 
   useEffect(() => {
+    let idle;
+    let cancelled = false;
+    const reveal = async () => {
+      const poster = document.querySelector(".equipment-poster");
+      try { await poster?.decode(); } catch {}
+      if (cancelled) return;
+      const begin = () => { if (!cancelled) start(); };
+      if ("requestIdleCallback" in window) idle = requestIdleCallback(begin, { timeout: 2500 });
+      else idle = setTimeout(begin, 100);
+    };
+    // Let text, fonts and the preview paint before loading the WebGL runtime.
+    if (document.readyState === "complete") reveal();
+    else window.addEventListener("load", reveal, { once: true });
+    return () => { cancelled = true; window.removeEventListener("load", reveal); if ("cancelIdleCallback" in window) cancelIdleCallback(idle); else clearTimeout(idle); };
+  }, []);
+
+  useEffect(() => {
+    if (!enabled) return;
     const model = viewer.current;
     let disposed = false;
     let frame;
     const motionPreference = matchMedia("(prefers-reduced-motion: reduce)");
     const preferenceChanged = e => setMoving(!e.matches);
+    setMoving(!motionPreference.matches);
+    movingRef.current = !motionPreference.matches;
     motionPreference.addEventListener("change", preferenceChanged);
     const onLoad = () => {
       if (disposed) return;
@@ -118,23 +141,25 @@ export function EquipmentArtwork() {
       document.removeEventListener("visibilitychange", resetFrameClock);
       motionPreference.removeEventListener("change", preferenceChanged);
     };
-  }, []);
+  }, [enabled]);
 
   return (
     <div className={`equipment-visual equipment-${status}`}>
-      <model-viewer ref={viewer}
-        src="/hemedis-c24-18.glb"
+      {status !== "ready" && <img className="equipment-poster" src={assets.poster} alt="HEMEDIS MIBMIX C24" width="1000" height="1000" fetchPriority="high" />}
+      {enabled && <model-viewer ref={viewer}
+        src={assets.model}
         alt="HEMEDIS MIBMIX C24, მოძრავი ინტერაქტიული 3D ქომფაუნდერი. გადაატრიალეთ მაუსით ან ისრის ღილაკებით."
         camera-controls="" disable-pan="" touch-action="pan-y"
         camera-orbit={homeOrbit()} field-of-view="30deg"
         min-camera-orbit="auto 48deg 58%" max-camera-orbit="auto 100deg 130%"
         min-field-of-view="22deg" max-field-of-view="38deg"
         shadow-intensity="0.8" shadow-softness="1" exposure="1.15"
-        environment-image="/hemedis-lighting.hdr" interaction-prompt="none"
+        environment-image={assets.lighting} interaction-prompt="none"
         loading="eager" reveal="auto" animation-name="All Animations">
         <div slot="progress-bar" />
-      </model-viewer>
-      {status === "loading" && <div className="equipment-loading" role="status"><span />3D მოდელი იტვირთება</div>}
+      </model-viewer>}
+      {status === "preview" && <button className="equipment-start" onClick={start}>3D ხედის ჩართვა</button>}
+      {status === "loading" && <div className="equipment-loading equipment-progress" role="status">3D მოდელი იტვირთება</div>}
       {status === "error" && <div className="equipment-loading" role="alert">3D მოდელის ჩატვირთვა ვერ მოხერხდა.<a href="https://www.hemedis.de/mibmix-c24-18-channel-interaction/" target="_blank" rel="noreferrer">გახსენით HEMEDIS-ის მოდელი</a></div>}
       {status === "ready" && <div className="equipment-controls">
         <span className="equipment-hint"><MoveHorizontal size={17} aria-hidden="true" />გადაატრიალეთ მაუსით</span>
