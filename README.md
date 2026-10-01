@@ -12,7 +12,7 @@ npm run check
 node scripts/check-cms-auth.mjs
 ```
 
-Prebuild validates CMS content and creates lossless delivery images. Every published product gets an independent static route. The public site contains no checkout or patient data collection.
+Prebuild creates responsive, content-hashed delivery images while preserving CMS originals. Build validates CMS content and pre-renders every public route with visible HTML and only the product data needed on that route. The public site contains no checkout or patient data collection.
 
 ## Content editor
 
@@ -29,7 +29,7 @@ A successful save creates a main-branch commit and triggers the connected Vercel
 - **Products:** create or edit English and Georgian name, dosage form, preparation and route, medical area, short description, name and composition, pharmacological properties and mechanism of action, indications, dosage and administration, side effects, contraindications, special warnings and precautions, storage conditions, and manufacturer. Catalogue settings retain strength, pack quantity/unit, original image, filters and reference IDs. Turn “Published” off to retain a draft outside all public routes and filters. Product addresses are permanent; do not rename existing slugs. Use the same item order for corresponding English/Georgian filter lists.
 - **Website content:** edit existing bilingual text or add bilingual sections to the homepage, about, compounding, contact or catalog pages. Plain text fields keep public rendering safe.
 - **References:** maintain verified primary-source titles, URLs and IDs. Clinical fields require professional review before publication.
-- **Images:** upload PNG, JPEG or WebP through the image upload field (maximum 3 MB). Originals are committed unchanged under `public/uploads`. Build-time lossless WebP conversion verifies identical decoded pixels. No image regeneration or label alterations occur.
+- **Images:** upload PNG, JPEG or WebP through the image upload field (maximum 3 MB). Originals are committed unchanged under `public/uploads`. Build-time WebP delivery variants resize and compress uploads for their displayed size. The original uploaded files remain unchanged; labels are not regenerated or rewritten.
 
 CMS records live in `content/products/*.json`, existing text in `content/copy.json`, added sections in `content/home.json`, and primary references in `content/sources.json`. Generated `src/generated-content.js` is excluded from Git. The catalog, filter options, counts, image dimensions and routes derive from published records, so future additions do not need source code changes. Current catalog: 29 separate preparations, with the original four featured records.
 
@@ -42,3 +42,13 @@ English/Georgian and day/night preferences persist. The landscape theme switch f
 ## Verification
 
 `node scripts/check-preferences.mjs` exercises every public route in both languages and themes, mobile overflow, original image loading, search/filter logic, keyboard controls, finite hero motion and reduced motion. Set `FORTIS_TEST_URL` for production and `FORTIS_CHROME_PATH` for a local Chromium executable. `scripts/check-cms-auth.mjs` exercises password login, fixed-origin checks, restricted installation tokens, save/reload, SHA conflicts, image byte preservation, source protection, malformed input, logout, credential rotation, expiry and rate limits using a deterministic GitHub double. Real editor save/publish persistence must also be checked after the App and Vercel setup. Mock tests do not verify deployed services.
+
+## Loading performance
+
+The public pages hydrate build-time React markup. The homepage embeds only featured product summaries, the catalogue embeds searchable summaries, and a product page embeds only its own full record and references. The original CMS source remains authoritative.
+
+`public/optimized/` and `src/generated-*.json` are build outputs. Their content hashes safely support a one-year immutable cache. The admin HTML and API retain their existing cache/security rules. The 3D hero shows a rendered preview first, then initializes the optimized model after the page load and an idle opportunity; animation and camera controls remain available.
+
+The original 3D model and lighting are preserved. Delivery copies use glTF Transform 4.5.1 (deduplication, animation resampling, quantization, 1024px WebP textures, without mesh simplification, flattening, joining or instancing) and a 256×128 linear-light average of the original HDR.
+
+Run `node scripts/check-speed.mjs` against a built preview with `FORTIS_TEST_URL`. It verifies all published routes, static content without JavaScript, image loading, catalogue controls, theme persistence, mobile layouts and the 3D controls. `scripts/benchmark-speed.mjs` compares two served builds with fresh browser contexts, a 1.6 Mbps connection, 150 ms latency and 4× CPU throttling.
