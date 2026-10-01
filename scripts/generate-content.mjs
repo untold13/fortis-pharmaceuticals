@@ -13,6 +13,7 @@ const copy = await read("content/copy.json"),
   home = await read("content/home.json");
 validateContent("content/copy.json", copy);
 validateContent("content/home.json", home);
+const assets = await read("src/generated-assets.json");
 const records = [];
 for (const file of (await fs.readdir("content/products")).filter((f) =>
   f.endsWith(".json"),
@@ -29,7 +30,7 @@ for (const file of (await fs.readdir("content/products")).filter((f) =>
   p.imageWidth = meta.width;
   p.imageHeight = meta.height;
   p.originalImage = p.image;
-  p.image = p.image.replace(/\.(png|jpe?g)$/i, ".webp");
+  Object.assign(p, assets.products[p.slug]);
   records.push(p);
 }
 records.sort(

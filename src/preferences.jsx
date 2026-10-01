@@ -22,10 +22,14 @@ export function translate(value) {
 }
 
 export function PreferencesProvider({ children }) {
-  const [theme, setTheme] = useState(() =>
-    document.documentElement.dataset.theme === "dark" ? "dark" : "light",
-  );
+  const [theme, setTheme] = useState("light");
+  const [ready, setReady] = useState(false);
   useEffect(() => {
+    setTheme(document.documentElement.dataset.theme === "dark" ? "dark" : "light");
+    setReady(true);
+  }, []);
+  useEffect(() => {
+    if (!ready) return;
     document.documentElement.lang = "ka";
     document.documentElement.dataset.theme = theme;
     document.documentElement.style.colorScheme = theme;
@@ -37,7 +41,7 @@ export function PreferencesProvider({ children }) {
     } catch {
       /* Controls still work when browser storage is unavailable. */
     }
-  }, [theme]);
+  }, [theme, ready]);
   const value = useMemo(
     () => ({
       theme,

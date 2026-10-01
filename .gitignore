@@ -9,3 +9,9 @@ public/products/*.webp
 src/generated-content.js
 public/uploads/**/*.webp
 public/uploads/*.webp
+
+.ssr/
+public/optimized/
+node_modules
+src/generated-assets.json
+src/generated-artwork.json
