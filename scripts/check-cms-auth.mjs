@@ -204,7 +204,7 @@ try {
     changed = {
       ...product,
       manufacturer: "სატესტო მწარმოებელი",
-      facets: { specialty: ["ონკოლოგია", "იმუნოლოგია"], use: ["იმუნიტეტის გაძლიერება და იმუნომოდულაციური თერაპია"], system: ["იმუნური და ონკოლოგიური სისტემა"] },
+      facets: { specialty: ["ონკოლოგია", "იმუნოლოგია"] },
     };
   r = await call("save", { path, sha: before, data: changed }, cookie);
   assert.equal(r.statusCode, 200);
@@ -226,7 +226,7 @@ try {
         {
           path,
           sha: r.data.sha,
-          data: { ...product, image: "/uploads/missing.png" },
+          data: { ...product, published: true, image: "/uploads/missing.png" },
         },
         cookie,
       )

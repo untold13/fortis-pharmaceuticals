@@ -103,7 +103,7 @@ try {
     .getByRole("button", { name: "შესვლა", exact: true })
     .click();
   await page.locator(".admin-product-list > button").first().waitFor();
-  assert.equal(await page.locator(".admin-product-list > button").count(), 29);
+  assert.equal(await page.locator(".admin-product-list > button").count(), content.products.length);
   let audit = await new AxeBuilder({ page })
     .withTags(["wcag2a", "wcag2aa", "wcag21aa"])
     .analyze();
@@ -113,6 +113,12 @@ try {
   );
   await page.getByLabel("პრეპარატის ძებნა").fill("PSK");
   await page.locator(".admin-product-list > button").first().click();
+  assert.equal(await page.locator(".admin-filter-group").count(), 1);
+  await page.locator(".admin-filter-group summary").click();
+  assert.match(await page.locator(".admin-filter-group summary").innerText(), /სამედიცინო სპეციალობა/);
+  assert.equal(await page.locator(".admin-filter-fields input[type=checkbox]").count(), 42);
+  await page.locator(".admin-filter-fields").getByRole("checkbox", { name: "ჰემატოლოგია", exact: true }).check();
+
   for (const label of [
     "დასახელება",
     "წამლის ფორმა",
@@ -143,6 +149,9 @@ try {
   await page.reload();
   await page.getByLabel("პრეპარატის ძებნა").fill("PSK");
   await page.locator(".admin-product-list > button").first().click();
+  await page.locator(".admin-filter-group summary").click();
+  assert.equal(await page.locator(".admin-filter-fields").getByRole("checkbox", { name: "ჰემატოლოგია", exact: true }).isChecked(), true);
+
   assert.equal(
     await page
       .getByLabel("მწარმოებელი", { exact: true })
@@ -235,7 +244,7 @@ try {
   );
   assert.deepEqual(errors, []);
   console.log(
-    "PASS: custom editor login/error, 29 records, Georgian-only product fields, edit/save/reload, original-image preview, unchanged catalog filters, new draft, added section, logout, mobile overflow and WCAG AA checks. Browser API responses mocked; live setup required.",
+    "PASS: custom editor login/error, current product records, Georgian-only product fields, edit/save/reload, original-image preview, specialty-only filter save/reload, new draft, added section, logout, mobile overflow and WCAG AA checks. Browser API responses mocked; live setup required.",
   );
 } catch (e) {
   console.log({ errors, body: await page.locator("body").innerText() });
