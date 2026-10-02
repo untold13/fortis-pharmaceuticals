@@ -537,6 +537,8 @@ function PageIntro({ eyebrow, title, description }) {
     </div>
   );
 }
+// Keep public direction filters hidden while the new assignments are prepared.
+const showDirectionFilters = false;
 function Catalog() {
   const { products } = usePageData();
   const catalogProducts = React.useMemo(() => normalizeProducts(products), [products]);
@@ -601,9 +603,9 @@ function Catalog() {
               </button>
             )}
           </label>
-          <p>{t("შეგიძლიათ რამდენიმე სამედიცინო სპეციალობა მონიშნოთ.")}</p>
+          {showDirectionFilters && <p>{t("შეგიძლიათ რამოდენიმე მიმართულება მონიშნოთ.")}</p>}
         </div>
-        <div className="catalog-facets" ref={filterRef}>
+        {showDirectionFilters && <div className="catalog-facets" ref={filterRef}>
           {facets.map((f) => (
             <details
               className="catalog-facet"
@@ -649,7 +651,7 @@ function Catalog() {
               </fieldset>
             </details>
           ))}
-        </div>
+        </div>}
         <div className="catalog-results-bar">
           <p role="status" aria-live="polite" aria-atomic="true">
             <strong>{shown.length}</strong>
@@ -678,11 +680,6 @@ function Catalog() {
             ))}
           </div>
         )}
-        <p className="filter-note">
-          {t(
-            "სამედიცინო სპეციალობით დაჯგუფება ფორტისის პრეპარატების დამტკიცებულ ჩვენებებს არ განსაზღვრავს. კვლევების შედეგები და კონკრეტული ფორმულის შეზღუდვები პროდუქტის გვერდზეა განმარტებული.",
-          )}
-        </p>
         <div className="product-grid">
           {shown.map((p, index) => (
             <Card key={p.slug} p={p} priority={index < 2} />
