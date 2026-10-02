@@ -69,7 +69,7 @@ function Header() {
               href={url}
               aria-current={path === url ? "page" : undefined}
             >
-              {t(url === "/compounding" ? "Compound" : name)}
+              {t(url === "/compounding" ? "Compounding" : name)}
             </A>
           ))}
         </nav>
