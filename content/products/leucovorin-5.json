@@ -14,12 +14,7 @@
   "published": true,
   "order": 20,
   "facets": {
-    "specialty": [
-      "გინეკოლოგია / მეანობა",
-      "ნევროლოგია",
-      "ონკოლოგია",
-      "პედიატრია"
-    ]
+    "specialty": []
   },
   "packUnit": "ტაბლეტი",
   "preparation": "პერორალური",

@@ -115,9 +115,9 @@ try {
   await page.locator(".admin-product-list > button").first().click();
   assert.equal(await page.locator(".admin-filter-group").count(), 1);
   await page.locator(".admin-filter-group summary").click();
-  assert.match(await page.locator(".admin-filter-group summary").innerText(), /სამედიცინო სპეციალობა/);
-  assert.equal(await page.locator(".admin-filter-fields input[type=checkbox]").count(), 42);
-  await page.locator(".admin-filter-fields").getByRole("checkbox", { name: "ჰემატოლოგია", exact: true }).check();
+  assert.match(await page.locator(".admin-filter-group summary").innerText(), /მიმართულება/);
+  assert.equal(await page.locator(".admin-filter-fields input[type=checkbox]").count(), 3);
+  await page.locator(".admin-filter-fields").getByRole("checkbox", { name: "ალერგოლოგია", exact: true }).check();
 
   for (const label of [
     "დასახელება",
@@ -150,7 +150,7 @@ try {
   await page.getByLabel("პრეპარატის ძებნა").fill("PSK");
   await page.locator(".admin-product-list > button").first().click();
   await page.locator(".admin-filter-group summary").click();
-  assert.equal(await page.locator(".admin-filter-fields").getByRole("checkbox", { name: "ჰემატოლოგია", exact: true }).isChecked(), true);
+  assert.equal(await page.locator(".admin-filter-fields").getByRole("checkbox", { name: "ალერგოლოგია", exact: true }).isChecked(), true);
 
   assert.equal(
     await page

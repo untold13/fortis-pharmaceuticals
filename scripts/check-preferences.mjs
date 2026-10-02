@@ -1,7 +1,6 @@
 import assert from "node:assert/strict";
 import { chromium } from "playwright";
 import { products } from "../src/products.js";
-import { catalogProducts } from "../src/catalog-model.js";
 import fs from "node:fs";
 
 const copy = JSON.parse(fs.readFileSync("content/copy.json", "utf8"));
@@ -134,40 +133,11 @@ try {
       .click();
     assert.equal(await page.locator(".product-card").count(), products.length);
 
-    const select = async (key, value) => {
-      const group = page.locator(`[data-facet="${key}"]`);
-      if ((await group.getAttribute("open")) === null)
-        await group.locator("summary").click();
-      await group.getByRole("checkbox", { name: text(value), exact: true }).check();
-    };
-    const count = async (expected) => {
-      await page.waitForFunction(
-        (value) => document.querySelectorAll(".product-card").length === value,
-        expected,
-      );
-      assert.equal(await page.locator(".product-card").count(), expected);
-    };
-    assert.equal(await page.locator(".catalog-facet").count(), 1);
-    assert.equal(await page.locator(".catalog-facet summary span").innerText(), "სამედიცინო სპეციალობა");
-    await select("specialty", "ძილის მედიცინა");
-    await count(catalogProducts.filter((p) => p.facets.specialty.includes("ძილის მედიცინა")).length);
-    await select("specialty", "დერმატოლოგია");
-    await count(catalogProducts.filter((p) => p.facets.specialty.some((s) => ["ძილის მედიცინა", "დერმატოლოგია"].includes(s))).length);
-    assert.equal(await page.locator(".active-filters button").count(), 2);
-    await page
-      .getByRole("button", { name: "ფილტრების გასუფთავება", exact: true })
-      .click();
-    await count(products.length);
-
+    assert.equal(await page.locator(".catalog-facet").count(), 0);
+    assert.equal(await page.locator(".filter-note").count(), 0);
+    assert.equal(await page.locator(".product-card").count(), products.length);
     await page.setViewportSize({ width: 320, height: 800 });
-    await page.locator('[data-facet="specialty"] summary').click();
-    assert.equal(
-      await page.evaluate(() => document.documentElement.scrollWidth > innerWidth),
-      false,
-      "Open filters fit a 320px screen",
-    );
-    await page.locator('[data-facet="specialty"] summary').press("Escape");
-    assert.equal(await page.locator('[data-facet="specialty"]').getAttribute("open"), null);
+    assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
     await page.getByRole("switch").focus();
     await page.getByRole("switch").press("Space");
     assert.equal(

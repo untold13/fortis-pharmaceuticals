@@ -5,7 +5,7 @@ export function ProductFilterFields({ value = {}, onChange }) {
   return (
     <section className="admin-filter-fields">
       <h3>კატალოგის ფილტრები</h3>
-      <p className="admin-hint">შეგიძლიათ რამდენიმე სამედიცინო სპეციალობა მონიშნოთ.</p>
+      <p className="admin-hint">შეგიძლიათ რამოდენიმე მიმართულება მონიშნოთ.</p>
       {filterDefinitions.map((definition) => {
         const { key, label, groups } = definition;
         const { selected, unmatched } = resolveFilterSelections(key, value[key]);
