@@ -14,7 +14,9 @@
   "tag": "aaaa",
   "refs": [],
   "facets": {
-    "specialty": []
+    "specialty": [
+      "კარდიოლოგია"
+    ]
   },
   "nameComposition": "aaaa",
   "pharmacology": "aaaa",
