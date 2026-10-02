@@ -1,4 +1,4 @@
-// Directions supplied by the user; product assignments are being rebuilt.
+// Directions currently approved by the user.
 export const filterDefinitions = [
   {
     "key": "specialty",
@@ -7,7 +7,6 @@ export const filterDefinitions = [
       {
         "label": "",
         "options": [
-          "ტკივილის მართვა",
           "ალერგოლოგია",
           "გასტროენტეროლოგია"
         ]
@@ -20,7 +19,7 @@ export const filterOptions = Object.fromEntries(
   filterDefinitions.map((f) => [f.key, f.groups.flatMap((g) => g.options)]),
 );
 
-const previousLabels = { specialty: { "ალგოლოგია (ტკივილის მედიცინა)": ["ტკივილის მართვა"] } };
+const previousLabels = {};
 
 export function resolveFilterSelections(key, values = []) {
   const allowed = filterOptions[key] || [];

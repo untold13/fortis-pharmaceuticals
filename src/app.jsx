@@ -537,8 +537,8 @@ function PageIntro({ eyebrow, title, description }) {
     </div>
   );
 }
-// Keep public direction filters hidden while the new assignments are prepared.
-const showDirectionFilters = false;
+// Show the two directions currently approved for the catalogue.
+const showDirectionFilters = true;
 function Catalog() {
   const { products } = usePageData();
   const catalogProducts = React.useMemo(() => normalizeProducts(products), [products]);
