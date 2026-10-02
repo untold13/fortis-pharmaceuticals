@@ -133,7 +133,7 @@ try {
       .click();
     assert.equal(await page.locator(".product-card").count(), products.length);
 
-    assert.equal(await page.locator(".catalog-facet").count(), 0);
+    assert.equal(await page.locator(".catalog-facet").count(), 1);
     assert.equal(await page.locator(".filter-note").count(), 0);
     assert.equal(await page.locator(".product-card").count(), products.length);
     await page.setViewportSize({ width: 320, height: 800 });

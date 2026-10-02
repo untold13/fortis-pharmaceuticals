@@ -116,7 +116,7 @@ try {
   assert.equal(await page.locator(".admin-filter-group").count(), 1);
   await page.locator(".admin-filter-group summary").click();
   assert.match(await page.locator(".admin-filter-group summary").innerText(), /მიმართულება/);
-  assert.equal(await page.locator(".admin-filter-fields input[type=checkbox]").count(), 3);
+  assert.equal(await page.locator(".admin-filter-fields input[type=checkbox]").count(), 2);
   await page.locator(".admin-filter-fields").getByRole("checkbox", { name: "ალერგოლოგია", exact: true }).check();
 
   for (const label of [

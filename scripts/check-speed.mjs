@@ -30,7 +30,7 @@ try {
  await page.waitForFunction(()=>document.querySelectorAll('.product-card').length===0);
  await page.getByRole('button',{name:'ფილტრების გასუფთავება',exact:true}).click();
  assert.equal(await page.locator('.product-card').count(),products.length);
- assert.equal(await page.locator('.catalog-facet').count(),0);
+ assert.equal(await page.locator('.catalog-facet').count(),1);
  assert.equal(await page.locator('.filter-note').count(),0);
  await page.getByRole('switch').click();
  await page.waitForFunction(()=>document.documentElement.dataset.theme==='dark');
