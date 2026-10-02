@@ -93,6 +93,10 @@ html[data-theme="dark"] .bottle-cap-line {
   min-height: 3em;
   margin-bottom: 5px;
 }
+.product-card-bottom .product-category,
+html[data-theme="dark"] .product-card-bottom .product-category {
+  color: var(--orange);
+}
 .product-card h3 {
   min-height: 3em;
 }

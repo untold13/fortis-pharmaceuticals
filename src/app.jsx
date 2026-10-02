@@ -263,7 +263,7 @@ function Card({ p, priority = false }) {
         </span>
       </div>
       <div className="product-card-bottom">
-        <span className="product-category">{t(p.category)}</span>
+        <span className="product-category">{(p.facets?.specialty || []).map((direction) => t(direction)).join(", ")}</span>
         <h3>{t(p.name)}</h3>
         <div>
           <strong>{t(p.strength)}</strong>
