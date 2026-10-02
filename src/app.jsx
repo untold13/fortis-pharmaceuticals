@@ -263,7 +263,7 @@ function Card({ p, priority = false }) {
         </span>
       </div>
       <div className="product-card-bottom">
-        <span className="product-category">{t(p.category)}</span>
+        <span className="product-category">{(p.facets?.specialty || []).map((direction) => t(direction)).join(", ")}</span>
         <h3>{t(p.name)}</h3>
         <div>
           <strong>{t(p.strength)}</strong>
@@ -537,7 +537,7 @@ function PageIntro({ eyebrow, title, description }) {
     </div>
   );
 }
-// Show the two directions currently approved for the catalogue.
+// Show the directions currently approved for the catalogue.
 const showDirectionFilters = true;
 function Catalog() {
   const { products } = usePageData();

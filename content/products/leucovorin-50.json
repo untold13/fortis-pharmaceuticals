@@ -14,7 +14,11 @@
   "published": true,
   "order": 28,
   "facets": {
-    "specialty": []
+    "specialty": [
+      "ფსიქიატრია",
+      "ნერვოლოგია",
+      "პედიატრია"
+    ]
   },
   "packUnit": "ტაბლეტი",
   "preparation": "პერორალური",

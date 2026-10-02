@@ -5,13 +5,15 @@
   "pack": 1,
   "packUnit": "ერთეული",
   "form": "სპრეი",
-  "image": "/uploads/product-2026-10-02-antifungal-shoe-spray-100ml.webp",
+  "image": "/uploads/product-2026-10-02-antifungal-shoe-spray-100ml-refresh.webp",
   "published": true,
   "featured": false,
   "order": 118,
   "refs": [],
   "facets": {
-    "specialty": []
+    "specialty": [
+      "დერმატოლოგია"
+    ]
   },
   "preparation": "ტოპიკური",
   "category": "დერმატოლოგია, მიკოლოგია, ჰიგიენა",

@@ -15,7 +15,10 @@
   "published": true,
   "order": 18,
   "facets": {
-    "specialty": []
+    "specialty": [
+      "ფსიქიატრია",
+      "სექსოლოგია"
+    ]
   },
   "packUnit": "ტაბლეტი",
   "preparation": "კომპოზიტური · პერორალური",

@@ -9,12 +9,15 @@
   "strength": "7.5 მგ",
   "pack": 30,
   "form": "ტაბლეტი",
-  "image": "/uploads/approved-2026-09-15-mirtazapine-7-5.webp",
+  "image": "/uploads/product-2026-10-02-mirtazapine-7-5-low-dose.webp",
   "featured": false,
   "published": true,
   "order": 19,
   "facets": {
-    "specialty": []
+    "specialty": [
+      "ფსიქიატრია",
+      "ნერვოლოგია"
+    ]
   },
   "packUnit": "ტაბლეტი",
   "preparation": "კომპოზიტური · პერორალური",

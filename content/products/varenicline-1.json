@@ -14,7 +14,10 @@
   "tag": "aaaa",
   "refs": [],
   "facets": {
-    "specialty": []
+    "specialty": [
+      "კარდიოლოგია",
+      "ფსიქიატრია"
+    ]
   },
   "nameComposition": "aaaa",
   "pharmacology": "aaaa",

@@ -6,23 +6,27 @@
   "packUnit": "ერთეული",
   "form": "ბლანტი ადგილობრივი ხსნარი",
   "image": "/products/fortis-logo-placeholder.png",
-  "published": false,
+  "published": true,
   "featured": false,
   "order": 112,
   "refs": [],
   "facets": {
-    "specialty": []
+    "specialty": [
+      "ტკივილის მართვა",
+      "ენდოსკოპია",
+      "პედიატრია"
+    ]
   },
-  "preparation": "aaa",
-  "category": "aaa",
-  "tag": "aaa",
-  "nameComposition": "aaa",
-  "pharmacology": "aaa",
-  "indications": "aaa",
-  "dosageAdministration": "aaa",
-  "sideEffects": "aaa",
-  "contraindications": "aaa",
-  "warningsPrecautions": "aaa",
-  "storageConditions": "aaa",
-  "manufacturer": "aaa"
+  "preparation": "ბლანტი ადგილობრივი ხსნარი",
+  "category": "ტკივილის მართვა",
+  "tag": "ბლანტი ადგილობრივი ხსნარი",
+  "nameComposition": "",
+  "pharmacology": "",
+  "indications": "",
+  "dosageAdministration": "",
+  "sideEffects": "",
+  "contraindications": "",
+  "warningsPrecautions": "",
+  "storageConditions": "",
+  "manufacturer": ""
 }

@@ -1,6 +1,6 @@
 {
   "slug": "cardioasa-81-30",
-  "name": "CardioASA აცეტილსალიცილის მჟავა",
+  "name": "Chewable CardioASA",
   "strength": "81 მგ",
   "pack": 30,
   "packUnit": "საღეჭი ტაბლეტი",
@@ -9,7 +9,10 @@
   "order": 70,
   "refs": [],
   "facets": {
-    "specialty": []
+    "specialty": [
+      "კარდიოლოგია",
+      "გინეკოლოგია"
+    ]
   },
   "form": "საღეჭი ტაბლეტი",
   "preparation": "კომპოზიტური · პერორალური",
@@ -24,5 +27,5 @@
   "warningsPrecautions": "",
   "storageConditions": "შეინახეთ ბავშვებისთვის მიუწვდომელ ადგილას.\nშეინახეთ არაუმეტეს +25°C ტემპერატურაზე, მშრალ,\nპირდაპირი სინათლისგან დაცულ ადგილას.\nსტანდარტი: დამზადებულია აშშ ფარმაკოპეის (USP-NF)\nდა GPP სტანდარტების შესაბამისად.",
   "manufacturer": "შპს „ფორტის ფარმაცეუტიკალსი“\nPharmaceutical Compounding\nმისამართი: საქართველო, თბილისი, გ. ჟვანიას ქ. No9\nტელ: 032 2053191\nსამუშაო საათები - ყოველდღე 10:00-20:00",
-  "image": "/uploads/approved-2026-09-15-cardioasa-81-30.webp"
+  "image": "/uploads/product-2026-10-02-chewable-cardioasa-81-30-refresh.webp"
 }
