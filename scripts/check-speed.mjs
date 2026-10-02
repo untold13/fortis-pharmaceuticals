@@ -30,10 +30,8 @@ try {
  await page.waitForFunction(()=>document.querySelectorAll('.product-card').length===0);
  await page.getByRole('button',{name:'ფილტრების გასუფთავება',exact:true}).click();
  assert.equal(await page.locator('.product-card').count(),products.length);
- await page.locator('.catalog-facet summary').click();
- await page.getByLabel('ძილის მედიცინა',{exact:true}).check();
- assert.ok(await page.locator('.product-card').count()>0);
- assert.ok(await page.locator('.product-card').count()<products.length);
+ assert.equal(await page.locator('.catalog-facet').count(),0);
+ assert.equal(await page.locator('.filter-note').count(),0);
  await page.getByRole('switch').click();
  await page.waitForFunction(()=>document.documentElement.dataset.theme==='dark');
  await page.reload();
@@ -71,5 +69,5 @@ try {
  await modelPage.screenshot({path:'/tmp/fortis-optimized-desktop.png'});
  await modelContext.close();
  assert.deepEqual(errors,[]);
- console.log(`PASS: ${routes.length} public routes; content without JavaScript; product details/images; search and specialty filters; persistent dark mode; contact dialog; equal mobile cards at 320/390/700; desktop layout; 3D model, animation, pause and reset; no page/hydration errors.`);
+ console.log(`PASS: ${routes.length} public routes; content without JavaScript; product details/images; search and temporarily hidden direction filters; persistent dark mode; contact dialog; equal mobile cards at 320/390/700; desktop layout; 3D model, animation, pause and reset; no page/hydration errors.`);
 }finally{await browser.close();}
