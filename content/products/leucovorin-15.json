@@ -11,7 +11,10 @@
     "wellcovorin"
   ],
   "facets": {
-    "specialty": []
+    "specialty": [
+      "ფსიქიატრია",
+      "ნერვოლოგია"
+    ]
   },
   "form": "ტაბლეტი",
   "preparation": "პერორალური",

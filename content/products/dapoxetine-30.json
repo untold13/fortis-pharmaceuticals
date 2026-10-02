@@ -15,7 +15,9 @@
   "published": true,
   "order": 17,
   "facets": {
-    "specialty": []
+    "specialty": [
+      "ფსიქიატრია"
+    ]
   },
   "packUnit": "ტაბლეტი",
   "preparation": "პერორალური",

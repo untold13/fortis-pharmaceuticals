@@ -1,28 +1,30 @@
 {
   "slug": "proctiva-200ml",
   "name": "Proctiva — 200 მლ",
-  "strength": "aaa",
+  "strength": "მითითებული არ არის",
   "pack": 1,
   "packUnit": "ერთეული",
-  "form": "aaa",
+  "form": "მითითებული არ არის",
   "image": "/products/fortis-logo-placeholder.png",
-  "published": false,
+  "published": true,
   "featured": false,
   "order": 119,
   "refs": [],
   "facets": {
-    "specialty": []
+    "specialty": [
+      "პროქტოლოგია"
+    ]
   },
-  "preparation": "aaa",
-  "category": "aaa",
-  "tag": "aaa",
-  "nameComposition": "aaa",
-  "pharmacology": "aaa",
-  "indications": "aaa",
-  "dosageAdministration": "aaa",
-  "sideEffects": "aaa",
-  "contraindications": "aaa",
-  "warningsPrecautions": "aaa",
-  "storageConditions": "aaa",
-  "manufacturer": "aaa"
+  "preparation": "მითითებული არ არის",
+  "category": "პროქტოლოგია",
+  "tag": "მითითებული არ არის",
+  "nameComposition": "",
+  "pharmacology": "",
+  "indications": "",
+  "dosageAdministration": "",
+  "sideEffects": "",
+  "contraindications": "",
+  "warningsPrecautions": "",
+  "storageConditions": "",
+  "manufacturer": ""
 }

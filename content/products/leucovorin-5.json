@@ -14,7 +14,12 @@
   "published": true,
   "order": 20,
   "facets": {
-    "specialty": []
+    "specialty": [
+      "ფსიქიატრია",
+      "ნერვოლოგია",
+      "დერმატოლოგია",
+      "რევმატოლოგია"
+    ]
   },
   "packUnit": "ტაბლეტი",
   "preparation": "პერორალური",
