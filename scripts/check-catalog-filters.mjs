@@ -5,10 +5,10 @@ import { facets, emptyFilters, filterProducts, catalogProducts } from '../src/ca
 import { filterDefinitions, filterOptions, resolveFilterSelections } from '../src/filter-options.js';
 import { validateContent } from '../lib/cms-validation.js';
 
-assert.deepEqual(filterDefinitions.map(f=>[f.key,filterOptions[f.key].length]), [['specialty',3]]);
+assert.deepEqual(filterDefinitions.map(f=>[f.key,filterOptions[f.key].length]), [['specialty',4]]);
 assert.deepEqual(facets.map(f=>f.key), ['specialty']);
 assert.deepEqual(emptyFilters(), {specialty:[]});
-assert.equal(new Set(filterOptions.specialty).size,3);
+assert.equal(new Set(filterOptions.specialty).size,4);
 assert.deepEqual(facets[0].options,filterOptions.specialty);
 assert.deepEqual(resolveFilterSelections('specialty',['ალგოლოგია (ტკივილის მედიცინა)']).selected,[]);
 assert.equal(filterProducts('',emptyFilters()).length,products.length);
@@ -26,4 +26,4 @@ const p=JSON.parse(readFileSync('content/products/lemborexant-5.json'));
 assert.doesNotThrow(()=>validateContent(`content/products/${p.slug}.json`,{...p,facets:{specialty:[]}},sources));
 assert.throws(()=>validateContent(`content/products/${p.slug}.json`,{...p,facets:{specialty:['']}},sources));
 assert.throws(()=>validateContent(`content/products/${p.slug}.json`,{...p,facets:{...p.facets,use:['obsolete']}},sources));
-console.log('PASS: direction filters, 3 user-supplied options, legacy matching, multi-select, search/reset, all product records and CMS validation.');
+console.log('PASS: direction filters, 4 user-supplied options, legacy matching, multi-select, search/reset, all product records and CMS validation.');
