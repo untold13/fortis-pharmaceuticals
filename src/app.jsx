@@ -537,7 +537,7 @@ function PageIntro({ eyebrow, title, description }) {
     </div>
   );
 }
-// Show the two directions currently approved for the catalogue.
+// Show the directions currently approved for the catalogue.
 const showDirectionFilters = true;
 function Catalog() {
   const { products } = usePageData();
