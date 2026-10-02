@@ -30,7 +30,7 @@ for (const name of readdirSync("content/products"))
     );
 for (const name of ["copy", "home", "sources"])
   put(`content/${name}.json`, JSON.parse(readFileSync(`content/${name}.json`)));
-const product = JSON.parse(readFileSync("content/products/psk-90.json"));
+const product = JSON.parse(readFileSync("content/products/psk-180.json"));
 put("public" + product.image, readFileSync("public" + product.image));
 const result = (data, status = 200) => ({
   ok: status < 400,
@@ -199,12 +199,12 @@ try {
         .statusCode,
       400,
     );
-  const path = "content/products/psk-90.json",
+  const path = "content/products/psk-180.json",
     before = files.get(path).sha,
     changed = {
       ...product,
       manufacturer: "სატესტო მწარმოებელი",
-      facets: { specialty: ["ონკოლოგია", "იმუნოლოგია"] },
+      facets: { specialty: ["ონკოლოგია", "პედიატრია"] },
     };
   r = await call("save", { path, sha: before, data: changed }, cookie);
   assert.equal(r.statusCode, 200);
